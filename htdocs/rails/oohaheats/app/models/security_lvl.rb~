@@ -1,0 +1,4 @@
+class User_Types < ActiveRecord::Base
+   belongs_to :users
+   validates_uniqueness_of :name
+end

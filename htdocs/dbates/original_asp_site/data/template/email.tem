@@ -1,0 +1,13 @@
+<html> 
+<head> 
+	<link ref="stylesheet" type="text/css" href="/agent/document/resource/agent.css">
+</head>
+<body>
+<b>Date: #ServerTime#</b><br>
+<b>From: #FromAddress# (#FromName#)</b><br>
+<b>To: #Recipients#</b><br>
+<b>Subject: #Subject#</b><br>
+<hr>
+#BodyText#
+</html>
+</body>

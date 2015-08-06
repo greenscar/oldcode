@@ -1,0 +1,449 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./spheretry_files/filelist.xml">
+<title>/*</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>c8h10n4o2</o:Author>
+  <o:LastAuthor>c8h10n4o2</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2000-12-08T14:04:00Z</o:Created>
+  <o:LastSaved>2000-12-08T14:04:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>600</o:Words>
+  <o:Characters>3422</o:Characters>
+  <o:Company>Rave On</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>4202</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* PROGRAMMER: <span
+style='mso-tab-count:1'>   </span>James Sandlin<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* COURSE: <span
+style='mso-tab-count:2'>               </span>ACS 356-01<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* ASSIGNMENT:<span
+style='mso-tab-count:1'>      </span>Final Project<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* SEMESTER:<span
+style='mso-tab-count:1'>            </span>Fall 2000<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* DATE:<span
+style='mso-tab-count:2'>                     </span>12/04/2000<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* WHAT I DO: A
+sphere that responds to mouse clicks/movement<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal>import COLOR;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.applet.Applet;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.awt.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.awt.event.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.media.j3d.Transform3D;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.applet.MainFrame;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.universe.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.geometry.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.behaviors.picking.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.behaviors.mouse.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.image.TextureLoader;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.media.j3d.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.vecmath.*;<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>public class SphereTry extends Applet<o:p></o:p></p>
+
+<p class=MsoNormal>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+SphereTry()<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>setLayout(new
+BorderLayout());<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+1 CREATE Canvas3D<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Canvas3D
+canvas3d = new Canvas3D(null);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>add(&quot;Center&quot;,
+canvas3d);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+2 CREATE SimpleUniverse<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>SimpleUniverse
+simpleUni = new SimpleUniverse(canvas3d);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+2a CUSTOMIZE SimpleUniverse<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//MOVE
+YOURSELF BACK <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>ViewingPlatform
+myView = simpleUni.getViewingPlatform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>TransformGroup
+myViewTransformGroup = myView.getViewPlatformTransform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Transform3D
+myViewTransform = new Transform3D();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>myViewTransform.setTranslation(new
+Vector3f(0.0f, 0.0f, 5.0f));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>myViewTransformGroup.setTransform(myViewTransform);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//simpleUni.getViewingPlatform().setNominalViewingTransform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+3 CONSTRUCT content branch graph<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>BranchGroup
+scene = createSceneGraph(simpleUni);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+4 COMPILE content branch graph<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//<span
+style='mso-tab-count:3'>                                  </span>Locale of
+SimpleUniverse<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>scene.compile();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//STEP
+5 INSERT content branch graph into<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>simpleUni.addBranchGraph(scene);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+BranchGroup createSceneGraph(SimpleUniverse su)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{ <span
+style='mso-tab-count:2'>                     </span><span style="mso-spacerun:
+yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE ROOT OF BRANCH GRAPH<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>BranchGroup objRoot = new BranchGroup();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>BoundingSphere mouseBounds = null;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>TransformGroup vpTrans = null;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>vpTrans =
+su.getViewingPlatform().getViewPlatformTransform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE TRANSFORM GROUP TO SCALE ALL OBJECTS<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>TransformGroup objScale = new
+TransformGroup();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>Transform3D t3d = new Transform3D();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>t3d.setScale(.5);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objScale.setTransform(t3d);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objRoot.addChild(objScale);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE BOUNDS FOR BACKGROUND AND BEHAVIORS<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>mouseBounds = new BoundingSphere(new
+Point3d(0,0,0), 400);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE BACKGROUND<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>Background bg = new
+Background(COLOR.darkGrey);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>bg.setApplicationBounds(mouseBounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objRoot.addChild(bg);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE OBJECTS WITH BEHAVIOR AND ADD TO
+SCENE GRAPH<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* Material(COLOR3f ambientCOLOR, COLOR3f
+emissiveCOLOR, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*<span style='mso-tab-count:3'>                                </span>COLOR3f
+diffuseCOLOR, COLOR3f specularCOLOR, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*<span style='mso-tab-count:3'>                                </span>float
+shininess) <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>Appearance app = new Appearance();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>app.setMaterial(new Material(COLOR.red,
+COLOR.medGrey, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><span style='mso-tab-count:5'>                                                           </span>COLOR.blue,
+COLOR.orange, 30.0f));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:4'>                                                </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//SET LIGHTING<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>Vector3f lDir1 = new Vector3f(5.0f, 5.0f,
+-5.0f);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* IN THE FOLLOWING LINES, I HAD AN AMBIENT
+LIGHT, HOWEVER, I DID NOT<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* LIKE THE RESULTS IT GAVE ME SO I JUST
+DOCUMENTED IT OUT SO I MAY<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* USE IT LATER<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*/ <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//AmbientLight aLgt = new
+AmbientLight(COLOR.white);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//aLgt.setInfluencingBounds(mouseBounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//objRoot.addChild(aLgt);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>DirectionalLight lgt1 = new
+DirectionalLight(COLOR.white, lDir1);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>lgt1.setInfluencingBounds(mouseBounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objRoot.addChild(lgt1);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><span
+style="mso-spacerun: yes">      </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objScale.addChild(createSphere(3f, app));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>MouseTranslate myMouseTranslate = new
+MouseTranslate(MouseBehavior.INVERT_INPUT);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>myMouseTranslate.setTransformGroup(vpTrans);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>myMouseTranslate.setSchedulingBounds(mouseBounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objRoot.addChild(myMouseTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//PERFORM OPTIMIZATIONS<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objRoot.compile();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>return objRoot;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>private
+Group createSphere(float radius, Appearance app)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>TransformGroup objTrans = new
+TransformGroup();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun:
+yes"> </span>objTrans.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>Primitive obj = null;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>obj = (Primitive) new Sphere(radius,
+Sphere.GENERATE_NORMALS | <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><span style='mso-tab-count:7'>                                                                                   </span>Sphere.GENERATE_TEXTURE_COORDS,
+40, app);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//add this obj to scene graph<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>objTrans.addChild(obj);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>return objTrans;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+static void main(String[] args)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Frame
+frame = new MainFrame(new SphereTry(), 500, 500);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal>}</p>
+
+</div>
+
+</body>
+
+</html>

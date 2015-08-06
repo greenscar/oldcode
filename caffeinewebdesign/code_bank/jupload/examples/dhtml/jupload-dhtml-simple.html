@@ -1,0 +1,73 @@
+<html>
+ <head>
+  <script type="text/javascript">
+
+   function myAddListener() {
+    alert('myAddListener');
+   }
+
+   function myUploadListener() {
+    alert('myUploadListener');
+   }
+
+   function initonload() {
+    alert('Trying to get JUpload...'+document.JUpload);
+
+    if (!document.JUpload) {
+     return;
+    }
+
+    alert('Trying to get JUpload...'+document.JUpload.jsIsReady());
+
+    if (document.JUpload.jsIsReady()) {
+     alert('JUpload listeners registered');
+     document.JUpload.jsRegisterAddListener("myAddListener");
+     document.JUpload.jsRegisterUploadListener("myUploadListener");
+    }
+    else {
+     alert('JUpload not yet ready');
+     window.setTimeout('initonload()',1000);
+    }
+   }
+
+  </script>
+ </head>
+
+ <!body onLoad="initonload();">
+
+ <body>
+
+ <p>JUpload simple DHTML/JavaScript sample.</p>
+
+  <applet 
+   code="JUpload/startup.class"
+   archive="../../jupload_uncompressed.jar"
+   width="640"
+   height="480"
+   mayscript="true"
+   name="JUpload"
+   alt="JUpload applet"> 
+
+   <!-- Java Plug-In Options -->
+   <param name="progressbar" value="true">
+   <param name="boxmessage" value="Loading JUpload Applet ...">
+   <param name="boxbgcolor" value="#e0e0ff">
+
+   <!-- Target links -->
+   <param name="actionURL" value="http://jupload.biz/demo/JUpload.php">
+   <param name="showThumbnails" value="false">
+
+   <!-- Colors -->
+   <param name="backgroundColor" value="#e0e0ff">
+   <param name="mainSplitpaneLocation" value="320">
+
+   <!-- Switches -->
+   <param name="checkResponse" value="true">
+   <param name="showSuccessDialog" value="false">
+   <param name="debug" value="true">
+  </applet>
+
+<input type="button" value="add Add listener" onClick="document.JUpload.jsRegisterAddListener('myAddListener');">
+
+
+</html>

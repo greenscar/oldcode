@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: cablecrazy.com/
+site_owner: Brenten Yates
+address1: 6517 170th PL SW
+address2: 
+city: Edmonds
+state: WA
+country: 
+postal_code: 98026
+phone_number: 425-608-5638
+display_email: webmaster@cablecrazy.com
+site_name: Cable Crazy
+site_description: Cable Crazy sells Case Mods, PC Mods, PC Water Cooling, Cases, Cables, Networking, and computer case mod accessories.

@@ -1,0 +1,125 @@
+package my_mp3_lister;
+/**
+ * This class will scan the directory provided as an argument
+ * for mp3 files and display a list of them.
+ * THREE methods....
+ * Vector getMp3s(String directory){}
+ *		returns a Vector of all mp3s in the dir and subs
+ * void printListSize()
+ *		displays the number of songs in the dir and subs
+ * void printList(){
+ *		displays all songs in the list and number of songs
+ */
+import java.io.*;
+import java.util.*;
+
+public class Mp3Lister{
+  private Vector totalList = new Vector();
+  /*
+   * This method will be called by other classes to get all
+   * mp3s in a dir
+   */
+  public Vector getMp3s(String directory){
+  	this.makeList(directory);
+	return totalList;
+  }
+  /*
+   * makeList takes a directory as an argument
+   * and makes a Vector with all the mp3s in this dir
+   * in totalList
+   */
+  private void makeList(String directory){
+    File[] dirList = null;
+	File[] mp3List = null;
+	directory = directory.concat("/");
+    dirList = List_Dirs_In_Dir(directory);
+	mp3List = List_Mp3s_In_Dir(directory);
+	if (dirList.length == 0){
+		addToList(totalList, mp3List);
+      	mp3List = List_Mp3s_In_Dir(directory);
+    }
+    else{
+	  for(int i = 0; i < dirList.length; i++){
+	  	String temp = directory.concat(dirList[i].getName());
+	    makeList(temp);
+      }
+	  addToList(totalList, mp3List);
+    }
+  }
+
+
+  /*
+   * Display Vector provided to screen
+   */
+  public void printList(){
+    for(int i = 0; i < totalList.size(); i++){
+      System.out.println(totalList.elementAt(i));
+    }
+	System.out.println("The total list has "+ totalList.size()+ " songs.");
+  }
+
+  /*
+   * appends the provided array elements to the Vector
+   */
+  private void addToList(Vector totalList, File[] toAdd){
+  	for(int i = 0; i < toAdd.length; i++){
+		totalList.add(toAdd[i]);
+  	}
+  }
+
+  /*
+   * Displays the number of elements in the Vector
+   */
+  public void printListSize(){
+	System.out.println(totalList.size()+" songs");
+  }
+
+  /*
+   * Returns a File array holding all mp3s in the
+   * 	provided directory
+   */
+  private File[] List_Mp3s_In_Dir(String directory){
+    Filter MP3filter = new Filter(".mp3");
+    File currentDir = new File(directory);
+    return currentDir.listFiles(MP3filter);
+  }
+
+  /*
+   * Returns a Vector holding all subdirectories
+   * 	of the provided directory
+   */
+  private File[] List_Dirs_In_Dir(String directory){
+    int i;
+    int dirCnt = 0;
+    File[] tmpList;
+    Vector dirList = new Vector();
+    dirCnt = 0;
+    Filter ListAllFilter = new Filter();
+    File currentDir = new File(directory);
+
+    tmpList = currentDir.listFiles(ListAllFilter);
+    if (tmpList != null){
+      for(i = 0; i < tmpList.length; i++){
+        if (tmpList[i].isDirectory()){
+          dirList.add(tmpList[i]);
+        }
+      }
+    }
+    tmpList = new File[dirList.size()];
+    for(i = 0; i < dirList.size(); i++){
+      tmpList[i] = (File)(dirList.elementAt(i));
+    }
+    return tmpList;
+  }
+
+
+  public static void main(String args[]){
+    Mp3Lister m = new Mp3Lister();
+    m.makeList("d:");
+	m.printList();
+	m.printListSize();
+  }
+
+}
+
+

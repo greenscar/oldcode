@@ -1,0 +1,35 @@
+
+body {
+   background: #000000;
+   font-family: "new century schoolbook", serif;
+   color: #FFFFFF;
+}
+td.header {
+   text-align: center;
+   background: #666666;
+   /*border: 5px solid red;*/
+   font-weight: 900;
+   font-size: 15pt;
+}
+td.data {
+   text-align: center;
+   font-family: Verdana, Serif; 
+   font-weight: bold; 
+   font-size: 12px;
+   font-color: #FFFFFF;
+}
+tr.odd{
+   background: #BBBBBB;
+}
+tr.even{
+   background: #888888;
+}
+h3 {
+   text-align: center;
+   background: #FFFFFF;
+   border: 5px solid #999999;
+   padding: 0px 0px 4px 0px;
+   font-weight: 900;
+   font-size: 25pt;
+   color: #000000;
+}

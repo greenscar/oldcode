@@ -1,0 +1,167 @@
+<html>
+ <head>
+  <style type="text/css">
+   body,p,table { font-family: arial; font-size:12px; }
+
+   #uploadlist {
+    border-top: 1px solid blue;
+    align:left;
+   }
+
+   #uploadlist thead { background-color:navy;color:white;  }
+
+   #uploadlist img {
+    border:none;
+    vertical-align:middle;
+   }
+
+   #main { width:500px; }
+  </style>
+  <script type="text/javascript">
+   function clearTbody() {
+    var tbody = document.getElementById("uploadlistbody");
+    while (tbody.childNodes.length > 0) {
+      tbody.removeChild(tbody.firstChild);
+    }
+   }
+
+   var done = 0;
+   var number;
+
+   function displayFileQueue() {
+    if (!document.JUpload) return;
+    if (!document.JUpload.jsIsReady()) return;
+    number = document.JUpload.jsGetFileNumber();
+    var i = 0;
+    clearTbody();
+    for (i=0; i<number; i=i+1) {    
+     var theTableBody = document.getElementById("uploadlistbody");
+     var newRow = theTableBody.insertRow(0);
+     if (i%2!=0) { newRow.style.background='#EEE'; }
+     var name = document.JUpload.jsGetFileAt(i);
+     var unit = 'b';
+     var size = document.JUpload.jsGetFileSizeAt(i);
+     if(size>1024) { size=size/1024; unit='Kb'; }
+     if(size>1024) { size=size/1024; unit='Mb'; }
+     if(size>1024) { size=size/1024; unit='Gb'; }
+     size = Math.round(size*100)/100;
+     var newCell;
+
+     newCell = newRow.insertCell(0);
+     newCell.innerHTML = '<img src="images/file.png"> ';
+     newCell = newRow.insertCell(1);
+     newCell.align='left';
+     newCell.innerHTML = name;
+     newCell = newRow.insertCell(2);
+     newCell.align = 'right';
+     newCell.innerHTML = size + '' + unit;
+     newCell = newRow.insertCell(3);
+     newCell.align = 'right';
+     newCell.innerHTML = '<a href="#" onclick="document.JUpload.jsRemoveFileAt(' + i + ');displayFileQueue();"> <img src="images/delete.png" alt="Delete"></a>';
+    }
+   }
+
+   function initonload() {
+    if (!document.JUpload) return;
+    if (document.JUpload.jsIsReady()) {
+     document.JUpload.jsRegisterAddedListener("myAddListener");
+     document.JUpload.jsRegisterUploaded("myUploaded");
+     document.JUpload.jsRegisterUploadListener("myUploadListener");
+    }
+    else {
+     window.setTimeout('initonload()',400);
+    }
+   }
+
+   function myAddListener() { displayFileQueue(); }
+
+   function myUploaded() {
+    done = 1;
+    document.getElementById('bar').style.width = '100%'; 
+    clearTbody();
+    var theTableBody = document.getElementById("uploadlistbody");
+    var newRow = theTableBody.insertRow(0);
+    newCell = newRow.insertCell(0);
+    newCell.innerHTML = '&nbsp;';
+    newCell = newRow.insertCell(1);
+    newCell.align='left';
+    newCell.innerHTML = 'Succesfully uploaded <b>' + number + '</b> file(s)';
+    newCell = newRow.insertCell(2);
+    newCell.align = 'right';
+    newCell.innerHTML = '&nbsp;';
+    newCell = newRow.insertCell(3);
+    newCell.align = 'right';
+    newCell.innerHTML = '&nbsp;';
+    setTimeout('toggle(\'progbar\')',1000);
+   }
+
+   function myUploadListener() {
+    done = 0;
+    toggle('progbar'); 
+    setTimeout('progress()',100);
+   }
+
+   function toggle(el) {
+
+    lyr = document.getElementById(el);
+
+    if (lyr.style.display != 'block') { lyr.style.display = 'block'; } 
+
+    else { lyr.style.display = 'none'; }
+
+   }
+
+
+   function progress() {
+    if (!document.JUpload) return;
+    var w = document.JUpload.jsGetTotalProgressbarValue();
+    if (w > 0) { if (done != 1) { document.getElementById('bar').style.width = w +'%'; } }
+    if (w < 100) { setTimeout('progress()',100); }
+   }
+
+  </script>
+ </head>
+ <body onload="initonload();">
+ </body>
+ <div style="visibility: hidden;">
+  <applet 
+   code="JUpload/startup.class"
+   archive="../../JUpload.jar"
+   width="0"
+   height="0"
+   mayscript
+   name="JUpload"
+   alt="JUpload applet"> 
+
+   <!-- Java Plug-In Options -->
+   <param name="progressbar" value="true">
+   <param name="boxmessage" value="Loading JUpload Applet ...">
+   <param name="boxbgcolor" value="#e0e0ff">
+
+   <!-- Target links -->
+   <param name="actionURL" value="http://jupload.biz/demo/JUpload.php">
+   <param name="showThumbnails" value="false">
+
+   <!-- Colors -->
+   <param name="backgroundColor" value="#e0e0ff">
+   <param name="mainSplitpaneLocation" value="320">
+
+   <!-- Switches -->
+   <param name="checkResponse" value="true">
+   <param name="showSuccessDialog" value="false">
+  </applet>
+ </div>
+ <div id="main">
+  <table id="uploadlist" cellpading="0" cellspacing="0" width="100%">
+   <thead>
+    <tr><td>&nbsp;</td><td align="left"><b>File</b></td><td align="right"><b>Size</b></td><td>&nbsp;</td></tr>
+   </thead>
+   <tbody id="uploadlistbody">
+    <tr><td>&nbsp;</td><td>Please add files by using the <img src="images/add.gif" alt="" /> icon in your lower right</td></tr>
+   </tbody>
+  </table>
+  <table width="100%" cellpadding="2" cellspacing="0" style="border-top:1px solid blue;">
+   <tr><td><span style="float:left;"><div id="progbar" style="border:1px solid black;display:none;width:200px;height:6px;"><img src="images/b.gif" width="1%" height="6" id="bar" /></div></div></span><span style="float:right;"><a href="#" onClick="document.JUpload.jsClickAdd();"><img src="images/add.gif" border="0" /></a> <a href="#" onclick="document.JUpload.jsClickUpload();"><img src="images/upload.gif" border="0" /></a></span></td></tr>
+  </table>
+ </div>
+</html>

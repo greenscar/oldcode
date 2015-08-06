@@ -1,0 +1,57 @@
+<h1>Add new recipe</h1>
+<% form_tag :action => 'create'  do %>
+
+<div>
+<label for="recipe_name">Name</label>:
+<%= text_field 'recipe', 'name' %>
+</div>
+
+<br />
+
+<div>
+<label for="recipe_category">Category</label>:
+<% for category in Category.find(:all) %>
+   <div>
+      <input type="checkbox" id="<%=category.id%>" name="recipe_ids" value="<%=category.id %>"><%=category.name%>
+   </div>
+<% end %>
+</div>
+
+<br />
+<ul>
+<label for="recipe_ingredients">Ingredients</label>:
+<% @recipe.ingredients.each_with_index do |ingredient, index| %>
+   <li>
+   <% measurement = ingredient.measurement %>
+   <% fields_for "measurements[#{index}]", measurement do |m| %>
+      <%= m.text_field :name, :class => "measurement" %>
+   <% end %>
+   <% grocery = ingredient.grocery %>
+   <% fields_for "groceries[#{index}]", grocery do |g| %>
+      <%= g.text_field :name, :class => "grocery" %>
+   <% end %>
+   </li>
+<% end %>
+</ul>
+<br />
+
+<ol>
+<label for="recipe_steps">Steps</label>:
+<% @recipe.steps.each_with_index do |step, index| %>
+   <% fields_for "steps[#{index}]", step do |f| %>
+      <li><%= f.text_area :instruction, :class => "step"%></li>
+   <% end %>
+<% end %>
+</ol>
+
+
+<br />
+
+<%= submit_tag "Create" %>
+
+<% end  %>
+
+<br />
+
+<%= link_to 'Back', {:action => 'list'} %>
+

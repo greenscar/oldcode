@@ -1,0 +1,25 @@
+<form action="/public/cgi/seminar.asp" method="post">
+<!--Need Title-->
+        <input type="hidden" name="Title" value="Professional Employer Organization (PEO)">
+<!--Need Registrar-->
+        <input type="hidden" name="Registrar" value="christenp">
+        <table width="90%" border="0" align="center" bgcolor="#EEEEEE">
+        	<tr><td colspan="2" bgcolor="#0000AA"><h2 style="color:white;margin-left:10pt;">Register Online</h2></td></tr>
+        	<tr><td colspan="2" bgcolor="#DDDDFF"><p>1. Please complete the following information:</p></td></tr>
+        	<tr><td align="right">Name</td><td><input type="text" size="30" name="Name"></td></tr>
+        	<tr><td align="right">Company</td><td><input type="text" size="30" name="Company"></td></tr>
+        	<tr><td align="right">Names of<br>Attendees</td><td><textarea name="Attendees" wrap="virtual" rows="3" cols="40"></textarea></td></tr>
+        	<tr><td align="right">Phone</td><td><input type="text" size="30" name="Phone"></td></tr>
+        	<tr><td align="right">E-mail</td><td><input type="text" size="30" name="Email"></td></tr>
+        	<tr><td colspan="2" bgcolor="#DDDDFF"><p>2. Which session will you be attending?</p></td></tr> 
+        	<tr><td></td><td>
+        <p>
+<!--Need Sessions-->
+        <input type="radio" name="Session" value="9-14-2000">Thursday, September 14, 2000<br>
+        <input type="radio" name="Session" value="10-16-2000">Thursday, October 16, 2000<br>
+        <input type="radio" name="Session" value="11-16-2000">Thursday, November 16, 2000<br>
+        </p>
+        </td></tr>
+        <tr><td colspan="2" bgcolor="#DDDDFF">&nbsp;&nbsp;3.&nbsp; <input type="submit" value="Click here to complete registration"></td></tr>
+        </table>                                   
+</form>  

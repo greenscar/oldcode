@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order: 1
+  measurement_id: 1
+  grocery_id: 1
+  recipe_id: 1
+
+two:
+  order: 1
+  measurement_id: 1
+  grocery_id: 1
+  recipe_id: 1

@@ -1,0 +1,5 @@
+# Mon Sep 18 23:03:34 2006
+# Query_time: 2  Lock_time: 0  Rows_sent: 43  Rows_examined: 43
+use marionlo_copp1;
+SELECT extension, mime, content FROM cpg_filetypes
+

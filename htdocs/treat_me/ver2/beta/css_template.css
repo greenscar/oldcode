@@ -1,0 +1,109 @@
+/* CSS Document */
+div {
+    text-align:left;
+	}
+div.button
+{
+	text-align:center;
+	width: 100%;
+	float:left;
+   
+}
+a.button {
+	width:110px;
+	text-align:center;
+	text-decoration:none;
+	border-color:white;
+	border-width:2px;
+	border-style:solid;
+	margin:0px 10px 10px 10px;
+	float:left;
+    color:#F8B6D3;			   		
+}
+a.button:hover {
+	width:110px;
+	text-align:center;
+	text-decoration:none;
+	border-color:#EE2D68;
+	border-width:2px;
+	border-style:solid;
+	margin:0px 10px 10px 10px;
+	float:left;	
+	color:#EE2D68;	
+}
+
+div.menuframe {
+	width:130px;
+	border:0px solid green;
+	position:relative;left:10px;top:-20px;
+    
+}
+div.body {
+    width:470px;
+    height:450px;
+    position:absolute;
+    left:140px;
+    top:18px;
+	/*background-color: green;*/
+}
+
+div.arialtwleve {
+	font-size:12px;
+	font-family:arial;
+	font-weight:bold;
+	margin:0px 0px 0px 0px;	
+	text-align:center;
+}
+div.arialfourteen {
+    font-size:14px;
+	font-family:arial;
+	font-weight:bold;
+	margin:0px 0px 0px 0px;
+	text-align:center; 
+}
+div.arialtwenty {
+    font-size:16px;
+	font-family:arial;
+	font-weight:900;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	color:#EE2D68;
+}	
+a.submit {
+	width:200px;
+	text-align:center;
+	text-decoration:none;
+	border-color:white;
+	border-width:2px;
+	border-style:solid;
+	margin:0px 10px 10px 10px;
+	float:left;
+    color:#F8B6D3;
+
+/*
+     color:#EE2D68;
+	 font-size:14px;
+	 font-family:arial;
+	 font-weight:bold;
+	 width:200px;
+	 background-color:#F8DEEB;
+	 border-color:white;
+	 border-width:2px;
+	 border-style:solid;
+	 color: #F8B6D3; 
+	 font-size:14px;
+	 font-family:arial;
+	 font-weight:bold;
+*/}
+a.submit:hover {     
+
+	width:200px;
+	text-align:center;
+	text-decoration:none;
+	border-color:#EE2D68;
+	border-width:2px;
+	border-style:solid;
+	margin:0px 10px 10px 10px;
+	float:left;
+    color:#EE2D68;
+}

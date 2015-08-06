@@ -1,0 +1,31 @@
+<h1><%= @recipe.name %></h1>
+<div>
+</div>
+
+<br />
+<label for="recipe_category">Category / Categories</label>:
+<ul>
+<% @recipe.categories.each do |cat| -%>
+   <li><%= cat.name -%></li>
+<% end -%>
+</ul>
+<br />
+<label for="recipe_ingredients">Ingredients</label>
+<% for ingredient in @recipe.ingredients %>
+<div>
+<%= ingredient.measurement.name %> <%= ingredient.grocery.name %>
+</div>
+<% end %>
+
+<br />
+<label for="recipe_steps">Steps</label>:
+<% for step in @recipe.steps %>
+<div>
+<%= (step.order_num) -%>)<%= step.instruction %>
+</div>
+<% end %>
+<br>
+
+<% if (session[:user] != nil && session[:user].is_admin) %>
+<%= link_to 'Edit', {:action => "edit",:id => @recipe.id} , :class=>"button" %><%= link_to 'Back', {:action => 'list'}, :class=>"button"  %>
+<% end %>

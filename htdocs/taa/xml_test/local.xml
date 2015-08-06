@@ -1,0 +1,772 @@
+<envts>
+	<envt>
+		<name>AST01</name>
+		<onlineAST01webserver.list>iedaau002
+
+</onlineAST01webserver.list>
+		<onlineAST01clustersserver.name>iedaau002
+</onlineAST01clustersserver.name>
+		<onlineAST01host.port>14511
+</onlineAST01host.port>
+		<onlineAST01hostxml.dir>/home/wastest
+/WebContent/AST01
+/XML
+</onlineAST01hostxml.dir>
+		<onlineAST01dmgr.home>/export/ENV/TIERS/ast/WebSphere/DeploymentManager
+</onlineAST01dmgr.home>
+		<onlineAST01host.name>iedaau018
+</onlineAST01host.name>
+		<onlineAST01appserver.list>AST01
+</onlineAST01appserver.list>
+		<onlineAST01dns.name>tiers-ast01
+</onlineAST01dns.name>
+		<onlineAST01user.name>wastest
+</onlineAST01user.name>
+		<onlineAST01cell.name>tiers_ast_Network
+</onlineAST01cell.name>
+		<onlineAST01svr.login>wastest
+@iedaau018
+
+</onlineAST01svr.login>
+		<onlineAST01webserver.secure>false
+</onlineAST01webserver.secure>
+		<onlineAST01clustermembers.list>ast01-server2
+</onlineAST01clustermembers.list>
+		<onlineAST01app.name>tiersast01
+</onlineAST01app.name>
+		<onlineAST01pf.dir>/home/wastest
+/WebContent/AST01
+/properties  
+</onlineAST01pf.dir>
+		<onlineAST01webserver.switch>true
+</onlineAST01webserver.switch>
+		<onlineAST01cluster.switch>Yes
+</onlineAST01cluster.switch>
+		<onlineAST01was.home>/export/ENV/TIERS/ast/WebSphere/AppServer
+</onlineAST01was.home>
+		<onlineAST01appserver1.list>
+</onlineAST01appserver1.list>
+		<onlineAST01pf.pullfromstream>true
+</onlineAST01pf.pullfromstream>
+		<onlineAST01templatedest>/home/wastest
+/WebContent/AST01
+/bin
+</onlineAST01templatedest>
+		<onlineAST01server.secure>false
+</onlineAST01server.secure>
+		<onlineAST01webserver.dir>/home/wastest
+/WebContent/AST01
+/web
+</onlineAST01webserver.dir>
+		<onlineAST01server.name>ast01-server2
+</onlineAST01server.name>
+		<onlineAST01vh.name>ast01-cluster
+</onlineAST01vh.name>
+		<onlineAST01cluster.name>ast01-cluster
+</onlineAST01cluster.name>
+		<onlineAST01node.name>iedaau002
+</onlineAST01node.name>
+		<onlineAST01conn.type>SOAP
+</onlineAST01conn.type>
+	</envt>
+	<envt>
+		<name>AST02</name>
+		<onlineAST02clustersserver.name>iedaau002
+</onlineAST02clustersserver.name>
+		<onlineAST02pf.dir>/home/wastest
+/WebContent/AST02
+/properties  
+</onlineAST02pf.dir>
+		<onlineAST02templatedest>/home/wastest
+/WebContent/AST02
+/bin
+</onlineAST02templatedest>
+		<onlineAST02hostxml.dir>/home/wastest
+/WebContent/AST02
+/XML
+</onlineAST02hostxml.dir>
+		<onlineAST02clustermembers.list>ast02-server2
+</onlineAST02clustermembers.list>
+		<onlineAST02conn.type>SOAP
+</onlineAST02conn.type>
+		<onlineAST02node.name>iedaau002
+</onlineAST02node.name>
+		<onlineAST02dns.name>tiers-ast02
+</onlineAST02dns.name>
+		<onlineAST02webserver.list>iedaau002
+
+</onlineAST02webserver.list>
+		<onlineAST02cluster.name>ast02-cluster
+</onlineAST02cluster.name>
+		<onlineAST02appserver1.list>
+</onlineAST02appserver1.list>
+		<onlineAST02pf.pullfromstream>true
+</onlineAST02pf.pullfromstream>
+		<onlineAST02appserver.list>AST02
+</onlineAST02appserver.list>
+		<onlineAST02host.port>14511
+</onlineAST02host.port>
+		<onlineAST02webserver.secure>false
+</onlineAST02webserver.secure>
+		<onlineAST02dmgr.home>/export/ENV/TIERS/ast/WebSphere/DeploymentManager
+</onlineAST02dmgr.home>
+		<onlineAST02server.secure>false
+</onlineAST02server.secure>
+		<onlineAST02host.name>iedaau018
+</onlineAST02host.name>
+		<onlineAST02app.name>tiersast02
+</onlineAST02app.name>
+		<onlineAST02webserver.dir>/home/wastest
+/WebContent/AST02
+/web
+</onlineAST02webserver.dir>
+		<onlineAST02user.name>wastest
+</onlineAST02user.name>
+		<onlineAST02cell.name>tiers_ast_Network
+</onlineAST02cell.name>
+		<onlineAST02svr.login>wastest
+@iedaau018
+
+</onlineAST02svr.login>
+		<onlineAST02was.home>/export/ENV/TIERS/ast/WebSphere/AppServer
+</onlineAST02was.home>
+		<onlineAST02vh.name>ast02-cluster
+</onlineAST02vh.name>
+		<onlineAST02webserver.switch>true
+</onlineAST02webserver.switch>
+		<onlineAST02server.name>ast02-server2
+</onlineAST02server.name>
+		<onlineAST02cluster.switch>Yes
+</onlineAST02cluster.switch>
+	</envt>
+	<envt>
+		<name>AST03</name>
+		<onlineAST03clustersserver.name>iedaau002
+</onlineAST03clustersserver.name>
+		<onlineAST03dmgr.home>/export/ENV/TIERS/ast/WebSphere/DeploymentManager
+</onlineAST03dmgr.home>
+		<onlineAST03host.name>iedaau018
+</onlineAST03host.name>
+		<onlineAST03user.name>wastest
+</onlineAST03user.name>
+		<onlineAST03cell.name>tiers_ast_Network
+</onlineAST03cell.name>
+		<onlineAST03webserver.switch>true
+</onlineAST03webserver.switch>
+		<onlineAST03svr.login>wastest
+@iedaau018
+
+</onlineAST03svr.login>
+		<onlineAST03cluster.switch>Yes
+</onlineAST03cluster.switch>
+		<onlineAST03appserver1.list>
+</onlineAST03appserver1.list>
+		<onlineAST03clustermembers.list>ast03-server2
+</onlineAST03clustermembers.list>
+		<onlineAST03hostxml.dir>/home/wastest
+/WebContent/AST03
+/XML
+</onlineAST03hostxml.dir>
+		<onlineAST03pf.pullfromstream>true
+</onlineAST03pf.pullfromstream>
+		<onlineAST03server.secure>false
+</onlineAST03server.secure>
+		<onlineAST03webserver.dir>/home/wastest
+/WebContent/AST03
+/web
+</onlineAST03webserver.dir>
+		<onlineAST03dns.name>tiers-ast03
+</onlineAST03dns.name>
+		<onlineAST03templatedest>/home/wastest
+/WebContent/AST03
+/bin
+</onlineAST03templatedest>
+		<onlineAST03webserver.list>iedaau002
+
+</onlineAST03webserver.list>
+		<onlineAST03vh.name>ast03-cluster
+</onlineAST03vh.name>
+		<onlineAST03app.name>tiersast03
+</onlineAST03app.name>
+		<onlineAST03conn.type>SOAP
+</onlineAST03conn.type>
+		<onlineAST03node.name>iedaau002
+</onlineAST03node.name>
+		<onlineAST03appserver.list>AST03
+</onlineAST03appserver.list>
+		<onlineAST03pf.dir>/home/wastest
+/WebContent/AST03
+/properties  
+</onlineAST03pf.dir>
+		<onlineAST03cluster.name>ast03-cluster
+</onlineAST03cluster.name>
+		<onlineAST03webserver.secure>false
+</onlineAST03webserver.secure>
+		<onlineAST03was.home>/export/ENV/TIERS/ast/WebSphere/AppServer
+</onlineAST03was.home>
+		<onlineAST03host.port>14511
+</onlineAST03host.port>
+		<onlineAST03server.name>ast03-server2
+</onlineAST03server.name>
+	</envt>
+	<envt>
+		<name>APT01</name>
+		<onlineAPT01webserver.dir>/home/wasapt
+/WebContent/APT01
+/web
+</onlineAPT01webserver.dir>
+		<onlineAPT01dns.name>tiers-apt01
+</onlineAPT01dns.name>
+		<onlineAPT01cluster.switch>Yes
+</onlineAPT01cluster.switch>
+		<onlineAPT01hostxml.dir>/home/wasapt
+/WebContent/APT01
+/XML
+</onlineAPT01hostxml.dir>
+		<onlineAPT01pf.dir>/home/wasapt
+/WebContent/APT01
+/properties
+</onlineAPT01pf.dir>
+		<onlineAPT01app.name>tiersapt01
+</onlineAPT01app.name>
+		<onlineAPT01clustersserver.name>iedaau002
+</onlineAPT01clustersserver.name>
+		<onlineAPT01was.home>/export/ENV/TIERS/apt/WebSphere/AppServer
+</onlineAPT01was.home>
+		<onlineAPT01webserver.secure>true
+</onlineAPT01webserver.secure>
+		<onlineAPT01templatedest>/home/wasapt
+/WebContent/APT01
+/bin
+</onlineAPT01templatedest>
+		<onlineAPT01clustermembers.list>apt01-server2
+</onlineAPT01clustermembers.list>
+		<onlineAPT01appserver1.list>
+</onlineAPT01appserver1.list>
+		<onlineAPT01node.name>iedaau002
+</onlineAPT01node.name>
+		<onlineAPT01conn.type>SOAP
+</onlineAPT01conn.type>
+		<onlineAPT01cluster.name>apt01-cluster
+</onlineAPT01cluster.name>
+		<onlineAPT01webserver.list>iedaau002
+
+</onlineAPT01webserver.list>
+		<onlineAPT01webserver.switch>true
+</onlineAPT01webserver.switch>
+		<onlineAPT01vh.name>apt01-cluster
+</onlineAPT01vh.name>
+		<onlineAPT01host.port>14211
+</onlineAPT01host.port>
+		<onlineAPT01appserver.list>APT01
+</onlineAPT01appserver.list>
+		<onlineAPT01dmgr.home>/export/ENV/TIERS/aging/WebSphere/DeploymentManager
+</onlineAPT01dmgr.home>
+		<onlineAPT01host.name>iedaau018
+</onlineAPT01host.name>
+		<onlineAPT01user.name>wasapt
+</onlineAPT01user.name>
+		<onlineAPT01cell.name>tiers_apt_Network
+</onlineAPT01cell.name>
+		<onlineAPT01server.name>apt01-server2
+</onlineAPT01server.name>
+		<onlineAPT01svr.login>wasapt
+@iedaau018
+
+</onlineAPT01svr.login>
+		<onlineAPT01pf.pullfromstream>true
+</onlineAPT01pf.pullfromstream>
+		<onlineAPT01server.secure>true
+</onlineAPT01server.secure>
+	</envt>
+	<envt>
+		<name>APT02</name>
+		<onlineAPT02server.name>apt02-server2
+</onlineAPT02server.name>
+		<onlineAPT02node.name>iedaau002
+</onlineAPT02node.name>
+		<onlineAPT02conn.type>SOAP
+</onlineAPT02conn.type>
+		<onlineAPT02cluster.name>apt02-cluster
+</onlineAPT02cluster.name>
+		<onlineAPT02appserver.list>APT02
+</onlineAPT02appserver.list>
+		<onlineAPT02dns.name>tiers-apt02
+</onlineAPT02dns.name>
+		<onlineAPT02host.port>14211
+</onlineAPT02host.port>
+		<onlineAPT02dmgr.home>/export/ENV/TIERS/aging/WebSphere/DeploymentManager
+</onlineAPT02dmgr.home>
+		<onlineAPT02host.name>iedaau018
+</onlineAPT02host.name>
+		<onlineAPT02clustersserver.name>iedaau002
+</onlineAPT02clustersserver.name>
+		<onlineAPT02user.name>wasapt
+</onlineAPT02user.name>
+		<onlineAPT02hostxml.dir>/home/wasapt
+/WebContent/APT02
+/XML
+</onlineAPT02hostxml.dir>
+		<onlineAPT02cell.name>tiers_apt_Network
+</onlineAPT02cell.name>
+		<onlineAPT02appserver1.list>
+</onlineAPT02appserver1.list>
+		<onlineAPT02svr.login>wasapt
+@iedaau018
+
+</onlineAPT02svr.login>
+		<onlineAPT02app.name>tiersapt02
+</onlineAPT02app.name>
+		<onlineAPT02cluster.switch>Yes
+</onlineAPT02cluster.switch>
+		<onlineAPT02clustermembers.list>apt02-server2
+</onlineAPT02clustermembers.list>
+		<onlineAPT02was.home>/export/ENV/TIERS/apt/WebSphere/AppServer
+</onlineAPT02was.home>
+		<onlineAPT02vh.name>apt02-cluster
+</onlineAPT02vh.name>
+		<onlineAPT02webserver.secure>true
+</onlineAPT02webserver.secure>
+		<onlineAPT02pf.pullfromstream>true
+</onlineAPT02pf.pullfromstream>
+		<onlineAPT02server.secure>true
+</onlineAPT02server.secure>
+		<onlineAPT02webserver.dir>/home/wasapt
+/WebContent/APT02
+/web
+</onlineAPT02webserver.dir>
+		<onlineAPT02templatedest>/home/wasapt
+/WebContent/APT02
+/bin
+</onlineAPT02templatedest>
+		<onlineAPT02pf.dir>/home/wasapt
+/WebContent/APT02
+/properties
+</onlineAPT02pf.dir>
+		<onlineAPT02webserver.switch>true
+</onlineAPT02webserver.switch>
+		<onlineAPT02webserver.list>iedaau002
+
+</onlineAPT02webserver.list>
+	</envt>
+	<envt>
+		<name>AGING01</name>
+		<onlineAGING01host.port>14211
+</onlineAGING01host.port>
+		<onlineAGING01vh.name>aging01-cluster
+</onlineAGING01vh.name>
+		<onlineAGING01cluster.name>aging01-cluster
+</onlineAGING01cluster.name>
+		<onlineAGING01dmgr.home>/export/ENV/TIERS/aging/WebSphere/DeploymentManager
+</onlineAGING01dmgr.home>
+		<onlineAGING01host.name>iedaau018
+</onlineAGING01host.name>
+		<onlineAGING01user.name>wasaging
+</onlineAGING01user.name>
+		<onlineAGING01cell.name>tiers_aging_Network
+</onlineAGING01cell.name>
+		<onlineAGING01svr.login>wasaging
+@iedaau018
+
+</onlineAGING01svr.login>
+		<onlineAGING01server.name>aging01-server2
+</onlineAGING01server.name>
+		<onlineAGING01dns.name>tiers-aging01
+</onlineAGING01dns.name>
+		<onlineAGING01clustersserver.name>iedaau002
+</onlineAGING01clustersserver.name>
+		<onlineAGING01pf.pullfromstream>true
+</onlineAGING01pf.pullfromstream>
+		<onlineAGING01webserver.list>iedaau002
+
+</onlineAGING01webserver.list>
+		<onlineAGING01appserver1.list>
+</onlineAGING01appserver1.list>
+		<onlineAGING01clustermembers.list>aging01-server2
+</onlineAGING01clustermembers.list>
+		<onlineAGING01app.name>tiersaging01
+</onlineAGING01app.name>
+		<onlineAGING01server.secure>false
+</onlineAGING01server.secure>
+		<onlineAGING01appserver.list>AGING01
+</onlineAGING01appserver.list>
+		<onlineAGING01webserver.dir>/home/wasaging
+/WebContent/AGING01
+/web
+</onlineAGING01webserver.dir>
+		<onlineAGING01webserver.secure>false
+</onlineAGING01webserver.secure>
+		<onlineAGING01hostxml.dir>/home/wasaging
+/WebContent/AGING01
+/XML
+</onlineAGING01hostxml.dir>
+		<onlineAGING01pf.dir>/home/wasaging
+/WebContent/AGING01
+/properties
+</onlineAGING01pf.dir>
+		<onlineAGING01was.home>/export/ENV/TIERS/aging/WebSphere/AppServer
+</onlineAGING01was.home>
+		<onlineAGING01webserver.switch>true
+</onlineAGING01webserver.switch>
+		<onlineAGING01node.name>iedaau002
+</onlineAGING01node.name>
+		<onlineAGING01conn.type>SOAP
+</onlineAGING01conn.type>
+		<onlineAGING01templatedest>/home/wasaging
+/WebContent/AGING01
+/bin
+</onlineAGING01templatedest>
+		<onlineAGING01cluster.switch>Yes
+</onlineAGING01cluster.switch>
+	</envt>
+	<envt>
+		<name>AGING02</name>
+		<onlineAGING02webserver.switch>true
+</onlineAGING02webserver.switch>
+		<onlineAGING02pf.pullfromstream>true
+</onlineAGING02pf.pullfromstream>
+		<onlineAGING02cluster.switch>Yes
+</onlineAGING02cluster.switch>
+		<onlineAGING02appserver1.list>
+</onlineAGING02appserver1.list>
+		<onlineAGING02clustersserver.name>iedaau002
+</onlineAGING02clustersserver.name>
+		<onlineAGING02node.name>iedaau002
+</onlineAGING02node.name>
+		<onlineAGING02conn.type>SOAP
+</onlineAGING02conn.type>
+		<onlineAGING02pf.dir>/home/wasaging
+/WebContent/AGING02
+/properties
+</onlineAGING02pf.dir>
+		<onlineAGING02templatedest>/home/wasaging
+/WebContent/AGING02
+/bin
+</onlineAGING02templatedest>
+		<onlineAGING02server.name>aging02-server2
+</onlineAGING02server.name>
+		<onlineAGING02server.secure>false
+</onlineAGING02server.secure>
+		<onlineAGING02dns.name>tiers-aging02
+</onlineAGING02dns.name>
+		<onlineAGING02webserver.dir>/home/wasaging
+/WebContent/AGING02
+/web
+</onlineAGING02webserver.dir>
+		<onlineAGING02host.port>14211
+</onlineAGING02host.port>
+		<onlineAGING02clustermembers.list>aging02-server2
+</onlineAGING02clustermembers.list>
+		<onlineAGING02dmgr.home>/export/ENV/TIERS/aging/WebSphere/DeploymentManager
+</onlineAGING02dmgr.home>
+		<onlineAGING02host.name>iedaau018
+</onlineAGING02host.name>
+		<onlineAGING02cluster.name>aging02-cluster
+</onlineAGING02cluster.name>
+		<onlineAGING02user.name>wasaging
+</onlineAGING02user.name>
+		<onlineAGING02cell.name>tiers_aging_Network
+</onlineAGING02cell.name>
+		<onlineAGING02svr.login>wasaging
+@iedaau018
+
+</onlineAGING02svr.login>
+		<onlineAGING02app.name>tiersaging02
+</onlineAGING02app.name>
+		<onlineAGING02hostxml.dir>/home/wasaging
+/WebContent/AGING02
+/XML
+</onlineAGING02hostxml.dir>
+		<onlineAGING02webserver.list>iedaau002
+
+</onlineAGING02webserver.list>
+		<onlineAGING02was.home>/export/ENV/TIERS/aging/WebSphere/AppServer
+</onlineAGING02was.home>
+		<onlineAGING02webserver.secure>false
+</onlineAGING02webserver.secure>
+		<onlineAGING02appserver.list>AGING02
+</onlineAGING02appserver.list>
+		<onlineAGING02vh.name>aging02-cluster
+</onlineAGING02vh.name>
+	</envt>
+	<envt>
+		<name>AGING03</name>
+		<onlineAGING03dmgr.home>/export/ENV/TIERS/aging/WebSphere/DeploymentManager
+</onlineAGING03dmgr.home>
+		<onlineAGING03host.name>iedaau018
+</onlineAGING03host.name>
+		<onlineAGING03pf.pullfromstream>true
+</onlineAGING03pf.pullfromstream>
+		<onlineAGING03user.name>wasaging
+</onlineAGING03user.name>
+		<onlineAGING03cluster.name>aging03-cluster
+</onlineAGING03cluster.name>
+		<onlineAGING03cell.name>tiers_aging_Network
+</onlineAGING03cell.name>
+		<onlineAGING03webserver.list>iedaau002
+
+</onlineAGING03webserver.list>
+		<onlineAGING03appserver1.list>
+</onlineAGING03appserver1.list>
+		<onlineAGING03svr.login>wasaging
+@iedaau018
+
+</onlineAGING03svr.login>
+		<onlineAGING03webserver.secure>false
+</onlineAGING03webserver.secure>
+		<onlineAGING03appserver.list>AGING03
+</onlineAGING03appserver.list>
+		<onlineAGING03clustersserver.name>iedaau002
+</onlineAGING03clustersserver.name>
+		<onlineAGING03server.secure>false
+</onlineAGING03server.secure>
+		<onlineAGING03webserver.dir>/home/wasaging
+/WebContent/AGING03
+/web
+</onlineAGING03webserver.dir>
+		<onlineAGING03webserver.switch>true
+</onlineAGING03webserver.switch>
+		<onlineAGING03server.name>aging03-server2
+</onlineAGING03server.name>
+		<onlineAGING03clustermembers.list>aging03-server2
+</onlineAGING03clustermembers.list>
+		<onlineAGING03cluster.switch>Yes
+</onlineAGING03cluster.switch>
+		<onlineAGING03dns.name>tiers-aging03
+</onlineAGING03dns.name>
+		<onlineAGING03node.name>iedaau002
+</onlineAGING03node.name>
+		<onlineAGING03conn.type>SOAP
+</onlineAGING03conn.type>
+		<onlineAGING03hostxml.dir>/home/wasaging
+/WebContent/AGING03
+/XML
+</onlineAGING03hostxml.dir>
+		<onlineAGING03templatedest>/home/wasaging
+/WebContent/AGING03
+/bin
+</onlineAGING03templatedest>
+		<onlineAGING03app.name>tiersaging03
+</onlineAGING03app.name>
+		<onlineAGING03vh.name>aging03-cluster
+</onlineAGING03vh.name>
+		<onlineAGING03host.port>14211
+</onlineAGING03host.port>
+		<onlineAGING03was.home>/export/ENV/TIERS/aging/WebSphere/AppServer
+</onlineAGING03was.home>
+		<onlineAGING03pf.dir>/home/wasaging
+/WebContent/AGING03
+/properties
+</onlineAGING03pf.dir>
+	</envt>
+	<envt>
+		<name>MISC01</name>
+		<onlineMISC01vh.name>misc01-cluster
+</onlineMISC01vh.name>
+		<onlineMISC01templatedest>/home/wasmisc
+/WebContent/MISC01
+/bin
+</onlineMISC01templatedest>
+		<onlineMISC01webserver.list>iedaau002
+
+</onlineMISC01webserver.list>
+		<onlineMISC01cluster.name>misc01-cluster
+</onlineMISC01cluster.name>
+		<onlineMISC01appserver.list>MISC01
+</onlineMISC01appserver.list>
+		<onlineMISC01pf.pullfromstream>true
+</onlineMISC01pf.pullfromstream>
+		<onlineMISC01server.name>misc01-server2
+</onlineMISC01server.name>
+		<onlineMISC01dns.name>tiers-misc01
+</onlineMISC01dns.name>
+		<onlineMISC01pf.dir>/home/wasmisc
+/WebContent/MISC01
+/properties
+</onlineMISC01pf.dir>
+		<onlineMISC01node.name>iedaau002
+</onlineMISC01node.name>
+		<onlineMISC01conn.type>SOAP
+</onlineMISC01conn.type>
+		<onlineMISC01webserver.secure>false
+</onlineMISC01webserver.secure>
+		<onlineMISC01cluster.switch>Yes
+</onlineMISC01cluster.switch>
+		<onlineMISC01host.port>14311
+</onlineMISC01host.port>
+		<onlineMISC01hostxml.dir>/home/wasmisc
+/WebContent/MISC01
+/XML
+</onlineMISC01hostxml.dir>
+		<onlineMISC01clustersserver.name>iedaau002
+</onlineMISC01clustersserver.name>
+		<onlineMISC01app.name>tiersmisc01
+</onlineMISC01app.name>
+		<onlineMISC01appserver1.list>
+</onlineMISC01appserver1.list>
+		<onlineMISC01dmgr.home> /export/ENV/TIERS/misc/WebSphere/DeploymentManager
+</onlineMISC01dmgr.home>
+		<onlineMISC01host.name>iedaau018
+</onlineMISC01host.name>
+		<onlineMISC01user.name>wasmisc
+</onlineMISC01user.name>
+		<onlineMISC01cell.name>tiers_misc_Network
+</onlineMISC01cell.name>
+		<onlineMISC01server.secure>false
+</onlineMISC01server.secure>
+		<onlineMISC01was.home>/export/ENV/TIERS/misc/WebSphere/AppServer
+</onlineMISC01was.home>
+		<onlineMISC01webserver.switch>true
+</onlineMISC01webserver.switch>
+		<onlineMISC01svr.login>wasmisc
+@iedaau018
+
+</onlineMISC01svr.login>
+		<onlineMISC01webserver.dir>/home/wasmisc
+/WebContent/MISC01
+/web
+</onlineMISC01webserver.dir>
+		<onlineMISC01clustermembers.list>misc01-server2
+</onlineMISC01clustermembers.list>
+	</envt>
+	<envt>
+		<name>MISC02</name>
+		<onlineMISC02was.home>/export/ENV/TIERS/misc/WebSphere/AppServer
+</onlineMISC02was.home>
+		<onlineMISC02pf.pullfromstream>true
+</onlineMISC02pf.pullfromstream>
+		<onlineMISC02host.port>14311
+</onlineMISC02host.port>
+		<onlineMISC02webserver.switch>true
+</onlineMISC02webserver.switch>
+		<onlineMISC02pf.dir>/home/wasmisc
+/WebContent/MISC02
+/properties
+</onlineMISC02pf.dir>
+		<onlineMISC02dmgr.home> /export/ENV/TIERS/misc/WebSphere/DeploymentManager
+</onlineMISC02dmgr.home>
+		<onlineMISC02host.name>iedaau018
+</onlineMISC02host.name>
+		<onlineMISC02user.name>wasmisc
+</onlineMISC02user.name>
+		<onlineMISC02cell.name>tiers_misc_Network
+</onlineMISC02cell.name>
+		<onlineMISC02svr.login>wasmisc
+@iedaau018
+
+</onlineMISC02svr.login>
+		<onlineMISC02webserver.list>iedaau002
+
+</onlineMISC02webserver.list>
+		<onlineMISC02templatedest>/home/wasmisc
+/WebContent/MISC02
+/bin
+</onlineMISC02templatedest>
+		<onlineMISC02server.name>misc02-server2
+</onlineMISC02server.name>
+		<onlineMISC02appserver1.list>
+</onlineMISC02appserver1.list>
+		<onlineMISC02appserver.list>MISC02
+</onlineMISC02appserver.list>
+		<onlineMISC02dns.name>tiers-misc02
+</onlineMISC02dns.name>
+		<onlineMISC02cluster.name>misc02-cluster
+</onlineMISC02cluster.name>
+		<onlineMISC02clustersserver.name>iedaau002
+</onlineMISC02clustersserver.name>
+		<onlineMISC02server.secure>false
+</onlineMISC02server.secure>
+		<onlineMISC02webserver.dir>/home/wasmisc
+/WebContent/MISC02
+/web
+</onlineMISC02webserver.dir>
+		<onlineMISC02hostxml.dir>/home/wasmisc
+/WebContent/MISC02
+/XML
+</onlineMISC02hostxml.dir>
+		<onlineMISC02webserver.secure>false
+</onlineMISC02webserver.secure>
+		<onlineMISC02vh.name>misc02-cluster
+</onlineMISC02vh.name>
+		<onlineMISC02app.name>tiersmisc02
+</onlineMISC02app.name>
+		<onlineMISC02clustermembers.list>misc02-server2
+</onlineMISC02clustermembers.list>
+		<onlineMISC02cluster.switch>Yes
+</onlineMISC02cluster.switch>
+		<onlineMISC02conn.type>SOAP
+</onlineMISC02conn.type>
+		<onlineMISC02node.name>iedaau002
+</onlineMISC02node.name>
+	</envt>
+	<envt>
+		<name>IPT</name>
+		<onlineIPTconn.type>SOAP
+</onlineIPTconn.type>
+		<onlineIPTnode.name>iedaau002
+</onlineIPTnode.name>
+		<onlineIPTwebserver.switch>true
+</onlineIPTwebserver.switch>
+		<onlineIPTappserver1.list>
+</onlineIPTappserver1.list>
+		<onlineIPTcluster.name>ipt-cluster
+</onlineIPTcluster.name>
+		<onlineIPTcluster.switch>Yes
+</onlineIPTcluster.switch>
+		<onlineIPTdns.name>tiers-ipt02
+</onlineIPTdns.name>
+		<onlineIPThost.port>10211
+</onlineIPThost.port>
+		<onlineIPTdmgr.home> /export/ENV/TIERS/ipt/WebSphere/DeploymentManager
+</onlineIPTdmgr.home>
+		<onlineIPThost.name>iedaau018
+</onlineIPThost.name>
+		<onlineIPTpf.pullfromstream>true
+</onlineIPTpf.pullfromstream>
+		<onlineIPTuser.name>wasipt
+</onlineIPTuser.name>
+		<onlineIPTcell.name>tiers_ipt_Network
+</onlineIPTcell.name>
+		<onlineIPTclustersserver.name>iedaau002
+</onlineIPTclustersserver.name>
+		<onlineIPTsvr.login>wasipt
+@iedaau018
+
+</onlineIPTsvr.login>
+		<onlineIPTapp.name>stage3tiersIPT
+</onlineIPTapp.name>
+		<onlineIPTserver.name>ipt-server2
+</onlineIPTserver.name>
+		<onlineIPTwas.home>/export/ENV/TIERS/ipt/WebSphere/AppServer
+</onlineIPTwas.home>
+		<onlineIPTclustermembers.list>ipt-server2
+</onlineIPTclustermembers.list>
+		<onlineIPTpf.dir>/home/wasipt
+/WebContent/IPT
+/properties
+</onlineIPTpf.dir>
+		<onlineIPTserver.secure>true
+</onlineIPTserver.secure>
+		<onlineIPTwebserver.dir>/home/wasipt
+/WebContent/IPT
+/web
+</onlineIPTwebserver.dir>
+		<onlineIPTwebserver.list>iedaau002
+
+</onlineIPTwebserver.list>
+		<onlineIPTwebserver.secure>false
+</onlineIPTwebserver.secure>
+		<onlineIPTappserver.list>IPT
+</onlineIPTappserver.list>
+		<onlineIPThostxml.dir>/home/wasipt
+/WebContent/IPT
+/XML
+</onlineIPThostxml.dir>
+		<onlineIPTvh.name>ipt-cluster
+</onlineIPTvh.name>
+		<onlineIPTtemplatedest>/home/wasipt
+/WebContent/IPT
+/bin
+</onlineIPTtemplatedest>
+	</envt>
+</envts>

@@ -1,0 +1,21 @@
+;JBuilder -- PROJECT FILE VERSION {2.00} - do not alter this line!
+#0=My_mp3_Lister.jpr
+#1=My_mp3_Lister.html
+sys[0].BackupPath=bak
+sys[0].CheckStable=1
+sys[0].Company=
+sys[0].Copyright=Copyright (c) 2001
+sys[0].DefaultPackage=my_mp3_lister
+sys[0].Description=This program will scan your directories and list the mp3s
+sys[0].DocPath=doc
+sys[0].ExcludeClassEnabled=0
+sys[0].JDK=java 1.3.0-C
+sys[0].LastTag=1
+sys[0].Libraries=
+sys[0].MakeStable=0
+sys[0].OutPath=classes
+sys[0].SourcePath=src
+sys[0].Title=MP3 Lister
+sys[0].Version=1.0
+sys[0].WorkingDirectory=.
+sys[1].Parent=0

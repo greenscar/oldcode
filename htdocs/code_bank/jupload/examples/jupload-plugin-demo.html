@@ -1,0 +1,273 @@
+<html>
+<!--
+ Author: $Author: mhaller $
+ Id: $Id: JUpload.html,v 1.1 2004/02/05 08:59:40 mhaller Exp $
+ Version: $Revision: 1.1 $
+ Date: $Date: 2004/02/05 08:59:40 $
+-->
+<head>
+
+<title>JUpload - multiple file upload with resuming</title>
+
+<meta name="Author" content="Mike Haller">
+<meta name="Publisher" content="Haller Systemservice">
+<meta name="Copyright" content="Mike Haller">
+<meta name="Keywords" content="jupload, multiple, java, upload, http, html, applet, embed, object, input, type, file, submit, add, remove, queue, rfc 1867, application/x-www-form-urlencoded, POST METHOD, swing, awt, j2se, transfer, files, requests, webserver, apache, asp, jsp, php4, php5, php, multipart, content-disposition, form-data, boundary, attachment, mime headers, transmission, enctype, remote data, browser, internet explorer, mozilla, opera, fileuploader, batch upload, file selection dialog, resuming, resume, continue">
+<meta name="Description" content="JUpload is a java applet for uploading multiple files to the webserver using RFC1867 post method. It features a status display showing current transfer rate.">
+<meta name="Page-topic" content="HTTP file upload with resuming using post or put method featuring https and proxy">
+<meta name="Audience" content="Advanced">
+<meta name="Content-language" content="EN">
+<meta name="Page-type" content="Software-Download">
+<meta name="Robots" content="INDEX,FOLLOW">
+
+<script type="text/javascript">
+
+function myAddListener() {
+ alert('myAddListener');
+}
+
+function myAddedListener() {
+ alert('myAddedListener');
+}
+
+function myRemoveListener() {
+ alert('myRemoveListener');
+}
+
+function myUploadListener() {
+ alert('myUploadListener');
+}
+
+function myUploadedListener() {
+ alert('myUploadedListener');
+}
+
+
+
+function initonload() {
+    if (!document.JUpload) return;
+    if (document.JUpload.jsIsReady()) {
+     alert('Registering hooks...');
+     document.JUpload.jsRegisterAddListener("myAddListener");
+     document.JUpload.jsRegisterAddedListener("myAddedListener");
+     document.JUpload.jsRegisterRemoveListener("myRemoveListener");
+     document.JUpload.jsRegisterUploadListener("myUploadListener");
+     document.JUpload.jsRegisterUploaded("myUploadedListener");
+    }
+    else {
+     window.setTimeout('initonload()',400);
+    }
+   }
+
+
+function displayFileQueue() {
+    if (!document.JUpload) return;
+    if (!document.JUpload.jsIsReady()) return;
+    var number = document.JUpload.jsGetFileNumber();
+    var i = 0;
+    //alert(number);
+    for (i=0; i<number; i=i+1) {    
+	alert((i+1)+"/"+number+": "+document.JUpload.jsGetFileAt(i));     
+    }
+   }
+
+</script>
+
+</head>
+
+<body onLoad="initonload()">
+
+<h1>JUpload Plugin and JavaScript Demo</h1>
+
+<p><strong>
+Fill out some form values, select files to upload and click on Upload button.
+You will see the selected formfield values in the realtime response window.
+</strong></p>
+
+<hr>
+
+<form name="JUploadForm">
+<input type="hidden" name="f_hidden" value="test_hidden">
+<input type="text" name="f_text" value="test_text">
+<textarea name="f_textarea">test_textarea</textarea>
+<input type="text" name="f_readonly" value="test_text_readonly">
+
+<select name="f_select">
+<option>test_select_1</option>
+<option>test_select_2</option>
+<option>test_select_3</option>
+<option>test_select_4</option>
+<option>test_select_5</option>
+</select>
+
+<select name="f_select_multiple" size="5" multiple>
+<option>Heino</option>
+<option>Michael Jackson</option>
+<option>Tom Waits</option>
+<option>Nina Hagen</option>
+<option>Marianne Rosenberg</option>
+</select>
+
+<select name="f_select_preselected" size="5">
+<option>Heino</option>
+<option>Michael Jackson</option>
+<option selected>Tom Waits</option>
+<option>Nina Hagen</option>
+<option>Marianne Rosenberg</option>
+</select>
+
+<select name="Pizza" size="5">
+<option value="P101">Pizza Napoli</option>
+<option value="P102">Pizza Funghi</option>
+<option value="P103">Pizza Mare</option>
+<option value="P104">Pizza Tonno</option>
+<option value="P105">Pizza Mexicana</option>
+<option value="P106">Pizza Regina</option>
+<option value="P107">Pizza de la Casa</option>
+<option value="P108">Pizza Calzone</option>
+<option value="P109">Pizza con tutti</option>
+</select>
+
+<select name="f_select_grouped" size=3>
+ <optgroup label="Namen mit A">
+  <option label="Anna">Anna</option>
+  <option label="Achim">Achim</option>
+  <option label="August">August</option>
+ </optgroup>
+ <optgroup label="Namen mit B">
+  <option label="Berta">Berta</option>
+  <option label="Barbara">Barbara</option>
+  <option label="Bernhard">Bernhard</option>
+ </optgroup>
+ <optgroup label="Namen mit C">
+  <option label="Caesar">Caesar</option>
+  <option label="Christiane">Christiane</option>
+  <option label="Christian">Christian</option>
+ </optgroup>
+</select>
+
+
+<input type="radio" name="Zahlmethode" value="Mastercard" checked>Mastercard /
+<input type="radio" name="Zahlmethode" value="Visa"> Visa /
+<input type="radio" name="Zahlmethode" value="AmericanExpress"> American Express
+/
+<input type="checkbox" name="zutat" value="salami" checked> Salami /
+<input type="checkbox" name="zutat" value="pilze"> Pilze /
+<input type="checkbox" name="zutat" value="sardellen"> Sardellen
+
+</form>
+
+<hr>
+
+<applet 
+  code="JUploadPlugin_FolderChooser"
+  archive="../jupload.jar"
+  width="300"
+  height="24"
+  mayscript
+  name="JUploadPlugin_FolderChooser"
+  alt="JUpload Plugin: Folder chooser">
+</applet>
+<applet 
+  code="JUploadPlugin_FiletypeChooser"
+  archive="../jupload.jar"
+  width="300"
+  height="24"
+  mayscript
+  name="JUploadPlugin_FiletypeChooser"
+  alt="JUpload Plugin: Filetype chooser">
+</applet>
+
+
+<br>
+
+ <applet 
+  code="JUpload/startup.class"
+  archive="../jupload.jar"
+  width="300"
+  height="300"
+  mayscript
+  name="JUpload"
+  alt="JUpload applet">
+
+ <!-- Target links -->
+ <param name="actionURL" value="http://jupload.biz/demo/JUpload.php">
+
+ <!-- IF YOU HAVE PROBLEMS, CHANGE THIS TO TRUE BEFORE CONTACTING SUPPORT -->
+ <param name="debug" value="false">
+ <param name="realTimeResponse" value="true">
+ <param name="showStatusPanel" value="false">
+ <param name="showThumbnails" value="false">
+
+ Your browser does not support applets. Or you have disabled applet in your options.
+ To use this applet, please install the newest version of Sun's java. You can get it from <a href="http://www.java.com/">java.com</a>
+
+ </applet>
+
+
+<applet 
+  code="JUploadPlugin_SimpleFileChooser"
+  archive="../jupload.jar"
+  width="300"
+  height="300"
+  mayscript
+  name="JUploadPlugin_SimpleFileChooser"
+  alt="JUpload Plugin: Simple file chooser">
+</applet>
+
+<applet 
+  code="JUploadPlugin_ImagePreview"
+  archive="../jupload.jar"
+  width="300"
+  height="300"
+  mayscript
+  name="JUploadPlugin_ImagePreview"
+  alt="JUpload Plugin: Image preview">
+</applet>
+
+<br>
+
+<applet 
+  code="JUploadPlugin_ProgressMeter"
+  archive="../jupload.jar"
+  width="900"
+  height="50"
+  mayscript
+  name="JUploadPlugin_ProgressMeter"
+  alt="JUpload Plugin: Progress meter">
+</applet>
+
+
+<input type="submit" value="Parent folder" onClick="document.JUploadPlugin_SimpleFileChooser.jsMoveUp();">
+<input type="submit" value="Home folder" onClick="document.JUploadPlugin_SimpleFileChooser.jsGotoHome();">
+<input type="submit" value="Default folder" onClick="document.JUploadPlugin_SimpleFileChooser.jsGotoDefault();">
+<input type="submit" value="List" onClick="document.JUploadPlugin_SimpleFileChooser.jsViewList();">
+<input type="submit" value="Detailed" onClick="document.JUploadPlugin_SimpleFileChooser.jsViewDetailed();">
+<input type="submit" value="Thumbnails" onClick="document.JUploadPlugin_SimpleFileChooser.jsViewThumbnail();">
+
+<input type="button" value="Display file queue" onclick="displayFileQueue();">
+<input type="button" value="Remove first file" onclick="document.JUpload.jsRemoveFileAt(0);">
+<input type="button" value="Count files in queue" onclick="alert(document.JUpload.jsGetFileNumber());">
+
+<input type="button" value="Open dialog to add files" onclick="document.JUpload.jsClickAdd();">
+<input type="button" value="Remove all selected files from filequeue" onclick="document.JUpload.jsClickRemove();">
+
+<input type="button" value="Upload" onclick="document.JUpload.jsClickUpload();">
+
+<hr>
+
+<p>
+<h2>JUpload Official Website</h2>
+The official project website can be found at this place:
+<a href="http://jupload.biz/">http://jupload.biz/</a>.
+</p>
+
+<hr>
+<address>
+Copyright &copy; 2003 <a href="http://www.haller-systemservice.net/">Haller Systemservice</a><br>
+Mike Haller <a href="mailto:info@jupload.biz?subject=jupload+applet">info@jupload.biz</a><br>
+Last modified: 2004-02-05
+</address>
+
+</body>
+</html>

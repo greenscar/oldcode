@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Marion, LA</title>
+<!-- TemplateEndEditable --><link href="../style.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head> 
+
+<body>
+<div id="wrapper"> 
+<div id ="banner"><h1>- The official website of the town of Marion &nbsp; </h1></div>
+<div id ="nav">
+<ul>
+<li><a href="../index.html">Home</a></li
+><li><a href="../government/index.html">Government</a></li
+><li><a href="../area_services.html">Area Services</a></li
+><li><a href="../visitors/index.html">Visitors</a></li
+><li><a href="../contact.html">Contact Us</a></li></ul></div>
+<!--end nav !-->
+<div id="content">
+  <div class="container">
+	<!-- TemplateBeginEditable name="Subtitle" -->
+	<h2>Insert Title Here</h2>
+	<!-- TemplateEndEditable -->
+    <!-- TemplateBeginEditable name="Content" -->
+    <P>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. </P>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    <!-- TemplateEndEditable --></div>
+</div>
+  <!-- end content !-->
+  <!-- begin footer !-->
+<div id="footer"> 
+<ul>
+  <li><a href="../credits.html">Picture Credits</a></li
+  ><li><a href="../sitemap.html"> Site Map</a></li>
+</ul>
+</div>
+<!-- end footer !-->
+
+</div>
+<!-- end wrapper !-->
+<!-- begin design info !--> 
+<div id="designer_info"><p>Website created by the <a href="http://www.latech.edu/tech/rural">Louisiana Tech University Center for Rural Development</a> (2005) <br>
+Funding provided by a grant from USDA Rural Development and the Delta Regional Authority  <br>
+ </p>
+</div>
+<!-- end design infor !--> 
+</body>
+</html>
+

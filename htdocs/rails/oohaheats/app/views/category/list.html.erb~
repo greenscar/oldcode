@@ -1,0 +1,20 @@
+<h1>Listing Categories</h1>
+<ul id="category_list">
+<% @categories.each do |c| %>
+<li><%= link_to c.name, :action => 'show', :id => c.id %>
+<% end %>
+</ul>
+
+
+<p id="add_link">
+   <%= link_to_function("Add a Category", "Element.remove('add_link'); Element.show('add_category')")%>
+</p>
+<div id="add_category" style="display:none;">
+   <% form_remote_tag(:url => {:action => 'create'},
+       :update => "category_list", :position => :bottom,
+       :html => {:id => 'category_form'}) do %>
+       Name: <%= text_field "category", "name" %>
+   <%= submit_tag 'Add' , :class=>"button" %>
+   <% end %>
+</div>
+

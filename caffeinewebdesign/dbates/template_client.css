@@ -1,0 +1,262 @@
+body {
+    margin-top: 20px;
+    /* CENTER IT */
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    /* END CENTER IT */
+    padding:0px;
+	 border: 0px solid red;
+    width: 800px;
+    background-color: #FFFFFF;
+    /*
+    background-color: #DDDDDD;
+    position: relative;
+    */
+}
+div.body{width:800px; height: 600px; border: 1px solid #FFFF00;}
+
+table.body{width: 800px; height: 600px;}
+table.body td { vertical-align: top;}
+table.sub{ width: 100%; }
+
+th { color: black; text-align: center; background-color: #DDDDDD; border:2px solid black;}
+th.serviceTeam{ color: black; text-align: center; border:2px solid black;}
+td.service_team{ text-align: center;}
+
+img{border: 0px;}
+div.list {
+    color: black;
+    background-color: #FFFFFF;
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+}
+
+a { text-decoration: none; }
+
+a.list {
+    color: black;
+    /**************************************************************************************************/
+    /*background-color: #FFFFFF;*/
+    /**************************************************************************************************/
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+}
+a.list:hover { color: white; background-color: black;}
+
+a.list .nonbold{
+    font-weight: normal;
+}
+
+h2.title{
+    width: 100%;
+    color: black;
+    text-align: center;
+    background-color: #DDDDDD;
+    border:2px solid black;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+    }
+th.menu {
+    color: black;
+    text-align: center;
+    background-color: #DDDDDD;
+    border:2px solid black;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+}
+td.darkBlackSmall
+{
+     padding: 5px 0px 5px 0px;
+     text-align: center;
+     font-size: xx-small;
+     font-weight: bold;
+     font-family: 'Verdana', Verdana, sans-serif;
+}
+a.menu
+{
+    color: black;
+    background-color: #FFFFFF;
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+}
+a.menu:hover { color: white; background-color: black;}
+
+a.addNew {
+   color: black;
+   background-color: #DDDDDD; 
+   text-align: center;
+   border: 2px solid #333333;
+   padding: 1px 5px 1px 5px;
+   font-weight: 700;
+   font-size: small;
+   font-family: 'Verdana', Verdana, sans-serif;
+}
+
+a.addNew:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+    }
+
+input.submit {color: black;background-color: #DDDDDD;border: 2px solid #333333;padding: 0px 5px 0px 5px;text-align: center; font-weight: 700;font-size: small;font-family: 'Verdana', Verdana, sans-serif;}
+input.submit:hover{color: #FFFFFF;background-color: #000000; border: 2px solid #000000; padding: 0px 5px 0px 5px; text-align: center; font-weight: 700; font-size: small; font-family: 'Verdana', Verdana, sans-serif;}
+
+input.submitButton {
+    color: black;background-color: #DDDDDD;
+    border: 1px solid #333333;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: small;
+    font-family: 'Verdana', Verdana, sans-serif;
+}
+input.submitButton:hover {color: #FFFFFF;background-color: #000000; border: 1px solid #000000; padding: 0px 5px 0px 5px; text-align: center; font-weight: 700; font-size: small; font-family: 'Verdana', Verdana, sans-serif;}
+
+.submitButton {color: black;background-color: #DDDDDD;border: 1px solid #333333;padding: 0px 5px 0px 5px;text-align: center; font-weight: 700;font-size: small;font-family: 'Verdana', Verdana, sans-serif;}
+.submitButton_hover {color: #FFFFFF;background-color: #000000; border: 1px solid #000000; padding: 0px 5px 0px 5px; text-align: center; font-weight: 700; font-size: small; font-family: 'Verdana', Verdana, sans-serif;}
+
+input.name {
+    width: 200px;
+    background-color: #DDDDDD;
+    text-align: left;
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: 'Verdana', Verdana, sans-serif;
+    
+}
+input.title { width: 300px;}
+input{padding: 1px 3px 1px 3px;border: 1px solid #000000;width: 200px;}
+input.radio{width: 20px;border: 0px;}
+input.file{padding: 1px 3px 1px 3px;border: 1px solid #000000;width: 300px;}
+ 
+textarea
+{
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+img.logo {width: 100px;}
+
+
+table.form
+{
+   border-collapse: collapse;
+   color: #000000;
+   border: 0px solid #000000;
+   border-spacing: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align:left;
+   vertical-align: bottom;
+   width: 700px;
+}
+
+table.mod_screen
+{
+   border-collapse: collapse;
+   color: #000000;
+   border: 1px solid #000000;
+   border-spacing: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   margin-left: auto;
+   margin-right: auto;
+	/*text-align:center;
+   vertical-align: top;
+   */
+   text-align:left;
+   vertical-align: bottom;
+   width: 700px;
+}
+
+table.mod_screen td { border: 1px solid #000000; vertical-align: top;padding: 1px 3px 1px 3px;}
+
+
+table.linkList
+{
+   text-align: left;
+   vertical-align: bottom;
+}
+
+.linkEdit
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 2px 2px 2px 2px;
+    spacing: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    width: 400px;
+    border: 1px solid #000000;
+    font-size: 12px;
+    font-family: 'Arial';
+}
+.newsEdit
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 2px 2px 2px 2px;
+    spacing: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    width: 400px;
+    border: 1px solid #000000;
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+table.mod{width: 400px;}
+table.mod td {border: 1px solid black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+table.client { width: 500px;}
+table.repListEdit {width: 700px;}
+
+table.repEdit {width: 500px;}
+tr.repEdit { border: 0px; border-bottom: 2px; border-color: #000000; border-style: solid;}
+td {text-align:left; border: 0px; border-bottom: 2px; border-color: #000000; border-style: solid; vertical-align: top; padding: 2px 2px 2px 2px;}
+
+a.list:link {color: black; text-decoration: none;}
+a.list:active {color: #FF0000; text-decoration: none;}
+a.list:visited {color: green; text-decoration: none;}
+a.list:over {color: #00FF00;}
+
+
+
+
+
+select.associate
+{
+    width: 200px;
+}
+*/

@@ -1,0 +1,675 @@
+<?xml version="1.0"?> 
+<submission>
+	<Recipients>
+		<PrimaryRecipient>
+			<name>Jeremy Anderson</name>
+			<address>jeremya@dbates.com</address>
+		</PrimaryRecipient>
+		<BackupRecipient>  
+			<name>role#prcsr</name>
+			<address/>
+		</BackupRecipient>
+	</Recipients>
+	<template id="Client-CL-BusinessIncome" title="Business Income Worksheet" description="Calculate the financial risks facing your company due to an interruption of operations and/or relocation caused by a loss.">
+		<page id="0" title="Initial Questions" active="1">     
+			<table id="PageTable">    
+        			<tr valign="top">
+        				<td colspan="2" id="section">Contact Information</td> 
+        			</tr>
+				<tr>
+					<td align="right" >Your Business</td>
+					<td align="left">
+						<input type="text" name="ClientName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/Name</refDefault>
+						</input>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td align="right">Your Name</td>
+					<td align="left">
+						<input type="text" name="ContactName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactName</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">Your E-mail Address</td>
+					<td align="left">
+						<input type="text" name="ClientEmail" size="30" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactEmail</refDefault>
+						</input>
+					</td>
+				</tr> 
+				<tr valign="top">
+					<td align="right">Your Phone Number</td>
+					<td align="left">
+						<input type="text" name="ContactPhone" size="20" maxlength="25"  required="1">					
+							<refDefault>//ClientTable/ContactPhone</refDefault>
+						</input>
+					</td>
+				</tr>     
+        			<tr valign="top">
+        				<td colspan="2" id="section">Reporting Period</td> 
+        			</tr>
+				<tr valign="top">
+					<td align="right">Year End Date</td>
+					<td align="left">
+						<input type="text" name="YearEndMonth" size="2" maxlength="2" required="1"/>-
+						<input type="text" name="YearEndDay" size="2" maxlength="2" required="1"/>-
+						<input type="text" name="YearEndYear" size="4" maxlength="4" required="1" onBlur="Y2K(this.value);"/>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">Next Year End Date (Projection)</td>
+					<td align="left">
+						<input type="text" name="NextYearEndMonth" size="2" maxlength="2" required="1"/>-
+						<input type="text" name="NextYearEndDay" size="2" maxlength="2" required="1"/>-
+						<input type="text" name="NextYearEndYear" size="4" maxlength="4" required="1" onBlur="Y2K(this.value);"/>
+					</td>
+				</tr>
+				<MetaQuestion>
+                			<tr valign="top">
+                				<td colspan="2" id="section">Worksheet Options</td> 
+                			</tr>
+                			<tr valign="top">
+                				<td colspan="2">Do you wish to cover your entire payroll throughout a loss?</td> 
+                			</tr>
+
+        				<tr valign="top">
+        					<td align="right"><input type="radio" name="Payroll" value="1">1</input><br/></td>
+        					<td align="left">Yes, cover entire payroll.<br/></td>
+        				</tr> 
+        				<tr valign="top" style="height:25pt;">
+        					<td align="right"><input type="radio" name="Payroll" value="0"/></td>
+        					<td align="left">No, I will be excluding certain payroll items from coverage.</td>
+        				</tr>
+                			<tr>
+                				<td colspan="2" id="section"/>
+                			</tr>
+
+				</MetaQuestion>
+			</table>
+		</page>
+		<page id="1" title="Manufacturing Income"> 
+			<script language="javascript1.2">
+			<!--
+			function TotalIncomePast()
+				{DBForm.IncomeTotalPast.value = SumFields(['GrossSalesPast','StockPast','SalesValuePast','OtherIncomePast','ExciseTaxPast','OtherIncome2Past','ReturnsPast','CustomerDiscountPast','FreightPast','BadDebtsPast','DepletionPast']);}
+			function TotalIncomeNext()
+				{DBForm.IncomeTotalNext.value = SumFields(['GrossSalesNext','StockNext','SalesValueNext','OtherIncomeNext','ExciseTaxNext','OtherIncome2Next','ReturnsNext','CustomerDiscountNext','FreightNext','BadDebtsNext','DepletionNext']);}
+			function TotalExpensesPast()
+				{DBForm.ExpenseTotalPast.value = SumFields(['RawStockPast','RawStock2Past','FactoryPast','RawStock3Past']);}
+			function TotalExpensesNext()
+				{DBForm.ExpenseTotalNext.value = SumFields(['RawStockNext','RawStock2Next','FactoryNext','RawStock3Next']);}
+			function TotalBIMfgPast()
+				{DBForm.ManufacturingTotalPast.value = DBForm.IncomeTotalPast.value - DBForm.ExpenseTotalPast.value;}
+			function TotalBIMfgNext()
+				{DBForm.ManufacturingTotalNext.value = DBForm.IncomeTotalNext.value - DBForm.ExpenseTotalNext.value;}
+						
+			function SubmitThisPage()
+				{
+                                TotalIncomePast();
+                                TotalIncomeNext();
+                                TotalExpensesPast();
+                                TotalExpensesNext();
+				TotalBIMfgPast();
+				TotalBIMfgNext();			
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+			<table id="PageTable" cellspacing="0" cellpadding="0"> 
+				<tr valign="top" id="subheading">           
+					<td align="center">Item</td>
+					<td align="center">Year-End Figures</td>
+					<td align="center">Projected Next Year Figures</td>
+				</tr> 
+				<tr valign="top">     
+					<td colspan="3" id="section">Revenue/Income</td>
+				</tr>
+				<tr valign="top">           
+					<td>1. Gross sales.</td>
+					<td  align="center"><input type="text" name="GrossSalesPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="GrossSalesNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>   
+				<tr valign="top">           
+					<td>2. <span id="less">Less</span> Sales value of finished stock inventories at beginning of year.</td>
+					<td  align="center"><input type="text" name="StockPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="StockNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>3. Sales value of finished stock at end of year.</td>
+					<td  align="center"><input type="text" name="SalesValuePast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="SalesValueNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>4. Other income (commissions or rents).</td>
+					<td  align="center"><input type="text" name="OtherIncomePast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OtherIncomeNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>5. <span id="less">Less</span> Excise tax.</td>
+					<td  align="center"><input type="text" name="ExciseTaxPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="ExciseTaxNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>6. All other income (licensing fees, royaties, etc.)</td>
+					<td  align="center"><input type="text" name="OtherIncome2Past" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OtherIncome2Next" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>7. <span id="less">Less</span> Deductions for 'Returns and Allowances'.</td>
+					<td  align="center"><input type="text" name="ReturnsPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="ReturnsNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>8 <span id="less">Less</span> Discounts granted to customers.</td>
+					<td  align="center"><input type="text" name="CustomerDiscountPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="CustomerDiscountNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>9. <span id="less">Less</span> Prepaid outgoing freight.</td>
+					<td  align="center"><input type="text" name="FreightPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="FreightNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>10. <span id="less">Less</span> Bad debts.</td>
+					<td  align="center"><input type="text" name="BadDebtsPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="BadDebtsNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>11. <span id="less">Less</span> Depletion allowances.</td>
+					<td  align="center"><input type="text" name="DepletionPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="DepletionNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top" id="subheading">           
+					<td>Total Revenue/Income</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="IncomeTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="IncomeTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>
+
+				<tr valign="top">     
+					<td colspan="3" id="section">Expenses/Deductions</td>
+				</tr>
+				<tr valign="top">           
+					<td>12. Raw stock inventory at beginning of year, including stock in process (but not finished).</td>
+					<td  align="center"><input type="text" name="RawStockPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="RawStockNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>   
+				<tr valign="top">           
+					<td>13. Raw stock purchased, including transportation costs.</td>
+					<td  align="center"><input type="text" name="RawStock2Past" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="RawStock2Next" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>14. Factory supplies consumed.</td>
+					<td  align="center"><input type="text" name="FactoryPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FactoryNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>15. <span id="less">Less</span> Raw stock inventory at end of year, including stock in process (but not finished).</td>
+					<td  align="center"><input type="text" name="RawStock3Past" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="RawStock3Next" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>     
+
+				<tr valign="top" id="subheading">           
+					<td>Total Expenses/Deductions</td>
+					<td align="center"><input type="text" id="AutoTotal" name="ExpenseTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td align="center"><input type="text" id="AutoTotal" name="ExpenseTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>   
+
+				<tr id="section" height="20pt" valign="bottom">           
+					<td>Total Business Income from Manufacturing<br/>(Based on 12-month fiscal year)</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="ManufacturingTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="ManufacturingTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>
+			</table>
+		</page>
+		<page id="2" title="Non-Manufacturing Income">  
+			<script language="javascript1.2">
+			<!--
+			function TotalIncomePast()
+				{DBForm.IncomeTotalPast.value = SumFields(['GrossSalesPast','StockPast','SalesValuePast','ExciseTaxPast','FreightPast','BadDebtsPast','DepletionPast']);}
+			function TotalIncomeNext()
+				{DBForm.IncomeTotalNext.value = SumFields(['GrossSalesNext','StockNext','SalesValueNext','ExciseTaxNext','FreightNext','BadDebtsNext','DepletionNext']);}
+			function TotalExpensesPast()
+				{DBForm.ExpenseTotalPast.value = SumFields(['InventoryPast','PurchasesPast','FactoryPast','LeftoverInventoryPast']);}
+			function TotalExpensesNext()
+				{DBForm.ExpenseTotalNext.value = SumFields(['InventoryNext','PurchasesNext','FactoryNext','LeftoverInventoryNext']);}
+			function TotalBINonMfgPast()
+				{DBForm.NonManufacturingTotalPast.value = DBForm.IncomeTotalPast.value - DBForm.ExpenseTotalPast.value;}
+			function TotalBINonMfgNext()
+				{DBForm.NonManufacturingTotalNext.value = DBForm.IncomeTotalNext.value - DBForm.ExpenseTotalNext.value;}
+						
+			function SubmitThisPage()
+				{
+                                TotalIncomePast();
+                                TotalIncomeNext();
+                                TotalExpensesPast();
+                                TotalExpensesNext();
+				TotalBINonMfgPast();
+				TotalBINonMfgNext();			
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+			<table id="PageTable" cellspacing="0" cellpadding="0"> 
+				<tr valign="top" id="subheading">           
+					<td align="center">Item</td>
+					<td align="center">Year-End Figures</td>
+					<td align="center">Projected Next Year Figures</td>
+				</tr> 
+				<tr valign="top">
+					<td colspan="3" id="section">Revenue/Income</td>
+				</tr>
+				<tr valign="top">           
+					<td>1. Gross sales.</td>
+					<td  align="center"><input type="text" name="GrossSalesPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="GrossSalesNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>   
+				<tr valign="top">           
+					<td>2. <span id="less">Less</span> Sales value of finished stock at beginning of year.</td>
+					<td  align="center"><input type="text" name="StockPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="StockNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>3. Sales value of finished stock at end of year.</td>
+					<td  align="center"><input type="text" name="SalesValuePast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="SalesValueNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>4. <span id="less">Less</span> Excise tax.</td>
+					<td  align="center"><input type="text" name="ExciseTaxPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="ExciseTaxNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>5. <span id="less">Less</span> Prepaid outgoing freight.</td>
+					<td  align="center"><input type="text" name="FreightPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="FreightNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>6. <span id="less">Less</span> Bad debts.</td>
+					<td  align="center"><input type="text" name="BadDebtsPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="BadDebtsNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>7. <span id="less">Less</span> Depletion allowances.</td>
+					<td  align="center"><input type="text" name="DepletionPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="DepletionNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>
+				<tr valign="top" id="subheading">           
+					<td>Total Revenue/Income</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="IncomeTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="IncomeTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>
+
+				<tr valign="top">
+					<td colspan="3" id="section">Expenses/Deductions</td>
+				</tr>
+				<tr valign="top">           
+					<td>8. Inventory at beginning of year.</td>
+					<td  align="center"><input type="text" name="InventoryPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="InventoryNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>   
+				<tr valign="top">           
+					<td>9. Purchases, including transportation costs.</td>
+					<td  align="center"><input type="text" name="PurchasesPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PurchasesNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>10. Factory supplies consumed.</td>
+					<td  align="center"><input type="text" name="FactoryPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FactoryNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+				<tr valign="top">           
+					<td>11. <span id="less">Less</span> End of year inventory.</td>
+					<td  align="center"><input type="text" name="LeftoverInventoryPast" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+					<td  align="center"><input type="text" name="LeftoverInventoryNext" size="8" maxlength="10" required="1" onBlur="javascript:LessValue(this);"/></td>
+				</tr>     
+				<tr valign="top" id="subheading">           
+					<td>Total Expenses/Deductions</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="ExpenseTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="ExpenseTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>   
+				<tr id="section">           
+					<td>Total Non-Manufacturing Business Income<br/>(Based on 12-month fiscal year)</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="NonManufacturingTotalPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="NonManufacturingTotalNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>
+			</table>
+		</page>
+		<page id="3" title="Excluded Payroll" instructions="Enter amounts you wish to have EXCLUDED from coverage.  Remember, you are not entering limits of coverage, but rather amounts to be excluded before coverage begins.">
+			<excluded>
+				<refX>//template[@id="Client-CL-BusinessIncome"]/page[@id="0"]//input[@name="Payroll"]</refX>
+			</excluded>   
+			<script language="javascript1.2">
+			<!--
+			function TotalMfgPast()
+				{DBForm.TotalPayrollMfgPast.value = SumFields(['PayrollMfgPast','BenefitsMfgPast','FICAMfgPast','401KMfgPast','WCMfgPast']);}
+			function TotalMfgNext()
+				{DBForm.TotalPayrollMfgNext.value = SumFields(['PayrollMfgNext','BenefitsMfgNext','FICAMfgNext','401KMfgNext','WCMfgNext']);}
+			function TotalNonMfgPast()
+				{DBForm.TotalPayrollNonMfgPast.value = SumFields(['PayrollNonMfgPast','BenefitsNonMfgPast','FICANonMfgPast','401KNonMfgPast','WCNonMfgPast']);}
+			function TotalNonMfgNext()
+				{DBForm.TotalPayrollNonMfgNext.value = SumFields(['PayrollNonMfgNext','BenefitsNonMfgNext','FICANonMfgNext','401KNonMfgNext','WCNonMfgNext']);}
+			function TotalPast()
+				{DBForm.TotalPayrollPast.value = SumFields(['TotalPayrollMfgPast','TotalPayrollNonMfgPast']);}
+			function TotalNext()
+				{DBForm.TotalPayrollNext.value = SumFields(['TotalPayrollMfgNext','TotalPayrollNonMfgNext']);}
+						
+			function SubmitThisPage()
+				{
+                                TotalMfgPast();
+                                TotalMfgNext();
+                                TotalNonMfgPast();
+                                TotalNonMfgNext();
+				TotalPast();
+				TotalNext();			
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+
+			<table id="PageTable" cellspacing="0" cellpadding="0"> 
+				<tr valign="top" id="subheading">           
+					<td align="center">Ordinary Payroll</td>
+					<td align="center">Manufacturing Income<br/>[Year-End]</td>
+					<td align="center">Non-Manufacturing Income<br/>[Year-End]</td>
+					<td align="center">Manufacturing Income<br/>[Projected Next Year]</td>
+					<td align="center">Non-Manufacturing Income<br/>[Projected Next Year]</td>
+				</tr> 
+				<tr valign="top">
+					<td colspan="5" id="section">Excluded Payroll Items</td>
+				</tr> 
+				<tr valign="top">           
+					<td>1. Payroll</td>
+					<td  align="center"><input type="text" name="PayrollMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PayrollNonMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PayrollMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PayrollNonMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>               
+				<tr valign="top">           
+					<td>2. Benefits</td>
+					<td  align="center"><input type="text" name="BenefitsMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="BenefitsNonMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="BenefitsMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="BenefitsNonMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>     
+				<tr valign="top">           
+					<td>3. FICA</td>
+					<td  align="center"><input type="text" name="FICAMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FICANonMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FICAMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FICANonMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>     
+				<tr valign="top">           
+					<td>4. 401K</td>
+					<td  align="center"><input type="text" name="401KMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="401KNonMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="401KMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="401KNonMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>     
+				<tr valign="top">           
+					<td>5. Workers' Compensation</td>
+					<td  align="center"><input type="text" name="WCMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="WCNonMfgPast" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="WCMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="WCNonMfgNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>    
+				<tr valign="top" id="subheading">           
+					<td>Totals</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollMfgPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollNonMfgPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollMfgNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollNonMfgNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>    
+				<tr valign="top" id="section">           
+					<td colspan="2">Grand Total of Excluded Ordinary Payroll</td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollPast" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td  align="center"><input type="text" id="AutoTotal" name="TotalPayrollNext" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+					<td/>
+				</tr> 
+			</table>
+		</page>
+		<page id="4" title="Extra Expense Worksheet"> 
+			<script language="javascript1.2">
+			<!--
+			function TotalXpenseFirst()
+				{
+				DBForm.TotalXFirst.value = SumFields(['RentFirst','EquipFirst','MoveFirst','OpsFirst','UtilFirst','MaintFirst','InsFirst','PayrollFirst','OvertimeFirst','TravelFirst','StaffFirst','AdsFirst','PhoneFirst','AdminFirst','SupplyFirst','OthersFirst','EquipPurchaseFirst','FreightFirst','AutosFirst','OtherFirst']);
+				DBForm.XExpenseFirst.value = DBForm.TotalXFirst.value;
+				}
+			function TotalXpenseNext()
+				{DBForm.TotalXNext.value = SumFields(['RentNext','EquipNext','MoveNext','OpsNext','UtilNext','MaintNext','InsNext','PayrollNext','OvertimeNext','TravelNext','StaffNext','AdsNext','PhoneNext','AdminNext','SupplyNext','OthersNext','EquipPurchaseNext','FreightNext','AutosNext','OtherNext']);}
+			function TotalXpenseFollowing()
+				{DBForm.XExpenseNext.value=DBForm.TotalXNext.value*DBForm.RecoveryMonths.value;}
+			function TotalRecoveryXpense()
+				{DBForm.XExpenseTotal.value=Number(DBForm.XExpenseFirst.value)+Number(DBForm.XExpenseNext.value);}
+						
+			function SubmitThisPage()
+				{
+                                TotalXpenseFirst();
+                                TotalXpenseNext();
+                                TotalXpenseFollowing();
+                                TotalRecoveryXpense();
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+			<table id="PageTable" cellspacing="0" cellpadding="0"> 
+				<tr valign="top">
+					<td colspan="3" id="section">Extra Expense Following Loss</td>
+				</tr>  
+				<tr valign="top" id="subheading">           
+					<td align="center">Item</td>
+					<td align="center">First Month</td>
+					<td align="center">Each Subsequent Month</td>
+				</tr> 
+				<tr valign="top">           
+					<td>1. Temporary location (rent).</td>
+					<td  align="center"><input type="text" name="RentFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="RentNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr> 
+				<tr valign="top">           
+					<td>2. Temporary fixtures, machinery and equipment (at temporary location).</td>
+					<td  align="center"><input type="text" name="EquipFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="EquipNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>3. Moving and hauling.</td>
+					<td  align="center"><input type="text" name="MoveFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="MoveNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>4. Installation of operations at temporary location.</td>
+					<td  align="center"><input type="text" name="OpsFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OpsNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr> 				
+				<tr valign="top">           
+					<td>5. Light, heat, and power at temporary location.</td>
+					<td  align="center"><input type="text" name="UtilFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="UtilNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>6. Maintenance at temporary location.</td>
+					<td  align="center"><input type="text" name="MaintFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="MaintNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>7. Insurance at temporary location.</td>
+					<td  align="center"><input type="text" name="InsFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="InsNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>8. Payroll incidentals.</td>
+					<td  align="center"><input type="text" name="PayrollFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PayrollNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>9. Overtime.</td>
+					<td  align="center"><input type="text" name="OvertimeFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OvertimeNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>10. Travel allowances.</td>
+					<td  align="center"><input type="text" name="TravelFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="TravelNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>11. Additional staff.</td>
+					<td  align="center"><input type="text" name="StaffFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="StaffNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>12. Advertising.</td>
+					<td  align="center"><input type="text" name="AdsFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="AdsNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>13. Installation and maintenance of telephone and communications at temporary location.</td>
+					<td  align="center"><input type="text" name="PhoneFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="PhoneNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>14. Engineering and administrative costs.</td>
+					<td  align="center"><input type="text" name="AdminFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="AdminNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>15. Transporting supplies and materials to temporary location.</td>
+					<td  align="center"><input type="text" name="SupplyFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="SupplyNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>16. Net amount paid to others for processing and manufacturing.</td>
+					<td  align="center"><input type="text" name="OthersFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OthersNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>17. Net cost of property and equipment purchased for temporary site. (Consider the salvage value after restoration.)</td>
+					<td  align="center"><input type="text" name="EquipPurchaseFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="EquipPurchaseNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>18. Additional freight and shipping costs due to temporary location.</td>
+					<td  align="center"><input type="text" name="FreightFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="FreightNext"  size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>19. Automobile rentals.</td>
+					<td  align="center"><input type="text" name="AutosFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="AutosNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr>
+ 				<tr valign="top">           
+					<td>20. Other expenses: <input type="text" name="OtherDescription" size="30" maxlength="200"/>
+					</td>
+					<td  align="center"><input type="text" name="OtherFirst" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+					<td  align="center"><input type="text" name="OtherNext" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);"/></td>
+				</tr> 				
+				<tr valign="top" id="subheading">           
+					<td>Total</td>
+					<td align="center"><input type="text" id="AutoTotal" name="TotalXFirst" size="8" maxlength="10" onFocus="SubmitThisPage();"/></td>
+					<td align="center"><input type="text" id="AutoTotal" name="TotalXNext" size="8" maxlength="10" onFocus="SubmitThisPage();"/></td>
+				</tr>                           
+				<tr valign="top">
+					<td colspan="3" id="section">Recovery Period</td>
+				</tr>  
+				<tr valign="top">           
+					<td colspan="2" width="400pt">21. Number of months required to recover from total destruction of property. (This is excluding the first month if Extra Expense dollars are spent.)</td>
+					<td align="center"><input type="text" name="RecoveryMonths" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);SubmitThisPage();"/></td>
+				</tr>      
+				<tr valign="top" id="subheading">           
+					<td colspan="2" width="400pt">Total extra expense for first month following loss.</td>
+					<td align="center"><input type="text" name="XExpenseFirst" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>                           
+				<tr valign="top" id="subheading">           
+					<td colspan="2" width="400pt">Total extra expense for all months after first month.</td>
+					<td align="center"><input type="text" name="XExpenseNext" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>    
+				<tr valign="top" id="section">           
+					<td colspan="2" width="400pt">Total extra expense for full recovery period.</td>
+					<td align="center"><input type="text" name="XExpenseTotal" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/></td>
+				</tr>                           
+			</table>
+		</page>
+		<page id="5" title="Total Business Income &amp; Extra Expense">
+			<script language="javascript1.2">
+			<!--
+			function SubmitThisPage()
+				{      
+				CalcDurationExpenses();
+				CalcBIReductionAmount(); 
+				CalcBILoss();
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+			<table id="PageTable" cellspacing="0" cellpadding="0">
+				<tr valign="top">
+					<td colspan="2" id="section">Totals</td>
+				</tr>  
+ 				<tr valign="top">           
+					<td><li>Projected 12-month net Business Income basis.</li></td>
+					<td align="center">
+						<input type="hidden" name="BITotal" size="8" maxlength="10">0</input>
+                                                <calculation target="BITotal">Number(<refX>//template[@id="Client-CL-BusinessIncome"]/page[@id="1"]//input[@name="ManufacturingTotalNext"]</refX>)+Number(<refX>//template[@id="Client-CL-BusinessIncome"]/page[@id="2"]//input[@name="NonManufacturingTotalNext"]</refX>)-Number(<refX>//template[@id="Client-CL-BusinessIncome"]/page[@id="3"]//input[@name="TotalPayrollNext"]</refX>)</calculation>	
+						<display target="BITotal"/>				
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td>1. Estimated total number of months from date of loss until operation/sales are back to normal if Extra Expense dollars were not spent.</td>
+					<td align="center">
+						<input type="text" name="RecoveryMonthsUnassisted" size="8" maxlength="10" required="1" onBlur="javascript:EmptyZero(this);SubmitThisPage();"/>
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td><li>Business Income dollars required for loss duration.</li></td>
+					<td align="center">
+						<input type="text" name="DurationExpenses" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcDurationExpenses" target="DurationExpenses">DBForm.BITotal.value*DBForm.RecoveryMonthsUnassisted.value</function>
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td>2. Estimated percentage by which Business Income Loss is reduced when Extra Expense dollars are spent.</td>
+					<td align="left"><input type="text" name="BIReductionPercent" size="3" maxlength="3" required="1" onBlur="javascript:EmptyZero(this);SubmitThisPage();"/>%</td>
+				</tr>
+ 				<tr valign="top">           
+					<td><li>Estimated amount Business Income is reduced by Extra Expense dollars.</li></td>
+					<td align="center">
+						<input type="text" name="BIReductionAmount" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcBIReductionAmount" target="BIReductionAmount">DBForm.BIReductionPercent.value*DBForm.DurationExpenses.value*.01</function>
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td><li>Remaining Business Income Loss.</li></td>
+					<td align="center">
+						<input type="text" name="BILoss" id="AutoTotal" size="8" maxlength="10" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcBILoss" target="BILoss">Math.abs(Number(DBForm.DurationExpenses.value)-Number(DBForm.BIReductionAmount.value))</function>
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td><li>Total Extra Expense for full recovery period.</li></td>
+					<td  align="center">
+						<input type="hidden" name="XpenseRecovery" size="8" maxlength="10">0</input>
+						<calculation target="XpenseRecovery">Number(<refX>//template[@id="Client-CL-BusinessIncome"]/page[@id="4"]//input[@name="XExpenseTotal"]</refX>)</calculation>
+						<display target="XpenseRecovery"/>
+					</td>
+				</tr>
+ 				<tr valign="top">           
+					<td><li>Estimated combined worst possible Business Income loss/required Extra Expense dollars</li></td>
+					<td align="center">
+						<input type="hidden" name="WorstCaseLoss" size="8" maxlength="10">0</input>
+						<calculation target="WorstCaseLoss">Number(DBForm.BITotal.value)+Number(DBForm.XpenseRecovery.value)</calculation>
+						<display target="WorstCaseLoss"/>
+					</td>
+				</tr>
+			</table>
+		</page>
+	</template>
+</submission>

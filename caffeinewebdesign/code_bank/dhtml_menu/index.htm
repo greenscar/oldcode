@@ -1,0 +1,74 @@
+<!--
+ Moving Menu by James Sandlin
+ Coded By: James Sandlin
+ Date: 08/30/2004
+-->
+<HTML>
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="jtut.css">
+<script language="JavaScript1.2" src='js_menu_fxns.js' type="text/javascript"></script>
+<script language="Javascript1.2">
+   subMenus = new Array("subMenu1", "subMenu2", "subMenu3");
+</script>
+</head>
+
+<body onload="init();">
+<div id="entireMenu" class="mmMenu" style="top:10">
+   <div id ="menu1" class="mmCategory" style="left:100;" onMouseOver="showLayer('subMenu1');">
+      <a href="javascript:void(0)" class="mmCategory">
+            Category Admin
+      </a>
+   </div>
+   <div name="subMenu1" id="subMenu1" class="mmSubMenu" style="left:100;top:-119;width:152;height:135px;" onMouseOver="showLayer('subMenu1'); ">
+      <div class="mmSubMenuCell"><a href="SubCategoryAdmin?do=disp" class="mmSubMenuCell">Display Categorization</a></div>
+      <div class="mmSubMenuCell"><a href="CategoryAdmin?do=create" class="mmSubMenuCell">Category Create</a></div>
+      <div class="mmSubMenuCell"><a href="CategoryAdmin?do=mod" class="mmSubMenuCell">Category Modify</a></div>
+      <div class="mmSubMenuCell"><a href="SubCategoryAdmin?do=create" class="mmSubMenuCell">SubCategory Create</a></div>
+      <div class="mmSubMenuCell"><a href="SubCategoryAdmin?do=mod" class="mmSubMenuCell">SubCategory Modify</a></div>
+   </div>
+   
+   <div id ="menu2" class="mmCategory" style="left:250;" onMouseOver="showLayer('subMenu2');">
+      <a href="javascript:void(0)" class="mmCategory">
+            Item Admin
+      </a>
+   </div>
+   <div name="subMenu2" id="subMenu2" class="mmSubMenu" style="left:250;top:-92;width:152;height: 108px;" onMouseOver="showLayer('subMenu2');">
+      <div class="mmSubMenuCell"><a href="ItemAdmin?do=disp" class="mmSubMenuCell">Display Items</a></div>
+      <div class="mmSubMenuCell"><a href="#" class="mmSubMenuCell">Item Create</a></div>
+      <div class="mmSubMenuCell"><a href="ItemAdmin?do=mod" class="mmSubMenuCell">Item Modify</a></div>
+      <div class="mmSubMenuCell"><a href="#" class="mmSubMenuCell">Item Delete</a></div>
+   </div>
+   
+   <div id ="menu3" class="mmCategory" style="left:400;" onMouseOver="showLayer('subMenu3');">
+      <a href="javascript:void(0)" class="mmCategory">
+            Order Admin
+      </a>
+   </div>
+   <div name="subMenu3" id="subMenu3" class="mmSubMenu" style="left:400;top:-12;width:152;height: 27px;" onMouseOver="showLayer('subMenu3');">
+      <div class="mmSubMenuCell"><a href="Order" class="mmSubMenuCell">Order Admin</a></div>
+   </div>
+   <!--
+      THESE DIVS ARE NOT SEEN BY THE USER. THEIR ONLY USE IS TO HIDE THE SUBMENU
+   -->
+   <div id="hideAll" class="hideMenu" style="top:-10;z-index:4;" onMouseOver="hideLayers();">
+      <a href="javascript:void(0)" >
+         <img src="999999.gif" width="634" height="30" border="0">
+      </a>
+   </div>
+   <div id="transparent" class="hideMenu" style="top:20; z-index:1;"  onMouseOver="hideLayers();">
+      <a  href="javascript:void(0)" >
+         <img src="transparent.gif" width="634" height="200" border="0">
+      </a>
+   </div>
+   <!--
+      END THESE DIVS ARE NOT SEEN BY THE USER. THEIR ONLY USE IS TO HIDE THE SUBMENU
+   -->
+</div>
+
+
+<div id="body" class="mmBody">
+Body Content
+</div>
+</body>
+</HTML>
+

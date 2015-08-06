@@ -1,0 +1,423 @@
+<html>
+
+<head>
+<style TYPE="text/css">
+    #movefish {position:absolute; left:50; top:300; width:144; z-index:0}
+    #movehand {position:absolute; left:580; top:50; width:144; z-index:0}
+    #movemorninglory {position:absolute; left:630; top:250;width:144;z-index:0}
+    #movegears  {position:absolute; left:190; top:47; width:144;z-index:0}
+</style>
+<title>James Sandlin Photography & Web Design </title>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!--  Begin
+
+// global holds reference to selected element
+var selectedObj
+// globals hold location of click relative to element
+var offsetX, offsetY
+// global holds current direction of fish (positive = right, negative = left)
+var fishdirection=2
+// globals hold x,y directions of hand
+var handx=Math.round(Math.random() * 10), handy=Math.round(Math.random() * 10) * -1
+
+// Netscape/Internet Explorer discovery
+
+var isNav, isIE
+
+if (parseInt(navigator.appVersion) >= 4) {
+    if (navigator.appName == "Netscape") {
+        isNav = true
+    }
+    else {
+        isIE = true
+    }
+}
+
+// Assign event handlers used by both Navigator and IE (called by
+// onLoad()), then get the objects moving!
+
+function init() {
+    if (isNav) {
+       setNavEventCapture()
+    }
+
+    // assign functions for mouse down, drag, up
+
+    document.onmousedown = engage
+    document.onmousemove = dragIt
+    document.onmouseup = release
+
+    // get those objects moving...
+
+    MoveObjects()
+
+}
+
+
+// Set zIndex (depth) property
+function setZIndex(obj, zOrder) {
+    // dragged object floats above other objects
+   obj.zIndex = zOrder
+}
+
+
+// Position an object at a specific pixel coordinate
+function shiftTo(obj, x, y) {
+  if (x < 0) {
+      x = 0;
+  }
+  else if (y < 0) {
+      y = 0;
+  }
+  
+  if (isNav) {
+      obj.moveTo(x,y)
+  }
+  else {
+      obj.pixelLeft = x
+      obj.pixelTop = y
+  }
+}
+
+
+
+// Determine which object is being dragged
+function setSelectedElem(evt) {
+    if (isNav) {
+        var testObj
+        var clickX = evt.pageX
+        var clickY = evt.pageY
+        // loop through all layers (starting with frontmost layer)
+        // to see if event coordinates are in the layer
+        for (var i = document.layers.length - 1; i >= 0; i--) {
+            testObj = document.layers[i]
+            if ((clickX > testObj.left) && 
+                (clickX < testObj.left +
+                 testObj.clip.width) && 
+                (clickY > testObj.top) && 
+                (clickY < testObj.top +
+                 testObj.clip.height)) {
+               // remember layer in global, bring layer to front
+               selectedObj = testObj
+               setZIndex(selectedObj, 100)
+               return
+            }
+        }
+    } 
+    else {
+        var imgObj = window.event.srcElement
+        // make sure it's a moveable object
+        if (imgObj.parentElement.id.indexOf("move") != -1) {
+            // remember layer in global, bring layer to front
+            selectedObj = imgObj.parentElement.style
+            setZIndex(selectedObj,100)
+            return
+        }
+    }
+
+    // no selected object
+    selectedObj = null
+    return
+}
+
+
+// Reverse direction of fish object
+function FishReverse() {
+   if (fishdirection > 0) {
+        if (isNav) {
+            document.movefish.src="images/fish.gif"
+        }
+        else {
+            document.all("movefish").innerHTML = '<img src="images/fish.gif">'
+
+        }
+   }
+   else {
+       if (isNav) {
+           document.movefish.src="images/fish_r.gif"
+       }
+       else {
+           document.all("movefish").innerHTML = '<img src="images/fish_r.gif">'
+       }
+   }
+}
+
+
+// Move objects--seemingly recursive (though it's not).
+// 'setTimeout()' method is a strange hack 
+// (but apparently standard practice...)
+function MoveObjects() {
+    if (isNav) {        
+            if (document.movefish.left < 2) {
+                fishdirection=2
+                FishReverse()
+            }
+            else if (document.movefish.left > window.innerWidth) {
+                fishdirection=-2
+                FishReverse()
+            }
+
+            if (document.movehand.left < 2) {
+                handx=Math.round(Math.random() * 10)
+            }
+            else if (document.movehand.left > window.innerWidth) {
+                handx=Math.round(Math.random() * 10) * -1
+            }
+
+            if (document.movehand.top < 2) {
+                handy=Math.round(Math.random() * 10)
+            }
+            else if (document.movehand.top > window.innerHeight) {
+                handy=Math.round(Math.random() * 10) * -1
+            }
+
+            shiftTo(document.movefish,
+                    document.movefish.left+fishdirection,
+                    document.movefish.top)
+
+            shiftTo(document.movehand,
+                    document.movehand.left+handx,
+                    document.movehand.top+handy)
+    }
+    else {
+            if (movefish.offsetLeft < 2) {
+                fishdirection=2
+                FishReverse()
+            }
+            else if (movefish.offsetLeft > document.body.clientWidth) {
+                fishdirection=-2
+                FishReverse()
+            }
+
+            if (movehand.offsetLeft < 2) {
+                handx=Math.round(Math.random() * 10)
+            }
+            else if (movehand.offsetLeft > document.body.clientWidth) {
+                handx=Math.round(Math.random() * 10) * -1
+            }
+
+            if (movehand.offsetTop < 2) {
+                handy=Math.round(Math.random() * 10)
+            }
+            else if (movehand.offsetTop> document.body.clientHeight) {
+                handy=Math.round(Math.random() * 10) * -1
+            }
+
+            shiftTo(movefish.style,
+                    parseInt(movefish.offsetLeft)+fishdirection,
+                    parseInt(movefish.offsetTop))
+
+            shiftTo(movehand.style,
+                    parseInt(movehand.offsetLeft)+handx,
+                    parseInt(movehand.offsetTop)+ handy)
+                    
+    }
+
+
+//    if (isNav) {      
+//          shiftTo(document.layers["movefish"], 
+//             document.layers["movefish"].left+1,
+//             document.layers["movefish"].top)
+//    }
+
+
+
+    // we'll be called by a new thread of execution, and the 
+    // current invocation will be gone by then...
+                
+    setTimeout('MoveObjects()', 100)
+
+}
+
+
+// Drag an object
+function dragIt(evt) {
+    // operate only if a moveable object is selected
+    if (selectedObj) {
+        if (isNav) {
+            shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))
+            return false
+        }
+        else {
+            shiftTo(selectedObj, (window.event.clientX -
+                offsetX), (window.event.clientY - offsetY))
+           // prevent further system response to dragging in IE
+           return false
+        }
+    }
+}
+
+
+// Setup possible drag
+function engage(evt) {
+    // figure out which object was clicked (if any) 
+    setSelectedElem(evt)
+    if (selectedObj) {
+        // remember where the click is in relation to the
+        // top left corner of the object 
+        if (isNav) {
+            offsetX = evt.pageX - selectedObj.left
+            offsetY = evt.pageY - selectedObj.top
+        } 
+        else {
+            offsetX = window.event.offsetX
+            offsetY = window.event.offsetY      
+        }
+    }
+
+    return true
+}
+
+
+// Stop dragging current object
+function release(evt) {
+    if (selectedObj) {
+        setZIndex(selectedObj, 0)
+        selectedObj = null
+    }
+}
+
+
+// Start event capture for Navigator
+function setNavEventCapture() {
+    if (isNav) {
+        document.captureEvents(Event.MOUSEDOWN |
+                               Event.MOUSEMOVE | Event.MOUSEUP)
+    }
+}
+
+// End -->
+
+
+</SCRIPT> 
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <META NAME="Author" CONTENT="James Gregory Sandlin">
+</HEAD>
+<BODY BGCOLOR="#66afff" TEXT="#ff99ff" LINK="#ff0066" VLINK="#0000ff"
+ALINK="#ff0066" onLoad="init()">
+
+<!doctype-- html public "-//w3c//dtd html 4.0 transitional//en">
+
+<P><CENTER><FONT COLOR="#000000" SIZE="+4">James Sandlin</FONT><FONT
+
+ COLOR="#000000" SIZE="+3"> <BR>
+</FONT><FONT SIZE="-1"><A HREF="http://homepage.dave-world.net/~caffeine/">http://homepage.dave-world.net/~caffeine/</A></FONT><FONT
+
+ COLOR="#000000" SIZE="-1"> <BR>
+</FONT><FONT SIZE="-1"><A HREF="mailto:caffeine@davesworld.net">caffeine@davesworld.net</A></FONT></CENTER></P>
+
+<P><CENTER><FONT COLOR="#000000">click on any image to drag it
+around the page<BR>
+</FONT></CENTER></P>
+
+
+<p align="center"><br>
+</p>
+<div align="center"><center>
+
+<table BORDER="1" CELLPADDING="7" WIDTH="731">
+  <tr>
+    <td VALIGN="TOP" WIDTH="17%"><font color="#000000"><font size="+1"><b>Objective</b></font></font></td>
+    <td VALIGN="TOP" WIDTH="83%"><font color="#000000"><font size="+1">Entry level position as
+    a web designer</font></font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP" WIDTH="17%"><font color="#000000"><font size="+1"><b>Education</b></font></font></td>
+    <td VALIGN="TOP" WIDTH="83%"><font color="#000000"><font size="+1">Illinois State
+    University (Normal, IL)</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bachelor of
+    Science Applied Computer Science&nbsp;</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Expected
+    December 2000)</font> </font><p><font color="#000000"><font size="+1">University of New
+    Orleans (New Orleans, LA)</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Computer
+    Science (Fall 1998 - Spring 1999)</font> </font></p>
+    <p><font color="#000000"><font size="+1">Northeast Louisiana University (Monroe, LA)</font>
+    <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Bachelor of Arts Psychology (August, 1999)</font></font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP" WIDTH="17%"><font color="#000000"><font size="+1"><b>Work History</b></font></font></td>
+    <td VALIGN="TOP" WIDTH="83%"><font color="#000000"><font size="+1">T.C. Computers (Kenner,
+    LA) August 1998 - November 1998</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Assembly of Components</font> </font><p><font color="#000000"><font size="+1">N.L.U. Art
+    Department (Monroe, LA) August 1993 - June 1998</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Responsible for photography lab, assisting students and&nbsp;</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    maintaining&nbsp; lab</font> </font></p>
+    <p><font color="#000000"><font size="+1">N.L.U. Pow Wow (school paper) August 1994 -
+    December 1997</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Photographer</font></font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP" WIDTH="17%"><font color="#000000"><font size="+1"><b>Special Skills</b></font></font></td>
+    <td VALIGN="TOP" WIDTH="83%"><font color="#000000"><font size="+1">Web design using HTML
+    and JAVA and Javascript</font> <br>
+    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    http://homepage.dave-world.net/~caffeine/</font> <br>
+    <font size="+1">C, C++, JAVA, UNIX</font> <br>
+    <font size="+1">MS Windows 3.1, 95, 98</font> <br>
+    <font size="+1">MS Word, MS Excel</font> <br>
+    <font size="+1">Two semesters of JAVA at University of New Orleans</font> <br>
+    <font size="+1">Computer Hardware installation and maintainence</font> <br>
+    <font size="+1">Graphic Layout (three semesters of fine art photography)</font></font></td>
+  </tr>
+  <tr>
+    <td VALIGN="TOP" WIDTH="17%"><font size="+1" color="#000000"><b>Further Info</b></font></td>
+    <td VALIGN="TOP" WIDTH="83%"><font size="+1" color="#000000">Transcripts and References
+    are available upon request</font></td>
+  </tr>
+</table>
+</center></div>
+
+<p><br>
+&nbsp;
+<!--   Definition of layers
+//-->
+
+<DIV ID=movehand>
+
+<img src="images/hand.gif" width="80" height="57">
+
+</DIV>
+
+
+<DIV ID=movefish>
+
+<img src="images/fish.gif" width="177" height="63">
+
+</DIV>
+
+
+<DIV ID=movemorninglory>
+
+<img src="images/morninglory.gif" width="112" height="98">
+
+</DIV>
+
+
+<DIV ID=movegears>
+
+<img src="images/gears.gif" width="78" height="60">
+
+</DIV>
+
+
+<!--   End layer definitions
+//-->
+<p align="center"><a href="../index.htm"><img border="0" src="../Home2.gif" width="126" height="31"></a></p>
+
+
+
+
+</body>
+</html>

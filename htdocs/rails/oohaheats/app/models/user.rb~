@@ -1,0 +1,57 @@
+class User < ActiveRecord::Base
+   validates_uniqueness_of :name 
+   has_many :user_type
+   validates_confirmation_of :password, :on => :create
+   validates_length_of :password, :within => 5..40
+   
+   # If a user matching the credentials is found, returns the User object.
+   # If no matching user is found, returns nil.
+   def authenticate1
+      logger.debug("user.authenticate");
+      logger.debug("name = " + name)
+      logger.debug("password = " + password)
+      user = User.find_by_name_and_password(self.name, self.password)
+      if(user != nil)
+         logger.debug(user)
+      elsif(Password::check(password, user.password))
+         user
+      else
+         return false
+      end
+      logger.debug("END user.authenticate");
+   end
+   
+   def self.authenticate(name, pass)
+      #logger.debug(name + ", " + pass)
+      user = find(:first, :conditions => ['name = ?',name])
+      if(user != nil)
+         #logger.debug(user)
+         if Password::check(pass,user.password)
+            user
+         else
+            return false
+         end
+      else
+         return false
+      end
+   end
+   def before_create
+      logger.debug("old password = " + self.password)
+      self.password = Password::update(self.password)
+      logger.debug("new password = " + self.password)
+   end
+   # Checks login information
+   #def self.authenticate(nick, pass)
+   #   user = find(:first, :conditions => ['nick = ?',nick])
+   #   if Password::check(pass,user.password)
+   #      user
+   #   else
+   #      return false
+   #   end
+   #end
+   #
+   #protected
+   #def password=(pass)
+   #   write_attribute(:password, password = Password::update(pass))
+   #end
+end

@@ -1,0 +1,26 @@
+18-01-2007 20:57 => Admin.dbLoadUserListBriefAll(dbmgr)<br>
+18-01-2007 20:57 => SELECT usl.SEC_LVL_NAME, u.SEC_LVL_ID, u.USER_ID, u.USER_NAME, u.NAME, u.CONTACT, u.ACTIVE FROM USER u, USER_SEC_LVL usl WHERE u.SEC_LVL_ID = usl.SEC_LVL_ID AND u.user_id > 0 AND u.user_id != 14<br>
+18-01-2007 20:58 => Security->session_get_admin(Array)<br>
+18-01-2007 20:58 => Security->session_get_admin(Array) => false<br>
+18-01-2007 20:58 => empty(_POST['id'])<br>
+18-01-2007 20:58 => Display login form<br>
+18-01-2007 20:58 => isset(_POST['id'])<br>
+18-01-2007 20:58 => Error in SELECT U.USER_ID, U.PASSWORD, S.SEC_LVL_NAME FROM USER U, USER_SEC_LVL S WHERE U.USER_NAME = 'jsandlin' AND S.SEC_LVL_ID = U.SEC_LVL_ID<br>
+18-01-2007 20:58 => loginSuccessful == false. Forwarding user to /login.php<br>
+18-01-2007 20:58 => empty(_POST['id'])<br>
+18-01-2007 20:58 => Display login form<br>
+18-01-2007 20:58 => isset(_POST['id'])<br>
+18-01-2007 20:58 => Error in SELECT U.USER_ID, U.PASSWORD, S.SEC_LVL_NAME FROM USER U, USER_SEC_LVL S WHERE U.USER_NAME = 'jsandlin' AND S.SEC_LVL_ID = U.SEC_LVL_ID<br>
+18-01-2007 20:58 => loginSuccessful == false. Forwarding user to /login.php<br>
+18-01-2007 20:58 => empty(_POST['id'])<br>
+18-01-2007 20:58 => Display login form<br>
+18-01-2007 20:58 => isset(_POST['id'])<br>
+18-01-2007 20:58 => Error in SELECT U.USER_ID, U.PASSWORD, S.SEC_LVL_NAME FROM USER U, USER_SEC_LVL S WHERE U.USER_NAME = 'jsandlin' AND S.SEC_LVL_ID = U.SEC_LVL_ID<br>
+18-01-2007 20:58 => loginSuccessful == false. Forwarding user to /login.php<br>
+18-01-2007 20:58 => empty(_POST['id'])<br>
+18-01-2007 20:58 => Display login form<br>
+18-01-2007 20:58 => isset(_POST['id'])<br>
+18-01-2007 20:58 => Error in SELECT U.USER_ID, U.PASSWORD, S.SEC_LVL_NAME FROM USER U, USER_SEC_LVL S WHERE U.USER_NAME = 'sandlinjames' AND S.SEC_LVL_ID = U.SEC_LVL_ID<br>
+18-01-2007 20:58 => loginSuccessful == false. Forwarding user to /login.php<br>
+18-01-2007 20:58 => empty(_POST['id'])<br>
+18-01-2007 20:58 => Display login form<br>

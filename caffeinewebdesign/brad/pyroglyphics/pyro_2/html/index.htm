@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/main_f3.gif','images/main_f2.gif','images/about_f3.gif','images/about_f2.gif','images/comics_f3.gif','images/comics_f2.gif','images/contact_f3.gif','images/contact_f2.gif','images/links_f3.gif','images/links_f2.gif','../../pyro/PYROTEMP/images/sabbath_f3.gif','../../pyro/PYROTEMP/images/sabbath_f2.gif','../../pyro/PYROTEMP/images/credence_f3.gif','../../pyro/PYROTEMP/images/credence_f2.gif','../../pyro/PYROTEMP/images/blue_f3.gif','../../pyro/PYROTEMP/images/blue_f2.gif')">
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0" width="772">
+    <!-- fwtable fwsrc="pyronew_top.png" fwbase="menuetop.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="2" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="64" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="64" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="64" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="64" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="64" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="450" height="1" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td colspan="7"><img name="menuetop_r1_c1" src="images/menuetop_r1_c1.gif" width="772" height="178" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="1" height="178" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td rowspan="2"><img name="menuetop_r2_c1" src="images/menuetop_r2_c1.gif" width="2" height="46" border="0" alt=""></td>
+      <td><a href="index.htm" target="_top" onClick="MM_nbGroup('down','navbar1','main','images/main_f3.gif',1)" onMouseOver="MM_nbGroup('over','main','images/main_f2.gif','images/main_f3.gif',1)" onMouseOut="MM_nbGroup('out');"><img name="main" src="images/main.gif" width="64" height="16" border="0" alt="Pyroglyphics Homepage"></a></td>
+      <td><a href="about.htm" target="_top" onClick="MM_nbGroup('down','navbar1','about','images/about_f3.gif',1)" onMouseOver="MM_nbGroup('over','about','images/about_f2.gif','images/about_f3.gif',1)" onMouseOut="MM_nbGroup('out');"><img name="about" src="images/about.gif" width="64" height="16" border="0" alt="Pyroglyphics About"></a></td>
+      <td><a href="comics.htm" target="_top" onClick="MM_nbGroup('down','navbar1','comics','images/comics_f3.gif',1)" onMouseOver="MM_nbGroup('over','comics','images/comics_f2.gif','images/comics_f3.gif',1)" onMouseOut="MM_nbGroup('out');"><img name="comics" src="images/comics.gif" width="64" height="16" border="0" alt="Pyroglyphics Comics"></a></td>
+      <td><a href="contact.htm" target="_top" onClick="MM_nbGroup('down','navbar1','contact','images/contact_f3.gif',1)" onMouseOver="MM_nbGroup('over','contact','images/contact_f2.gif','images/contact_f3.gif',1)" onMouseOut="MM_nbGroup('out');"><img name="contact" src="images/contact.gif" width="64" height="16" border="0" alt="Pyroglyphics Contact"></a></td>
+      <td><a href="links.htm" target="_top" onClick="MM_nbGroup('down','navbar1','links','images/links_f3.gif',1)" onMouseOver="MM_nbGroup('over','links','images/links_f2.gif','images/links_f3.gif',1)" onMouseOut="MM_nbGroup('out');"><img name="links" src="images/links.gif" width="64" height="16" border="0" alt="Pyroglyphics Links"></a></td>
+      <td rowspan="2"><img name="menuetop_r2_c7" src="images/menuetop_r2_c7.gif" width="450" height="46" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="1" height="16" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td colspan="5"><img name="menuetop_r3_c2" src="images/menuetop_r3_c2.gif" width="320" height="30" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
+    </tr>
+  </table>
+  <table width="759" height="445" border="0" cellpadding="0" cellspacing="3">
+    <tr> 
+      <td width="183" rowspan="2"><table border="0" cellpadding="0" cellspacing="0" width="182">
+          <!-- fwtable fwsrc="sidebar.png" fwbase="sidebar.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+          <tr> 
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="59" height="1" border="0"></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="116" height="1" border="0"></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="7" height="1" border="0"></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="1" border="0"></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><img name="sidebar_r1_c1" src="../../pyro/PYROTEMP/images/sidebar_r1_c1.gif" width="182" height="7" border="0" alt=""></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="7" border="0"></td>
+          </tr>
+          <tr> 
+            <td rowspan="4"><img name="sidebar_r2_c1" src="../../pyro/PYROTEMP/images/sidebar_r2_c1.gif" width="59" height="424" border="0" alt=""></td>
+            <td><a href="char_sabbath.htm" target="_top" onClick="MM_nbGroup('down','navbar1','sabbath','../../pyro/PYROTEMP/images/sabbath_f3.gif',1);" onMouseOver="MM_nbGroup('over','sabbath','../../pyro/PYROTEMP/images/sabbath_f2.gif','../../pyro/PYROTEMP/images/sabbath_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="sabbath" src="../../pyro/PYROTEMP/images/sabbath.gif" width="116" height="16" border="0" alt="Character Sabbath"></a></td>
+            <td rowspan="4"><img name="sidebar_r2_c3" src="../../pyro/PYROTEMP/images/sidebar_r2_c3.gif" width="7" height="424" border="0" alt=""></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="16" border="0"></td>
+          </tr>
+          <tr> 
+            <td><a href="char_credence.htm" target="_top" onClick="MM_nbGroup('down','navbar1','credence','../../pyro/PYROTEMP/images/credence_f3.gif',1);" onMouseOver="MM_nbGroup('over','credence','../../pyro/PYROTEMP/images/credence_f2.gif','../../pyro/PYROTEMP/images/credence_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="credence" src="../../pyro/PYROTEMP/images/credence.gif" width="116" height="16" border="0" alt="Character Credence"></a></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="16" border="0"></td>
+          </tr>
+          <tr> 
+            <td><a href="char_blue.htm" target="_top" onClick="MM_nbGroup('down','navbar1','blue','../../pyro/PYROTEMP/images/blue_f3.gif',1);" onMouseOver="MM_nbGroup('over','blue','../../pyro/PYROTEMP/images/blue_f2.gif','../../pyro/PYROTEMP/images/blue_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="blue" src="../../pyro/PYROTEMP/images/blue.gif" width="116" height="16" border="0" alt="Character Blue Angel"></a></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="16" border="0"></td>
+          </tr>
+          <tr> 
+            <td><img name="sidebar_r5_c2" src="../../pyro/PYROTEMP/images/sidebar_r5_c2.gif" width="116" height="376" border="0" alt=""></td>
+            <td><img src="../../pyro/PYROTEMP/images/spacer.gif" alt="" name="undefined_3" width="1" height="376" border="0"></td>
+          </tr>
+        </table>
+</td>
+      <td width="574"><table width="391" height="238" border="0" cellpadding="0" cellspacing="3">
+          <tr> 
+            <td width="374" height="53"> <img name="redbar" src="../../pyro/PYROTEMP/images/redbar.gif" width="374" height="50" border="0" alt=""></td>
+            <td width="8" rowspan="2"> <img name="character" src="../../pyro/PYROTEMP/images/character.gif" width="180" height="287" border="0" alt=""></td>
+          </tr>
+          <tr> 
+            <td height="176">&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr> 
+      <td height="143"> 
+        <table width="222" height="124" border="0" cellspacing="3">
+          <tr> 
+            <td width="192" rowspan="4"> <img name="meters" src="../../pyro/PYROTEMP/images/meters.gif" width="180" height="129" border="0" alt=""></td>
+            <td colspan="2"> <img name="blackbar" src="../../pyro/PYROTEMP/images/blackbar.gif" width="374" height="26" border="0" alt=""></td>
+          </tr>
+          <tr> 
+            <td width="8"> <img name="bullet" src="../../pyro/PYROTEMP/images/bullet.gif" width="8" height="8" border="0" alt=""></td>
+            <td width="349">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="36"> <img name="bullet_2" src="../../pyro/PYROTEMP/images/bullet.gif" width="8" height="8" border="0" alt=""></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="23"> <img name="bullet_3" src="../../pyro/PYROTEMP/images/bullet.gif" width="8" height="8" border="0" alt=""></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="768">
+    <!-- fwtable fwsrc="pyronew_bot.png" fwbase="menuebot.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="448" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="64" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="64" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="64" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="64" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="64" height="1" border="0"></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="6"><img name="menuebot_r1_c1" src="images/menuebot_r1_c1.gif" width="768" height="18" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="1" height="18" border="0"></td>
+    </tr>
+    <tr> 
+      <td rowspan="2"><img name="menuebot_r2_c1" src="images/menuebot_r2_c1.gif" width="448" height="41" border="0" alt=""></td>
+      <td><a href="index.htm" target="_top" onClick="MM_nbGroup('down','navbar1','main_2','images/main_f3.gif',1);" onMouseOver="MM_nbGroup('over','main_2','images/main_f2.gif','images/main_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="main_2" src="images/main.gif" width="64" height="16" border="0" alt="Pyroglyphics Homepage"></a></td>
+      <td><a href="about.htm" target="_top" onClick="MM_nbGroup('down','navbar1','about_2','images/about_f3.gif',1);" onMouseOver="MM_nbGroup('over','about_2','images/about_f2.gif','images/about_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="about_2" src="images/about.gif" width="64" height="16" border="0" alt="Pyroglyphics About"></a></td>
+      <td><a href="comics.htm" target="_top" onClick="MM_nbGroup('down','navbar1','comics_2','images/comics_f3.gif',1);" onMouseOver="MM_nbGroup('over','comics_2','images/comics_f2.gif','images/comics_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="comics_2" src="images/comics.gif" width="64" height="16" border="0" alt="Pyroglyphics Comics"></a></td>
+      <td><a href="contact.htm" target="_top" onClick="MM_nbGroup('down','navbar1','contact_2','images/contact_f3.gif',1);" onMouseOver="MM_nbGroup('over','contact_2','images/contact_f2.gif','images/contact_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="contact_2" src="images/contact.gif" width="64" height="16" border="0" alt="Pyroglyphics Contact"></a></td>
+      <td><a href="links.htm" target="_top" onClick="MM_nbGroup('down','navbar1','links_2','images/links_f3.gif',1);" onMouseOver="MM_nbGroup('over','links_2','images/links_f2.gif','images/links_f3.gif',1);" onMouseOut="MM_nbGroup('out');"><img name="links_2" src="images/links.gif" width="64" height="16" border="0" alt="Pyroglyphics Links"></a></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="1" height="16" border="0"></td>
+    </tr>
+    <tr> 
+      <td colspan="5"><img name="menuebot_r3_c2" src="images/menuebot_r3_c2.gif" width="320" height="25" border="0" alt=""></td>
+      <td><img src="images/spacer.gif" alt="" name="undefined_2" width="1" height="25" border="0"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+#require_dependency 'password'
+class RecipeController < ApplicationController   
+   layout 'standard'
+   #protected
+   def secure?
+      ["new", "create", "edit", "update", "delete"].include?(action_name)
+   end
+   
+   def list
+      @recipes = Recipe.find_all_by_active(1)
+   end
+   
+   def show
+      @recipe = Recipe.find(params[:id])
+      @client_ip = request.remote_ip  
+      @tracking = Tracking.new(:ip => @client_ip, :recipe_id => params[:id])
+      @tracking.save
+   end
+   
+   def new
+      logger.debug("recipe_controller.new")
+      @recipe = Recipe.new
+      20.times {@recipe.ingredients.build}
+      20.times {@recipe.steps.build}
+      @categories = Category.find(:all)
+   end
+   
+   def create
+      logger.debug("-=-=-=-=-=-=-=-=-= b4 create -=-=-=-=-=-=-=-=-=-=-=-=");
+      @recipe = Recipe.new(params[:recipe])
+      logger.debug("name = ", @recipe.name)
+      #logger.debug(@recipe.save)
+      logger.debug("-=-=-=-=-=-=-=-=-= end create -=-=-=-=-=-=-=-=-=-=-=-=");
+      #return(1)
+      #return(1);
+      params[:steps].each do |key, value|
+         @recipe.steps.build(:order_num => key, :instruction => value["instruction"]) unless value.values.all?(&:blank?)
+      end
+      logger.debug("-=-=-=-=-=-=-=-=-= b4 groceries -=-=-=-=-=-=-=-=-=-=-=-=");
+      unless params[:groceries].nil?
+         params[:groceries].each do |key, value|
+            unless value.values.all?(&:blank?)
+               grocery = Grocery.find_or_create_by_name(params[:groceries][key][:name])
+               measurement = Measurement.find_or_create_by_name(params[:measurements][key][:name])
+               ingredient = Ingredient.new(:order_num => key, :grocery => grocery, :measurement => measurement)
+               @recipe.ingredients.build(:order_num => key, :grocery => grocery, :measurement => measurement)
+            end
+         end
+      end
+      logger.debug("-=-=-=-=-=-=-=-=-= after groceries -=-=-=-=-=-=-=-=-=-=-=-=");
+      
+      if @recipe.save
+         redirect_to :action => 'list'
+      else 
+         @categories = Category.find(:all)
+         render :action => 'new'
+      end
+   end
+   
+   def edit
+      @recipe = Recipe.find(params[:id])
+      @categories = Category.find(:all)
+      while(@recipe.ingredients.length < 20)
+         @recipe.ingredients.build
+      end
+      while(@recipe.steps.length < 20)
+         @recipe.steps.build
+      end
+   end
+   
+   # RATHER THAN UPDATNIG EXISTING RECIPE, MARK EXISTING RECIPE OBSOLETE THEN CREATE NEW INSTANCE.
+   # THIS WILL PROVIDE FULL HISTORICAL TRACKING.
+   def update
+      # MARK CURRENT RECIPE INACTIVE.
+      Recipe.update(params[:id], :active => '0')
+      # CREATE NEW RECIPE FROM THAT IN FORM
+      logger.debug("-=-=-=-=-=-=-=-=-= b4 create -=-=-=-=-=-=-=-=-=-=-=-=");
+      @recipe = Recipe.new(params[:recipe])
+      logger.debug("name = ", @recipe.name)
+      logger.debug("-=-=-=-=-=-=-=-=-= end create -=-=-=-=-=-=-=-=-=-=-=-=");
+      params[:steps].each do |key, value|
+         if value["instruction"] !~ /^[\s]*$/
+            @recipe.steps.build(:order_num => key, :instruction => value["instruction"]) unless value.values.all?(&:blank?)
+         end
+      end
+      logger.debug("-=-=-=-=-=-=-=-=-= b4 groceries -=-=-=-=-=-=-=-=-=-=-=-=");
+      unless params[:groceries].nil?
+         params[:groceries].each do |key, value|
+            if( params[:groceries][key][:name] !~ /^[\s]*$/ && params[:measurements][key][:name] !~ /^[\s]*$/)
+               grocery = Grocery.find_or_create_by_name(params[:groceries][key][:name])
+               measurement = Measurement.find_or_create_by_name(params[:measurements][key][:name])
+               ingredient = Ingredient.new(:order_num => key, :grocery => grocery, :measurement => measurement)
+               @recipe.ingredients.build(:order_num => key, :grocery => grocery, :measurement => measurement)
+            end
+         end
+      end
+      logger.debug("-=-=-=-=-=-=-=-=-= after groceries -=-=-=-=-=-=-=-=-=-=-=-=");
+      
+      if @recipe.save
+         redirect_to :action => 'list'
+      else 
+         @categories = Category.find(:all)
+         render :action => 'new'
+      end
+   end
+   
+   
+   def delete
+      # MARK CURRENT RECIPE INACTIVE.
+      Recipe.update(params[:id], :active => '0')
+      redirect_to :action => 'list'
+   end
+
+   # SHOW RECIPES OF GIVEN CATEGORY
+   # RENAME THIS METHOD TO WORK
+   def show_categories
+      @category = Category.find(params[:id])
+      #@category = Category.find(params[:id], :include => :recipes_active)
+      #@category.recipes_active
+      logger.debug("-----------------------------------");
+      #logger.debug("length = " + @category.length.to_s)
+      #@category.length.times do |i|
+      #   logger.debug(i.to_s + " -> " + @category[i].to_s)
+      #   logger.debug("-=-=-=-" + @category[i].name + "-=-=-=-")
+      #   @category[i].recipes.each do |r|
+      #      logger.debug(r.name)
+      #   end
+      #   logger.debug("-=-=-=-" + @category[i].name + "-=-=-=-")
+      #end
+      logger.debug("-=-=-=-" + @category.name + "-=-=-=-")
+      @category.recipes do |r|
+         logger.debug(r.name)
+      end
+      
+      #logger.debug(@category)
+      logger.debug("-----------------------------------");
+      #@category = Category.find(:all)
+   end
+   
+   def step_attributes=(step_attributes)
+      step_attributes.each do |instruction|
+         steps.build(instruction)
+      end
+   end
+   
+end

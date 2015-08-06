@@ -1,0 +1,12 @@
+09/12/2004 20:13:32 CDT (dtr:90)|../../common/openwizard.mvi:3261|OUIMWSetup.d.fastflg=1
+09/12/2004 20:13:32 CDT (dtr:90)|../../common/openwizard.mvi:3287|_API=1
+09/12/2004 20:13:34 CDT (dtr:88)|../../common/openwizard.mvi:3497|l.string=Pass=, Max=0, More=0
+09/12/2004 20:13:35 CDT (dtr:90)|../../common/openwizard.mvi:5197|l.host=http://www.openuiupdates.org/
+09/12/2004 20:13:47 CDT (dtr:89)|../../common/openwizard.mvi:5197|l.host=http://www.openuiupdates.org/
+09/25/2004 12:50:47 CDT (dtr:90)|../../common/openwizard.mvi:1643|l.mirrors[l.ndx]:name=Driftwood Network Services
+09/25/2004 12:50:47 CDT (dtr:90)|../../common/openwizard.mvi:1643|l.mirrors[l.ndx]:name=CybrHost Corporation
+09/25/2004 12:50:48 CDT (dtr:89)|../../common/openwizard.mvi:1643|l.mirrors[l.ndx]:name=WolfPaw Computers
+09/25/2004 12:50:48 CDT (dtr:89)|../../common/openwizard.mvi:1643|l.mirrors[l.ndx]:name=Hostasaurus.com
+09/25/2004 12:50:48 CDT (dtr:89)|../../common/openwizard.mvi:1643|l.mirrors[l.ndx]:name=dotCOM designers
+09/25/2004 12:50:50 CDT (dtr:90)|../../common/openwizard.mvi:3237|l.host=http://update04.openui.org/
+09/25/2004 12:51:33 CDT (dtr:89)|../../common/openwizard.mvi:5197|l.host=http://www.openuiupdates.org/

@@ -1,0 +1,88 @@
+<?php
+require_once("Secretary.inc");
+require_once("Settings.inc");
+class Schema
+{
+   var $id;
+   var $box;
+   var $port;
+   var $db;
+   var $uid;
+   var $version;
+   var $descr;
+   var $allVersions;
+   var $settings;
+   
+   function Schema()
+   {
+      $this->log = new Secretary();
+      $this->allVersions = array();
+      $this->settings = new Settings();
+   }
+   function to_string()
+   {
+      $thistr = "\r\n-------------------------------------------\r\n";
+      $thistr .= "id => " . $this->id . "\r\n";
+      $thistr .= "box => " . $this->box . "\r\n";
+      $thistr .= "port => " . $this->port . "\r\n";
+      $thistr .= "db => " . $this->db . "\r\n";
+      $thistr .= "uid => " . $this->uid . "\r\n";
+      $thistr .= "version => " . $this->version . "\r\n";
+      $thistr .= "-------------------------------------------\r\n";
+      return($thistr);
+   }
+
+   function db_load_tiers_db_versions($dbmgr)
+   {
+      $this->log->write("Schema->db_load_db_release_nums() START");
+      $query = "select a.BUILD_NUM from v_environments a"
+               . " where a.display_sw = 'Y' and a.ENV_ID in (";
+      $envs_to_display = $this->settings->app_schemas["TIERS"];
+      foreach($envs_to_display as $key=>$val)
+      {
+         $query .= $val . ", ";
+      }
+      $query = substr($query, 0, (strlen($query) - 2));
+      $query .= ")"
+             . " ORDER BY BUILD_NUM";
+      $this->log->write($query);
+      $dbmgr->query($query);
+      while($row = $dbmgr->fetch_assoc_array())
+      {
+         $bn = trim($row["BUILD_NUM"]);
+         $inarray = in_array($bn, $this->allVersions);
+         if(!$inarray)
+         {
+            $this->log->write("push " . $bn);
+            array_push($this->allVersions, $bn);
+         }
+      }
+      $this->log->write("EnvtMgr->db_load_db_release_nums() END");
+   }
+   
+   function db_load_info($dbmgr)
+   {
+      $this->log->write("Schema->db_load_info($dbmgr) START");
+      $query = "select a.ENV_ID,a.BUILD_NUM,a.NAME,a.HOST_STRING,c.HOST_NAME,a.CONNECT_ACCOUNT"
+         . " from v_environments a, v_ad_instances b, ad_hosts c"
+         . " where a.host_string = b.instance_name"
+         . " and b.host_id = c.host_id"
+         . " and a.ENV_ID = " . $this->id;
+      $this->log->write($query);
+      if($row = $dbmgr->fetch_assoc_array())
+      {
+         $this->id = $row["ENV_ID"];
+         $this->descr = $row["NAME"];
+         $this->box= $row["HOST_NAME"];
+         $this->port= 0000;
+         $this->db= $row["HOST_STRING"];
+         $this->uid= $row["CONNECT_ACCOUNT"];
+         $this->version= $row["BUILD_NUM"];
+      }
+      $this->log->write("Schema->db_load_info($dbmgr) END");
+   }
+}
+
+
+?>
+

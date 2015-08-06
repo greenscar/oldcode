@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>404 - Page can not be found</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a:link {
+	color: #3366cc;
+	text-decoration: none;
+	font-family: "Verdana", "Arial";
+	font-size: 11px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+a:visited {
+	color: #3366cc;
+	text-decoration: none;
+	font-family: "Verdana", "Arial";
+	font-size: 11px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+a:hover { color: #db5d00; text-decoration: none;
+	font-family: "Verdana", "Arial";
+	font-size: 11px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px; }
+.style3 {color: #e15d00}
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#EEEEEE">
+<table width="700" border="0" align="center" cellpadding="2" cellspacing="2" bgcolor="#ffffff">
+  <tr>
+    <td bordercolor="#FFFFFF">&nbsp;<span class="style1"><strong>404 - Page can not be displayed or found</strong></span><br>
+      <br>
+	
+	  <span class="style2"><strong>What does 404 mean?</strong><br>
+
+404 is an HTTP status code. Every time you visit a web page, your computer (the 'client') is requesting data from a server using HTTP, or Hypertext Transfer Protocol. Before the web page is even displayed in your browser, the web server has sent the HTTP header, which contains the status code. Not surprisingly, your browser has sent the server its own headers, which contain a lot more information about you than you think! 
+<br>
+
+For a normal web page, the status is 200 OK. You don't see this because the server proceeds to send you the contents of the page. It's only when you encounter an error that you see the actual status code, such as 404 Not Found. <br>
+<br>
+
+
+<strong>So where do status codes come from?</strong><br>
+
+HTTP status codes were established by the World Wide Web Consortium (W3C) in 1992, as a part of the HTTP 0.9 spec. They were defined by Tim Berners-Lee, the same person who single-handedly invented the web and the first web browser in 1990. We at the 404 Research Lab like to think of him as The Man Who Made All Of This Possible. <br>
+
+
+Berners-Lee based the HTTP status codes on FTP status codes, which were already well established by 1990; the official FTP spec is dated 1985, although FTP has actually been in use much longer. <br>
+<br>
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-5174249592653525";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="5469266417";
+google_color_border = "FCFCFC";
+google_color_bg = "FCFCFC";
+google_color_link = "000000";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><br>
+<br>
+</center>
+</span>      <table width="680" border="0" align="center" cellpadding="2" cellspacing="2" bordercolor="#FFFFFF">
+  <tr>
+    <td bordercolor="#FFFFFF" bgcolor="#E5ECF9" class="style2">&nbsp; <span class="style3"><strong>Suggested Resources and services:</strong></span></td>
+  </tr>
+</table>
+      <table width="680" border="0" align="center" cellpadding="2" cellspacing="2">
+        <tr>
+          <td width="220" bordercolor="#FFFFFF" bgcolor="#EEEEEE">&nbsp;&nbsp;<a href="http://www.whatismy.net" title="What is my IP?" target="_blank"><strong>What is my IP?</strong></a>
+
+
+</td>
+          <td width="220" bordercolor="#FFFFFF" bgcolor="#EEEEEE">&nbsp;<a href="http://www.speedurl.com" title="Free Bandwidth Speed Test" target="_blank"><strong>Free Bandwidth Speed Test</strong></a>
+
+
+</td>
+          <td width="220" bordercolor="#FFFFFF" bgcolor="#EEEEEE">
+
+
+
+
+&nbsp;<a href="http://www.whmfaq.com" title="cPanel and WHM FAQ" target="_blank"><strong>WHM and cPanel FAQ</strong></a>
+
+
+
+
+
+
+</td>
+        </tr>
+      </table><table width="680" border="0" align="center" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><span class="style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site owners:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change the default server 404 page by logging into your control panel, click on "Error pages" icon and updating the 404 page.</span></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+</body>
+</html>

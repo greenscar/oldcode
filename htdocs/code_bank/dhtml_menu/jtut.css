@@ -1,0 +1,87 @@
+/*
+ Moving Menu by James Sandlin
+ Coded By: James Sandlin
+ Date: 08/30/2004
+*/
+body 
+{
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+    align: center;
+    background-color: #999999;
+}
+
+div.mmBody
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 50px;
+    width: 800px;
+    z-index: 5;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+}
+div.mmCategory
+{
+   position:absolute;
+   height: 20px;
+   top:0px;
+   width: 140px;
+   background-color:#000000;
+   z-index: 5;
+   border-color: #FFFFFF;
+   border-width: 2px;
+   border-style: solid;
+   color:#FFFFFF;
+}
+a.mmCategory:link{color:#FFFFFF;text-decoration:none;font-family:arial;font-size:15px;font-weight:600}
+a.mmCategory:visited{color:#00FF00;text-decoration:none;font-family:arial;font-size:15px;font-weight:600}
+a.mmCategory:hover{color:#FF0000;text-decoration:none;font-family:arial;font-size:15px;font-weight:600}
+
+div.mmSubMenu
+{
+   position:absolute;
+   width:150px;
+   background-color: #000000;
+   z-index: 3;
+   border-color: #FFFFFF;
+   border-width: 2px;
+   border-style: solid;
+   /*color:#FFFFFF;*/
+   padding: 0px;
+}
+div.mmSubMenuCell
+{
+   width: 150px;
+   height: 25px;
+   border-width: 1px;
+   border-color: #000000;
+   background-color: #000000;
+   border-style: solid;
+   padding: 0px;
+}
+a.mmSubMenuCell:link{color:#FFFFFF;text-decoration:none;font-family:arial;font-size:15px}
+a.mmSubMenuCell:visited{color:#00FF00;text-decoration:none;font-family:arial;font-size:15px}
+a.mmSubMenuCell:hover{color:#FF0000;text-decoration:none;font-family:arial;font-size:15px}
+
+div.mmMenu
+{
+   position:absolute;
+   left:50px;
+   width:800px;
+   border:1px;
+   z-index:6;
+   border: 0px solid black;
+}
+
+div.hideMenu
+{
+   position:absolute;
+   left:32px;
+   width:334px;
+   height:1px;
+   border: 0px solid red;
+}

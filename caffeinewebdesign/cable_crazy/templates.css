@@ -1,0 +1,80 @@
+font.blueHeader
+{
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 18pt; 
+	FONT-FAMILY: tahoma;
+	COLOR: mediumslateblue;
+}
+font.blueBody
+{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 12pt; 
+	FONT-FAMILY: tahoma;
+	COLOR: mediumslateblue;
+}
+td
+{
+	border-spacing: 0px;
+	padding: 0px
+}
+tr
+{
+	border-spacing: 0px;
+	padding: 0px
+}
+table
+{
+	border-spacing: 0px;
+	padding: 0px;
+}
+table.body
+{
+	border-style: solid; 
+	border-color: #555555;
+	width: 761px;
+	background-color: #dddddd;
+}
+table.solid {border-style: solid; border-color: #555555}
+table.main{border-left: thin dotted #00FF00;}
+table.nav_bar{
+	/*border-right: thin solid #000000;*/
+	border=0;
+	padding=2px;
+	spacing=5px;
+	width=180px;
+}
+div.form
+{
+	font-weight: 700;
+	color: #000000; 
+	font-family : Arial, Helvetica, sans-serif;
+	align: left;
+}
+textarea.form
+{
+	height: 150px;
+	width: 250px;
+	background : #efefee none;
+	color : #0000;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+input.form
+{
+	width: 250px;
+	background : #efefee none;
+	color : #000000;
+	font-family : Arial, Helvetica, sans-serif;
+}
+select.form
+{
+	width: 250px;
+	background : #efefee none;
+	color : #000000;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+a:link { text-decoration: none; color: #000000; font-weight: 100; }
+a:active { text-decoration: none; color: #3333FF; font-weight: 100;}
+a:visited { text-decoration: none; color: #000000;font-weight: 100; }
+a:hover { text-decoration: bold; color: #197eb5; font-weight: 100;}

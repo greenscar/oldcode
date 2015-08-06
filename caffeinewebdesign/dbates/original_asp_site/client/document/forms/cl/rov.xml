@@ -1,0 +1,162 @@
+<?xml version="1.0"?> 
+<submission>
+	<Recipients>
+		<PrimaryRecipient>
+			<name>team#CSRCommercial</name>
+			<address/>
+		</PrimaryRecipient>
+		<BackupRecipient>
+			<name>role#CLCSR</name> 
+			<address/>
+		</BackupRecipient>
+	</Recipients>
+	<template id="Client-CL-ROV" title="Report of Values" description="Periodic reporting form for value of business property">
+		<page id="0" active="1" title="Initial Questions">
+			<table id="PageTable">    
+        			<tr>
+        				<td colspan="2" id="section">Contact Information</td> 
+        			</tr>
+				<tr>
+					<td align="right" width="180pt">Your Business</td>
+					<td align="left">
+						<input type="text" name="ClientName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/Name</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="180pt">Your Name</td>
+					<td align="left">
+						<input type="text" name="ContactName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactName</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="180pt">Your E-mail Address</td>
+					<td align="left">
+						<input type="text" name="ClientEmail" size="30" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactEmail</refDefault>
+						</input>
+					</td>
+				</tr> 
+				<tr>
+					<td align="right" width="180pt">Your Phone Number</td>
+					<td align="left">
+						<input type="text" name="ContactPhone" size="20" maxlength="25"  required="1">					
+							<refDefault>//ClientTable/ContactPhone</refDefault>
+						</input>
+					</td>
+				</tr>    
+                                <tr>
+                                	<td colspan="2" id="section">Reporting Period</td>
+                                </tr>
+
+                                <tr>
+                                	<td align="right" width="180pt">Values on last day of </td> 
+                                	<td align="left">
+                                		<input type="text" size="2" name="ROVDateMonth" required="1"/>/
+                                		<input type="text" size="4" name="ROVDateYear" required="1" onBlur="Y2K(this.value);"/>
+                                	</td>
+                                </tr>	
+                                
+				<MetaQuestion>
+                			<tr>
+                				<td colspan="2" id="section">Report Options</td> 
+                			</tr>
+        				<tr>
+        					<td align="right" width="180pt">How many contributing policies?</td>
+        					<td align="left">
+        						<input type="text" name="Policies" size="2" maxlength="2" required="1" onBlur="javascript:if (this.value &lt; 1) {this.value=1;}">1</input>
+        					</td>
+        				</tr>   
+        				<tr>
+        					<td align="right" width="180pt">How many locations?</td>
+        					<td align="left">
+        						<input type="text" name="Locations" size="2" maxlength="2" required="1" onBlur="javascript:if (this.value &lt; 1) {this.value=1;}">1</input>
+        					</td>
+        				</tr>
+				</MetaQuestion>
+			</table>
+		</page>
+		<page id="1" title="Risk Information"> 
+
+			<script language="javascript1.2">
+			<!--
+			function SubmitThisPage()
+				{      
+                                CalcROVInsdPPTotal();
+                                CalcROVStockTotal();
+                                CalcROVOthPPTotal();
+				}                 
+
+			document.SpecialPageScripts = 'SubmitThisPage()';
+			//-->
+			</script>  
+  
+
+                        <table id="PageTable" border="0" cellspacing="0">   
+                                <tr>
+                                	<td colspan="5" id="section">Contributing Policies</td>
+                                </tr>                                             
+        			<tr>
+        				<td colspan="2" align="center">Policy Company</td> 
+        				<td colspan="3" align="center">Policy Number</td>
+        			</tr>
+
+                        <repeat>
+                        	<Iterations><refX>//input[@name='Policies']</refX></Iterations>
+                        	<RepeatTemplate>
+                        		<RepeatInstance>
+                        			<tr>
+                        				<td colspan="2" align="center"><input type="text" size="30" required="1" name="ROVPolicy"/></td>
+                        				<td colspan="3" align="center"><input type="text" size="30" required="1" name="ROVCompany"/></td>
+                        			</tr>
+                        		</RepeatInstance>
+                        	</RepeatTemplate>
+                        </repeat>	 
+ 
+                                <tr>
+                                	<td colspan="5" id="section">Locations</td>
+                                </tr>
+                                <tr align="center">
+                                        <td>Address</td>
+                                        <td>Personal Property incl. Stock</td>
+                                        <td>Stock Only</td>
+                                        <td>Personal Property of Others</td>
+                                        <td>Limit of Liability for all Contributing Insurance</td>
+                                </tr> 
+                        <repeat> 
+                        	<Iterations><refX>//*[@name='Locations']</refX></Iterations>
+                        	<RepeatTemplate>
+                        		<RepeatInstance>
+                        			<tr align="center">
+                                                        <td><input type="text" size="25" name="ROVLocationAddress" required="1"/></td>
+                                                        <td><input type="text" size="7" name="ROVInsdPP" required="1"/></td>
+                                                        <td><input type="text" size="7" name="ROVStock" required="1"/></td>
+                                                        <td><input type="text" size="7" name="ROVOthPP" required="1"/></td>
+                                                        <td><input type="text" size="9" name="ROVLiab" required="1"/></td>
+                        			</tr> 
+                        		</RepeatInstance>
+                        	</RepeatTemplate>
+                        </repeat> 
+                                <tr id="subheading">
+                                	<td align="right">Totals</td>
+                                        <td align="center">
+						<input type="text" id="AutoTotal" size="7" name="ROVInsdPPTotal" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcROVInsdPPTotal" target="ROVInsdPPTotal">SumColumn('ROVInsdPP')</function>
+					</td>
+                                        <td align="center">
+						<input type="text" id="AutoTotal" size="7" name="ROVStockTotal" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcROVStockTotal" target="ROVStockTotal">SumColumn('ROVStock')</function>
+					</td>
+                                        <td align="center">
+						<input type="text" id="AutoTotal" size="7" name="ROVOthPPTotal" onFocus="javascript:SubmitThisPage();"/>
+						<function name="CalcROVOthPPTotal" target="ROVOthPPTotal">SumColumn('ROVOthPP')</function>
+					</td>
+                                	<td/>
+                                </tr>
+        		</table> 
+        	</page>
+        </template>
+</submission>

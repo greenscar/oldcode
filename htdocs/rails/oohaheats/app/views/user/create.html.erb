@@ -1,0 +1,16 @@
+<h1>Create</h1>
+
+<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+<% form_tag :action => 'create' do %>
+   <div>
+      <label for="user_name">Name</label>:
+      <%= text_field(:user, :name, :size => 10)%>
+   </div>
+   <div>
+      <label for="user_name">Password</label>:
+      <%= password_field(:user, :password, :size=>10)%>
+   </div>
+   <%= submit_tag "Create"%>
+<% end %> 
+

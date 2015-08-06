@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Quinn;Joe
+FN:Joe Quinn
+ORG:Meyers Nave;Litigation
+TITLE:Principal
+TEL;WORK;VOICE:(510) 808-2000
+TEL;WORK;FAX:(510) 444-1108
+ADR;WORK:;;555 12th Street, Suite 1500;Oakland;CA;94607;United States of America
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:555 12th Street, Suite 1500=0D=0AOakland, CA 94607=0D=0AUnited States of Ame=
+rica
+URL;WORK:http://www.meyersnave.com
+EMAIL;PREF;INTERNET:jquinn@meyersnave.com
+REV:20060516T191410Z
+END:VCARD

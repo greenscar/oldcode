@@ -1,0 +1,3503 @@
+14-03-2007 01:35 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 12<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 9<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 10<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 24<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 26<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 14<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 14<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 12<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 16<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 7<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => ------------------id = 2<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:35 => Rep->logValues()<br>
+14-03-2007 01:35 => rep_list size = 40<br>
+14-03-2007 01:35 => ------------------Colleen<br>
+14-03-2007 01:35 => ------------------Jeremy<br>
+14-03-2007 01:35 => ------------------Janna<br>
+14-03-2007 01:35 => ------------------Joanna<br>
+14-03-2007 01:35 => ------------------Ellen<br>
+14-03-2007 01:35 => ------------------Mike<br>
+14-03-2007 01:35 => ------------------Susan<br>
+14-03-2007 01:35 => ------------------Steven<br>
+14-03-2007 01:35 => ------------------Julie<br>
+14-03-2007 01:35 => ------------------Jeff<br>
+14-03-2007 01:35 => ------------------Susan<br>
+14-03-2007 01:35 => ------------------Diane<br>
+14-03-2007 01:35 => ------------------Terri<br>
+14-03-2007 01:35 => ------------------Katrina<br>
+14-03-2007 01:35 => ------------------Julie<br>
+14-03-2007 01:35 => ------------------Debra<br>
+14-03-2007 01:35 => ------------------David<br>
+14-03-2007 01:35 => ------------------Bill<br>
+14-03-2007 01:35 => ------------------Dan<br>
+14-03-2007 01:35 => ------------------Melody<br>
+14-03-2007 01:35 => ------------------Alexandra<br>
+14-03-2007 01:35 => ------------------Stacey<br>
+14-03-2007 01:35 => ------------------Andy<br>
+14-03-2007 01:35 => ------------------Sean<br>
+14-03-2007 01:35 => ------------------Amy<br>
+14-03-2007 01:35 => ------------------Julie<br>
+14-03-2007 01:35 => ------------------Nancy<br>
+14-03-2007 01:35 => ------------------Christen<br>
+14-03-2007 01:35 => ------------------Bill<br>
+14-03-2007 01:35 => ------------------Greg<br>
+14-03-2007 01:35 => ------------------Dick<br>
+14-03-2007 01:35 => ------------------Charlotte<br>
+14-03-2007 01:35 => ------------------Evelyn<br>
+14-03-2007 01:35 => ------------------Brea<br>
+14-03-2007 01:35 => ------------------Alison<br>
+14-03-2007 01:35 => ------------------Heather<br>
+14-03-2007 01:35 => ------------------Bob<br>
+14-03-2007 01:35 => ------------------Lori<br>
+14-03-2007 01:35 => ------------------Jake<br>
+14-03-2007 01:35 => ------------------Ingo<br>
+14-03-2007 01:37 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 4<br>
+14-03-2007 01:37 => ------------------id = 12<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 4<br>
+14-03-2007 01:37 => ------------------id = 9<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 2<br>
+14-03-2007 01:37 => ------------------id = 10<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 4<br>
+14-03-2007 01:37 => ------------------id = 24<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 3<br>
+14-03-2007 01:37 => ------------------id = 26<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 1<br>
+14-03-2007 01:37 => ------------------id = 14<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 1<br>
+14-03-2007 01:37 => ------------------id = 14<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 3<br>
+14-03-2007 01:37 => ------------------id = 12<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 4<br>
+14-03-2007 01:37 => ------------------id = 16<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 2<br>
+14-03-2007 01:37 => ------------------id = 7<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 1<br>
+14-03-2007 01:37 => ------------------id = 2<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:37 => COUNT = 0<br>
+14-03-2007 01:37 => DONE<br>
+14-03-2007 01:37 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:37 => Rep->logValues()<br>
+14-03-2007 01:37 => rep_list size = 40<br>
+14-03-2007 01:37 => ------------------Colleen<br>
+14-03-2007 01:37 => ------------------Jeremy<br>
+14-03-2007 01:37 => ------------------Janna<br>
+14-03-2007 01:37 => ------------------Joanna<br>
+14-03-2007 01:37 => ------------------Ellen<br>
+14-03-2007 01:37 => ------------------Mike<br>
+14-03-2007 01:37 => ------------------Susan<br>
+14-03-2007 01:37 => ------------------Steven<br>
+14-03-2007 01:37 => ------------------Julie<br>
+14-03-2007 01:37 => ------------------Jeff<br>
+14-03-2007 01:37 => ------------------Susan<br>
+14-03-2007 01:37 => ------------------Diane<br>
+14-03-2007 01:37 => ------------------Terri<br>
+14-03-2007 01:37 => ------------------Katrina<br>
+14-03-2007 01:37 => ------------------Julie<br>
+14-03-2007 01:37 => ------------------Debra<br>
+14-03-2007 01:37 => ------------------David<br>
+14-03-2007 01:37 => ------------------Bill<br>
+14-03-2007 01:37 => ------------------Dan<br>
+14-03-2007 01:37 => ------------------Melody<br>
+14-03-2007 01:37 => ------------------Alexandra<br>
+14-03-2007 01:37 => ------------------Stacey<br>
+14-03-2007 01:37 => ------------------Andy<br>
+14-03-2007 01:37 => ------------------Sean<br>
+14-03-2007 01:37 => ------------------Amy<br>
+14-03-2007 01:37 => ------------------Julie<br>
+14-03-2007 01:37 => ------------------Nancy<br>
+14-03-2007 01:37 => ------------------Christen<br>
+14-03-2007 01:37 => ------------------Bill<br>
+14-03-2007 01:37 => ------------------Greg<br>
+14-03-2007 01:37 => ------------------Dick<br>
+14-03-2007 01:37 => ------------------Charlotte<br>
+14-03-2007 01:37 => ------------------Evelyn<br>
+14-03-2007 01:37 => ------------------Brea<br>
+14-03-2007 01:37 => ------------------Alison<br>
+14-03-2007 01:37 => ------------------Heather<br>
+14-03-2007 01:37 => ------------------Bob<br>
+14-03-2007 01:37 => ------------------Lori<br>
+14-03-2007 01:37 => ------------------Jake<br>
+14-03-2007 01:37 => ------------------Ingo<br>
+14-03-2007 01:38 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 4<br>
+14-03-2007 01:38 => ------------------id = 12<br>
+14-03-2007 01:38 => ------------------id = 6<br>
+14-03-2007 01:38 => ------------------id = 5<br>
+14-03-2007 01:38 => ------------------id = 4<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 4<br>
+14-03-2007 01:38 => ------------------id = 9<br>
+14-03-2007 01:38 => ------------------id = 8<br>
+14-03-2007 01:38 => ------------------id = 7<br>
+14-03-2007 01:38 => ------------------id = 10<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 2<br>
+14-03-2007 01:38 => ------------------id = 10<br>
+14-03-2007 01:38 => ------------------id = 11<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 4<br>
+14-03-2007 01:38 => ------------------id = 24<br>
+14-03-2007 01:38 => ------------------id = 25<br>
+14-03-2007 01:38 => ------------------id = 10<br>
+14-03-2007 01:38 => ------------------id = 3<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 3<br>
+14-03-2007 01:38 => ------------------id = 26<br>
+14-03-2007 01:38 => ------------------id = 13<br>
+14-03-2007 01:38 => ------------------id = 7<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 1<br>
+14-03-2007 01:38 => ------------------id = 14<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 1<br>
+14-03-2007 01:38 => ------------------id = 14<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 3<br>
+14-03-2007 01:38 => ------------------id = 12<br>
+14-03-2007 01:38 => ------------------id = 6<br>
+14-03-2007 01:38 => ------------------id = 4<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 4<br>
+14-03-2007 01:38 => ------------------id = 16<br>
+14-03-2007 01:38 => ------------------id = 13<br>
+14-03-2007 01:38 => ------------------id = 7<br>
+14-03-2007 01:38 => ------------------id = 17<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 2<br>
+14-03-2007 01:38 => ------------------id = 7<br>
+14-03-2007 01:38 => ------------------id = 2<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 0<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:38 => COUNT = 1<br>
+14-03-2007 01:38 => ------------------id = 2<br>
+14-03-2007 01:38 => DONE<br>
+14-03-2007 01:38 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:38 => Rep->logValues()<br>
+14-03-2007 01:38 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:39 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:39 => COUNT = 0<br>
+14-03-2007 01:39 => DONE<br>
+14-03-2007 01:39 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:39 => Rep->logValues()<br>
+14-03-2007 01:39 => rep_list size = 40<br>
+14-03-2007 01:39 => ------------------Colleen<br>
+14-03-2007 01:39 => ------------------Jeremy<br>
+14-03-2007 01:39 => ------------------Janna<br>
+14-03-2007 01:39 => ------------------Joanna<br>
+14-03-2007 01:39 => ------------------Ellen<br>
+14-03-2007 01:39 => ------------------Mike<br>
+14-03-2007 01:39 => ------------------Susan<br>
+14-03-2007 01:39 => ------------------Steven<br>
+14-03-2007 01:39 => ------------------Julie<br>
+14-03-2007 01:39 => ------------------Jeff<br>
+14-03-2007 01:39 => ------------------Susan<br>
+14-03-2007 01:39 => ------------------Diane<br>
+14-03-2007 01:39 => ------------------Terri<br>
+14-03-2007 01:39 => ------------------Katrina<br>
+14-03-2007 01:39 => ------------------Julie<br>
+14-03-2007 01:39 => ------------------Debra<br>
+14-03-2007 01:39 => ------------------David<br>
+14-03-2007 01:39 => ------------------Bill<br>
+14-03-2007 01:39 => ------------------Dan<br>
+14-03-2007 01:39 => ------------------Melody<br>
+14-03-2007 01:39 => ------------------Alexandra<br>
+14-03-2007 01:39 => ------------------Stacey<br>
+14-03-2007 01:39 => ------------------Andy<br>
+14-03-2007 01:39 => ------------------Sean<br>
+14-03-2007 01:39 => ------------------Amy<br>
+14-03-2007 01:39 => ------------------Julie<br>
+14-03-2007 01:39 => ------------------Nancy<br>
+14-03-2007 01:39 => ------------------Christen<br>
+14-03-2007 01:39 => ------------------Bill<br>
+14-03-2007 01:39 => ------------------Greg<br>
+14-03-2007 01:39 => ------------------Dick<br>
+14-03-2007 01:39 => ------------------Charlotte<br>
+14-03-2007 01:39 => ------------------Evelyn<br>
+14-03-2007 01:39 => ------------------Brea<br>
+14-03-2007 01:39 => ------------------Alison<br>
+14-03-2007 01:39 => ------------------Heather<br>
+14-03-2007 01:39 => ------------------Bob<br>
+14-03-2007 01:39 => ------------------Lori<br>
+14-03-2007 01:39 => ------------------Jake<br>
+14-03-2007 01:39 => ------------------Ingo<br>
+14-03-2007 01:41 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:41 => SELECT S.NAME, S.SPECIALTY_ID FROM SPECIALTY_DEF S WHERE S.SPECIALTY_ID = (SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1)<br>
+14-03-2007 01:41 => Rep->logValues()<br>
+14-03-2007 01:41 => rep_list size = 40<br>
+14-03-2007 01:41 => ------------------Colleen<br>
+14-03-2007 01:41 => ------------------Jeremy<br>
+14-03-2007 01:41 => ------------------Janna<br>
+14-03-2007 01:41 => ------------------Joanna<br>
+14-03-2007 01:41 => ------------------Ellen<br>
+14-03-2007 01:41 => ------------------Mike<br>
+14-03-2007 01:41 => ------------------Susan<br>
+14-03-2007 01:41 => ------------------Steven<br>
+14-03-2007 01:41 => ------------------Julie<br>
+14-03-2007 01:41 => ------------------Jeff<br>
+14-03-2007 01:41 => ------------------Susan<br>
+14-03-2007 01:41 => ------------------Diane<br>
+14-03-2007 01:41 => ------------------Terri<br>
+14-03-2007 01:41 => ------------------Katrina<br>
+14-03-2007 01:41 => ------------------Julie<br>
+14-03-2007 01:41 => ------------------Debra<br>
+14-03-2007 01:41 => ------------------David<br>
+14-03-2007 01:41 => ------------------Bill<br>
+14-03-2007 01:41 => ------------------Dan<br>
+14-03-2007 01:41 => ------------------Melody<br>
+14-03-2007 01:41 => ------------------Alexandra<br>
+14-03-2007 01:41 => ------------------Stacey<br>
+14-03-2007 01:41 => ------------------Andy<br>
+14-03-2007 01:41 => ------------------Sean<br>
+14-03-2007 01:41 => ------------------Amy<br>
+14-03-2007 01:41 => ------------------Julie<br>
+14-03-2007 01:41 => ------------------Nancy<br>
+14-03-2007 01:41 => ------------------Christen<br>
+14-03-2007 01:41 => ------------------Bill<br>
+14-03-2007 01:41 => ------------------Greg<br>
+14-03-2007 01:41 => ------------------Dick<br>
+14-03-2007 01:41 => ------------------Charlotte<br>
+14-03-2007 01:41 => ------------------Evelyn<br>
+14-03-2007 01:41 => ------------------Brea<br>
+14-03-2007 01:41 => ------------------Alison<br>
+14-03-2007 01:41 => ------------------Heather<br>
+14-03-2007 01:41 => ------------------Bob<br>
+14-03-2007 01:41 => ------------------Lori<br>
+14-03-2007 01:41 => ------------------Jake<br>
+14-03-2007 01:41 => ------------------Ingo<br>
+14-03-2007 01:47 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 4<br>
+14-03-2007 01:47 => ------------------id = 12<br>
+14-03-2007 01:47 => ------------------id = 6<br>
+14-03-2007 01:47 => ------------------id = 5<br>
+14-03-2007 01:47 => ------------------id = 4<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 4<br>
+14-03-2007 01:47 => ------------------id = 9<br>
+14-03-2007 01:47 => ------------------id = 8<br>
+14-03-2007 01:47 => ------------------id = 7<br>
+14-03-2007 01:47 => ------------------id = 10<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 2<br>
+14-03-2007 01:47 => ------------------id = 10<br>
+14-03-2007 01:47 => ------------------id = 11<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 4<br>
+14-03-2007 01:47 => ------------------id = 24<br>
+14-03-2007 01:47 => ------------------id = 25<br>
+14-03-2007 01:47 => ------------------id = 10<br>
+14-03-2007 01:47 => ------------------id = 3<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 3<br>
+14-03-2007 01:47 => ------------------id = 26<br>
+14-03-2007 01:47 => ------------------id = 13<br>
+14-03-2007 01:47 => ------------------id = 7<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 1<br>
+14-03-2007 01:47 => ------------------id = 14<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 1<br>
+14-03-2007 01:47 => ------------------id = 14<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 3<br>
+14-03-2007 01:47 => ------------------id = 12<br>
+14-03-2007 01:47 => ------------------id = 6<br>
+14-03-2007 01:47 => ------------------id = 4<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 4<br>
+14-03-2007 01:47 => ------------------id = 16<br>
+14-03-2007 01:47 => ------------------id = 13<br>
+14-03-2007 01:47 => ------------------id = 7<br>
+14-03-2007 01:47 => ------------------id = 17<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 2<br>
+14-03-2007 01:47 => ------------------id = 7<br>
+14-03-2007 01:47 => ------------------id = 2<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:47 => COUNT = 0<br>
+14-03-2007 01:47 => DONE<br>
+14-03-2007 01:47 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:47 => Rep->logValues()<br>
+14-03-2007 01:47 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 1<br>
+14-03-2007 01:48 => ------------------id = 2<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => rep_list size = 40<br>
+14-03-2007 01:48 => ------------------Colleen<br>
+14-03-2007 01:48 => ------------------Jeremy<br>
+14-03-2007 01:48 => ------------------Janna<br>
+14-03-2007 01:48 => ------------------Joanna<br>
+14-03-2007 01:48 => ------------------Ellen<br>
+14-03-2007 01:48 => ------------------Mike<br>
+14-03-2007 01:48 => ------------------Susan<br>
+14-03-2007 01:48 => ------------------Steven<br>
+14-03-2007 01:48 => ------------------Julie<br>
+14-03-2007 01:48 => ------------------Jeff<br>
+14-03-2007 01:48 => ------------------Susan<br>
+14-03-2007 01:48 => ------------------Diane<br>
+14-03-2007 01:48 => ------------------Terri<br>
+14-03-2007 01:48 => ------------------Katrina<br>
+14-03-2007 01:48 => ------------------Julie<br>
+14-03-2007 01:48 => ------------------Debra<br>
+14-03-2007 01:48 => ------------------David<br>
+14-03-2007 01:48 => ------------------Bill<br>
+14-03-2007 01:48 => ------------------Dan<br>
+14-03-2007 01:48 => ------------------Melody<br>
+14-03-2007 01:48 => ------------------Alexandra<br>
+14-03-2007 01:48 => ------------------Stacey<br>
+14-03-2007 01:48 => ------------------Andy<br>
+14-03-2007 01:48 => ------------------Sean<br>
+14-03-2007 01:48 => ------------------Amy<br>
+14-03-2007 01:48 => ------------------Julie<br>
+14-03-2007 01:48 => ------------------Nancy<br>
+14-03-2007 01:48 => ------------------Christen<br>
+14-03-2007 01:48 => ------------------Bill<br>
+14-03-2007 01:48 => ------------------Greg<br>
+14-03-2007 01:48 => ------------------Dick<br>
+14-03-2007 01:48 => ------------------Charlotte<br>
+14-03-2007 01:48 => ------------------Evelyn<br>
+14-03-2007 01:48 => ------------------Brea<br>
+14-03-2007 01:48 => ------------------Alison<br>
+14-03-2007 01:48 => ------------------Heather<br>
+14-03-2007 01:48 => ------------------Bob<br>
+14-03-2007 01:48 => ------------------Lori<br>
+14-03-2007 01:48 => ------------------Jake<br>
+14-03-2007 01:48 => ------------------Ingo<br>
+14-03-2007 01:48 => User_Public->dbLoadRepList() START<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 4<br>
+14-03-2007 01:48 => ------------------id = 12<br>
+14-03-2007 01:48 => ------------------id = 6<br>
+14-03-2007 01:48 => ------------------id = 5<br>
+14-03-2007 01:48 => ------------------id = 4<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 4<br>
+14-03-2007 01:48 => ------------------id = 9<br>
+14-03-2007 01:48 => ------------------id = 8<br>
+14-03-2007 01:48 => ------------------id = 7<br>
+14-03-2007 01:48 => ------------------id = 10<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 2<br>
+14-03-2007 01:48 => ------------------id = 10<br>
+14-03-2007 01:48 => ------------------id = 11<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 4<br>
+14-03-2007 01:48 => ------------------id = 24<br>
+14-03-2007 01:48 => ------------------id = 25<br>
+14-03-2007 01:48 => ------------------id = 10<br>
+14-03-2007 01:48 => ------------------id = 3<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 3<br>
+14-03-2007 01:48 => ------------------id = 26<br>
+14-03-2007 01:48 => ------------------id = 13<br>
+14-03-2007 01:48 => ------------------id = 7<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 1<br>
+14-03-2007 01:48 => ------------------id = 14<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 1<br>
+14-03-2007 01:48 => ------------------id = 14<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 3<br>
+14-03-2007 01:48 => ------------------id = 12<br>
+14-03-2007 01:48 => ------------------id = 6<br>
+14-03-2007 01:48 => ------------------id = 4<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 4<br>
+14-03-2007 01:48 => ------------------id = 16<br>
+14-03-2007 01:48 => ------------------id = 13<br>
+14-03-2007 01:48 => ------------------id = 7<br>
+14-03-2007 01:48 => ------------------id = 17<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 2<br>
+14-03-2007 01:48 => ------------------id = 7<br>
+14-03-2007 01:48 => ------------------id = 2<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 1<br>
+14-03-2007 01:48 => ------------------id = 2<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 01:48 => COUNT = 0<br>
+14-03-2007 01:48 => DONE<br>
+14-03-2007 01:48 => Department->dbLoad(dbmgr)<br>
+14-03-2007 01:48 => Rep->logValues()<br>
+14-03-2007 01:48 => rep_list size = 40<br>
+14-03-2007 01:48 => ------------------Colleen<br>
+14-03-2007 01:48 => ------------------Jeremy<br>
+14-03-2007 01:48 => ------------------Janna<br>
+14-03-2007 01:48 => ------------------Joanna<br>
+14-03-2007 01:48 => ------------------Ellen<br>
+14-03-2007 01:48 => ------------------Mike<br>
+14-03-2007 01:48 => ------------------Susan<br>
+14-03-2007 20:11 => USER HAS NOT AGREED. LOG THEM OUT.<br>
+14-03-2007 20:11 => empty(_POST['id'])<br>
+14-03-2007 20:11 => Display login form<br>
+14-03-2007 20:11 => isset(_POST['id'])<br>
+14-03-2007 20:11 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 20:11 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 20:11 => empty(_POST['id'])<br>
+14-03-2007 20:11 => Display login form<br>
+14-03-2007 20:12 => isset(_POST['id'])<br>
+14-03-2007 20:12 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 20:12 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 20:12 => empty(_POST['id'])<br>
+14-03-2007 20:12 => Display login form<br>
+14-03-2007 20:26 => User_Public->dbLoadRepList() START<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 4<br>
+14-03-2007 20:26 => ------------------id = 12<br>
+14-03-2007 20:26 => ------------------id = 6<br>
+14-03-2007 20:26 => ------------------id = 5<br>
+14-03-2007 20:26 => ------------------id = 4<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 4<br>
+14-03-2007 20:26 => ------------------id = 9<br>
+14-03-2007 20:26 => ------------------id = 8<br>
+14-03-2007 20:26 => ------------------id = 7<br>
+14-03-2007 20:26 => ------------------id = 10<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 2<br>
+14-03-2007 20:26 => ------------------id = 10<br>
+14-03-2007 20:26 => ------------------id = 11<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 4<br>
+14-03-2007 20:26 => ------------------id = 24<br>
+14-03-2007 20:26 => ------------------id = 25<br>
+14-03-2007 20:26 => ------------------id = 10<br>
+14-03-2007 20:26 => ------------------id = 3<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 3<br>
+14-03-2007 20:26 => ------------------id = 26<br>
+14-03-2007 20:26 => ------------------id = 13<br>
+14-03-2007 20:26 => ------------------id = 7<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 1<br>
+14-03-2007 20:26 => ------------------id = 14<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 1<br>
+14-03-2007 20:26 => ------------------id = 14<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 3<br>
+14-03-2007 20:26 => ------------------id = 12<br>
+14-03-2007 20:26 => ------------------id = 6<br>
+14-03-2007 20:26 => ------------------id = 4<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 4<br>
+14-03-2007 20:26 => ------------------id = 16<br>
+14-03-2007 20:26 => ------------------id = 13<br>
+14-03-2007 20:26 => ------------------id = 7<br>
+14-03-2007 20:26 => ------------------id = 17<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 2<br>
+14-03-2007 20:26 => ------------------id = 7<br>
+14-03-2007 20:26 => ------------------id = 2<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 1<br>
+14-03-2007 20:26 => ------------------id = 2<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 20:26 => COUNT = 0<br>
+14-03-2007 20:26 => DONE<br>
+14-03-2007 20:26 => Department->dbLoad(dbmgr)<br>
+14-03-2007 20:26 => Rep->logValues()<br>
+14-03-2007 20:26 => rep_list size = 40<br>
+14-03-2007 20:26 => ------------------Colleen<br>
+14-03-2007 20:26 => ------------------Jeremy<br>
+14-03-2007 20:26 => ------------------Janna<br>
+14-03-2007 20:26 => ------------------Joanna<br>
+14-03-2007 20:26 => ------------------Ellen<br>
+14-03-2007 20:26 => ------------------Mike<br>
+14-03-2007 20:26 => ------------------Susan<br>
+14-03-2007 20:26 => ------------------Steven<br>
+14-03-2007 20:26 => ------------------Julie<br>
+14-03-2007 20:26 => ------------------Jeff<br>
+14-03-2007 20:26 => ------------------Susan<br>
+14-03-2007 20:26 => ------------------Diane<br>
+14-03-2007 20:26 => ------------------Terri<br>
+14-03-2007 20:26 => ------------------Katrina<br>
+14-03-2007 20:26 => ------------------Julie<br>
+14-03-2007 20:26 => ------------------Debra<br>
+14-03-2007 20:26 => ------------------David<br>
+14-03-2007 20:26 => ------------------Bill<br>
+14-03-2007 20:26 => ------------------Dan<br>
+14-03-2007 20:26 => ------------------Melody<br>
+14-03-2007 20:26 => ------------------Alexandra<br>
+14-03-2007 20:26 => ------------------Stacey<br>
+14-03-2007 20:26 => ------------------Andy<br>
+14-03-2007 20:26 => ------------------Sean<br>
+14-03-2007 20:26 => ------------------Amy<br>
+14-03-2007 20:26 => ------------------Julie<br>
+14-03-2007 20:26 => ------------------Nancy<br>
+14-03-2007 20:26 => ------------------Christen<br>
+14-03-2007 20:26 => ------------------Bill<br>
+14-03-2007 20:26 => ------------------Greg<br>
+14-03-2007 20:26 => ------------------Dick<br>
+14-03-2007 20:26 => ------------------Charlotte<br>
+14-03-2007 20:26 => ------------------Evelyn<br>
+14-03-2007 20:26 => ------------------Brea<br>
+14-03-2007 20:26 => ------------------Alison<br>
+14-03-2007 20:26 => ------------------Heather<br>
+14-03-2007 20:26 => ------------------Bob<br>
+14-03-2007 20:26 => ------------------Lori<br>
+14-03-2007 20:26 => ------------------Jake<br>
+14-03-2007 20:26 => ------------------Ingo<br>
+14-03-2007 20:26 => empty(_POST['id'])<br>
+14-03-2007 20:26 => Display login form<br>
+14-03-2007 20:26 => isset(_POST['id'])<br>
+14-03-2007 20:26 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 20:26 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 20:26 => empty(_POST['id'])<br>
+14-03-2007 20:26 => Display login form<br>
+14-03-2007 20:26 => isset(_POST['id'])<br>
+14-03-2007 20:26 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 20:26 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 20:26 => empty(_POST['id'])<br>
+14-03-2007 20:26 => Display login form<br>
+14-03-2007 20:26 => isset(_POST['id'])<br>
+14-03-2007 20:26 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 20:26 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 20:26 => empty(_POST['id'])<br>
+14-03-2007 20:26 => Display login form<br>
+14-03-2007 20:27 => isset(_POST['id'])<br>
+14-03-2007 20:27 => CREATING NEW CLIENT<br>
+14-03-2007 20:27 => Client->dbLoad(dbmgr)<br>
+14-03-2007 20:27 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 20:27 => Forwarding user to https://cerberus/client/index.php?UID=test<br>
+14-03-2007 22:00 => empty(_POST['id'])<br>
+14-03-2007 22:00 => Display login form<br>
+14-03-2007 22:00 => User_Public->dbLoadRepList() START<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 4<br>
+14-03-2007 22:00 => ------------------id = 12<br>
+14-03-2007 22:00 => ------------------id = 6<br>
+14-03-2007 22:00 => ------------------id = 5<br>
+14-03-2007 22:00 => ------------------id = 4<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2180 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 4<br>
+14-03-2007 22:00 => ------------------id = 9<br>
+14-03-2007 22:00 => ------------------id = 8<br>
+14-03-2007 22:00 => ------------------id = 7<br>
+14-03-2007 22:00 => ------------------id = 10<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2220 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 2<br>
+14-03-2007 22:00 => ------------------id = 10<br>
+14-03-2007 22:00 => ------------------id = 11<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2198 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2218 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2216 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 4<br>
+14-03-2007 22:00 => ------------------id = 24<br>
+14-03-2007 22:00 => ------------------id = 25<br>
+14-03-2007 22:00 => ------------------id = 10<br>
+14-03-2007 22:00 => ------------------id = 3<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2230 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2224 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2226 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2229 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2181 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2168 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 3<br>
+14-03-2007 22:00 => ------------------id = 26<br>
+14-03-2007 22:00 => ------------------id = 13<br>
+14-03-2007 22:00 => ------------------id = 7<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 1<br>
+14-03-2007 22:00 => ------------------id = 14<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2223 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2225 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2210 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2217 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2200 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 1<br>
+14-03-2007 22:00 => ------------------id = 14<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2215 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2176 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2222 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2152 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 3<br>
+14-03-2007 22:00 => ------------------id = 12<br>
+14-03-2007 22:00 => ------------------id = 6<br>
+14-03-2007 22:00 => ------------------id = 4<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 4<br>
+14-03-2007 22:00 => ------------------id = 16<br>
+14-03-2007 22:00 => ------------------id = 13<br>
+14-03-2007 22:00 => ------------------id = 7<br>
+14-03-2007 22:00 => ------------------id = 17<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2164 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 2<br>
+14-03-2007 22:00 => ------------------id = 7<br>
+14-03-2007 22:00 => ------------------id = 2<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2151 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2209 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2150 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2145 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2227 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2196 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2231 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2232 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 1<br>
+14-03-2007 22:00 => ------------------id = 2<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2166 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:00 => COUNT = 0<br>
+14-03-2007 22:00 => DONE<br>
+14-03-2007 22:00 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:00 => Rep->logValues()<br>
+14-03-2007 22:00 => rep_list size = 40<br>
+14-03-2007 22:00 => ------------------Colleen<br>
+14-03-2007 22:00 => ------------------Jeremy<br>
+14-03-2007 22:00 => ------------------Janna<br>
+14-03-2007 22:00 => ------------------Joanna<br>
+14-03-2007 22:00 => ------------------Ellen<br>
+14-03-2007 22:00 => ------------------Mike<br>
+14-03-2007 22:00 => ------------------Susan<br>
+14-03-2007 22:00 => ------------------Steven<br>
+14-03-2007 22:00 => ------------------Julie<br>
+14-03-2007 22:00 => ------------------Jeff<br>
+14-03-2007 22:00 => ------------------Susan<br>
+14-03-2007 22:00 => ------------------Diane<br>
+14-03-2007 22:00 => ------------------Terri<br>
+14-03-2007 22:00 => ------------------Katrina<br>
+14-03-2007 22:00 => ------------------Julie<br>
+14-03-2007 22:00 => ------------------Debra<br>
+14-03-2007 22:00 => ------------------David<br>
+14-03-2007 22:00 => ------------------Bill<br>
+14-03-2007 22:00 => ------------------Dan<br>
+14-03-2007 22:00 => ------------------Melody<br>
+14-03-2007 22:00 => ------------------Alexandra<br>
+14-03-2007 22:00 => ------------------Stacey<br>
+14-03-2007 22:00 => ------------------Andy<br>
+14-03-2007 22:00 => ------------------Sean<br>
+14-03-2007 22:00 => ------------------Amy<br>
+14-03-2007 22:00 => ------------------Julie<br>
+14-03-2007 22:00 => ------------------Nancy<br>
+14-03-2007 22:00 => ------------------Christen<br>
+14-03-2007 22:00 => ------------------Bill<br>
+14-03-2007 22:00 => ------------------Greg<br>
+14-03-2007 22:00 => ------------------Dick<br>
+14-03-2007 22:00 => ------------------Charlotte<br>
+14-03-2007 22:00 => ------------------Evelyn<br>
+14-03-2007 22:00 => ------------------Brea<br>
+14-03-2007 22:00 => ------------------Alison<br>
+14-03-2007 22:00 => ------------------Heather<br>
+14-03-2007 22:00 => ------------------Bob<br>
+14-03-2007 22:00 => ------------------Lori<br>
+14-03-2007 22:00 => ------------------Jake<br>
+14-03-2007 22:00 => ------------------Ingo<br>
+14-03-2007 22:01 => empty(_POST['id'])<br>
+14-03-2007 22:01 => Display login form<br>
+14-03-2007 22:01 => isset(_POST['id'])<br>
+14-03-2007 22:01 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 22:01 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 22:01 => empty(_POST['id'])<br>
+14-03-2007 22:01 => Display login form<br>
+14-03-2007 22:01 => isset(_POST['id'])<br>
+14-03-2007 22:01 => CREATING NEW CLIENT<br>
+14-03-2007 22:01 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:01 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 22:01 => Forwarding user to https://cerberus/client/index.php?UID=test<br>
+14-03-2007 22:03 => isset(_SESSION['user'])<br>
+14-03-2007 22:03 => Forwarding user to https://cerberus/client/index.php?UID=8<br>
+14-03-2007 22:03 => -------------<br>
+14-03-2007 22:03 => -------------<br>
+14-03-2007 22:03 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:03 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:03 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:03 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:03 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2205 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:03 => COUNT = 0<br>
+14-03-2007 22:03 => DONE<br>
+14-03-2007 22:03 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:03 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:03 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:03 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:03 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:03 => -----Service_Member-----
+client_id = 
+title = Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:03 => Rep->logValues()<br>
+14-03-2007 22:03 => ---------------
+<br>
+14-03-2007 22:03 => -------------<br>
+14-03-2007 22:03 => -------------<br>
+14-03-2007 22:03 => USER HAS NOT AGREED. LOG THEM OUT.<br>
+14-03-2007 22:03 => empty(_POST['id'])<br>
+14-03-2007 22:03 => Display login form<br>
+14-03-2007 22:04 => isset(_POST['id'])<br>
+14-03-2007 22:04 => CREATING NEW CLIENT<br>
+14-03-2007 22:04 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 22:04 => Forwarding user to https://cerberus/client/index.php?UID=Paccess<br>
+14-03-2007 22:04 => HAS CUSTOM PAGE BUT NOT BATCH IMAGE PAGE -> FORWARD TO CUSTOM PAGE.<br>
+14-03-2007 22:04 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:04 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:04 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:04 => empty(_POST['id'])<br>
+14-03-2007 22:04 => Display login form<br>
+14-03-2007 22:04 => isset(_POST['id'])<br>
+14-03-2007 22:04 => CREATING NEW CLIENT<br>
+14-03-2007 22:04 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 22:04 => Forwarding user to https://cerberus/client/index.php?UID=Zidell<br>
+14-03-2007 22:04 => HAS CUSTOM PAGE BUT NOT BATCH IMAGE PAGE -> FORWARD TO CUSTOM PAGE.<br>
+14-03-2007 22:04 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:04 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:04 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:04 => COUNT = 4<br>
+14-03-2007 22:04 => ------------------id = 12<br>
+14-03-2007 22:04 => ------------------id = 6<br>
+14-03-2007 22:04 => ------------------id = 5<br>
+14-03-2007 22:04 => ------------------id = 4<br>
+14-03-2007 22:04 => DONE<br>
+14-03-2007 22:04 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:04 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:04 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:04 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:04 => Rep->logValues()<br>
+14-03-2007 22:04 => ---------------
+<br>
+14-03-2007 22:07 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:07 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:07 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:07 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:07 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:07 => COUNT = 4<br>
+14-03-2007 22:07 => ------------------id = 12<br>
+14-03-2007 22:07 => ------------------id = 6<br>
+14-03-2007 22:07 => ------------------id = 5<br>
+14-03-2007 22:07 => ------------------id = 4<br>
+14-03-2007 22:07 => DONE<br>
+14-03-2007 22:07 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:07 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:07 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:07 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:07 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:07 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:07 => Rep->logValues()<br>
+14-03-2007 22:07 => ---------------
+<br>
+14-03-2007 22:08 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:08 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:08 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:08 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:08 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:08 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:09 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:09 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:09 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:09 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:09 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:09 => COUNT = 4<br>
+14-03-2007 22:09 => ------------------id = 12<br>
+14-03-2007 22:09 => ------------------id = 6<br>
+14-03-2007 22:09 => ------------------id = 5<br>
+14-03-2007 22:09 => ------------------id = 4<br>
+14-03-2007 22:09 => DONE<br>
+14-03-2007 22:09 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:09 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:09 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:09 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:09 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:09 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:09 => Rep->logValues()<br>
+14-03-2007 22:09 => ---------------
+<br>
+14-03-2007 22:11 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:11 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:11 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:11 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:11 => rep id = 2174<br>
+14-03-2007 22:11 => rep id = 2207<br>
+14-03-2007 22:11 => rep id = 2195<br>
+14-03-2007 22:11 => rep id = 2199<br>
+14-03-2007 22:11 => rep id = 2185<br>
+14-03-2007 22:11 => rep id = 2159<br>
+14-03-2007 22:11 => rep id = 2183<br>
+14-03-2007 22:11 => rep id = 2182<br>
+14-03-2007 22:11 => rep id = 2149<br>
+14-03-2007 22:11 => rep id = 2221<br>
+14-03-2007 22:11 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:11 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:11 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:11 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:11 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:11 => Rep->logValues()<br>
+14-03-2007 22:11 => ---------------
+<br>
+14-03-2007 22:12 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:12 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:12 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:12 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:12 => rep id = 2174<br>
+14-03-2007 22:12 => rep id = 2207<br>
+14-03-2007 22:12 => rep id = 2195<br>
+14-03-2007 22:12 => rep id = 2199<br>
+14-03-2007 22:12 => rep id = 2185<br>
+14-03-2007 22:12 => rep id = 2159<br>
+14-03-2007 22:12 => rep id = 2183<br>
+14-03-2007 22:12 => rep id = 2182<br>
+14-03-2007 22:12 => rep id = 2149<br>
+14-03-2007 22:12 => rep id = 2221<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:12 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:12 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:12 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:12 => rep id = 2174<br>
+14-03-2007 22:12 => rep id = 2207<br>
+14-03-2007 22:12 => rep id = 2195<br>
+14-03-2007 22:12 => rep id = 2199<br>
+14-03-2007 22:12 => rep id = 2185<br>
+14-03-2007 22:12 => rep id = 2159<br>
+14-03-2007 22:12 => rep id = 2183<br>
+14-03-2007 22:12 => rep id = 2182<br>
+14-03-2007 22:12 => rep id = 2149<br>
+14-03-2007 22:12 => rep id = 2221<br>
+14-03-2007 22:12 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:12 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:12 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:12 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:12 => rep id = 2174<br>
+14-03-2007 22:12 => rep id = 2207<br>
+14-03-2007 22:12 => rep id = 2195<br>
+14-03-2007 22:12 => rep id = 2199<br>
+14-03-2007 22:12 => rep id = 2185<br>
+14-03-2007 22:12 => rep id = 2159<br>
+14-03-2007 22:12 => rep id = 2183<br>
+14-03-2007 22:12 => rep id = 2182<br>
+14-03-2007 22:12 => rep id = 2149<br>
+14-03-2007 22:12 => rep id = 2221<br>
+14-03-2007 22:12 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:12 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:12 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:12 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:12 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:12 => rep id = 2174<br>
+14-03-2007 22:12 => rep id = 2207<br>
+14-03-2007 22:12 => rep id = 2195<br>
+14-03-2007 22:12 => rep id = 2199<br>
+14-03-2007 22:12 => rep id = 2185<br>
+14-03-2007 22:12 => rep id = 2159<br>
+14-03-2007 22:12 => rep id = 2183<br>
+14-03-2007 22:12 => rep id = 2182<br>
+14-03-2007 22:12 => rep id = 2149<br>
+14-03-2007 22:12 => rep id = 2221<br>
+14-03-2007 22:12 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:12 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:12 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:12 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:12 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:12 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:12 => rep id = 2174<br>
+14-03-2007 22:12 => rep id = 2207<br>
+14-03-2007 22:12 => rep id = 2195<br>
+14-03-2007 22:12 => rep id = 2199<br>
+14-03-2007 22:12 => rep id = 2185<br>
+14-03-2007 22:12 => rep id = 2159<br>
+14-03-2007 22:12 => rep id = 2183<br>
+14-03-2007 22:12 => rep id = 2182<br>
+14-03-2007 22:12 => rep id = 2149<br>
+14-03-2007 22:12 => rep id = 2221<br>
+14-03-2007 22:12 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:12 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:12 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:12 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:12 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:12 => Rep->logValues()<br>
+14-03-2007 22:12 => ---------------
+<br>
+14-03-2007 22:13 => empty(_POST['id'])<br>
+14-03-2007 22:13 => Display login form<br>
+14-03-2007 22:13 => isset(_POST['id'])<br>
+14-03-2007 22:13 => Security->dbLoginUser(dbmgr) => FALSE<br>
+14-03-2007 22:13 => loginSuccessful == false. Forwarding user to /login.php<br>
+14-03-2007 22:13 => empty(_POST['id'])<br>
+14-03-2007 22:13 => Display login form<br>
+14-03-2007 22:14 => isset(_POST['id'])<br>
+14-03-2007 22:14 => CREATING NEW CLIENT<br>
+14-03-2007 22:14 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:14 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 22:14 => Forwarding user to https://cerberus/client/index.php?UID=Zidell<br>
+14-03-2007 22:14 => HAS CUSTOM PAGE BUT NOT BATCH IMAGE PAGE -> FORWARD TO CUSTOM PAGE.<br>
+14-03-2007 22:14 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:14 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:14 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:14 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:14 => rep id = 2174<br>
+14-03-2007 22:14 => rep id = 2207<br>
+14-03-2007 22:14 => rep id = 2195<br>
+14-03-2007 22:14 => rep id = 2199<br>
+14-03-2007 22:14 => rep id = 2185<br>
+14-03-2007 22:14 => rep id = 2159<br>
+14-03-2007 22:14 => rep id = 2183<br>
+14-03-2007 22:14 => rep id = 2182<br>
+14-03-2007 22:14 => rep id = 2149<br>
+14-03-2007 22:14 => rep id = 2221<br>
+14-03-2007 22:14 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:14 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:14 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:14 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:14 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:14 => Rep->logValues()<br>
+14-03-2007 22:14 => ---------------
+<br>
+14-03-2007 22:15 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:15 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:15 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:15 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:15 => rep id = 2174<br>
+14-03-2007 22:15 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:15 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:15 => COUNT = 4<br>
+14-03-2007 22:15 => ------------------id = 12<br>
+14-03-2007 22:15 => ------------------id = 6<br>
+14-03-2007 22:15 => ------------------id = 5<br>
+14-03-2007 22:15 => ------------------id = 4<br>
+14-03-2007 22:15 => DONE<br>
+14-03-2007 22:15 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:15 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:15 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:15 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:15 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:15 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:15 => Rep->logValues()<br>
+14-03-2007 22:15 => ---------------
+<br>
+14-03-2007 22:16 => -=-=-=-=-=-=-=-=- custom_page.php START -=-=-=-=-=-=-=-=-<br>
+14-03-2007 22:16 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:16 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 4<br>
+14-03-2007 22:16 => rep id = 2174<br>
+14-03-2007 22:16 => rep id = 2207<br>
+14-03-2007 22:16 => rep id = 2195<br>
+14-03-2007 22:16 => rep id = 2199<br>
+14-03-2007 22:16 => rep id = 2185<br>
+14-03-2007 22:16 => rep id = 2159<br>
+14-03-2007 22:16 => rep id = 2183<br>
+14-03-2007 22:16 => rep id = 2182<br>
+14-03-2007 22:16 => rep id = 2149<br>
+14-03-2007 22:16 => rep id = 2221<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 4<br>
+14-03-2007 22:16 => ------------------id = 12<br>
+14-03-2007 22:16 => ------------------id = 6<br>
+14-03-2007 22:16 => ------------------id = 5<br>
+14-03-2007 22:16 => ------------------id = 4<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2207 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 1<br>
+14-03-2007 22:16 => ------------------id = 14<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2195 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 0<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2199 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 0<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2185 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 2<br>
+14-03-2007 22:16 => ------------------id = 10<br>
+14-03-2007 22:16 => ------------------id = 11<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2159 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 0<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2183 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 0<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2182 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 3<br>
+14-03-2007 22:16 => ------------------id = 26<br>
+14-03-2007 22:16 => ------------------id = 13<br>
+14-03-2007 22:16 => ------------------id = 7<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2149 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 4<br>
+14-03-2007 22:16 => ------------------id = 16<br>
+14-03-2007 22:16 => ------------------id = 13<br>
+14-03-2007 22:16 => ------------------id = 7<br>
+14-03-2007 22:16 => ------------------id = 17<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:16 => COUNT = 0<br>
+14-03-2007 22:16 => DONE<br>
+14-03-2007 22:16 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:16 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:16 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:16 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:16 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Wet Marine
+type = LEADER
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = All Other
+type = LEADER
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Wet Marine Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Marine & Non-Marine Liability
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = E&O, Crime and Fiduciary Liability Customer Service
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Customer Service (Non Wet  Marine)
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Property and Flood
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Pollution and Environmental
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => -----Service_Member-----
+client_id = 
+title = Workers' Comp
+type = SERVICE
+<br>
+14-03-2007 22:16 => Rep->logValues()<br>
+14-03-2007 22:16 => ---------------
+<br>
+14-03-2007 22:16 => empty(_POST['id'])<br>
+14-03-2007 22:16 => Display login form<br>
+14-03-2007 22:17 => isset(_POST['id'])<br>
+14-03-2007 22:17 => CREATING NEW ROOT<br>
+14-03-2007 22:17 => Admin->dbLoad(dbmgr)<br>
+14-03-2007 22:17 => Security->dbLoginUser(dbmgr) => TRUE<br>
+14-03-2007 22:17 => Forwarding user to https://cerberus/admin/index.php?UID=jsandlin<br>
+14-03-2007 22:17 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:17 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:17 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:17 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:17 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:17 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:17 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:17 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:17 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:17 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:17 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:17 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:17 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:17 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:17 => Admin->dbLoadRepListBreif(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => Admin->dbLoadRepListBrief(dbmgr)<br>
+14-03-2007 22:21 => SELECT R.REP_ID, R.FIRST_NAME, R.LAST_NAME, DD.NAME FROM REP R, DEPT_DEF DD WHERE R.DEPT_ID = DD.DEPT_ID AND DD.IS_INSURANCE = '1' ORDER BY R.LAST_NAME<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr) => true<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:21 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadRepListBrief(dbmgr)<br>
+14-03-2007 22:21 => SELECT R.REP_ID, R.FIRST_NAME, R.LAST_NAME, DD.NAME FROM REP R, DEPT_DEF DD WHERE R.DEPT_ID = DD.DEPT_ID AND DD.IS_INSURANCE = '1' ORDER BY R.LAST_NAME<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr) => true<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:21 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadRepListBrief(dbmgr)<br>
+14-03-2007 22:21 => SELECT R.REP_ID, R.FIRST_NAME, R.LAST_NAME, DD.NAME FROM REP R, DEPT_DEF DD WHERE R.DEPT_ID = DD.DEPT_ID AND DD.IS_INSURANCE = '1' ORDER BY R.LAST_NAME<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbInsert(dbmgr) => true<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => rep id = 2228<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:21 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => rep id = 2228<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2228 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadRepListBrief(dbmgr)<br>
+14-03-2007 22:21 => SELECT R.REP_ID, R.FIRST_NAME, R.LAST_NAME, DD.NAME FROM REP R, DEPT_DEF DD WHERE R.DEPT_ID = DD.DEPT_ID AND DD.IS_INSURANCE = '1' ORDER BY R.LAST_NAME<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:21 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2221<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Member->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2221 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 0<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadRepListBrief(dbmgr)<br>
+14-03-2007 22:21 => SELECT R.REP_ID, R.FIRST_NAME, R.LAST_NAME, DD.NAME FROM REP R, DEPT_DEF DD WHERE R.DEPT_ID = DD.DEPT_ID AND DD.IS_INSURANCE = '1' ORDER BY R.LAST_NAME<br>
+14-03-2007 22:21 => Client->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:21 => DONE<br>
+14-03-2007 22:21 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:21 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:21 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:21 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:21 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:21 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:21 => rep id = 2174<br>
+14-03-2007 22:21 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:21 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:21 => COUNT = 4<br>
+14-03-2007 22:21 => ------------------id = 12<br>
+14-03-2007 22:21 => ------------------id = 6<br>
+14-03-2007 22:21 => ------------------id = 5<br>
+14-03-2007 22:21 => ------------------id = 4<br>
+14-03-2007 22:22 => DONE<br>
+14-03-2007 22:22 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:22 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:22 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->DbDelete(dbmgr)<br>
+14-03-2007 22:22 => Client->dbLoadName(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoad(dbmgr)<br>
+14-03-2007 22:22 => Service_Team->dbLoadServiceTeam(dbmgr)<br>
+14-03-2007 22:22 => SELECT REP_ID, TITLE, TYPE FROM CP_SERVICE_TEAM WHERE USER_ID = 23<br>
+14-03-2007 22:22 => rep id = 2174<br>
+14-03-2007 22:22 => Rep->dbLoad(dbmgr)<br>
+14-03-2007 22:22 => SELECT SPECIALTY_ID FROM REP_SPECIALTY WHERE REP_ID = 2174 AND SPECIALTY_ID != 1<br>
+14-03-2007 22:22 => COUNT = 4<br>
+14-03-2007 22:22 => ------------------id = 12<br>
+14-03-2007 22:22 => ------------------id = 6<br>
+14-03-2007 22:22 => ------------------id = 5<br>
+14-03-2007 22:22 => ------------------id = 4<br>
+14-03-2007 22:22 => DONE<br>
+14-03-2007 22:22 => Department->dbLoad(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadCoverageList()<br>
+14-03-2007 22:22 => Custom_Page->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadFormList(dbmgr)<br>
+14-03-2007 22:22 => Custom_Page->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadFAQList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadLinkList(dbmgr)<br>
+14-03-2007 22:22 => Admin->dbLoadFormList(dbmgr)<br>

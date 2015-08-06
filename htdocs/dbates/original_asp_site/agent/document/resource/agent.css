@@ -1,0 +1,149 @@
+a
+        {color: #004785;
+	font-weight: bold;
+	}
+
+a:hover
+        {
+	color: #C00000;
+	}
+
+b.XML
+        {color: #C00000;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 15px
+	background-color: #FFFF00;
+	}
+
+
+body
+        {font-family: arial, helvetica, sans-serif;
+        font-size: 13px;
+	background-color: #FFFFFF;
+        color: #000000;
+        margin-left:20pt;
+        }
+
+center
+        {
+        font-family: arial, helvetica, sans-serif;
+        }
+
+form
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	}
+
+
+h4
+        {
+        font-family:  arial, helvetica;
+	font-size: 12px;
+        font-weight: bold;
+        color: #004785;
+	}
+
+
+h3
+        {
+        font-family:  arial, helvetica;
+	font-size: 16px;
+        font-weight: bold;
+        color: #000000;
+        margin-left: 0px;
+        margin-top: 7px;
+        margin-bottom: 10px;
+	}
+
+h2
+        {
+        font-family:  arial, helvetica;
+	font-size: 16pt;
+        font-weight: bold;
+        color: #000000;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+	}
+
+
+h1
+        {
+        font-family:  arial, helvetica;
+	font-size: 24pt;
+        font-weight: bold;
+        color: #000000;    
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+	}
+
+
+li
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	}
+
+li.feature
+	{  
+	list-style-image: url('/resource/x_master.jpg');
+	}
+
+
+p
+        {
+        font-family:  arial, helvetica;
+	font-size: 13.5px;
+        margin-left: 22px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        }
+
+td
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	}
+
+
+td.whitpage1
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	font-weight: bold;
+        color: #004785;
+	}
+
+td.whitpage2
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	}
+
+td.whitpage3
+	{
+        font-family:  arial, helvetica;
+	font-size: 12px;
+	}
+
+
+ul
+        {
+        font-family:  arial, helvetica;
+	font-size: 13.5px;
+        list-style-type:circle;
+	margin-top:2px;
+        margin-bottom:2px;
+        }
+
+                      
+#incomplete
+	{    
+	background-color: gold; 
+	}

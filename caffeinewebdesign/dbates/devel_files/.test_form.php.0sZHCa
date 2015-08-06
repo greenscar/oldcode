@@ -1,0 +1,269 @@
+	<html>
+   <body>
+<table id="PageTable" border="0" cellspacing="0">
+<tr>
+   <td colspan="2" id="section">Contact Information</td>
+</tr>
+<tr>
+   <td align="right" width="150pt">Your Business</td>
+   <td align="left" colspan="4">
+      <input type="text" name="ClientName" size="40" maxlength="40" required="1" checked="1"></input>
+   </td>
+</tr>
+<tr>
+   <td align="right" width="150pt">Your Name</td>
+   <td align="left">
+      <input type="text" name="ContactName" size="40" maxlength="40" required="1" checked="1"></input>
+   </td>
+</tr>
+<tr>
+   <td align="right" width="150pt">Your E-mail Address</td>
+   <td align="left">
+      <input type="text" name="ClientEmail" size="30" maxlength="40" required="1" checked="1"></input>
+   </td>
+</tr>
+<tr>
+   <td align="right" width="150pt">Your Phone Number</td>
+   <td align="left">
+      <input type="text" name="ContactPhone" size="20" maxlength="25" required="1" checked="1"></input>
+   </td>
+</tr>
+<tr>
+   <td colspan="2" id="section">Report Options</td>
+</tr>
+<tr>
+   <td align="right" width="150pt">How many drivers?</td>
+   <td align="left">
+      <input type="text" name="Drivers" size="2" maxlength="2" required="1" value="1"></input>
+   </td>
+</tr>
+<tr id="section">
+   <td colspan="2">Handling Instructions</td>
+</tr>
+<tr>
+   <td align="right">Urgent?</td>
+   <td><input type="checkbox" value="1" name="MVRUrgent"/></td>
+</tr>
+<tr>
+   <td colspan="5" id="section">Drivers</td>
+</tr>
+<tr>
+   <td align="center">Driver Name</td>
+   <td align="center">Date of Birth<br/>mm-dd-yyyy</td>
+   <td align="center">License<br/>Number</td>
+   <td align="center">Issuing<br/>State</td>
+   <td align="center"><small>Currently<br/>Employed?</small></td>
+</tr>
+<tr>
+   <td align="center">
+      <input type="text" name="MVRDriver1" size="20" maxlength="40" required="1" checked="1"/>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRDOBMonth1" size="2" maxlength="2" required="1" checked="1"></input>-<input type="text" name="MVRDOBDay1" size="2" maxlength="2" required="1" checked="1"></input>-<input type="text" name="MVRDOBYear1" size="4" maxlength="4" required="1" onBlur="Y2K(this.value)" checked="1"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRLicense1" size="15" maxlength="20" required="1" checked="1"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRState1" size="3" maxlength="3" required="1" checked="1"></input>
+   </td>
+   <td align="center">
+      <input type="checkbox" value="1" name="MVREmployed1"/>
+   </td>
+</tr>
+<tr>
+   <td align="center">
+      <input type="text" name="MVRDriver2" size="20" maxlength="40" required="1" checked="0"/>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRDOBMonth2" size="2" maxlength="2" required="1" checked="0"></input>-<input type="text" name="MVRDOBDay1" size="2" maxlength="2" required="1" checked="1"></input>-<input type="text" name="MVRDOBYear1" size="4" maxlength="4" required="1" onBlur="Y2K(this.value)" checked="1"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRLicense2" size="15" maxlength="20" required="1" checked="0"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRState2" size="3" maxlength="3" required="1" checked="0"></input>
+   </td>
+   <td align="center">
+      <input type="checkbox" value="1" name="MVREmployed2"/>
+   </td>
+</tr>
+<tr>
+   <td align="center">
+      <input type="text" name="MVRDriver3" size="20" maxlength="40" required="1" checked="0"/>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRDOBMonth3" size="2" maxlength="2" required="1" checked="0"></input>-<input type="text" name="MVRDOBDay1" size="2" maxlength="2" required="1" checked="1"></input>-<input type="text" name="MVRDOBYear1" size="4" maxlength="4" required="1" onBlur="Y2K(this.value)" checked="1"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRLicense3" size="15" maxlength="20" required="1" checked="0"></input>
+   </td>
+   <td align="center">
+      <input type="text" name="MVRState3" size="3" maxlength="3" required="1" checked="0"></input>
+   </td>
+   <td align="center">
+      <input type="checkbox" value="1" name="MVREmployed3"/>
+   </td>
+</tr>
+</table>
+      
+      
+      
+      
+      
+      
+<!--      
+   <form name="DBForm" action="/EditForm.asp" method="post">
+      
+<table id="PageTable">
+   <tr> 
+      <td colspan="5" id="section">Contact Information</td>
+   </tr>
+   <tr> 
+      <td align="right" width="150pt">Your Business</td>
+      <td align="left" colspan="4">
+         <input type="text" name="ClientName" size="40" maxlength="40" required="1" value="<?php echo($_SESSION["user"]->name); ?>"></input> 
+      </td>
+   </tr>
+   <tr> 
+      <td align="right" width="150pt">Your Name</td>
+      <td align="left" colspan="4">
+         <input type="text" name="ContactName" size="40" maxlength="40" required="1" value="<?php echo($_SESSION["user"]->contact); ?>"></input> 
+      </td>
+   </tr>
+   <tr> 
+      <td align="right" width="150pt">Your E-mail Address</td>
+      <td align="left" colspan="4">
+         <input type="text" name="ClientEmail" size="30" maxlength="40" required="1" value="<?php echo($_SESSION["user"]->email); ?>"></input> 
+      </td>
+   </tr>
+   <tr> 
+      <td align="right" width="150pt">Your Phone Number</td>
+      <td align="left" colspan="4">
+         <input type="text" name="ContactPhone" size="20" maxlength="25" required="1" value="<?php echo($_SESSION["user"]->phone); ?>"></input> 
+      </td>
+   </tr>
+   <tr id="section"> 
+      <td align="left" colspan="3">
+         <b>Handling Instructions</b>
+      </td>
+   </tr>
+   <tr> 
+      <td align="right">Urgency</td>
+      <td colspan="2">
+         <input type="radio" name="CertSendUrgency" value="Mail" checked="1"></input> 
+         Mail 
+         <input type="radio" name="CertSendUrgency" value="Fax"></input> 
+         Fax: 
+         <input type="text" name="CertFaxNumber" size="15" checked="1"/> 
+      </td>
+   </tr>
+   <tr> 
+      <td align="right" valign="top">Mail Original to</td>
+      <td colspan="2">
+         <input type="radio" name="CertOriginalTo" value="Insured" checked="1"></input>
+         Your business<br/>
+         <input type="radio" name="CertOriginalTo" value="CertificateHolder"></input>
+         Certificate Holder<br/>
+         <input type="radio" name="CertOriginalTo" value="Other"></input>
+         Other:<br/>
+         <input type="text" name="CertOriginalToOther1" size="40" checked="1"/><br/> 
+         <input type="text" name="CertOriginalToOther2" size="40" checked="1"/><br/> 
+         <input type="text" name="CertOriginalToOther3" size="40" checked="1"/><br/> 
+         <input type="text" name="CertOriginalToOther4" size="40" checked="1"/>
+      </td>
+   </tr>
+   <tr id="section"> 
+      <td colspan="3">
+         <b>For what types of coverage do you need to provide proof?</b>
+      </td>
+   </tr>
+   <tr> 
+      <td valign="top" width="50%" style="margin-left:20pt;">
+         <input type="checkbox" name="CertTypeLiability" value="Liability"/>
+         Liability<br/>
+         <input type="checkbox" name="CertTypeProperty" value="Property"/>
+         Property:<br/>
+         <input type="checkbox" name="CertTypePropertyBuilding" value="PropertyBuilding"/>
+         Building<br/>
+         <input type="checkbox" name="CertTypePropertyInventory" value="PropertyInventory"/>
+         Inventory<br/>
+         <input type="checkbox" name="CertTypeAuto" value="Auto"/>
+         Auto<br/>
+         <input type="checkbox" name="CertTypeAutoLeased" value="AutoLeased"/>
+         Leased/Rented<br/>
+      </td>
+      <td colspan="2" valign="top">
+         <input type="checkbox" name="CertTypeMortgageeLossPayee" value="MortgageeLossPayee"/>
+         Mortgagee / Loss Payee<br/>
+         <input type="checkbox" name="CertTypeEquipment" value="Equipment"/>
+         Equipment<br/>
+         <input type="checkbox" name="CertTypeEquipmentLeased" value="EquipmentLeased"/>
+         Leased/Rented<br/>
+         <input type="checkbox" name="CertTypeUmbrella" value="Umbrella"/>
+         Umbrella<br/>
+         <input type="checkbox" name="CertTypeUSLH" value="USLH"/>
+         USL&amp;H<br/>
+         <input type="checkbox" name="CertTypeWorkersComp" value="WorkersComp"/>
+         Workers' Compensation<br/>
+      </td>
+   </tr>
+   <tr id="section"> 
+      <td colspan="3">
+         <b>Who is the Certificate Holder for this coverage?</b>
+      </td>
+   </tr>
+   <tr> 
+      <td colspan="1">
+         <input type="text" name="CertHolder1" size="40" required="1" checked="1"/>
+         <br/> <input type="text" name="CertHolder2" size="40" checked="1"/>
+         <br/> <input type="text" name="CertHolder3" size="40" checked="1"/>
+         <br/> <input type="text" name="CertHolder4" size="40" checked="1"/>
+         <br/> <input type="text" name="CertHolder5" size="40" checked="1"/>
+      </td>
+      <td valign="top" colspan="2">
+         <input type="checkbox" name="CertAddlInsured" value="Yes"/>
+         Additional Insured?<br/>
+         <input type="checkbox" name="CertLandlord" value="Yes"/>
+         Landlord?
+      </td>
+   </tr>
+   <tr id="section"> 
+      <td align="left" colspan="3">
+         <b>Information about the covered items</b>
+      </td>
+   </tr>
+   <tr> 
+      <td align="right">Location or description of covered items</td>
+      <td colspan="2">
+         <textarea name="CertLocation" cols="40" rows="2" wrap="virtual" required="1"></textarea> 
+      </td>
+   </tr>
+   <tr> 
+      <td align="right">Job Name or Loan Number</td>
+      <td colspan="2">
+         <input type="text" name="CertID" size="40" checked="1"/>
+      </td>
+   </tr>
+   <tr> 
+      <td align="right">Include Following Certificate Requirements</td>
+      <td colspan="2">
+         <textarea name="CertWording" cols="40" rows="2" wrap="virtual"></textarea> 
+      </td>
+   </tr>
+</table>
+
+
+<p style='text-align:center;margin-top:10pt;'><br/>
+<input type="button" value="Finish" style="color:red;font-weight:bold;" onClick="javascript:DBForm.SendForm.value=1;FormValidation(1);"/>
+&nbsp 
+<input type="button" name="Cancel" value="Cancel" onClick="javascript:DBForm.CancelForm.value='1';FormValidation(0);"/>
+</p>
+</form></td>
+</tr>
+</table>
+
+</form>
+-->
+</body>
+</html>

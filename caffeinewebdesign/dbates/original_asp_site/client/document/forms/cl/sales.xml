@@ -1,0 +1,76 @@
+<?xml version="1.0"?> 
+<submission>
+	<Recipients>
+		<PrimaryRecipient>
+			<name>team#CSRCommercial</name>
+			<address/>
+		</PrimaryRecipient>
+		<BackupRecipient>
+			<name>role#CLCSR</name> 
+			<address/>
+		</BackupRecipient>
+	</Recipients>
+	<template id="Client-CL-Sales" title="Gross Sales Report" description="Periodic reporting form for gross business sales.">
+		<page id="0" active="1" title="Initial Questions" description="Please complete the following:">
+			<table id="PageTable">    
+        			<tr>
+        				<td colspan="2" id="section">Contact Information</td> 
+        			</tr>
+				<tr>
+					<td align="right" width="150pt">Your Business</td>
+					<td align="left">
+						<input type="text" name="ClientName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/Name</refDefault>
+						</input>
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right" width="150pt">Your Name</td>
+					<td align="left">
+						<input type="text" name="ContactName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactName</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="150pt">Your E-mail Address</td>
+					<td align="left">
+						<input type="text" name="ClientEmail" size="30" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactEmail</refDefault>
+						</input>
+					</td>
+				</tr> 
+				<tr>
+					<td align="right" width="150pt">Your Phone Number</td>
+					<td align="left">
+						<input type="text" name="ContactPhone" size="20" maxlength="25"  required="1">					
+							<refDefault>//ClientTable/ContactPhone</refDefault>
+						</input>
+					</td>
+				</tr>
+        			<tr>
+        				<td colspan="2" id="section">Sales Data</td> 
+        			</tr>
+
+                                <tr>
+                                	<td align="right" width="150pt">For the period of</td> 
+                                	<td align="left">
+                                                <input type="text" size="2" name="GrSaleDateMonth1" required="1"/>-
+                                                <input type="text" size="2" name="GrSaleDateDate1" required="1" />-
+                                                <input type="text" size="4" name="GrSaleDateYear1" required="1" onBlur="Y2K(this.value);"/>
+                                		to
+                                                <input type="text" size="2" name="GrSaleDateMonth2" required="1"/>-
+                                                <input type="text" size="2" name="GrSaleDateDate2" required="1"/>-
+                                                <input type="text" size="4" name="GrSaleDateYear2" required="1" onBlur="Y2K(this.value);"/>
+                                
+                                	</td>
+                                </tr>	                   
+                                <tr>
+                                	<td align="right" width="150pt">Gross Sales $</td>
+                                        <td><input type="text" size="15" name="GrSaleAmount" required="1"/></td>
+                                </tr>
+			</table>    
+		</page>
+	</template>
+</submission>

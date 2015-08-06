@@ -1,0 +1,12 @@
+<script language="vbscript" runat="server">
+sub Session_OnStart
+
+Session("Locale") = 1
+Session("EnableMail") = 1
+Session("AvailableHttpsProtocol") = "https://"
+Session("DBType") = "jet"
+Session("MailServer") = "smtp.easystreet.com"
+Session("BadTry") = 0 
+                             
+end sub
+</script>

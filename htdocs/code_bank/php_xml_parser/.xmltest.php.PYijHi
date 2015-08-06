@@ -1,0 +1,126 @@
+<?php
+//display("<html>");
+//display("<header><title>Online.properties XML</title></header>");
+//display("<body>");
+require_once("Simple_Parser.inc");
+require_once("XML_Envt.inc");
+$var_list = Array();
+$xml_envts = Array();
+/**********************************************************
+* THE CODE IN THIS SECTION IS TO READ FROM A LOCAL XML
+***********************************************************/
+/*
+$xml_loc = "c:/scripts/envts.xml";
+if (!($fp=@fopen($xml_loc, "r")))
+   die("<h1>Couldn't open XML");
+$filesize = filesize($xml_loc);
+display("filesize  = $filesize");
+$data = fread($fp, $filesize);
+fclose($fp);
+printf("\n\n\n\n");
+//printf($data);
+printf("\n\n\n\n");
+$xml_parser = new Simple_Parser();
+$return = $xml_parser->parse($data);
+display($return);
+display("sizeof data => " . sizeof($xml_parser->data));
+$envts = $xml_parser->data["ENVTS"][0]["child"];
+echo(print_array($xml_parser->data));
+*/
+/**********************************************************
+* END THE CODE IN THIS SECTION IS TO READ FROM A LOCAL XML
+***********************************************************/
+
+/**********************************************************
+* READ FROM A WEB XML
+***********************************************************/
+$xml_loc = "http://iedaau019/envts_online.xml";
+$data=read_xml_from_http($xml_loc);
+$xml_parser = new Simple_Parser();
+$return = $xml_parser->parse($data);
+//display($return);
+//display("sizeof data => " . sizeof($xml_parser->data));
+$envts = $xml_parser->data["ENVTS"][0]["child"];
+//echo(print_array($xml_parser->data));
+/**********************************************************
+* END READ FROM A WEB XML
+***********************************************************/
+
+
+/**********************************************************
+* CONVERT XML FILE TO XML_Envt OBJECTS
+***********************************************************/
+foreach($envts["ENVT"] as $id=>$var)
+{
+   $envt = new XML_Envt();
+   $var = $var["child"];
+   foreach($var as $id=>$var)
+   {
+      $value = $var[0]["data"];
+      $envt->add_var($id, $value);
+   }
+   array_push($xml_envts, $envt);
+}
+/**********************************************************
+* END CONVERT XML FILE TO XML_Envt OBJECTS
+***********************************************************/
+/*
+// CREATE LIST OF VARIABLES
+foreach($xml_envts as $id=>$envt)
+{
+   $env_id = $envt->get_id();
+   foreach($envt->vars as $id=>$var)
+   {
+      //echo(strtolower($id) . " = " . $envt->$id . "<BR>");
+      display("var \$" . strtolower($id) . "; //"  . $var);
+      //echo(getVarName($id, $env_id) . "<br>");
+   }
+   echo("<hr>");
+}
+*/
+function read_xml_from_http($url)
+{
+   $ary_header = get_headers($url, 1);       
+   $filesize = $ary_header['Content-Length'];
+   // Fake the browser type
+   ini_set('user_agent','MSIE 4\.0b2;');
+   $result = "";
+   $dh = fopen("$url",'r');
+   while(!feof($dh))
+   {
+      $result .= fread($dh,$filesize);
+   }
+   return $result;
+} 
+function display($string)
+{
+   echo("$string<br>\n");
+}
+function print_array($ar)
+{
+   $to_return = "";
+   foreach($ar as $id=>$val)
+   {
+      $to_return .= "$id = $val<br>\n";
+   }
+   return($to_return);
+   /*
+   echo("<h4>" . $envt->get_id() . "</h4>");
+   echo("<ul>");
+   foreach($envt->vars as $id=>$val)
+   {
+      echo("<li>$id = $val</li>\n");
+   }
+   echo("</ul>");
+   */
+}
+function getVarNames($var, $envt)
+{
+   $sub_var_to_remove = "ONLINE" . $envt;
+   $substrlen = strlen($sub_var_to_remove);
+   $toreturn = substr($var, $substrlen);
+   return($toreturn);
+}
+//display("</body>");
+?>
+

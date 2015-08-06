@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;.charset=iso-8859-1" />
+      <meta http-equiv="Content-Language" content="en-us" />
+      <title>Recipes</title>
+      <%= stylesheet_link_tag "style" %>
+      <%= javascript_include_tag :defaults %>
+   </head>
+   <body id="cookbook">
+   <div id="Header">
+         <%= link_to "Categories", {:controller => "category", :action => "list"}, {:title => "Categories"} %>
+         | <%= link_to "Recipes", {:controller => "recipe", :action => "list"}, {:title => "Recipes"} %>
+         <% Category.find(:all).each do |c| %>
+            | <%= link_to c.name, :controller => "category", :action => "show", :id => c.id %>
+         <% end %>
+         | <%= link_to "Login", {:controller => "user", :action => "login"}, {:title => "Login"} %>
+         <% if (session[:user] != nil)%>
+            | <%= link_to "Logout", {:controller => "user", :action => "logout"}, {:title => "Logout"} %>
+         <% end %>
+   </div>
+   <div id="Content">
+       <%= yield -%>
+   </div>
+   <div id="Menu">
+   <a href="http://www.oohaheats.com/" title="Ooh Ah Eats Home">
+      <img src="http://oohaheats.com/monkey.png">
+      <% Category.find(:all).each do |c| %>
+      <%= link_to c.name, :controller => "category", :action => "show", :id => c.id %><br>
+      <% end %>
+   </a>
+   </div>
+   </body>
+</html>
+

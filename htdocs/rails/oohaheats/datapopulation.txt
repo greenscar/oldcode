@@ -1,0 +1,25 @@
+
+
+insert into security_lvls (`name`, `created_at`, `updated_at`) VALUES
+('admin', '2010-02-06 03:26:36', '2010-02-06 03:26:36');
+
+INSERT INTO `security_users` (`id`, `name`, `password`, `created_at`, `updated_at`, `security_lvl_id`) VALUES
+(1, 'james', '774926c0f476a1563548c69dbd322686c9524f5e4464b199f6b61a96b6183080b9124c9d33ec10b49800d28f812d961fae0c72a058e596b2d725955826a6ec0aD8zpbUU8DGyOeX3WXuZptb5bmNbrzqTp3c9iRbqayHk8KIogNxPNujY7uib4vAKF', '2010-02-09 04:38:04', '2010-02-09 04:38:04', '1'),
+(2, 'aubri', '61e6c1f251d126fe7c7267e40cfdbd94f65f0d53e42e3dc18ad9db8b652d50495e62f256ced4c919e80382c8148f2caa82857c43fb18575b8b0d689181c55a5fZJlfVDFHESEQdqoVGQKt2hqFai5QwlQcq3pO8T1sIZH2NQMCBhtj6Dh91am1ipcI', '2010-02-09 04:38:11', '2010-02-09 04:38:11', '1');
+
+INSERT INTO `security_users` (`name`, `updated_at`, `password`, `created_at`, `security_lvl_id`) VALUES('james', '2010-02-14 18:39:15', 'dcf5740606470de17141e8104522cba4c70cab138ebd7b1042315337b0291bc23c3751197a153cfc7a27dcf6d6e8a736233634e06100102b9307edad5472b303bvzr9eIZ4Nhu0XdzMc4rT1mdc6sYSfuzVQpose5Uk1drlMwGQrlOGEs95NlHKpsh', '2010-02-14 18:39:15', 1)
+INSERT INTO `security_users` (`name`, `updated_at`, `password`, `created_at`, `security_lvl_id`) VALUES('aubri', '2010-02-14 18:40:32', '9c260a7fcef6a041cc95693c963d2964b058b93da38c15268f1588e44181322981ded22bc5d5060ff67e1dda869e61947f5f0b04766b80fc491571dce2fde20d7UwC4ZhJ2YjLuUe96eJ17AqpqOs4ysANILDljDpFDnD8Ymru1rW7t5Fj3BXN3451', '2010-02-14 18:40:32', 1)
+
+insert into user_sec_lvls (security_lvls_id, users_id, created_at, updated_at) values
+(1, 1, '2010-02-06 03:26:36', '2010-02-06 03:26:36'),
+(1, 2, '2010-02-06 03:26:36', '2010-02-06 03:26:36');
+
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Appetizers', '2010-02-06 03:26:36', '2010-02-06 03:26:36'),
+(2, 'Breads', '2010-02-06 03:26:40', '2010-02-06 03:26:40'),
+(3, 'Smoothies', '2010-02-06 03:26:47', '2010-02-06 03:26:47'),
+(4, 'Muffins', '2010-02-06 03:26:51', '2010-02-06 03:26:51'),
+(5, 'Beer', '2010-02-06 03:26:55', '2010-02-06 03:26:55'),
+(6, 'Indian', '2010-02-06 03:27:08', '2010-02-06 03:27:08'),
+(7, 'Main Dishes', '2010-02-06 03:27:33', '2010-02-06 03:27:33');
+

@@ -1,0 +1,3165 @@
+[17:38] Cookbook->get_recipes_all() START
+[17:38] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:38] Cookbook->get_recipes_all() FINISHED => 3 recipes
+[17:38] Recipe->db_load() START
+[17:38] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 3
+[17:38] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 3
+[17:38] 
+-------------------------------------------
+order_num => 1
+item_id => 29
+item_descr => hot water
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 2
+item_id => 30
+item_descr => sugar
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 3
+item_id => 31
+item_descr => instant coffee
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 4
+item_id => 32
+item_descr => vanilla extract
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 5
+item_id => 33
+item_descr => vodka
+quantity => 2 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:38] num_ingredients = 5
+[17:38] SELECT order_num, step_descr FROM steps WHERE recipe_id = 3
+[17:38] Cookbook->get_recipes_all() START
+[17:38] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:38] Cookbook->get_recipes_all() FINISHED => 3 recipes
+[17:38] Recipe->db_load() START
+[17:38] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 2
+[17:38] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 2
+[17:38] 
+-------------------------------------------
+order_num => 1
+item_id => 1
+item_descr => mixed dry beans
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 2
+item_id => 4
+item_descr => onion
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 3
+item_id => 2
+item_descr => bell pepper
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 4
+item_id => 3
+item_descr => jalapeno
+quantity => 3
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 5
+item_id => 5
+item_descr => garlic
+quantity => 2
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 6
+item_id => 6
+item_descr => TVP
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 7
+item_id => 7
+item_descr => mexican spicy rotel tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 8
+item_id => 8
+item_descr => diced tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 9
+item_id => 10
+item_descr => chili powder
+quantity => 4
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 10
+item_id => 11
+item_descr => cumin
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 11
+item_id => 12
+item_descr => oregano
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 12
+item_id => 13
+item_descr => chili paste
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 13
+item_id => 14
+item_descr => brown sugar
+quantity => 3
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 14
+item_id => 15
+item_descr => salt
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:38] 
+-------------------------------------------
+order_num => 15
+item_id => 16
+item_descr => pepper
+quantity => 2
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:38] num_ingredients = 15
+[17:38] SELECT order_num, step_descr FROM steps WHERE recipe_id = 2
+[17:50] Recipe->addIngredient(1, 2, 10, zucchini, chopped) START
+[17:50] Ingredient->set_item_via_descr(zucchini, chopped, Object) START
+[17:50] Item->db_load_via_descr(zucchini, chopped) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "zucchini, chopped"
+[17:50] Item->db_load_via_descr(zucchini, chopped) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("zucchini, chopped");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(zucchini, chopped, Object) END => 36
+[17:50] Recipe->addIngredient(1, 2, 10, zucchini, chopped) END
+[17:50] Recipe->addIngredient(2, 1, 10, onion, chopped) START
+[17:50] Ingredient->set_item_via_descr(onion, chopped, Object) START
+[17:50] Item->db_load_via_descr(onion, chopped) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "onion, chopped"
+[17:50] Item->db_load_via_descr(onion, chopped) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("onion, chopped");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(onion, chopped, Object) END => 37
+[17:50] Recipe->addIngredient(2, 1, 10, onion, chopped) END
+[17:50] Recipe->addIngredient(3, 2, 2, minced fresh parsley) START
+[17:50] Ingredient->set_item_via_descr(minced fresh parsley, Object) START
+[17:50] Item->db_load_via_descr(minced fresh parsley) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "minced fresh parsley"
+[17:50] Item->db_load_via_descr(minced fresh parsley) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("minced fresh parsley");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(minced fresh parsley, Object) END => 38
+[17:50] Recipe->addIngredient(3, 2, 2, minced fresh parsley) END
+[17:50] Recipe->addIngredient(4, 1, 1, dried basil) START
+[17:50] Ingredient->set_item_via_descr(dried basil, Object) START
+[17:50] Item->db_load_via_descr(dried basil) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "dried basil"
+[17:50] Item->db_load_via_descr(dried basil) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("dried basil");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(dried basil, Object) END => 39
+[17:50] Recipe->addIngredient(4, 1, 1, dried basil) END
+[17:50] Recipe->addIngredient(5, 1/3, 3, butter or margarine) START
+[17:50] Ingredient->set_item_via_descr(butter or margarine, Object) START
+[17:50] Item->db_load_via_descr(butter or margarine) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "butter or margarine"
+[17:50] Item->db_load_via_descr(butter or margarine) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("butter or margarine");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(butter or margarine, Object) END => 40
+[17:50] Recipe->addIngredient(5, 1/3, 3, butter or margarine) END
+[17:50] Recipe->addIngredient(6, 1/3, 3, all-purpose flour) START
+[17:50] Ingredient->set_item_via_descr(all-purpose flour, Object) START
+[17:50] Item->db_load_via_descr(all-purpose flour) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "all-purpose flour"
+[17:50] Item->db_load_via_descr(all-purpose flour) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("all-purpose flour");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(all-purpose flour, Object) END => 41
+[17:50] Recipe->addIngredient(6, 1/3, 3, all-purpose flour) END
+[17:50] Recipe->addIngredient(7, 1, 1, salt) START
+[17:50] Ingredient->set_item_via_descr(salt, Object) START
+[17:50] Item->db_load_via_descr(salt) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "salt"
+[17:50] salt found in DB. ID => 15
+[17:50] Item->db_load_via_descr(salt) END => 1
+[17:50] Ingredient->set_item_via_descr(salt, Object) END => 15
+[17:50] Recipe->addIngredient(7, 1, 1, salt) END
+[17:50] Recipe->addIngredient(8, 1/4, 1, pepper) START
+[17:50] Ingredient->set_item_via_descr(pepper, Object) START
+[17:50] Item->db_load_via_descr(pepper) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "pepper"
+[17:50] pepper found in DB. ID => 16
+[17:50] Item->db_load_via_descr(pepper) END => 1
+[17:50] Ingredient->set_item_via_descr(pepper, Object) END => 16
+[17:50] Recipe->addIngredient(8, 1/4, 1, pepper) END
+[17:50] Recipe->addIngredient(9, 3, 3, water) START
+[17:50] Ingredient->set_item_via_descr(water, Object) START
+[17:50] Item->db_load_via_descr(water) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "water"
+[17:50] water found in DB. ID => 17
+[17:50] Item->db_load_via_descr(water) END => 1
+[17:50] Ingredient->set_item_via_descr(water, Object) END => 17
+[17:50] Recipe->addIngredient(9, 3, 3, water) END
+[17:50] Recipe->addIngredient(10, 3, 1, chicken bouillon cubes) START
+[17:50] Ingredient->set_item_via_descr(chicken bouillon cubes, Object) START
+[17:50] Item->db_load_via_descr(chicken bouillon cubes) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "chicken bouillon cubes"
+[17:50] Item->db_load_via_descr(chicken bouillon cubes) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("chicken bouillon cubes");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(chicken bouillon cubes, Object) END => 42
+[17:50] Recipe->addIngredient(10, 3, 1, chicken bouillon cubes) END
+[17:50] Recipe->addIngredient(11, 1, 1, lemon juice) START
+[17:50] Ingredient->set_item_via_descr(lemon juice, Object) START
+[17:50] Item->db_load_via_descr(lemon juice) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "lemon juice"
+[17:50] Item->db_load_via_descr(lemon juice) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("lemon juice");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(lemon juice, Object) END => 43
+[17:50] Recipe->addIngredient(11, 1, 1, lemon juice) END
+[17:50] Recipe->addIngredient(12, 1, 17, diced tomatoes, undrained) START
+[17:50] Ingredient->set_item_via_descr(diced tomatoes, undrained, Object) START
+[17:50] Item->db_load_via_descr(diced tomatoes, undrained) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "diced tomatoes, undrained"
+[17:50] Item->db_load_via_descr(diced tomatoes, undrained) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("diced tomatoes, undrained");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(diced tomatoes, undrained, Object) END => 44
+[17:50] Recipe->addIngredient(12, 1, 17, diced tomatoes, undrained) END
+[17:50] Recipe->addIngredient(13, 12, 7, evaporated milk) START
+[17:50] Ingredient->set_item_via_descr(evaporated milk, Object) START
+[17:50] Item->db_load_via_descr(evaporated milk) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "evaporated milk"
+[17:50] Item->db_load_via_descr(evaporated milk) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("evaporated milk");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(evaporated milk, Object) END => 45
+[17:50] Recipe->addIngredient(13, 12, 7, evaporated milk) END
+[17:50] Recipe->addIngredient(14, 10, 7, frozen corn) START
+[17:50] Ingredient->set_item_via_descr(frozen corn, Object) START
+[17:50] Item->db_load_via_descr(frozen corn) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "frozen corn"
+[17:50] Item->db_load_via_descr(frozen corn) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("frozen corn");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(frozen corn, Object) END => 46
+[17:50] Recipe->addIngredient(14, 10, 7, frozen corn) END
+[17:50] Recipe->addIngredient(15, 1/4, 3, grated parmesan cheese) START
+[17:50] Ingredient->set_item_via_descr(grated parmesan cheese, Object) START
+[17:50] Item->db_load_via_descr(grated parmesan cheese) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "grated parmesan cheese"
+[17:50] Item->db_load_via_descr(grated parmesan cheese) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("grated parmesan cheese");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(grated parmesan cheese, Object) END => 47
+[17:50] Recipe->addIngredient(15, 1/4, 3, grated parmesan cheese) END
+[17:50] Recipe->addIngredient(16, 2, 3, shredded cheddar cheese) START
+[17:50] Ingredient->set_item_via_descr(shredded cheddar cheese, Object) START
+[17:50] Item->db_load_via_descr(shredded cheddar cheese) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "shredded cheddar cheese"
+[17:50] Item->db_load_via_descr(shredded cheddar cheese) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("shredded cheddar cheese");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(shredded cheddar cheese, Object) END => 48
+[17:50] Recipe->addIngredient(16, 2, 3, shredded cheddar cheese) END
+[17:50] Recipe->addIngredient(17, 1, 20, sugar (optional)) START
+[17:50] Ingredient->set_item_via_descr(sugar (optional), Object) START
+[17:50] Item->db_load_via_descr(sugar (optional)) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "sugar (optional)"
+[17:50] Item->db_load_via_descr(sugar (optional)) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("sugar (optional)");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(sugar (optional), Object) END => 49
+[17:50] Recipe->addIngredient(17, 1, 20, sugar (optional)) END
+[17:50] Recipe->addIngredient(18, 10, 20, fresh parsley (optional)) START
+[17:50] Ingredient->set_item_via_descr(fresh parsley (optional), Object) START
+[17:50] Item->db_load_via_descr(fresh parsley (optional)) START
+[17:50] SELECT item_id FROM item_def WHERE item_descr = "fresh parsley (optional)"
+[17:50] Item->db_load_via_descr(fresh parsley (optional)) END => 
+[17:50] Item->db_insert() START
+[17:50] INSERT INTO item_def (item_descr) VALUES ("fresh parsley (optional)");
+[17:50] Item->db_insert() END
+[17:50] Ingredient->set_item_via_descr(fresh parsley (optional), Object) END => 50
+[17:50] Recipe->addIngredient(18, 10, 20, fresh parsley (optional)) END
+[17:50] Recipe->dbInsert() START
+[17:50] INSERT INTO recipes (name, cat_id, time_to_complete, num_servings) VALUES ("Zucchini Garden Chowder", 2, "1 hr", "10");
+[17:50] key = 4
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "2", 10, 36, 1)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 10, 37, 2)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "2", 2, 38, 3)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 1, 39, 4)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1/3", 3, 40, 5)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1/3", 3, 41, 6)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 1, 15, 7)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1/4", 1, 16, 8)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "3", 3, 17, 9)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "3", 1, 42, 10)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 1, 43, 11)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 17, 44, 12)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "12", 7, 45, 13)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "10", 7, 46, 14)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1/4", 3, 47, 15)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "2", 3, 48, 16)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "1", 20, 49, 17)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] Ingredient->db_insert(4, Object) START
+[17:50] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (4, "10", 20, 50, 18)
+[17:50] Ingredient->db_insert(4, Object) END
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 0, "In a Dutch oven or soup kettle over medium heat, saute the zucchini, onion, 2 Tb parsley, & basil in butter until vegetables are tender.")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 1, "Stir in flour, salt and pepper.")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 2, "Gradually stir in water")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 3, "Add bouillon & lemon juice. Mix well.")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 4, "Bring to a boil. Cook & stir for 2 minutes.")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 5, "Add tomatoes, milk, and corn; bring to a boil. ")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 6, "Reduce heat; cover and simmer for 5 minutes or until corn is tender")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 7, "Just before serving, stir in cheeses until melted.")
+[17:50] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (4, 8, "Add sugar & garnish with additional parsley, if desired.")
+[17:50] Recipe->dbInsert() END
+[17:50] Cookbook->get_recipes_all() START
+[17:50] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:50] Cookbook->get_recipes_all() FINISHED => 4 recipes
+[17:50] Recipe->db_load() START
+[17:50] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 4
+[17:50] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 4
+[17:50] 
+-------------------------------------------
+order_num => 1
+item_id => 36
+item_descr => zucchini, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 2
+item_id => 37
+item_descr => onion, chopped
+quantity => 1
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 3
+item_id => 38
+item_descr => minced fresh parsley
+quantity => 2
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 4
+item_id => 39
+item_descr => dried basil
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 5
+item_id => 40
+item_descr => butter or margarine
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 6
+item_id => 41
+item_descr => all-purpose flour
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 7
+item_id => 15
+item_descr => salt
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 8
+item_id => 16
+item_descr => pepper
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 9
+item_id => 17
+item_descr => water
+quantity => 3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 10
+item_id => 42
+item_descr => chicken bouillon cubes
+quantity => 3
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 11
+item_id => 43
+item_descr => lemon juice
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 12
+item_id => 44
+item_descr => diced tomatoes, undrained
+quantity => 1
+measurement_id => 17
+measurement_descr => 14.5oz can
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 13
+item_id => 45
+item_descr => evaporated milk
+quantity => 12
+measurement_id => 7
+measurement_descr => oz.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 14
+item_id => 46
+item_descr => frozen corn
+quantity => 10
+measurement_id => 7
+measurement_descr => oz.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 15
+item_id => 47
+item_descr => grated parmesan cheese
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 16
+item_id => 48
+item_descr => shredded cheddar cheese
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 17
+item_id => 49
+item_descr => sugar (optional)
+quantity => 1
+measurement_id => 20
+measurement_descr => pinch
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 18
+item_id => 50
+item_descr => fresh parsley (optional)
+quantity => 10
+measurement_id => 20
+measurement_descr => pinch
+-------------------------------------------
+
+[17:50] num_ingredients = 18
+[17:50] SELECT order_num, step_descr FROM steps WHERE recipe_id = 4
+[17:50] Cookbook->get_recipes_all() START
+[17:50] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:50] Cookbook->get_recipes_all() FINISHED => 4 recipes
+[17:50] Recipe->db_load() START
+[17:50] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 1
+[17:50] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 1
+[17:50] 
+-------------------------------------------
+order_num => 1
+item_id => 18
+item_descr => russet potatoes
+quantity => 5
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 2
+item_id => 19
+item_descr => whipping cream
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 3
+item_id => 20
+item_descr => chicken broth
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 4
+item_id => 21
+item_descr => minced garlic
+quantity => 4
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 5
+item_id => 22
+item_descr => unsalted butter
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 6
+item_id => 23
+item_descr => grated parmesan
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 7
+item_id => 15
+item_descr => salt
+quantity => 3/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 8
+item_id => 16
+item_descr => pepper
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 9
+item_id => 24
+item_descr => shredded sharp cheddar
+quantity => 1 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] num_ingredients = 9
+[17:50] SELECT order_num, step_descr FROM steps WHERE recipe_id = 1
+[17:50] Cookbook->get_recipes_all() START
+[17:50] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:50] Cookbook->get_recipes_all() FINISHED => 4 recipes
+[17:50] Recipe->db_load() START
+[17:50] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 1
+[17:50] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 1
+[17:50] 
+-------------------------------------------
+order_num => 1
+item_id => 18
+item_descr => russet potatoes
+quantity => 5
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 2
+item_id => 19
+item_descr => whipping cream
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 3
+item_id => 20
+item_descr => chicken broth
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 4
+item_id => 21
+item_descr => minced garlic
+quantity => 4
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 5
+item_id => 22
+item_descr => unsalted butter
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 6
+item_id => 23
+item_descr => grated parmesan
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 7
+item_id => 15
+item_descr => salt
+quantity => 3/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 8
+item_id => 16
+item_descr => pepper
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:50] 
+-------------------------------------------
+order_num => 9
+item_id => 24
+item_descr => shredded sharp cheddar
+quantity => 1 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:50] num_ingredients = 9
+[17:50] SELECT order_num, step_descr FROM steps WHERE recipe_id = 1
+[17:51] Recipe->addIngredient(1, 5, 10, russet potatoes) START
+[17:51] Ingredient->set_item_via_descr(russet potatoes, Object) START
+[17:51] Item->db_load_via_descr(russet potatoes) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "russet potatoes"
+[17:51] russet potatoes found in DB. ID => 18
+[17:51] Item->db_load_via_descr(russet potatoes) END => 1
+[17:51] Ingredient->set_item_via_descr(russet potatoes, Object) END => 18
+[17:51] Recipe->addIngredient(1, 5, 10, russet potatoes) END
+[17:51] Recipe->addIngredient(2, 1, 3, whipping cream) START
+[17:51] Ingredient->set_item_via_descr(whipping cream, Object) START
+[17:51] Item->db_load_via_descr(whipping cream) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "whipping cream"
+[17:51] whipping cream found in DB. ID => 19
+[17:51] Item->db_load_via_descr(whipping cream) END => 1
+[17:51] Ingredient->set_item_via_descr(whipping cream, Object) END => 19
+[17:51] Recipe->addIngredient(2, 1, 3, whipping cream) END
+[17:51] Recipe->addIngredient(3, 1, 3, chicken broth) START
+[17:51] Ingredient->set_item_via_descr(chicken broth, Object) START
+[17:51] Item->db_load_via_descr(chicken broth) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "chicken broth"
+[17:51] chicken broth found in DB. ID => 20
+[17:51] Item->db_load_via_descr(chicken broth) END => 1
+[17:51] Ingredient->set_item_via_descr(chicken broth, Object) END => 20
+[17:51] Recipe->addIngredient(3, 1, 3, chicken broth) END
+[17:51] Recipe->addIngredient(4, 4, 15, minced garlic) START
+[17:51] Ingredient->set_item_via_descr(minced garlic, Object) START
+[17:51] Item->db_load_via_descr(minced garlic) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "minced garlic"
+[17:51] minced garlic found in DB. ID => 21
+[17:51] Item->db_load_via_descr(minced garlic) END => 1
+[17:51] Ingredient->set_item_via_descr(minced garlic, Object) END => 21
+[17:51] Recipe->addIngredient(4, 4, 15, minced garlic) END
+[17:51] Recipe->addIngredient(5, 1/4, 3, unsalted butter) START
+[17:51] Ingredient->set_item_via_descr(unsalted butter, Object) START
+[17:51] Item->db_load_via_descr(unsalted butter) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "unsalted butter"
+[17:51] unsalted butter found in DB. ID => 22
+[17:51] Item->db_load_via_descr(unsalted butter) END => 1
+[17:51] Ingredient->set_item_via_descr(unsalted butter, Object) END => 22
+[17:51] Recipe->addIngredient(5, 1/4, 3, unsalted butter) END
+[17:51] Recipe->addIngredient(6, 3/4, 3, grated parmesan) START
+[17:51] Ingredient->set_item_via_descr(grated parmesan, Object) START
+[17:51] Item->db_load_via_descr(grated parmesan) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "grated parmesan"
+[17:51] grated parmesan found in DB. ID => 23
+[17:51] Item->db_load_via_descr(grated parmesan) END => 1
+[17:51] Ingredient->set_item_via_descr(grated parmesan, Object) END => 23
+[17:51] Recipe->addIngredient(6, 3/4, 3, grated parmesan) END
+[17:51] Recipe->addIngredient(7, 3/4, 1, salt) START
+[17:51] Ingredient->set_item_via_descr(salt, Object) START
+[17:51] Item->db_load_via_descr(salt) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "salt"
+[17:51] salt found in DB. ID => 15
+[17:51] Item->db_load_via_descr(salt) END => 1
+[17:51] Ingredient->set_item_via_descr(salt, Object) END => 15
+[17:51] Recipe->addIngredient(7, 3/4, 1, salt) END
+[17:51] Recipe->addIngredient(8, 1/2, 1, pepper) START
+[17:51] Ingredient->set_item_via_descr(pepper, Object) START
+[17:51] Item->db_load_via_descr(pepper) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "pepper"
+[17:51] pepper found in DB. ID => 16
+[17:51] Item->db_load_via_descr(pepper) END => 1
+[17:51] Ingredient->set_item_via_descr(pepper, Object) END => 16
+[17:51] Recipe->addIngredient(8, 1/2, 1, pepper) END
+[17:51] Recipe->addIngredient(9, 1 1/2, 3, shredded sharp cheddar) START
+[17:51] Ingredient->set_item_via_descr(shredded sharp cheddar, Object) START
+[17:51] Item->db_load_via_descr(shredded sharp cheddar) START
+[17:51] SELECT item_id FROM item_def WHERE item_descr = "shredded sharp cheddar"
+[17:51] shredded sharp cheddar found in DB. ID => 24
+[17:51] Item->db_load_via_descr(shredded sharp cheddar) END => 1
+[17:51] Ingredient->set_item_via_descr(shredded sharp cheddar, Object) END => 24
+[17:51] Recipe->addIngredient(9, 1 1/2, 3, shredded sharp cheddar) END
+[17:51] Recipe->dbUpdate() START
+[17:51] UPDATE recipes SET name = "Creamy Potato Casserole", cat_id = 5, time_to_complete = "2.5 hrs", num_servings = 8 WHERE recipe_id = 1
+[17:51] DELETE FROM ingredients WHERE recipe_id = 1
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "5", 10, 18, 1)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "1", 3, 19, 2)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "1", 3, 20, 3)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "4", 15, 21, 4)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "1/4", 3, 22, 5)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "3/4", 3, 23, 6)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "3/4", 1, 15, 7)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "1/2", 1, 16, 8)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] Ingredient->db_insert(1, Object) START
+[17:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (1, "1 1/2", 3, 24, 9)
+[17:51] Ingredient->db_insert(1, Object) END
+[17:51] DELETE FROM steps WHERE recipe_id = 1
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 0, "Adjust oven rack to middle position & preheat oven to 350 degrees.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 1, "Place potatoes in large pot & add enough cold water to cover by 2 inches. Bring potatoes to boil over high heat, then lower heat to maintain gentle simmer. Cook until potatoes are just barely tender,")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 2, "Drain potatoes. When cool enough to handle (5 - 8 min), peel with paring knife.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 3, "Shred potatoes using shredding attachment of food processor or large holes on box grater. Place shredded potatoes in large bowl and set aside.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 4, "Bring cream and broth to simmer in small saucepan.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 5, "Remove pan from heat and stir in garlic, butter, & parmesan.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 6, "Pour cream mixture into bowl with potatoes and stir to combine.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 7, "Stir in salt and pepper.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 8, "Scrape potato mixture into 2-quart oval baking dish and sprinkle with cheddar.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 9, "Cover dish with foil and bake 30 minutes.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 10, "Uncover and continue cooking until top is nicely browned, 20-25 minutes.")
+[17:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (1, 11, "Cool 10 minutes before serving.")
+[17:51] Recipe->db_clean_item_table() START
+[17:51] Recipe->db_clean_item_table() END
+[17:51] Recipe->dbUpdate() END
+[17:51] Cookbook->get_recipes_all() START
+[17:51] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[17:51] Cookbook->get_recipes_all() FINISHED => 4 recipes
+[17:51] Recipe->db_load() START
+[17:51] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 1
+[17:51] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 1
+[17:51] 
+-------------------------------------------
+order_num => 1
+item_id => 18
+item_descr => russet potatoes
+quantity => 5
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 2
+item_id => 19
+item_descr => whipping cream
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 3
+item_id => 20
+item_descr => chicken broth
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 4
+item_id => 21
+item_descr => minced garlic
+quantity => 4
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 5
+item_id => 22
+item_descr => unsalted butter
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 6
+item_id => 23
+item_descr => grated parmesan
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 7
+item_id => 15
+item_descr => salt
+quantity => 3/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 8
+item_id => 16
+item_descr => pepper
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[17:51] 
+-------------------------------------------
+order_num => 9
+item_id => 24
+item_descr => shredded sharp cheddar
+quantity => 1 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[17:51] num_ingredients = 9
+[17:51] SELECT order_num, step_descr FROM steps WHERE recipe_id = 1
+[18:11] Recipe->addIngredient(1, 4, 8, rolled beef chuck roast) START
+[18:11] Ingredient->set_item_via_descr(rolled beef chuck roast, Object) START
+[18:11] Item->db_load_via_descr(rolled beef chuck roast) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "rolled beef chuck roast"
+[18:11] Item->db_load_via_descr(rolled beef chuck roast) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("rolled beef chuck roast");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(rolled beef chuck roast, Object) END => 51
+[18:11] Recipe->addIngredient(1, 4, 8, rolled beef chuck roast) END
+[18:11] Recipe->addIngredient(2, 2, 1, salt) START
+[18:11] Ingredient->set_item_via_descr(salt, Object) START
+[18:11] Item->db_load_via_descr(salt) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "salt"
+[18:11] salt found in DB. ID => 15
+[18:11] Item->db_load_via_descr(salt) END => 1
+[18:11] Ingredient->set_item_via_descr(salt, Object) END => 15
+[18:11] Recipe->addIngredient(2, 2, 1, salt) END
+[18:11] Recipe->addIngredient(3, 2, 1, freshly ground black pepper) START
+[18:11] Ingredient->set_item_via_descr(freshly ground black pepper, Object) START
+[18:11] Item->db_load_via_descr(freshly ground black pepper) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "freshly ground black pepper"
+[18:11] Item->db_load_via_descr(freshly ground black pepper) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("freshly ground black pepper");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(freshly ground black pepper, Object) END => 52
+[18:11] Recipe->addIngredient(3, 2, 1, freshly ground black pepper) END
+[18:11] Recipe->addIngredient(4, 1/4, 3, vegetable oil) START
+[18:11] Ingredient->set_item_via_descr(vegetable oil, Object) START
+[18:11] Item->db_load_via_descr(vegetable oil) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "vegetable oil"
+[18:11] Item->db_load_via_descr(vegetable oil) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("vegetable oil");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(vegetable oil, Object) END => 53
+[18:11] Recipe->addIngredient(4, 1/4, 3, vegetable oil) END
+[18:11] Recipe->addIngredient(5, 2, 10, onions, chopped) START
+[18:11] Ingredient->set_item_via_descr(onions, chopped, Object) START
+[18:11] Item->db_load_via_descr(onions, chopped) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "onions, chopped"
+[18:11] Item->db_load_via_descr(onions, chopped) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("onions, chopped");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(onions, chopped, Object) END => 54
+[18:11] Recipe->addIngredient(5, 2, 10, onions, chopped) END
+[18:11] Recipe->addIngredient(6, 2, 10, carrots, chopped) START
+[18:11] Ingredient->set_item_via_descr(carrots, chopped, Object) START
+[18:11] Item->db_load_via_descr(carrots, chopped) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "carrots, chopped"
+[18:11] Item->db_load_via_descr(carrots, chopped) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("carrots, chopped");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(carrots, chopped, Object) END => 55
+[18:11] Recipe->addIngredient(6, 2, 10, carrots, chopped) END
+[18:11] Recipe->addIngredient(7, 2, 10, celery stalks, chopped) START
+[18:11] Ingredient->set_item_via_descr(celery stalks, chopped, Object) START
+[18:11] Item->db_load_via_descr(celery stalks, chopped) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "celery stalks, chopped"
+[18:11] Item->db_load_via_descr(celery stalks, chopped) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("celery stalks, chopped");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(celery stalks, chopped, Object) END => 56
+[18:11] Recipe->addIngredient(7, 2, 10, celery stalks, chopped) END
+[18:11] Recipe->addIngredient(8, 3, 15, garlic, chopped) START
+[18:11] Ingredient->set_item_via_descr(garlic, chopped, Object) START
+[18:11] Item->db_load_via_descr(garlic, chopped) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "garlic, chopped"
+[18:11] Item->db_load_via_descr(garlic, chopped) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("garlic, chopped");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(garlic, chopped, Object) END => 57
+[18:11] Recipe->addIngredient(8, 3, 15, garlic, chopped) END
+[18:11] Recipe->addIngredient(9, 3/4, 3, tomato puree) START
+[18:11] Ingredient->set_item_via_descr(tomato puree, Object) START
+[18:11] Item->db_load_via_descr(tomato puree) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "tomato puree"
+[18:11] Item->db_load_via_descr(tomato puree) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("tomato puree");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(tomato puree, Object) END => 58
+[18:11] Recipe->addIngredient(9, 3/4, 3, tomato puree) END
+[18:11] Recipe->addIngredient(10, 1/4, 3, all-purpose flour) START
+[18:11] Ingredient->set_item_via_descr(all-purpose flour, Object) START
+[18:11] Item->db_load_via_descr(all-purpose flour) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "all-purpose flour"
+[18:11] all-purpose flour found in DB. ID => 41
+[18:11] Item->db_load_via_descr(all-purpose flour) END => 1
+[18:11] Ingredient->set_item_via_descr(all-purpose flour, Object) END => 41
+[18:11] Recipe->addIngredient(10, 1/4, 3, all-purpose flour) END
+[18:11] Recipe->addIngredient(11, 1, 3, red wine) START
+[18:11] Ingredient->set_item_via_descr(red wine, Object) START
+[18:11] Item->db_load_via_descr(red wine) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "red wine"
+[18:11] Item->db_load_via_descr(red wine) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("red wine");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(red wine, Object) END => 59
+[18:11] Recipe->addIngredient(11, 1, 3, red wine) END
+[18:11] Recipe->addIngredient(12, 1, 21, garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)) START
+[18:11] Ingredient->set_item_via_descr(garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag), Object) START
+[18:11] Item->db_load_via_descr(garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)"
+[18:11] Item->db_load_via_descr(garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag), Object) END => 60
+[18:11] Recipe->addIngredient(12, 1, 21, garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)) END
+[18:11] Recipe->addIngredient(13, 1.5 - 2.5, 5, beef broth) START
+[18:11] Ingredient->set_item_via_descr(beef broth, Object) START
+[18:11] Item->db_load_via_descr(beef broth) START
+[18:11] SELECT item_id FROM item_def WHERE item_descr = "beef broth"
+[18:11] Item->db_load_via_descr(beef broth) END => 
+[18:11] Item->db_insert() START
+[18:11] INSERT INTO item_def (item_descr) VALUES ("beef broth");
+[18:11] Item->db_insert() END
+[18:11] Ingredient->set_item_via_descr(beef broth, Object) END => 61
+[18:11] Recipe->addIngredient(13, 1.5 - 2.5, 5, beef broth) END
+[18:11] Recipe->dbInsert() START
+[18:11] INSERT INTO recipes (name, cat_id, time_to_complete, num_servings) VALUES ("Mother\'s Perfect Pot Roast", 3, "3 hrs", "10");
+[18:11] key = 5
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "4", 8, 51, 1)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 1, 15, 2)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 1, 52, 3)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1/4", 3, 53, 4)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 54, 5)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 55, 6)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 56, 7)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "3", 15, 57, 8)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "3/4", 3, 58, 9)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1/4", 3, 41, 10)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1", 3, 59, 11)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1", 21, 60, 12)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] Ingredient->db_insert(5, Object) START
+[18:11] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1.5 - 2.5", 5, 61, 13)
+[18:11] Ingredient->db_insert(5, Object) END
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 0, "Preheat oven to 350 degrees")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 1, "Trim the beef of excess fat and sinew. Season very well with salt and pepper. (If using canned broth, season the beef very lightly with salt.)")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 2, "Heat a Dutch oven or other heavy pot on high heat until very hot. Add oil and sear beef until browned on all sides.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 3, "Add onion, carrot, celery & garlic. Saute until the vegetables begin to brown. Reduce the heat to medium and continue cooking until the vegetables are very soft.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 4, "Add tomato puree and cook until mixture is dark brown, about 8-9 minutes.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 5, "Add flour, stir and cook for 3 to 4 minutes.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 6, "Add the wine and bouquet garni, and stir well, scraping to remove any bits stuck to the bottom of the pan.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 7, "Return the beef to the pan and add the stock a little at a time, stirring with a wooden spoon, until the stock comes about 2/3 up the size of the beef roast. The amount of stock will vary depending on the size of the pan.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 8, "Bring to a boil, cover and place in teh oven until the beef is fork-tender, about 2 hours.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 9, "Remove the beef and keep warm. Degrease the sauce, strain out the vegetables and remove the bouquet garni. ")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 10, "If the sauce is too thin, simmer, uncovered, until reduced and slightly thickened. Taste and adjust seasoning with salt and pepper.")
+[18:11] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 11, "Slice beef and serve with sauce.")
+[18:11] Recipe->dbInsert() END
+[18:11] Cookbook->get_recipes_all() START
+[18:11] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[18:11] Cookbook->get_recipes_all() FINISHED => 5 recipes
+[18:11] Recipe->db_load() START
+[18:11] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 5
+[18:11] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 5
+[18:11] 
+-------------------------------------------
+order_num => 1
+item_id => 51
+item_descr => rolled beef chuck roast
+quantity => 4
+measurement_id => 8
+measurement_descr => pound
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 2
+item_id => 15
+item_descr => salt
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 3
+item_id => 52
+item_descr => freshly ground black pepper
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 4
+item_id => 53
+item_descr => vegetable oil
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 5
+item_id => 54
+item_descr => onions, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 6
+item_id => 55
+item_descr => carrots, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 7
+item_id => 56
+item_descr => celery stalks, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 8
+item_id => 57
+item_descr => garlic, chopped
+quantity => 3
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 9
+item_id => 58
+item_descr => tomato puree
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 10
+item_id => 41
+item_descr => all-purpose flour
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 11
+item_id => 59
+item_descr => red wine
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 12
+item_id => 60
+item_descr => garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)
+quantity => 1
+measurement_id => 21
+measurement_descr => bouquet
+-------------------------------------------
+
+[18:11] 
+-------------------------------------------
+order_num => 13
+item_id => 61
+item_descr => beef broth
+quantity => 1.5 - 2.5
+measurement_id => 5
+measurement_descr => qt.
+-------------------------------------------
+
+[18:11] num_ingredients = 13
+[18:11] SELECT order_num, step_descr FROM steps WHERE recipe_id = 5
+[18:12] Cookbook->get_recipes_all() START
+[18:12] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[18:12] Cookbook->get_recipes_all() FINISHED => 5 recipes
+[18:12] Recipe->db_load() START
+[18:12] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 5
+[18:12] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 5
+[18:12] 
+-------------------------------------------
+order_num => 1
+item_id => 51
+item_descr => rolled beef chuck roast
+quantity => 4
+measurement_id => 8
+measurement_descr => pound
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 2
+item_id => 15
+item_descr => salt
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 3
+item_id => 52
+item_descr => freshly ground black pepper
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 4
+item_id => 53
+item_descr => vegetable oil
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 5
+item_id => 54
+item_descr => onions, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 6
+item_id => 55
+item_descr => carrots, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 7
+item_id => 56
+item_descr => celery stalks, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 8
+item_id => 57
+item_descr => garlic, chopped
+quantity => 3
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 9
+item_id => 58
+item_descr => tomato puree
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 10
+item_id => 41
+item_descr => all-purpose flour
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 11
+item_id => 59
+item_descr => red wine
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 12
+item_id => 60
+item_descr => garni (fresh thyme, parsley sprigs and bay leaf tied up in cheesecloth bag)
+quantity => 1
+measurement_id => 21
+measurement_descr => bouquet
+-------------------------------------------
+
+[18:12] 
+-------------------------------------------
+order_num => 13
+item_id => 61
+item_descr => beef broth
+quantity => 1.5 - 2.5
+measurement_id => 5
+measurement_descr => qt.
+-------------------------------------------
+
+[18:12] num_ingredients = 13
+[18:12] SELECT order_num, step_descr FROM steps WHERE recipe_id = 5
+[18:15] Recipe->addIngredient(1, 4, 8, rolled beef chuck roast) START
+[18:15] Ingredient->set_item_via_descr(rolled beef chuck roast, Object) START
+[18:15] Item->db_load_via_descr(rolled beef chuck roast) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "rolled beef chuck roast"
+[18:15] rolled beef chuck roast found in DB. ID => 51
+[18:15] Item->db_load_via_descr(rolled beef chuck roast) END => 1
+[18:15] Ingredient->set_item_via_descr(rolled beef chuck roast, Object) END => 51
+[18:15] Recipe->addIngredient(1, 4, 8, rolled beef chuck roast) END
+[18:15] Recipe->addIngredient(2, 2, 1, salt) START
+[18:15] Ingredient->set_item_via_descr(salt, Object) START
+[18:15] Item->db_load_via_descr(salt) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "salt"
+[18:15] salt found in DB. ID => 15
+[18:15] Item->db_load_via_descr(salt) END => 1
+[18:15] Ingredient->set_item_via_descr(salt, Object) END => 15
+[18:15] Recipe->addIngredient(2, 2, 1, salt) END
+[18:15] Recipe->addIngredient(3, 2, 1, freshly ground black pepper) START
+[18:15] Ingredient->set_item_via_descr(freshly ground black pepper, Object) START
+[18:15] Item->db_load_via_descr(freshly ground black pepper) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "freshly ground black pepper"
+[18:15] freshly ground black pepper found in DB. ID => 52
+[18:15] Item->db_load_via_descr(freshly ground black pepper) END => 1
+[18:15] Ingredient->set_item_via_descr(freshly ground black pepper, Object) END => 52
+[18:15] Recipe->addIngredient(3, 2, 1, freshly ground black pepper) END
+[18:15] Recipe->addIngredient(4, 1/4, 3, vegetable oil) START
+[18:15] Ingredient->set_item_via_descr(vegetable oil, Object) START
+[18:15] Item->db_load_via_descr(vegetable oil) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "vegetable oil"
+[18:15] vegetable oil found in DB. ID => 53
+[18:15] Item->db_load_via_descr(vegetable oil) END => 1
+[18:15] Ingredient->set_item_via_descr(vegetable oil, Object) END => 53
+[18:15] Recipe->addIngredient(4, 1/4, 3, vegetable oil) END
+[18:15] Recipe->addIngredient(5, 2, 10, onions, chopped) START
+[18:15] Ingredient->set_item_via_descr(onions, chopped, Object) START
+[18:15] Item->db_load_via_descr(onions, chopped) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "onions, chopped"
+[18:15] onions, chopped found in DB. ID => 54
+[18:15] Item->db_load_via_descr(onions, chopped) END => 1
+[18:15] Ingredient->set_item_via_descr(onions, chopped, Object) END => 54
+[18:15] Recipe->addIngredient(5, 2, 10, onions, chopped) END
+[18:15] Recipe->addIngredient(6, 2, 10, carrots, chopped) START
+[18:15] Ingredient->set_item_via_descr(carrots, chopped, Object) START
+[18:15] Item->db_load_via_descr(carrots, chopped) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "carrots, chopped"
+[18:15] carrots, chopped found in DB. ID => 55
+[18:15] Item->db_load_via_descr(carrots, chopped) END => 1
+[18:15] Ingredient->set_item_via_descr(carrots, chopped, Object) END => 55
+[18:15] Recipe->addIngredient(6, 2, 10, carrots, chopped) END
+[18:15] Recipe->addIngredient(7, 2, 10, celery stalks, chopped) START
+[18:15] Ingredient->set_item_via_descr(celery stalks, chopped, Object) START
+[18:15] Item->db_load_via_descr(celery stalks, chopped) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "celery stalks, chopped"
+[18:15] celery stalks, chopped found in DB. ID => 56
+[18:15] Item->db_load_via_descr(celery stalks, chopped) END => 1
+[18:15] Ingredient->set_item_via_descr(celery stalks, chopped, Object) END => 56
+[18:15] Recipe->addIngredient(7, 2, 10, celery stalks, chopped) END
+[18:15] Recipe->addIngredient(8, 3, 15, garlic, chopped) START
+[18:15] Ingredient->set_item_via_descr(garlic, chopped, Object) START
+[18:15] Item->db_load_via_descr(garlic, chopped) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "garlic, chopped"
+[18:15] garlic, chopped found in DB. ID => 57
+[18:15] Item->db_load_via_descr(garlic, chopped) END => 1
+[18:15] Ingredient->set_item_via_descr(garlic, chopped, Object) END => 57
+[18:15] Recipe->addIngredient(8, 3, 15, garlic, chopped) END
+[18:15] Recipe->addIngredient(9, 3/4, 3, tomato puree) START
+[18:15] Ingredient->set_item_via_descr(tomato puree, Object) START
+[18:15] Item->db_load_via_descr(tomato puree) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "tomato puree"
+[18:15] tomato puree found in DB. ID => 58
+[18:15] Item->db_load_via_descr(tomato puree) END => 1
+[18:15] Ingredient->set_item_via_descr(tomato puree, Object) END => 58
+[18:15] Recipe->addIngredient(9, 3/4, 3, tomato puree) END
+[18:15] Recipe->addIngredient(10, 1/4, 3, all-purpose flour) START
+[18:15] Ingredient->set_item_via_descr(all-purpose flour, Object) START
+[18:15] Item->db_load_via_descr(all-purpose flour) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "all-purpose flour"
+[18:15] all-purpose flour found in DB. ID => 41
+[18:15] Item->db_load_via_descr(all-purpose flour) END => 1
+[18:15] Ingredient->set_item_via_descr(all-purpose flour, Object) END => 41
+[18:15] Recipe->addIngredient(10, 1/4, 3, all-purpose flour) END
+[18:15] Recipe->addIngredient(11, 1, 3, red wine) START
+[18:15] Ingredient->set_item_via_descr(red wine, Object) START
+[18:15] Item->db_load_via_descr(red wine) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "red wine"
+[18:15] red wine found in DB. ID => 59
+[18:15] Item->db_load_via_descr(red wine) END => 1
+[18:15] Ingredient->set_item_via_descr(red wine, Object) END => 59
+[18:15] Recipe->addIngredient(11, 1, 3, red wine) END
+[18:15] Recipe->addIngredient(12, 1, 21, garni (fresh thyme, parsley sprigs and bay leaf ti) START
+[18:15] Ingredient->set_item_via_descr(garni (fresh thyme, parsley sprigs and bay leaf ti, Object) START
+[18:15] Item->db_load_via_descr(garni (fresh thyme, parsley sprigs and bay leaf ti) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "garni (fresh thyme, parsley sprigs and bay leaf ti"
+[18:15] Item->db_load_via_descr(garni (fresh thyme, parsley sprigs and bay leaf ti) END => 
+[18:15] Item->db_insert() START
+[18:15] INSERT INTO item_def (item_descr) VALUES ("garni (fresh thyme, parsley sprigs and bay leaf ti");
+[18:15] Item->db_insert() END
+[18:15] Ingredient->set_item_via_descr(garni (fresh thyme, parsley sprigs and bay leaf ti, Object) END => 62
+[18:15] Recipe->addIngredient(12, 1, 21, garni (fresh thyme, parsley sprigs and bay leaf ti) END
+[18:15] Recipe->addIngredient(13, 1.5 - , 5, beef broth) START
+[18:15] Ingredient->set_item_via_descr(beef broth, Object) START
+[18:15] Item->db_load_via_descr(beef broth) START
+[18:15] SELECT item_id FROM item_def WHERE item_descr = "beef broth"
+[18:15] beef broth found in DB. ID => 61
+[18:15] Item->db_load_via_descr(beef broth) END => 1
+[18:15] Ingredient->set_item_via_descr(beef broth, Object) END => 61
+[18:15] Recipe->addIngredient(13, 1.5 - , 5, beef broth) END
+[18:15] Recipe->dbUpdate() START
+[18:15] UPDATE recipes SET name = "Mother\'s Perfect Pot Roast", cat_id = 3, time_to_complete = "3 hrs", num_servings = 10 WHERE recipe_id = 5
+[18:15] DELETE FROM ingredients WHERE recipe_id = 5
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "4", 8, 51, 1)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 1, 15, 2)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 1, 52, 3)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1/4", 3, 53, 4)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 54, 5)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 55, 6)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "2", 10, 56, 7)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "3", 15, 57, 8)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "3/4", 3, 58, 9)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1/4", 3, 41, 10)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1", 3, 59, 11)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1", 21, 62, 12)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] Ingredient->db_insert(5, Object) START
+[18:15] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (5, "1.5 - ", 5, 61, 13)
+[18:15] Ingredient->db_insert(5, Object) END
+[18:15] DELETE FROM steps WHERE recipe_id = 5
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 0, "Preheat oven to 350 degrees")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 1, "Trim the beef of excess fat and sinew. Season very well with salt and pepper. (If using canned broth, season the beef very lightly with salt.)")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 2, "Heat a Dutch oven or other heavy pot on high heat until very hot. Add oil and sear beef until browned on all sides. Remove beef and set aside.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 3, "Add onion, carrot, celery & garlic. Saute until the vegetables begin to brown. Reduce the heat to medium and continue cooking until the vegetables are very soft.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 4, "Add tomato puree and cook until mixture is dark brown, about 8-9 minutes.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 5, "Add flour, stir and cook for 3 to 4 minutes.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 6, "Add the wine and bouquet garni, and stir well, scraping to remove any bits stuck to the bottom of the pan.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 7, "Return the beef to the pan.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 8, "Add the stock a little at a time, stirring with a wooden spoon, until the stock comes about 2/3 up the size of the beef roast. The amount of stock will vary depending on the size of the pan.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 9, "Bring to a boil, cover and place in teh oven until the beef is fork-tender, about 2 hours.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 10, "Remove the beef and keep warm. Degrease the sauce, strain out the vegetables and remove the bouquet garni.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 11, "If the sauce is too thin, simmer, uncovered, until reduced and slightly thickened. Taste and adjust seasoning with salt and pepper.")
+[18:15] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (5, 12, "Slice beef and serve with sauce.")
+[18:15] Recipe->db_clean_item_table() START
+[18:15] Recipe->db_clean_item_table() END
+[18:15] Recipe->dbUpdate() END
+[18:15] Cookbook->get_recipes_all() START
+[18:15] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[18:15] Cookbook->get_recipes_all() FINISHED => 5 recipes
+[18:15] Recipe->db_load() START
+[18:15] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 5
+[18:15] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 5
+[18:15] 
+-------------------------------------------
+order_num => 1
+item_id => 51
+item_descr => rolled beef chuck roast
+quantity => 4
+measurement_id => 8
+measurement_descr => pound
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 2
+item_id => 15
+item_descr => salt
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 3
+item_id => 52
+item_descr => freshly ground black pepper
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 4
+item_id => 53
+item_descr => vegetable oil
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 5
+item_id => 54
+item_descr => onions, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 6
+item_id => 55
+item_descr => carrots, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 7
+item_id => 56
+item_descr => celery stalks, chopped
+quantity => 2
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 8
+item_id => 57
+item_descr => garlic, chopped
+quantity => 3
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 9
+item_id => 58
+item_descr => tomato puree
+quantity => 3/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 10
+item_id => 41
+item_descr => all-purpose flour
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 11
+item_id => 59
+item_descr => red wine
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 12
+item_id => 62
+item_descr => garni (fresh thyme, parsley sprigs and bay leaf ti
+quantity => 1
+measurement_id => 21
+measurement_descr => bouquet
+-------------------------------------------
+
+[18:15] 
+-------------------------------------------
+order_num => 13
+item_id => 61
+item_descr => beef broth
+quantity => 1.5 -
+measurement_id => 5
+measurement_descr => qt.
+-------------------------------------------
+
+[18:15] num_ingredients = 13
+[18:15] SELECT order_num, step_descr FROM steps WHERE recipe_id = 5
+[18:21] Cookbook->get_recipes_all() START
+[18:21] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[18:21] Cookbook->get_recipes_all() FINISHED => 5 recipes
+[18:21] Recipe->db_load() START
+[18:21] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 2
+[18:21] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 2
+[18:21] 
+-------------------------------------------
+order_num => 1
+item_id => 1
+item_descr => mixed dry beans
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 2
+item_id => 4
+item_descr => onion
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 3
+item_id => 2
+item_descr => bell pepper
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 4
+item_id => 3
+item_descr => jalapeno
+quantity => 3
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 5
+item_id => 5
+item_descr => garlic
+quantity => 2
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 6
+item_id => 6
+item_descr => TVP
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 7
+item_id => 7
+item_descr => mexican spicy rotel tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 8
+item_id => 8
+item_descr => diced tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 9
+item_id => 10
+item_descr => chili powder
+quantity => 4
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 10
+item_id => 11
+item_descr => cumin
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 11
+item_id => 12
+item_descr => oregano
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 12
+item_id => 13
+item_descr => chili paste
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 13
+item_id => 14
+item_descr => brown sugar
+quantity => 3
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 14
+item_id => 15
+item_descr => salt
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[18:21] 
+-------------------------------------------
+order_num => 15
+item_id => 16
+item_descr => pepper
+quantity => 2
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[18:21] num_ingredients = 15
+[18:21] SELECT order_num, step_descr FROM steps WHERE recipe_id = 2
+[19:51] Recipe->addIngredient(1, 6, 9, black tea bags) START
+[19:51] Ingredient->set_item_via_descr(black tea bags, Object) START
+[19:51] Item->db_load_via_descr(black tea bags) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "black tea bags"
+[19:51] Item->db_load_via_descr(black tea bags) END => 
+[19:51] Item->db_insert() START
+[19:51] INSERT INTO item_def (item_descr) VALUES ("black tea bags");
+[19:51] Item->db_insert() END
+[19:51] Ingredient->set_item_via_descr(black tea bags, Object) END => 63
+[19:51] Recipe->addIngredient(1, 6, 9, black tea bags) END
+[19:51] Recipe->addIngredient(2, 2, 3, water) START
+[19:51] Ingredient->set_item_via_descr(water, Object) START
+[19:51] Item->db_load_via_descr(water) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "water"
+[19:51] water found in DB. ID => 17
+[19:51] Item->db_load_via_descr(water) END => 1
+[19:51] Ingredient->set_item_via_descr(water, Object) END => 17
+[19:51] Recipe->addIngredient(2, 2, 3, water) END
+[19:51] Recipe->addIngredient(3, 1/3, 3, sugar) START
+[19:51] Ingredient->set_item_via_descr(sugar, Object) START
+[19:51] Item->db_load_via_descr(sugar) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "sugar"
+[19:51] sugar found in DB. ID => 30
+[19:51] Item->db_load_via_descr(sugar) END => 1
+[19:51] Ingredient->set_item_via_descr(sugar, Object) END => 30
+[19:51] Recipe->addIngredient(3, 1/3, 3, sugar) END
+[19:51] Recipe->addIngredient(4, 1/3, 3, condensed milk) START
+[19:51] Ingredient->set_item_via_descr(condensed milk, Object) START
+[19:51] Item->db_load_via_descr(condensed milk) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "condensed milk"
+[19:51] Item->db_load_via_descr(condensed milk) END => 
+[19:51] Item->db_insert() START
+[19:51] INSERT INTO item_def (item_descr) VALUES ("condensed milk");
+[19:51] Item->db_insert() END
+[19:51] Ingredient->set_item_via_descr(condensed milk, Object) END => 64
+[19:51] Recipe->addIngredient(4, 1/3, 3, condensed milk) END
+[19:51] Recipe->addIngredient(5, 1/2, 3, half & half) START
+[19:51] Ingredient->set_item_via_descr(half & half, Object) START
+[19:51] Item->db_load_via_descr(half & half) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "half & half"
+[19:51] Item->db_load_via_descr(half & half) END => 
+[19:51] Item->db_insert() START
+[19:51] INSERT INTO item_def (item_descr) VALUES ("half & half");
+[19:51] Item->db_insert() END
+[19:51] Ingredient->set_item_via_descr(half & half, Object) END => 65
+[19:51] Recipe->addIngredient(5, 1/2, 3, half & half) END
+[19:51] Recipe->addIngredient(6, 1/4, 1, cardamom) START
+[19:51] Ingredient->set_item_via_descr(cardamom, Object) START
+[19:51] Item->db_load_via_descr(cardamom) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "cardamom"
+[19:51] Item->db_load_via_descr(cardamom) END => 
+[19:51] Item->db_insert() START
+[19:51] INSERT INTO item_def (item_descr) VALUES ("cardamom");
+[19:51] Item->db_insert() END
+[19:51] Ingredient->set_item_via_descr(cardamom, Object) END => 66
+[19:51] Recipe->addIngredient(6, 1/4, 1, cardamom) END
+[19:51] Recipe->addIngredient(7, 1/4, 1, cinnamon) START
+[19:51] Ingredient->set_item_via_descr(cinnamon, Object) START
+[19:51] Item->db_load_via_descr(cinnamon) START
+[19:51] SELECT item_id FROM item_def WHERE item_descr = "cinnamon"
+[19:51] Item->db_load_via_descr(cinnamon) END => 
+[19:51] Item->db_insert() START
+[19:51] INSERT INTO item_def (item_descr) VALUES ("cinnamon");
+[19:51] Item->db_insert() END
+[19:51] Ingredient->set_item_via_descr(cinnamon, Object) END => 67
+[19:51] Recipe->addIngredient(7, 1/4, 1, cinnamon) END
+[19:51] Recipe->dbInsert() START
+[19:51] INSERT INTO recipes (name, cat_id, time_to_complete, num_servings) VALUES ("Thai Iced Tea", 6, "30 min", "3");
+[19:51] key = 6
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "6", 9, 63, 1)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "2", 3, 17, 2)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/3", 3, 30, 3)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/3", 3, 64, 4)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/2", 3, 65, 5)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/4", 1, 66, 6)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] Ingredient->db_insert(6, Object) START
+[19:51] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/4", 1, 67, 7)
+[19:51] Ingredient->db_insert(6, Object) END
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 0, "Heat water to boiling, then add tea bags and steap for 3 minutes.")
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 1, "Place tea in refridgerator to cool.")
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 2, "Mix together the remaining ingredients.")
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 3, "Fill glasses with crushed ice.")
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 4, "Fill each glass about 1/2 with milk/sugar mixture.")
+[19:51] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 5, "Carefully pour cooled tea over top to preserve seperation. ")
+[19:51] Recipe->dbInsert() END
+[19:51] Cookbook->get_recipes_all() START
+[19:51] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[19:51] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[19:51] Recipe->db_load() START
+[19:51] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 6
+[19:51] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 6
+[19:51] 
+-------------------------------------------
+order_num => 1
+item_id => 63
+item_descr => black tea bags
+quantity => 6
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 2
+item_id => 17
+item_descr => water
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 3
+item_id => 30
+item_descr => sugar
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 4
+item_id => 64
+item_descr => condensed milk
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 5
+item_id => 65
+item_descr => half & half
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 6
+item_id => 66
+item_descr => cardamom
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[19:51] 
+-------------------------------------------
+order_num => 7
+item_id => 67
+item_descr => cinnamon
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[19:51] num_ingredients = 7
+[19:51] SELECT order_num, step_descr FROM steps WHERE recipe_id = 6
+[19:15] Cookbook->get_recipes_all() START
+[19:15] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[19:15] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[19:15] Recipe->db_load() START
+[19:15] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 6
+[19:15] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 6
+[19:15] 
+-------------------------------------------
+order_num => 1
+item_id => 63
+item_descr => black tea bags
+quantity => 6
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 2
+item_id => 17
+item_descr => water
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 3
+item_id => 30
+item_descr => sugar
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 4
+item_id => 64
+item_descr => condensed milk
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 5
+item_id => 65
+item_descr => half & half
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 6
+item_id => 66
+item_descr => cardamom
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[19:15] 
+-------------------------------------------
+order_num => 7
+item_id => 67
+item_descr => cinnamon
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[19:15] num_ingredients = 7
+[19:15] SELECT order_num, step_descr FROM steps WHERE recipe_id = 6
+[20:11] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%salt%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id
+[20:11] x
+[20:11] x
+[20:11] x
+[20:11] x
+[20:11] x
+[20:12] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%salt%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id
+[20:12] x
+[20:12] x
+[20:12] x
+[20:12] x
+[20:12] x
+[20:12] Cookbook->get_recipes_all() START
+[20:12] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[20:12] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[20:16] SELECT recipe_id, name FROM recipes where name like '%potato%'
+[20:16] x
+[20:16] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%salt%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id
+[20:16] x
+[20:16] x
+[20:16] x
+[20:16] x
+[20:16] x
+[20:17] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%salt%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_idGROUP BY r.recipe_id
+[20:17] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%salt%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id GROUP BY r.recipe_id
+[20:17] x
+[20:17] x
+[20:17] x
+[20:17] x
+[20:27] Cookbook->get_recipes_all() START
+[20:27] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[20:27] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[20:27] Recipe->db_load() START
+[20:27] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 6
+[20:27] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 6
+[20:27] 
+-------------------------------------------
+order_num => 1
+item_id => 63
+item_descr => black tea bags
+quantity => 6
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 2
+item_id => 17
+item_descr => water
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 3
+item_id => 30
+item_descr => sugar
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 4
+item_id => 64
+item_descr => condensed milk
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 5
+item_id => 65
+item_descr => half & half
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 6
+item_id => 66
+item_descr => cardamom
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:27] 
+-------------------------------------------
+order_num => 7
+item_id => 67
+item_descr => cinnamon
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:27] num_ingredients = 7
+[20:27] SELECT order_num, step_descr FROM steps WHERE recipe_id = 6
+[20:29] Cookbook->get_recipes_all() START
+[20:29] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[20:29] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[20:29] Recipe->db_load() START
+[20:29] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 6
+[20:29] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 6
+[20:29] 
+-------------------------------------------
+order_num => 1
+item_id => 63
+item_descr => black tea bags
+quantity => 6
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 2
+item_id => 17
+item_descr => water
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 3
+item_id => 30
+item_descr => sugar
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 4
+item_id => 64
+item_descr => condensed milk
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 5
+item_id => 65
+item_descr => half & half
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 6
+item_id => 66
+item_descr => cardamom
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:29] 
+-------------------------------------------
+order_num => 7
+item_id => 67
+item_descr => cinnamon
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:29] num_ingredients = 7
+[20:29] SELECT order_num, step_descr FROM steps WHERE recipe_id = 6
+[20:30] Recipe->addIngredient(1, 9, 9, black tea bags) START
+[20:30] Ingredient->set_item_via_descr(black tea bags, Object) START
+[20:30] Item->db_load_via_descr(black tea bags) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "black tea bags"
+[20:30] black tea bags found in DB. ID => 63
+[20:30] Item->db_load_via_descr(black tea bags) END => 1
+[20:30] Ingredient->set_item_via_descr(black tea bags, Object) END => 63
+[20:30] Recipe->addIngredient(1, 9, 9, black tea bags) END
+[20:30] Recipe->addIngredient(2, 3, 3, water) START
+[20:30] Ingredient->set_item_via_descr(water, Object) START
+[20:30] Item->db_load_via_descr(water) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "water"
+[20:30] water found in DB. ID => 17
+[20:30] Item->db_load_via_descr(water) END => 1
+[20:30] Ingredient->set_item_via_descr(water, Object) END => 17
+[20:30] Recipe->addIngredient(2, 3, 3, water) END
+[20:30] Recipe->addIngredient(3, 1/4, 1, cardamom) START
+[20:30] Ingredient->set_item_via_descr(cardamom, Object) START
+[20:30] Item->db_load_via_descr(cardamom) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "cardamom"
+[20:30] cardamom found in DB. ID => 66
+[20:30] Item->db_load_via_descr(cardamom) END => 1
+[20:30] Ingredient->set_item_via_descr(cardamom, Object) END => 66
+[20:30] Recipe->addIngredient(3, 1/4, 1, cardamom) END
+[20:30] Recipe->addIngredient(4, 1/4, 1, cinnamon) START
+[20:30] Ingredient->set_item_via_descr(cinnamon, Object) START
+[20:30] Item->db_load_via_descr(cinnamon) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "cinnamon"
+[20:30] cinnamon found in DB. ID => 67
+[20:30] Item->db_load_via_descr(cinnamon) END => 1
+[20:30] Ingredient->set_item_via_descr(cinnamon, Object) END => 67
+[20:30] Recipe->addIngredient(4, 1/4, 1, cinnamon) END
+[20:30] Recipe->addIngredient(5, 1/3, 3, sugar) START
+[20:30] Ingredient->set_item_via_descr(sugar, Object) START
+[20:30] Item->db_load_via_descr(sugar) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "sugar"
+[20:30] sugar found in DB. ID => 30
+[20:30] Item->db_load_via_descr(sugar) END => 1
+[20:30] Ingredient->set_item_via_descr(sugar, Object) END => 30
+[20:30] Recipe->addIngredient(5, 1/3, 3, sugar) END
+[20:30] Recipe->addIngredient(6, 1/3, 3, condensed milk) START
+[20:30] Ingredient->set_item_via_descr(condensed milk, Object) START
+[20:30] Item->db_load_via_descr(condensed milk) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "condensed milk"
+[20:30] condensed milk found in DB. ID => 64
+[20:30] Item->db_load_via_descr(condensed milk) END => 1
+[20:30] Ingredient->set_item_via_descr(condensed milk, Object) END => 64
+[20:30] Recipe->addIngredient(6, 1/3, 3, condensed milk) END
+[20:30] Recipe->addIngredient(7, 1/2, 3, half & half) START
+[20:30] Ingredient->set_item_via_descr(half & half, Object) START
+[20:30] Item->db_load_via_descr(half & half) START
+[20:30] SELECT item_id FROM item_def WHERE item_descr = "half & half"
+[20:30] half & half found in DB. ID => 65
+[20:30] Item->db_load_via_descr(half & half) END => 1
+[20:30] Ingredient->set_item_via_descr(half & half, Object) END => 65
+[20:30] Recipe->addIngredient(7, 1/2, 3, half & half) END
+[20:30] Recipe->dbUpdate() START
+[20:30] UPDATE recipes SET name = "Thai Iced Tea", cat_id = 6, time_to_complete = "30 min", num_servings = 3 WHERE recipe_id = 6
+[20:30] DELETE FROM ingredients WHERE recipe_id = 6
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "9", 9, 63, 1)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "3", 3, 17, 2)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/4", 1, 66, 3)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/4", 1, 67, 4)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/3", 3, 30, 5)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/3", 3, 64, 6)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] Ingredient->db_insert(6, Object) START
+[20:30] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (6, "1/2", 3, 65, 7)
+[20:30] Ingredient->db_insert(6, Object) END
+[20:30] DELETE FROM steps WHERE recipe_id = 6
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 0, "Heat water to boiling. Add cardamom & cinnamon to hot water and mix well.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 1, "Add tea bags and steap for 5 minutes.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 2, "Place tea in refridgerator to cool.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 3, "Mix together the remaining ingredients.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 4, "Fill glasses with crushed ice.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 5, "Fill each glass about 1/2 with milk/sugar mixture.")
+[20:30] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (6, 6, "Carefully pour cooled tea over top to preserve seperation.")
+[20:30] Recipe->db_clean_item_table() START
+[20:30] Recipe->db_clean_item_table() END
+[20:30] Recipe->dbUpdate() END
+[20:30] Cookbook->get_recipes_all() START
+[20:30] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[20:30] Cookbook->get_recipes_all() FINISHED => 6 recipes
+[20:30] Recipe->db_load() START
+[20:30] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 6
+[20:30] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 6
+[20:30] 
+-------------------------------------------
+order_num => 1
+item_id => 63
+item_descr => black tea bags
+quantity => 9
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 2
+item_id => 17
+item_descr => water
+quantity => 3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 3
+item_id => 66
+item_descr => cardamom
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 4
+item_id => 67
+item_descr => cinnamon
+quantity => 1/4
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 5
+item_id => 30
+item_descr => sugar
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 6
+item_id => 64
+item_descr => condensed milk
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:30] 
+-------------------------------------------
+order_num => 7
+item_id => 65
+item_descr => half & half
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:30] num_ingredients = 7
+[20:30] SELECT order_num, step_descr FROM steps WHERE recipe_id = 6
+[20:33] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%sugar%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id GROUP BY r.recipe_id
+[20:33] x
+[20:33] x
+[20:33] x
+[20:33] x
+[20:33] Recipe->db_load() START
+[20:33] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 2
+[20:33] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 2
+[20:33] 
+-------------------------------------------
+order_num => 1
+item_id => 1
+item_descr => mixed dry beans
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 2
+item_id => 4
+item_descr => onion
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 3
+item_id => 2
+item_descr => bell pepper
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 4
+item_id => 3
+item_descr => jalapeno
+quantity => 3
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 5
+item_id => 5
+item_descr => garlic
+quantity => 2
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 6
+item_id => 6
+item_descr => TVP
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 7
+item_id => 7
+item_descr => mexican spicy rotel tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 8
+item_id => 8
+item_descr => diced tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 9
+item_id => 10
+item_descr => chili powder
+quantity => 4
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 10
+item_id => 11
+item_descr => cumin
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 11
+item_id => 12
+item_descr => oregano
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 12
+item_id => 13
+item_descr => chili paste
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 13
+item_id => 14
+item_descr => brown sugar
+quantity => 3
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 14
+item_id => 15
+item_descr => salt
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:33] 
+-------------------------------------------
+order_num => 15
+item_id => 16
+item_descr => pepper
+quantity => 2
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:33] num_ingredients = 15
+[20:33] SELECT order_num, step_descr FROM steps WHERE recipe_id = 2
+[20:34] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%\"brown sugar\"%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id GROUP BY r.recipe_id
+[20:34] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%brown sugar%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id GROUP BY r.recipe_id
+[20:34] x
+[20:35] Recipe->db_load() START
+[20:35] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 2
+[20:35] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 2
+[20:35] 
+-------------------------------------------
+order_num => 1
+item_id => 1
+item_descr => mixed dry beans
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 2
+item_id => 4
+item_descr => onion
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 3
+item_id => 2
+item_descr => bell pepper
+quantity => 1
+measurement_id => 9
+measurement_descr => sm.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 4
+item_id => 3
+item_descr => jalapeno
+quantity => 3
+measurement_id => 10
+measurement_descr => med.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 5
+item_id => 5
+item_descr => garlic
+quantity => 2
+measurement_id => 15
+measurement_descr => cloves
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 6
+item_id => 6
+item_descr => TVP
+quantity => 1
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 7
+item_id => 7
+item_descr => mexican spicy rotel tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 8
+item_id => 8
+item_descr => diced tomatoes
+quantity => 1
+measurement_id => 13
+measurement_descr => med can
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 9
+item_id => 10
+item_descr => chili powder
+quantity => 4
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 10
+item_id => 11
+item_descr => cumin
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 11
+item_id => 12
+item_descr => oregano
+quantity => 1
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 12
+item_id => 13
+item_descr => chili paste
+quantity => 2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 13
+item_id => 14
+item_descr => brown sugar
+quantity => 3
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 14
+item_id => 15
+item_descr => salt
+quantity => 1
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:35] 
+-------------------------------------------
+order_num => 15
+item_id => 16
+item_descr => pepper
+quantity => 2
+measurement_id => 2
+measurement_descr => tablespoon
+-------------------------------------------
+
+[20:35] num_ingredients = 15
+[20:35] SELECT order_num, step_descr FROM steps WHERE recipe_id = 2
+[18:44] Recipe->addIngredient(1, 1/4, 3, vegetable oil) START
+[18:44] Ingredient->set_item_via_descr(vegetable oil, Object) START
+[18:44] Item->db_load_via_descr(vegetable oil) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "vegetable oil"
+[18:44] vegetable oil found in DB. ID => 53
+[18:44] Item->db_load_via_descr(vegetable oil) END => 1
+[18:44] Ingredient->set_item_via_descr(vegetable oil, Object) END => 53
+[18:44] Recipe->addIngredient(1, 1/4, 3, vegetable oil) END
+[18:44] Recipe->addIngredient(2, 1/2 , 3, brown sugar) START
+[18:44] Ingredient->set_item_via_descr(brown sugar, Object) START
+[18:44] Item->db_load_via_descr(brown sugar) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "brown sugar"
+[18:44] brown sugar found in DB. ID => 14
+[18:44] Item->db_load_via_descr(brown sugar) END => 1
+[18:44] Ingredient->set_item_via_descr(brown sugar, Object) END => 14
+[18:44] Recipe->addIngredient(2, 1/2 , 3, brown sugar) END
+[18:44] Recipe->addIngredient(3, 1/3, 3, molasses) START
+[18:44] Ingredient->set_item_via_descr(molasses, Object) START
+[18:44] Item->db_load_via_descr(molasses) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "molasses"
+[18:44] Item->db_load_via_descr(molasses) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("molasses");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(molasses, Object) END => 68
+[18:44] Recipe->addIngredient(3, 1/3, 3, molasses) END
+[18:44] Recipe->addIngredient(4, 1, 11, egg) START
+[18:44] Ingredient->set_item_via_descr(egg, Object) START
+[18:44] Item->db_load_via_descr(egg) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "egg"
+[18:44] Item->db_load_via_descr(egg) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("egg");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(egg, Object) END => 69
+[18:44] Recipe->addIngredient(4, 1, 11, egg) END
+[18:44] Recipe->addIngredient(5, 1/2, 3, sour cream) START
+[18:44] Ingredient->set_item_via_descr(sour cream, Object) START
+[18:44] Item->db_load_via_descr(sour cream) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "sour cream"
+[18:44] Item->db_load_via_descr(sour cream) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("sour cream");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(sour cream, Object) END => 70
+[18:44] Recipe->addIngredient(5, 1/2, 3, sour cream) END
+[18:44] Recipe->addIngredient(6, 2, 3, all-purpose flour) START
+[18:44] Ingredient->set_item_via_descr(all-purpose flour, Object) START
+[18:44] Item->db_load_via_descr(all-purpose flour) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "all-purpose flour"
+[18:44] all-purpose flour found in DB. ID => 41
+[18:44] Item->db_load_via_descr(all-purpose flour) END => 1
+[18:44] Ingredient->set_item_via_descr(all-purpose flour, Object) END => 41
+[18:44] Recipe->addIngredient(6, 2, 3, all-purpose flour) END
+[18:44] Recipe->addIngredient(7, 1/2, 1, ginger) START
+[18:44] Ingredient->set_item_via_descr(ginger, Object) START
+[18:44] Item->db_load_via_descr(ginger) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "ginger"
+[18:44] Item->db_load_via_descr(ginger) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("ginger");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(ginger, Object) END => 71
+[18:44] Recipe->addIngredient(7, 1/2, 1, ginger) END
+[18:44] Recipe->addIngredient(8, 1/2, 1, cinnamon) START
+[18:44] Ingredient->set_item_via_descr(cinnamon, Object) START
+[18:44] Item->db_load_via_descr(cinnamon) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "cinnamon"
+[18:44] cinnamon found in DB. ID => 67
+[18:44] Item->db_load_via_descr(cinnamon) END => 1
+[18:44] Ingredient->set_item_via_descr(cinnamon, Object) END => 67
+[18:44] Recipe->addIngredient(8, 1/2, 1, cinnamon) END
+[18:44] Recipe->addIngredient(9, 1/2, 1, cloves) START
+[18:44] Ingredient->set_item_via_descr(cloves, Object) START
+[18:44] Item->db_load_via_descr(cloves) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "cloves"
+[18:44] Item->db_load_via_descr(cloves) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("cloves");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(cloves, Object) END => 72
+[18:44] Recipe->addIngredient(9, 1/2, 1, cloves) END
+[18:44] Recipe->addIngredient(10, 1/2, 1, salt) START
+[18:44] Ingredient->set_item_via_descr(salt, Object) START
+[18:44] Item->db_load_via_descr(salt) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "salt"
+[18:44] salt found in DB. ID => 15
+[18:44] Item->db_load_via_descr(salt) END => 1
+[18:44] Ingredient->set_item_via_descr(salt, Object) END => 15
+[18:44] Recipe->addIngredient(10, 1/2, 1, salt) END
+[18:44] Recipe->addIngredient(11, 1/2, 1, baking soda) START
+[18:44] Ingredient->set_item_via_descr(baking soda, Object) START
+[18:44] Item->db_load_via_descr(baking soda) START
+[18:44] SELECT item_id FROM item_def WHERE item_descr = "baking soda"
+[18:44] Item->db_load_via_descr(baking soda) END => 
+[18:44] Item->db_insert() START
+[18:44] INSERT INTO item_def (item_descr) VALUES ("baking soda");
+[18:44] Item->db_insert() END
+[18:44] Ingredient->set_item_via_descr(baking soda, Object) END => 73
+[18:44] Recipe->addIngredient(11, 1/2, 1, baking soda) END
+[18:44] Recipe->dbInsert() START
+[18:44] INSERT INTO recipes (name, cat_id, time_to_complete, num_servings) VALUES ("Sour Cream Ginger Cookies", 4, "30 min", "24");
+[18:44] key = 7
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/4", 3, 53, 1)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2 ", 3, 14, 2)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/3", 3, 68, 3)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1", 11, 69, 4)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 3, 70, 5)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "2", 3, 41, 6)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 1, 71, 7)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 1, 67, 8)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 1, 72, 9)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 1, 15, 10)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] Ingredient->db_insert(7, Object) START
+[18:44] INSERT INTO ingredients (recipe_id, quantity, msrmnt_id, item_id, order_num) VALUES (7, "1/2", 1, 73, 11)
+[18:44] Ingredient->db_insert(7, Object) END
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 0, "Preheat oven to 375 degrees.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 1, "Place oil, brown sugar, molasses, egg and sour cream in a mixer bowl and mix at medium speed to blend well.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 2, "Stir flour, ginger, cinnamon, cloves, salt, and baking soda together to blend well.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 3, "Add flour mixture to sour cream mixture. Mix at medium speed until creamy.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 4, "Spray cookie sheet with oil or line with foil.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 5, "Drop dough by 1 1/2 tablespoonfuls onto cookie sheets.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 6, "Bake at 375 for about 10 minutes, or until cookies are firm and lightly browned.")
+[18:44] INSERT INTO steps (recipe_id, order_num, step_descr) VALUES (7, 7, "Remove them to a wire track and cool to room temperature.")
+[18:44] Recipe->dbInsert() END
+[18:44] Cookbook->get_recipes_all() START
+[18:44] SELECT r.recipe_id, r.name, r.tried, r.time_to_complete, r.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id
+[18:44] Cookbook->get_recipes_all() FINISHED => 7 recipes
+[18:44] Recipe->db_load() START
+[18:44] SELECT r.name, r.time_to_complete, r.num_servings, c.cat_id, c.cat_descr FROM recipes r, category_def c WHERE r.cat_id = c.cat_id AND r.recipe_id = 7
+[18:44] SELECT id.item_id, id.item_descr, i.quantity, i.order_num, m.msrmnt_id, m.msrmnt_descr FROM ingredients i, item_def id, msrmnt_def m WHERE i.item_id = id.item_id AND i.msrmnt_id = m.msrmnt_id AND i.recipe_id = 7
+[18:44] 
+-------------------------------------------
+order_num => 1
+item_id => 53
+item_descr => vegetable oil
+quantity => 1/4
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 2
+item_id => 14
+item_descr => brown sugar
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 3
+item_id => 68
+item_descr => molasses
+quantity => 1/3
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 4
+item_id => 69
+item_descr => egg
+quantity => 1
+measurement_id => 11
+measurement_descr => lrg.
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 5
+item_id => 70
+item_descr => sour cream
+quantity => 1/2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 6
+item_id => 41
+item_descr => all-purpose flour
+quantity => 2
+measurement_id => 3
+measurement_descr => cup
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 7
+item_id => 71
+item_descr => ginger
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 8
+item_id => 67
+item_descr => cinnamon
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 9
+item_id => 72
+item_descr => cloves
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 10
+item_id => 15
+item_descr => salt
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:44] 
+-------------------------------------------
+order_num => 11
+item_id => 73
+item_descr => baking soda
+quantity => 1/2
+measurement_id => 1
+measurement_descr => tsp.
+-------------------------------------------
+
+[18:44] num_ingredients = 11
+[18:44] SELECT order_num, step_descr FROM steps WHERE recipe_id = 7
+[18:45] SELECT r.recipe_id, r.name FROM recipes r, ingredients ig, item_def id WHERE id.item_descr like '%ginger%' AND ig.item_id = id.item_id AND ig.recipe_id = r.recipe_id GROUP BY r.recipe_id
+[18:45] x

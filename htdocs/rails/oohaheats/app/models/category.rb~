@@ -1,0 +1,15 @@
+class Category < ActiveRecord::Base
+   #has_and_belongs_to_many   :recipes, :join_table => "categories_recipes"
+   has_many :categorizations
+   has_many :recipes, :through => :categorizations, :class_name => "Recipe", :source => :recipe
+   #has_many :recipes_active, :through => :categorizations
+   has_many :recipes_active, :through => :categorizations, :class_name => "Recipe", :source => :recipe, :conditions => ['recipes.active = ?', 1]
+end
+
+
+
+#  has_many :group_users
+#  has_many :groups, :through => :groups_users
+#  has_many :moderators, :through => :group_users, :class_name => "User", :source => :user, :conditions => ['groups_users.moderator = ?',true]
+#end
+

@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<content>
+	<public>
+		<global>
+			<links>
+				<link source="http://www.glossarist.com/glossaries/economy-finance/insurance.asp" title="Glossary of Insurance Terms"/>
+			</links>
+		</global>
+	</public>
+	<clients>
+		<global>
+			<articles>
+				<article source="" title="Keeping Insurance Premiums Under Control" description=""/>
+			</articles>
+		</global>
+
+		<client id="CLIENT1"/>
+		<client id="CONTACT">
+			<body>
+				<logo source="/client/ContactLumber/logo.gif" title="Contact Lumber"/>
+			</body>
+			<coverage>
+				<line source="" title="General Liability" description=""/>
+				<line source="" title="Auto Liability" description=""/>
+				<line source="" title="Property/Boiler&lt;br&gt;&amp; Machinery" description=""/>
+				<line source="" title="Crime" description=""/>
+				<line source="" title="Umbrella" description=""/>
+				<line source="" title="Foreign" description=""/>
+				<line source="" title="Fiduciary Liability" description=""/>
+			</coverage>
+			<links>
+				<link source="http://www.tpmrs.com" title="Timber Products Manufacturers Association"/>
+				<link source="http://www.nwpa.org/" title="Northwest Wood Products Association"/>
+				<link source="http://www.awc.org/" title="American Wood Council"/>
+				<link source="http://www.timbersearch.com/default-links.html#nfbma" title="TimberSearch Web Directory"/> 
+				<link source="http://www.aitc-glulam.org" title="American Institute of Timber Construction"/>
+
+				<link source="http://www.chubb.com" title="Chubb Group of Insurance Companies"/>
+				<link source="http://www.safeco.com" title="Safeco Corporation"/>                            
+				<link source="http://www.affiliatedfm.com" title="Affilliated FM Insurance Co"/>
+
+				<link source="http://www.osha.gov" title="OSHA"/>
+			</links>
+			<team>
+				<executive>
+					<member name="Bill Prenger" title="Account Executive" email="billp@dbates.com" phone="503-796-1645"/>
+					<member name="Jim Camburn" title="Account Advisor" email="jimc@dbates.com" phone="503-796-0296"/>
+					<member name="Dick Seekins" title="Executive Liaison" email="dicks@dbates.com" phone="503-241-9216"/>
+				</executive>
+				<service>
+					<member name="Jayne Stolte" title="Marketing Coordinator" email="jaynes@dbates.com" phone="503-242-9403"/>
+					<member name="Greg Ryerson" title="Account Executive" email="gregr@dbates.com" phone="503-242-9405"/>
+					<member name="Joyce Bjorge" title="Account Services Backup" email="joyceb@dbates.com" phone="503-478-6617"/>
+				</service>
+				<extended>
+					<member name="Jeremy Andersen" title="Employment Practices Liability / Directors &amp; Officers Liability" email="jeremya@dbates.com" phone="503-796-1642"/>
+					<member name="Dennis Peterson" title="Worker's Compensation" email="dennisp@dbates.com" phone="503-796-1646"/>
+					<member name="Bill Prenger" title="Pollution Liability" email="billp@dbates.com" phone="503-796-1645"/>
+					<member name="Ingo Wittig" title="Technology" email="ingow@dbates.com" phone="503-241-9222"/>
+				</extended>				
+			</team>
+			<forms>
+				<form source="/LoadForm.asp?ID=96-859-240-5" title="Request a Certificate of Insurance" description="Request that proof of property and/or liability insurance be provided for your business."/>
+				<form source="/LoadForm.asp?ID=278-809-920-3" title="Request a Motor Vehicle Report" description="Request motor vehicle driving history for your employees."/>
+			</forms>
+
+		</client>
+
+		<client id="ZIDELL">
+			<body>
+				<logo source="/client/ZidellMarine/logo.gif" title="Zidell Marine"/>
+			</body>
+			<coverage>
+				<line source="cgl.pdf" title="General Liability" description=""/>
+				<line source="property.pdf" title="Property" description=""/>
+				<line source="auto.pdf" title="Automobile Liability" description=""/>                   
+				<line source="marine.pdf" title="Marine Liability" description=""/>      
+				<line source="marineprop.pdf" title="Marine Property" description=""/>   
+				<line source="umbrella.pdf" title="Umbrella" description=""/>
+				<line source="bumbershoot.pdf" title="Bumbershoot" description=""/>                   
+				<line source="foreign.pdf" title="Foreign Liability" description=""/>   
+				<line source="wcoregon.pdf" title="Worker's Comp., Oregon" description=""/>
+				<line source="wcother.pdf" title="Worker's Comp., Other States" description=""/>
+				<line source="fiduciary.pdf" title="Fiduciary Liability" description=""/>
+				<line source="crime.pdf" title="Crime" description=""/>
+				<line source="employment.pdf" title="Employment Practices Liability" description=""/>
+				<line source="coverage.pdf" title="Coverage Diagram" description=""/>
+			</coverage>
+			<faq src="/client/ZidellMarine/faq.html"/>
+			<links>
+				<link source="http://www.uscg.mil/hq/npfc/index.htm" title="National Pollution Fund Center"/>
+				<link source="http://www.american-club.com/" title="The American Club"/>
+				<link source="http://www.affiliatedfm.com" title="Affiliated FM Insurance Co."/>
+				<link source="http://www.osha.gov" title="OSHA"/>
+			</links>
+			<team>
+				<executive>
+					<member name="Bill Hurst" title="Wet Marine" email="billh@dbates.com" phone="503-241-9212"/>
+					<member name="Dick Seekins" title="All Other" email="dicks@dbates.com" phone="503-241-9216"/>
+				</executive>
+				<service>
+					<member name="Stacey Kramer" title="Wet Marine Customer Service" email="staceyk@dbates.com" phone="503-242-9406"/>
+					<member name="Mike Davis" title="Marine and Non-Marine Liability" email="miked@dbates.com" phone="503-242-9402"/>
+					<member name="Jayne Stolte" title="Property and Flood" email="jaynes@dbates.com" phone="503-242-9403"/>
+					<member name="Dennis Peterson" title="Worker's Comp" email="dennisp@dbates.com" phone="503-796-1646"/>
+					<member name="Barb Hayden" title="E&amp;O, Crime and Fiduciary Liability" email="barbh@dbates.com" phone="503-242-9400"/>
+					<member name="Jeremy Anderson" title="E&amp;O, Crime and Fiduciary Liability" email="jeremya@dbates.com" phone="503-796-1642"/>
+					<member name="Debra Hallock" title="E&amp;O, Crime and Fiduciary Liability Customer Service" email="debrah@dbates.com" phone="503-796-1649"/>
+					<member name="Marie Tedesco" title="Customer Service (Non Wet Marine)" email="mariet@dbates.com" phone="503-242-9409"/>
+				</service>
+			</team>
+			<forms>
+				<form source="/LoadForm.asp?ID=96-859-240-5" title="Request a Certificate of Insurance" description="Request that proof of property and/or liability insurance be provided for your business."/>
+				<form source="/LoadForm.asp?ID=278-809-920-3" title="Request a Motor Vehicle Report" description="Request motor vehicle driving history for your employees."/>
+			</forms>
+
+		</client>
+		<client id="ZIDELL2">
+			<body>
+				<logo source="/client/ZidellMarine/logo.gif" title="Zidell Marine"/>
+			</body>
+			<coverage>
+				<line source="cgl.pdf" title="General Liability" description=""/>
+				<line source="property.pdf" title="Property" description=""/>
+				<line source="auto.pdf" title="Automobile Liability" description=""/>                   
+				<line source="marine.pdf" title="Marine Liability" description=""/>   
+				<line source="marineprop.pdf" title="Marine Property" description=""/>   
+				<line source="umbrella.pdf" title="Umbrella" description=""/>
+				<line source="bumbershoot.pdf" title="Bumbershoot" description=""/>                   
+				<line source="foreign.pdf" title="Foreign Liability" description=""/>   
+				<line source="wcoregon.pdf" title="Worker's Comp., Oregon" description=""/>
+				<line source="wcother.pdf" title="Worker's Comp., Other States" description=""/>
+				<line source="fiduciary.pdf" title="Fiduciary Liability" description=""/>
+				<line source="crime.pdf" title="Crime" description=""/>
+				<line source="employment.pdf" title="Employment Practices Liability" description=""/>
+				<line source="coverage.pdf" title="Coverage Diagram" description=""/>
+			</coverage>
+			<faq src="/client/ZidellMarine/faq.html"/>
+			<links>
+				<link source="http://www.uscg.mil/hq/npfc/index.htm" title="National Pollution Fund Center"/>
+				<link source="http://www.american-club.com/" title="The American Club"/>
+				<link source="http://www.affiliatedfm.com" title="Affiliated FM Insurance Co."/>
+				<link source="http://www.osha.gov" title="OSHA"/>
+			</links>
+			<team>
+				<executive>
+					<member name="Bill Hurst" title="Wet Marine" email="billh@dbates.com" phone="503-241-9212"/>
+					<member name="Dick Seekins" title="All Other" email="dicks@dbates.com" phone="503-241-9216"/>
+				</executive>
+				<service>
+					<member name="Stacey Kramer" title="Wet Marine Customer Service" email="staceyk@dbates.com" phone="503-242-9406"/>
+					<member name="Mike Davis" title="Marine and Non-Marine Liability" email="miked@dbates.com" phone="503-242-9402"/>
+					<member name="Jayne Stolte" title="Property and Flood" email="jaynes@dbates.com" phone="503-242-9403"/>
+					<member name="Dennis Peterson" title="Worker's Comp" email="dennisp@dbates.com" phone="503-796-1646"/>
+					<member name="Barb Hayden" title="E&amp;O, Crime and Fiduciary Liability" email="barbh@dbates.com" phone="503-242-9400"/>
+					<member name="Jeremy Anderson" title="E&amp;O, Crime and Fiduciary Liability" email="jeremya@dbates.com" phone="503-796-1642"/>
+					<member name="Debra Hallock" title="E&amp;O, Crime and Fiduciary Liability Customer Service" email="debrah@dbates.com" phone="503-796-1649"/>
+					<member name="Marie Tedesco" title="Customer Service (Non Wet Marine)" email="mariet@dbates.com" phone="503-242-9409"/>
+				</service>
+			</team>
+			<forms>
+				<form source="/LoadForm.asp?ID=96-859-240-5" title="Request a Certificate of Insurance" description="Request that proof of property and/or liability insurance be provided for your business."/>
+				<form source="/LoadForm.asp?ID=278-809-920-3" title="Request a Motor Vehicle Report" description="Request motor vehicle driving history for your employees."/>
+			</forms>
+
+		</client>
+		<client id="SELECT">
+			<body>
+				<logo source="/client/SelectAccounts/logo.gif" title="D&amp;B Select Accounts Expertise"/>
+			</body>
+			<team>
+				<service>
+					<member name="Evelyn Widjaja" title="Account Names A-M" email="evelynw@dbates.com" phone="503-242-0294"/>
+					<member name="Justine Avera" title="Account Names N-Z" email="justinea@dbates.com" phone="503-241-9229"/>
+				</service>
+			</team>
+			<forms>
+				<form class="print" source="SelectAccounts/new location questionnaire.pdf" title="New Location Questionnaire"/>
+				<form class="print" source="SelectAccounts/request for policy change.pdf" title="Request for Policy Change"/>
+				<!--<form class="print" source="SelectAccounts/special event app.pdf" title="Special Events Application"/>-->
+				<form source="/LoadForm.asp?ID=7666-264-925-12" title="Request a Certificate of Insurance" description="Request that proof of property and/or liability insurance be provided for your business."/>
+				<form source="/LoadForm.asp?ID=7666-264-925-10" title="Request a Motor Vehicle Report" description="Request motor vehicle driving history for your employees."/>
+			</forms>
+		</client>
+	</clients>
+</content>

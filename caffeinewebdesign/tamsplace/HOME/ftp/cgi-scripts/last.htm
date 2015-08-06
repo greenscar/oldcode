@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>A "LAST PAGE" tag</title>
+</head>
+<body>
+<h1>Last :- A "LAST PAGE" tag</h1>
+<h2>Name          : <a href="last.pl">last.pl</a></h2>
+<h2>Version number: 1.00 (22Aug95)</h2>
+<h2>Release Date  : 22 Aug 95</h2>
+<h2>Servers       : NCSA-style</h2>
+<hr>
+<em>
+This is a really silly little tag, but some people seem to have been 
+asking for it!!!!
+</em>
+<p>
+<h2>What's it do?</h2>
+This script creates hyper-link tags which refer to the last Web resource 
+that was called by the browser before the current page.
+<p>
+Basically, it 'fakes' the <strong>BACK</strong> button.
+<p>
+<em>Why anyone wants this, when nearly all browsers already have a BACK 
+button, I don't know.. still, that's users for you!!! *8)
+</em>
+<h2>How to use <a href="last.pl">last.pl</a></h2>
+1> Take a copy of the Perl script, and put it into your 
+<code>/cgi-bin</code> directory.
+<p>
+2> Make <em><a href="last.pl">last.pl</a></em> exectuable:<p>
+<code>
+chmod +x last.pl
+</code>
+<p>
+3> Make a WebPage which contains your BACK hyper-link. This normally 
+looks like this:
+<p>
+<code>
+&lt;a href="some.page.html"&gt;BACK&lt;/a&gt;
+</code>
+<p>
+However, you need <em><a href="last.pl">last.pl</a></em> to 'fake' the last 
+WebResource's URL, so your tag now looks like this:
+<p>
+<code>
+&lt;a href="&lt;!--#exec cgi="/cgi-bin/last.pl" --&gt;"&gt;BACK&lt;/a&gt;
+</code>
+<p>
+<h2>How does <em><a href="last.pl">last.pl</a></em> work?</h2>
+<em><a href="last.pl">last.pl</a></em> is called by your page by a 
+<strong>server side include</strong>. This basically gets 
+<em><a href="last.pl">last.pl</a></em> to retrieve and 
+return the URL of the last Web resource your browser visited.
+<p>
+The returned URL is put in the place of your normal hyper-link's URL.
+<p>
+<hr>
+You can get the <em>last.pl</em> by clicking on any of the hi-lited links 
+in this page, or by clicking <a href="last.pl">HERE</a>.
+<hr>
+<strong>NOTE:-</strong>
+For <em><a href="last.pl">last.pl</a></em> to work, your WebServer 
+<strong>MUST</strong> have server side include capability. This generally 
+means that you must be using an NCSA-style server, and that server side 
+include capability has already been correctly setup to work with your server.
+<hr>
+For a more full reference and explanation of the back button function, 
+look at <a href="http://www.iaf.nl/%7Eabigail/HTML/Misc/back_button.html">
+Simulating the back button</a>.
+
+<h2><A HREF="/WebTools/">Back to WebTools menu</A></h2>
+<h2><A HREF="/">Back to main menu</A></h2>
+<hr>
+This page has been accessed <b>3</b> times since it was first accessed at 19:35 24Apr96.
+<br><br>
+<ADDRESS> Maintained by:
+<A HREF="/public/pango.html">Pangolin</A><br>
+University of Bristol, Clifton, Bristol, AVON, BS8 1TH, UK
+</ADDRESS>
+</body>
+</html>
+
+

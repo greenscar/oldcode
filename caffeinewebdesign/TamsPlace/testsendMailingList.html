@@ -1,0 +1,32 @@
+<html>
+<BODY BACKGROUND="../imshome/laceback.jpg">
+<h1 align = center> Mass Mailer</h1>
+<form enctype="multipart/form-data" action="php_files/testMassMailer.php" method="post">
+  <div align="center">
+  <table width="46%" border="1">
+    <tr> 
+      <td width="46%">Enter the subject of your email:</td>
+      <td width="54%"> 
+        <input type="text" name="subject">
+      </td>
+    </tr>
+    <tr> 
+      <td width="46%">Upload the file you wish to mail out:</td>
+      <td width="54%"> 
+  		<input type="hidden" name="MAX_FILE_SIZE" value="9999999999">
+        <input name="theFile" type="file">
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2"> 
+        <div align="center">
+          <input type="submit" value="Send the mail" name="submit">
+        </div>
+      </td>
+    </tr>
+  </table>
+
+
+</div>
+</form>
+</html>

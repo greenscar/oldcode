@@ -1,0 +1,12 @@
+<html>
+<head>
+	<link rel="stylesheet" href="/resource/document.css">
+       	<title>~Title~</title>
+        <meta name="description" value="~Description~">
+        <meta name="keywords" content="~MetaTags~">
+        <meta name="source" content="~Publisher~">
+        <meta name="author" content="~Author~">
+</head>
+~DocFrameSet~
+~DocBody~
+</html>

@@ -1,0 +1,12 @@
+<!ELEMENT cookbook (recipe+)>
+<!ELEMENT recipe (header, ingredient+, instruction+)>
+<!ELEMENT header (title, category+, credit*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT credit (#PCDATA)>
+<!ELEMENT ingredient (#PCDATA)>
+<!ELEMENT instruction (#PCDATA)>
+
+
+<!ATTLIST ingredient amount CDATA #REQUIRED>
+<!ATTLIST instruction step_num CDATA #REQUIRED>

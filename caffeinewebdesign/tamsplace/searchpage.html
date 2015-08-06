@@ -1,0 +1,121 @@
+<html>
+
+<head><title>TAM'S PAGE</title></head>
+
+<BODY BACKGROUND="imshome/laceback.jpg">
+<title>SEARCH PAGE</title>
+<form name="form1" method="post" action="php_files/displayEntries.php">
+  <p>&nbsp;</p>
+  <div align="center">
+    <h1>INFORMATION TO DISPLAY </h1>
+  </div>
+  <table width="19%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr> 
+      <td> 
+        <input type="checkbox" name="street" value="street" checked>
+      </td>
+      <td> <b>Street Address</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="checkbox" name="csz" value="csz" checked>
+      </td>
+      <td> <b>City, State, Zip, Country</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="checkbox" name="email" value="email" checked>
+      </td>
+      <td><b>Email Address</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="checkbox" name="phone" value="phone" checked>
+      </td>
+      <td><b>Phone Number</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="checkbox" name="reference" value="reference" checked>
+      </td>
+      <td> <b>Reference Type</b></td>
+    </tr>
+    <tr> 
+      <td> 
+        <input type="checkbox" name="datejoin" value="datejoin" checked>
+      </td>
+      <td> <b>Date Joined</b></td>
+    </tr>
+  </table>
+  <br>
+  <hr color=black height="3" noShade>
+  <h1 align="center">SEARCH LIST</h1>
+  <p align="center"> 
+    <input type="text" name="searchFor">
+    <select name="dataToSearch">
+      <option value="Name">Last Name</option>
+      <option value="emailAddress">Email Address</option>
+      <option value="entryNumber">Entry Number</option>
+	  <option value = "date">Entry Date (YYYY-MM-DD)</option>
+    </select>
+  </p>
+    <div align="center">
+    <p> 
+      <input type=SUBMIT  name = "search"  value="Search Contest">
+      <input type=SUBMIT  name = "search"  value="Search Mailing List">
+	  <input type=SUBMIT  name = "search"  value="Search Fenton Mailing List">
+    </p>
+  </div>
+  <hr color=black height="3" noShade>
+  <h1 align="center">DISPLAY A FULL LIST</h1>
+    
+  <p align="center"> 
+    <input type=SUBMIT  name = "createList"  value="List Current Contest Entries">
+    ordered by: 
+    <input type="radio" name="fullOrderedBy" value="name" checked>
+    Last Name 
+    <input type="radio" name="fullOrderedBy" value="state">
+    State 
+    <input type="radio" name="fullOrderedBy" value="email">
+    E-Mail 
+    <input type="radio" name="fullOrderedBy" value="date">
+    Date Entered</p>
+  <div align="center"> 
+    <p> 
+      <input type=SUBMIT  name = "createList"  value="List Everyone On Mailing List">
+      ordered by: 
+      <input type="radio" name="mailOrderedBy" value="name" checked>
+      Last Name 
+      <input type="radio" name="mailOrderedBy" value="state">
+      State 
+      <input type="radio" name="mailOrderedBy" value="email">
+      E-Mail 
+      <input type="radio" name="mailOrderedBy" value="date">
+      Date Joined</p>
+  </div>
+  <div align="center"> 
+    <p> 
+      <input type=SUBMIT  name = "createList"  value="List Everyone On Fenton Mailing List">
+      ordered by: 
+      <input type="radio" name="fentonOrderedBy" value="name" checked>
+      Last Name 
+      <input type="radio" name="fentonOrderedBy" value="state">
+      State 
+      <input type="radio" name="fentonOrderedBy" value="email">
+      E-Mail 
+      <input type="radio" name="fentonOrderedBy" value="date">
+      Date Joined</p>
+  </div>
+</form>
+<p> 
+<p>&nbsp;</p><hr color=black height="3" noShade>
+<p><br>
+</p>
+<h1 align="center">CLEAR CURRENT CONTEST ENTRIES</h1>
+<form action = "clearContestEntries.html">
+  <div align="center">
+    <input type="submit" name="clear" value="Clear Contest Entries">
+  </div>
+</form>
+</body>
+</html>

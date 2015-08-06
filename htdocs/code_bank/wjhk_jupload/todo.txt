@@ -1,0 +1,5 @@
+	TASKS FOR JUPLOAD
+	=================
+
+.: Add ability to include parameters. 
+.: Implement Event Listeners or Observer/Observable in main applet to listen to Upload thread.

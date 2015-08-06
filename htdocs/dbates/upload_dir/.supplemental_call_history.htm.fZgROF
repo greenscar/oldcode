@@ -1,0 +1,344 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/client/document/resource/client.css"/>
+	<title>Supplemental Call history of American Club</title>
+</head>
+<body>
+	<h3>Supplemental Call history of American Club</h3>
+	<table cellspacing="0" cellpadding="2" style="border: solid black 2px;">
+                <tr>
+                	<td class='heading'>Policy Year</td>
+                	<td colspan="2" class='heading'>1990-1991</td>
+                	<td colspan="2" class='heading'>1991-1992</td>
+                	<td colspan="2" class='heading'>1992-1993</td>
+                	<td colspan="2" class='heading'>1993-1994</td>
+                	<td colspan="2" class='heading'>1994-1995</td>
+                	<td colspan="2" class='heading'>1995-1996</td>
+                	<td colspan="2" class='heading'>1996-1997</td>
+                </tr>
+                <tr>
+                	<td class='subheading'>Supp. Call Estimate:</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                	<td class='subheading'>Original</td>
+                	<td class='subheading2'>Final</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>American Club</td>
+                	<td class='data'>80</td>
+                	<td class='data'>120</td>
+                	<td class='data'>80</td>
+                	<td class='data'>130</td>
+                	<td class='data'>80</td>
+                	<td class='data'>80</td>
+                	<td class='data'>80</td>
+                	<td class='data'>90</td>
+                	<td class='data'>65</td>
+                	<td class='data'>65</td>
+                	<td class='data'>50</td>
+                	<td class='data'>68</td>
+                	<td class='data'>25</td>
+                	<td class='data'>34</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Britannia</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>30</td>
+                	<td class='data'>0</td>
+                	<td class='data'>40</td>
+                	<td class='data'>-10</td>
+                	<td class='data'>40</td>
+                	<td class='data'>-5</td>
+                	<td class='data'>40</td>
+                	<td class='data'>-5</td>
+                	<td class='data'>25</td>
+                	<td class='data'>-10</td>
+                	<td class='data'>25</td>
+                	<td class='data'>-7.5</td>
+                </tr>
+                <tr>
+                	<td class="lightbluecarrier">Brit. Marine Mutual</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>45</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                	<td class='lightblue'>0</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Gard</td>
+                	<td class='data'>20</td>
+                	<td class='data'>105</td>
+                	<td class='data'>30</td>
+                	<td class='data'>60</td>
+                	<td class='data'>30</td>
+                	<td class='data'>15</td>
+                	<td class='data'>40</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>35</td>
+                	<td class='data'>30</td>
+                	<td class='data'>15</td>
+                	<td class='data'>30</td>
+                	<td class='data'>0</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Japan Club</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>30</td>
+                	<td class='data'>15</td>
+                	<td class='data'>40</td>
+                	<td class='data'>0</td>
+                	<td class='data'>40</td>
+                	<td class='data'>0</td>
+                	<td class='data'>20</td>
+                	<td class='data'>0</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>10</td>
+                </tr>
+                <tr>
+                	<td class="lightbluecarrier">Liverpool &amp; London</td>
+                	<td class='lightblue'>10</td>
+                	<td class='lightblue'>160</td>
+                	<td class='lightblue'>25</td>
+                	<td class='lightblue'>140</td>
+                	<td class='lightblue'>25</td>
+                	<td class='lightblue'>96.5</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>90</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>170</td>
+                	<td class='lightblue'>25</td>
+                	<td class='lightblue'>112.95</td>
+                	<td class='lightblue'>25</td>
+                	<td class='lightblue'>116</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>London Steamship</td>
+                	<td class='data'>30</td>
+                	<td class='data'>115</td>
+                	<td class='data'>30</td>
+                	<td class='data'>85</td>
+                	<td class='data'>30</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                </tr>
+                <tr>
+                	<td class="lightbluecarrier">Newcastle</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>95</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>60</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>45</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>45</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>96</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>130</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>164</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>North of England</td>
+                	<td class='data'>25</td>
+                	<td class='data'>75</td>
+                	<td class='data'>35</td>
+                	<td class='data'>70</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                </tr>
+                <tr>
+                	<td class="lightbluecarrier">Ocean Marine</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>20</td>
+                	<td class='lightblue'>80</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>95</td>
+                	<td class='lightblue'>30</td>
+                	<td class='lightblue'>95</td>
+                	<td class='lightblue'>40</td>
+                	<td class='lightblue'>180</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Shipowners</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>20</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Skuld</td>
+                	<td class='data'>20</td>
+                	<td class='data'>130</td>
+                	<td class='data'>20</td>
+                	<td class='data'>40</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                	<td class='data'>20</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Standard (Bermuda)</td>
+                	<td class='data'>25</td>
+                	<td class='data'>150</td>
+                	<td class='data'>25</td>
+                	<td class='data'>65</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>25</td>
+                	<td class='data'>10</td>
+                	<td class='data'>25</td>
+                	<td class='data'>0</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Standard (London)</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                	<td class='data'>0</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Steamship</td>
+                	<td class='data'>20</td>
+                	<td class='data'>125</td>
+                	<td class='data'>20</td>
+                	<td class='data'>67.5</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>Swedish</td>
+                	<td class='data'>25</td>
+                	<td class='data'>240</td>
+                	<td class='data'>25</td>
+                	<td class='data'>100</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                	<td class='data'>10</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>UK</td>
+                	<td class='data'>40</td>
+                	<td class='data'>150</td>
+                	<td class='data'>40</td>
+                	<td class='data'>70</td>
+                	<td class='data'>40</td>
+                	<td class='data'>25</td>
+                	<td class='data'>40</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>40</td>
+                	<td class='data'>30</td>
+                	<td class='data'>40</td>
+                	<td class='data'>25</td>
+                </tr>
+                <tr>
+                	<td class='carrier'>West of England</td>
+                	<td class='data'>35</td>
+                	<td class='data'>160</td>
+                	<td class='data'>50</td>
+                	<td class='data'>145</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                	<td class='data'>50</td>
+                </tr>
+	</table>
+</body>
+</html>

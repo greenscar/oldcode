@@ -1,0 +1,80 @@
+James Sandlin
+6311 Latigo Pass
+Austin, TX, 78749
+503-887-8510
+james@sandlininc.com
+
+
+Accomplished Object Oriented web application developer with strong experience in build and configuration automation. Works effectively with all project teams providing valuable communication and representation to all entities. Ability to manage configuration and automation through the entire software development life cycle. 
+
+- Design and develop scripts in PERL to minimize time required to perform tasks.
+- Design and develop web based applications using PHP and PERL including: E-Commerce, Account Driven Private Data, and Configuration Data Reporting
+- Define and Implement project standardization allowing automation through scripting.
+- Build and Configuration management and scripting.
+- Architect and develop database driven web based applications.
+- Linux based server administration.
+ 
+
+SKILLS
+
+Summary – Object Oriented Scripting (OOP), Linux Administration, Process Automation, Build Management, Configuration Management, Environment Management, Process Definition
+Languages – PHP, PERL, ANT, KSH, Bash, XML, Java, Servlets, JSP, MySQL, HTML, JavaScript
+Applications – IBM Rational BuildForge, ClearCase, ClearQuest, IBM WebSphere, Apache, MySQL, Subversion
+Operating Systems – Linux (Debian, Ubuntu, Fedora), UNIX (Solaris 9, 10), Windows
+
+
+PROFESSIONAL EXPERIENCE
+
+Sandlin Consulting, INC – Austin, TX – January 2008 to Present
+Build Manager – State of Texas HHSC
+- Lead build team for WebSphere J2EE, Portal, & SBA applications on Solaris UNIX providing a single process and standard for all applications utilized by the State of Texas Eligibility System.
+- Designed and developed OO PERL applications to automate code management and provide accurate build change reporting.
+- Architected and led implementation of an OO PERL driven Configuration Management Database utilizing Oracle 10g database providing accurate configuration management and automated reporting.
+- Architected and led integration between Mercury Quality Center and IBM Rational toolset providing accurate defect tracking and build reporting.
+- Architected and implemented Rational Build Forge for build, release, testing, and deployment of statewide applications. 
+- Defined, documented, and lead implementation of build and deployment standardization across vendors and applications providing a single process / standard followed across the organization.
+- Managed ANT build and deployment scripts for state wide eligibility systems including IBM WebSphere, Process Server, and Portal Server.
+- Architected stream structure for Rational Clear Case code management leading to full traceability of code and configuration changes.
+
+Accenture, LLP – Austin, TX – June 2005 to January 2008
+System Administrator / Build Manager – US IRS – (July 2007 – January 2008)
+- Designed and implemented OO PHP and PERL driven Configuration Management Database with MySQL backend to read configuration files from ClearCase and provide web based reporting.
+- Documented release process to ensure appropriate application deployment.
+- Performed application deployments to Windows based IBM WebSphere.
+- Converted build and deployment scripts from Windows Batch to PERL.
+Java Course Instructor - June 2007 
+- Taught entry level Java course for new employees.
+Configuration Manager / Build Manager – State of Texas HHSC – (June 2005 – May 2007)
+- Lead team of configuration managers overseeing changes for 170+ developers for the Texas Integrated Eligibility Redesign System (TIERS) project.
+- Managed code and configuration changes in IBM Rational ClearCase.
+- Managed between fifteen and twenty application environments and their configuration to support up to six concurrent software releases.
+- Managed build and deployment scripts for UNIX based J2EE applications.
+- Integrated WICA (WebSphere Integrated Configuration Automation) system with the TIERS deployment process.
+- Migrated all build scripts and application configuration artifacts into version control and developed ANT scripts to automate their assembly providing historical tracking and guaranteed environment specific configuration file deployment.
+- Defined & implemented environment and configuration management standardization for CMMI Level 4 compliance.
+- Defined, documented, and enforced process and standardization for software version control.
+
+Shari’s Management Corp. – Beaverton, OR – Feb 2002 to June 2005
+Web Application Developer
+- Designed and implemented Java, JSP, Servlet, and MSSQL based training and testing system. This allowed the company to perform training on site saving the company airline tickets and hotel for those in management training.
+- Setup and managed Fedora Linux based Java web servers integrating with MSSQL using open source drivers.
+- Designed and developed web applications utilizing PHP, MySQL, HTML, JavaScript, CSS, and DHTML.
+- Maintain and modify company web site using HTML, CSS, Dreamweaver, Fireworks, and Flash.
+- Maintain and modify company intranet site written in ColdFusion.
+
+Caffeine Web Design – Portland, OR – June 2001 – June 2005 
+Web Application Developer 
+- Setup and administered Linux based servers with standard Linux software, including: Apache, MySQL, PERL, PHP, Sendmail, Courier, Samba, etc.
+- Designed, developed, and maintained e-commerce and dynamic, database driven web sites.
+- Developed dynamic web sites using PHP, MySQL, JavaScript, CSS, and HTML.
+- Designed and developed web sites using Dreamweaver, Fireworks, and Adobe Photoshop.
+
+
+EDUCATION
+
+BS, Computer Science
+Illinois State University, Normal, IL
+Member – National Honor’s Society
+
+BA, Psychology
+Northeast Louisiana University, Monroe, LA

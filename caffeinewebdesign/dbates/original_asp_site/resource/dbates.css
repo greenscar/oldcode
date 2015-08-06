@@ -1,0 +1,94 @@
+a
+        {
+	font-weight: normal;
+	text-decoration: underline;
+	color: #063DAE;
+	}
+
+a:hover
+        {
+	color: #C00000;
+	}
+
+body
+        {
+	font-family: times new roman, times-roman, times, serif;
+	font-size: 10pt;
+	background-color: #FFFFFF;
+        color: #000000; 
+	width: 620px;
+        margin-left:-8px;
+        margin-top:-8px; 
+        }          
+
+h1	{	margin-left: 10pt;	}
+h2	{	margin-left: 10pt;	}
+h3	{	margin-left: 10pt;	}
+h4	{	margin-left: 10pt;	}
+
+li
+	{
+	list-style-type: disc;  
+	}
+li.map
+	{  
+	font-size: 9pt;   
+	margin-top: -2pt;
+	margin-bottom: -2pt;
+	margin-right: 0pt;
+	}	
+
+li.feature
+	{
+	list-style-type: disc;
+	list-style-image: url('dotdoc.jpg'); 
+	}
+
+p
+        { 
+        font-size: 10pt;
+        margin-left: 10pt;
+	margin-right: 15pt;
+	margin-top: 5pt;
+	margin-bottom: 5pt; 
+        }   
+
+p.indent
+	{
+	margin-left: 30pt;
+	margin-top: 2pt;
+	}
+
+span.compact
+	{
+	display: block;
+	margin-top: 1pt;  
+	margin-bottom: 10pt;
+	margin-right: 25pt;
+	margin-left: 30pt;
+	font-size: 10pt;  
+	}  
+
+ul
+	{
+	font-size: 10pt; 
+	margin-right: 15pt;
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	}
+
+#action
+	{
+	font-family: verdana, arial, helvetica;
+	font-size:6pt;
+	font-weight:bold;
+	margin:0px;
+	text-decoration:none;
+	color:black;
+	}
+
+#directory
+	{
+	font-family:verdana, arial, helvetica;
+	font-size:8pt;
+	}

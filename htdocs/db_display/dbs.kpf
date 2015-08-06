@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project kpf_version="2" name="dbs">
+<preference-set id="">
+  <string id="import_dirname">C:\Inetpub\wwwroot\db_display</string>
+</preference-set>
+<ProjectRef name="dbs.kpf" url="dbs.kpf">
+</ProjectRef>
+<file name="esharis.php" url="esharis.php">
+</file>
+<file name="insight.php" url="insight.php">
+</file>
+<file name="ps.php" url="ps.php">
+</file>
+<folder name="classes" url="classes">
+<file name="DB_Mgr.inc" url="classes/DB_Mgr.inc">
+</file>
+<file name="Settings.inc" url="classes/Settings.inc">
+</file>
+</folder>
+<file name="site_info.php" url="site_info.php">
+</file>
+</project>

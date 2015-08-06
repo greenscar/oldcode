@@ -1,0 +1,29 @@
+WWWboard By Matt Wright
+
+#Get all the files
+
+
+Files Include:
+
+msgs.html
+msgs.cgi
+postfp.cgi
+followup.cgi
+
+#Edit and configure all 4 files needed for this program.
+
+#change all references to yourdomain.com to your domain
+
+#change all references of your domain to    your name or your domain name
+
+#Install all the files in a subdirectory of your root directory, preferably named wwwboard as the scripts are already
+partially configured for this.
+
+
+#In addition you will need to create an additional directory in the wwwboard directory named messages
+
+#chmod 777 both the wwwboard directory and the messages directory
+#chmod 777 msgs.html
+#chmod 755 all three .cgi(s)
+
+#This should work

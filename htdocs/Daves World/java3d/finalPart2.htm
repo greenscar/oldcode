@@ -1,0 +1,758 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./finalPart2_files/filelist.xml">
+<title>/*</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>c8h10n4o2</o:Author>
+  <o:LastAuthor>c8h10n4o2</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2000-12-08T14:02:00Z</o:Created>
+  <o:LastSaved>2000-12-08T14:03:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>1307</o:Words>
+  <o:Characters>7450</o:Characters>
+  <o:Company>Rave On</o:Company>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>9149</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* PROGRAMMER: <span
+style='mso-tab-count:1'>   </span>James Sandlin<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* COURSE: <span
+style='mso-tab-count:2'>               </span>ACS 356-01<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* ASSIGNMENT:<span
+style='mso-tab-count:1'>      </span>Final Project<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* SEMESTER:<span
+style='mso-tab-count:1'>            </span>Fall 2000<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* DATE:<span
+style='mso-tab-count:2'>                     </span>12/04/2000<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>* WHAT I DO:<span
+style='mso-tab-count:1'>           </span>A cylinder rotating on the Z axis
+with a <o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>*<span
+style='mso-tab-count:5'>                                                         </span>directional
+located at (1,0,0)<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>*<span
+style='mso-tab-count:5'>                                                         </span>and
+a spotlight located at (0,0,-6)<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>import COLOR;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.applet.Applet;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.awt.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import java.awt.event.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.media.j3d.Transform3D;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.applet.MainFrame;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.universe.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.geometry.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.behaviors.picking.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import com.sun.j3d.utils.behaviors.mouse.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.media.j3d.*;<o:p></o:p></p>
+
+<p class=MsoNormal>import javax.vecmath.*;<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>public class finalPart2 extends Applet<o:p></o:p></p>
+
+<p class=MsoNormal>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+finalPart2()<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>setLayout(new
+BorderLayout());<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Canvas3D
+canvas3d = new Canvas3D(null);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>add(&quot;Center&quot;,
+canvas3d);<span style='mso-tab-count:2'>                      </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* MOVE THE VIEWING PLATFORM BACK 7 INCHES<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>SimpleUniverse
+simpleUni = new SimpleUniverse(canvas3d);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>ViewingPlatform
+myView = simpleUni.getViewingPlatform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>TransformGroup
+myViewTransformGroup = myView.getViewPlatformTransform();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Transform3D
+myViewTransform = new Transform3D();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>myViewTransform.setTranslation(new
+Vector3f(0.0f, 0.0f, 15.0f));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>myViewTransformGroup.setTransform(myViewTransform);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>BranchGroup
+scene = createSceneGraph(canvas3d);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>scene.compile();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>simpleUni.addBranchGraph(scene);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+BranchGroup createSceneGraph(Canvas3D canvas)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>BranchGroup
+objRoot = new BranchGroup();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** DEFINE MATERIALS
+********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>/**<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* Appearance.setMaterial(Material material) <o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>* <span
+style='mso-tab-count:2'>                        </span>--- Sets the material
+that will be used to draw an <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:3'>                                 </span>object.<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* Material(Color3f ambientColor, Color3f
+emissiveColor, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:3'>                                 </span>Color3f
+diffuseColor, Color3f specularColor, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:3'>                                 </span>float
+shininess) <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---
+Defines the material to be used as an argument for <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:3'>                                 </span>setMaterial(Material
+material<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---<span
+style='mso-tab-count:1'>        </span>ambientColor -&gt; color reflected off
+surface in <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:7'>                                                                                 </span>ambient
+light<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---<span
+style='mso-tab-count:1'>        </span>emissiveColor -&gt; color of light
+surface emits<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---<span
+style='mso-tab-count:1'>        </span>diffuseColor -&gt; color of material
+when illuminated<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---<span
+style='mso-tab-count:1'>        </span>specularColor -&gt; color of material
+under direct light<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:2'>                     </span>---
+shininess -&gt; NOT SHINY 1 &lt;= X =&lt; 128 VERY SHINY<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Appearance
+app1 = new Appearance();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Material
+material1 = new Material(COLOR.medGrey, COLOR.black, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:9'>                                                                                                            </span>COLOR.blue,
+COLOR.red, 128);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>app1.setMaterial(material1);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Appearance
+app2 = new Appearance();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Material
+material2 = new Material(COLOR.medGrey, COLOR.litGrey, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:9'>                                                                                                            </span>COLOR.green,
+COLOR.orange, 128);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>app2.setMaterial(material2);<o:p></o:p></p>
+
+<p class=MsoNormal>/*************************** END DEFINE MATERIALS
+********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:4'>                                                </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal>/********************* CREATE BOUNDING SPHERE SPECIFYING
+REGION ******************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* THE BoundingSphere SPECIFIES WHERE IN YOUR
+SCENEGRAPH YOUR EFFECTS OCCUR<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Point3d
+origen = new Point3d(0,0,0);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>BoundingSphere
+bounds = new BoundingSphere(origen, 100);<o:p></o:p></p>
+
+<p class=MsoNormal>/***************** END CREATE BOUNDING SPHERE SPECIFYING
+REGION ******************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><o:p></o:p></p>
+
+<p class=MsoNormal>/******************************** CREATE LIGHTING
+**********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:6'>                                                                        </span><span
+style="mso-spacerun: yes"> </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>//SET
+LIGHTING<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>/**<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* AmbientLight -&gt; light that seems to come
+from all directions. <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span><span
+style="mso-spacerun: yes">   </span>AmbientLight(Color3f color) <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* DirectionalLight -&gt; has parallel light
+rays that travel in <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:5'>                                                         </span><span
+style="mso-spacerun: yes">   </span>one direction along the specified vector.<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:5'>                                                         </span><span
+style="mso-spacerun: yes">   </span>DirectionalLight(Color3f color, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:10'>                                                                                                                     </span>Vector3f
+direction) <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* PointLight -&gt; an attenuated light source
+at a fixed point in <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>
+space that radiates light equally in all <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>
+directions away from the light source.<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>
+PointLight(Color3f color, Point3f position, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>
+<span style='mso-tab-count:3'>                                   </span>Point3f
+attenuation) <o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">         </span>*<span
+style='mso-tab-count:4'>                                     </span> position -
+the position of the light in three-<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>
+<span style='mso-tab-count:2'>                       </span>space<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* <span style='mso-tab-count:3'>                                </span><span
+style="mso-spacerun: yes">     </span>attenuation - the attenutation [DEF: the
+intensity <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:7'>                                                                                 </span><span
+style="mso-spacerun: yes">   </span>of a light source varying by the <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:7'>                                                                                 </span><span
+style="mso-spacerun: yes">   </span>distance between the visual object and <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:5'>                                                         </span><span
+style="mso-spacerun: yes">           </span>Directional Light Source]<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:7'>                                                                                 </span><span
+style="mso-spacerun: yes">   </span>(constant,linear,quadratic) of the light<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* SpotLight -&gt; an attenuated light source
+at a fixed point in <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>space
+that radiates light in a specified direction<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>from
+the light source<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>SpotLight(Color3f
+color, Point3f position, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span><span
+style="mso-spacerun: yes">  </span>Point3f attenuation, Vector3f direction,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span><span
+style="mso-spacerun: yes">  </span>float spreadAngle, float concentration) <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>Direction
+- The axis of the cone of light<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>Spread
+angle - The angle in radians between the <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span>direction
+axis and a ray along the edge <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span>of
+the cone.<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:4'>                                             </span>Concentration
+- how quickly the light intensity <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*<span style='mso-tab-count:6'>                                                                     </span>attenuate
+( 0 &lt;= x &lt;= 128)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*/<span style='mso-tab-count:1'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE VARIABLES<span style='mso-tab-count:
+1'>        </span> <span style='mso-tab-count:1'>           </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>float
+concentration = 0.0f;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>float
+spreadAngle = (float)(Math.PI);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>Vector3f
+spotLocation = new Vector3f(0.0f, 0.0f, -10.0f);<span style='mso-tab-count:
+3'>                                </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Vector3f
+lightDirection = new Vector3f(1.0f, 0.0f, 0.0f);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Point3f
+attenuation = new Point3f(1.0f, 0f, 0f);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>Point3f
+position = new Point3f(0.0f,0.0f,10.0f);<span style='mso-tab-count:3'>                         </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//CREATE LIGHTS<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>AmbientLight
+ambientLit = new AmbientLight(COLOR.medGrey);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>DirectionalLight
+directionalLit = new DirectionalLight(COLOR.blue, lightDirection);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>DirectionalLight
+directionalLit2 = new DirectionalLight(COLOR.blue, lightDirection);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>SpotLight
+spotLit = new SpotLight(COLOR.red, position, attenuation, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:5'>                                                            </span>spotLocation,
+spreadAngle, concentration);<span style='mso-tab-count:1'>       </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>//SET INFUENCING BOUNDS OF LIGHTS<span
+style='mso-tab-count:3'>                                   </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>ambientLit.setInfluencingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>directionalLit.setInfluencingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>spotLit.setInfluencingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** END CREATE LIGHTING
+********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span><span style='mso-tab-count:1'>           </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** SPIN OBJECT ********************************/<span
+style='mso-tab-count:3'>                            </span> <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>//
+RotationInterpolator(alpha, target, axisOfRotation, minAngle, maxAngle)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>Alpha
+alpha = new Alpha(-1, 4000);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>float
+radius = (float)(2*Math.PI);<span style='mso-tab-count:1'>          </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>TransformGroup
+objSpin = new TransformGroup();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>Transform3D
+rotateAxis = new Transform3D();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* SET CAPABILITIES OF objSpin SO IT CAN BE
+WRITTEN TO<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>objSpin.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objSpin.setCapability(TransformGroup.ALLOW_TRANSFORM_READ);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>/*<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* SET THE AXIS OF ROTATION TO THE Z AXIS<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>rotateAxis.setRotation(new
+Quat4d(0d, 0d, 1d, 1d));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>/**<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>* CREATE AN INSTANCE OF RotationInterpolator
+HOLDING THE PROPERTIES CREATED<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*<span style='mso-tab-count:2'>                    </span>AND
+USE IT AS THE PARENT OF THE ITEM YOU WISH TO SPIN <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>RotationInterpolator
+rotator = new RotationInterpolator(alpha, <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:10'>                                                                                                                      </span>objSpin,
+rotateAxis, 0, radius);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>rotator.setSchedulingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objSpin.addChild(rotator);<span
+style='mso-tab-count:2'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** END SPIN OBJECT ********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** TRANSLATE OBJECT
+********************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>/**<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>* THIS MUST BE CREATED SO THE MOUSE CAN BE
+USED TO MOVE OBJECTS AROUND<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes"> </span>*/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>Transform3D
+translate = new Transform3D();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>translate.setTranslation(new
+Vector3f(5.0f, 5.0f, -5.0f));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>TransformGroup
+objTranslate = new TransformGroup(translate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.setCapability(TransformGroup.ALLOW_TRANSFORM_WRITE);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.setCapability(TransformGroup.ALLOW_TRANSFORM_READ);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.setCapability(TransformGroup.ENABLE_PICK_REPORTING);<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>PickRotateBehavior
+pickRotate = <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:5'>                                                            </span>new
+PickRotateBehavior(objRoot, canvas, bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objRoot.addChild(pickRotate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>//ADD
+LIGHTS AS CHILDREN HERE SO THEY WILL BE MOVED WITH OBJECT<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(ambientLit);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(directionalLit);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(spotLit);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:4'>                                                </span><o:p></o:p></p>
+
+<p class=MsoNormal>/****************************** END TRANSLATE OBJECT
+*****************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal>/***************************** CREATE MOUSE LISTENER
+*****************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>MouseTranslate
+myMouseTranslate = new MouseTranslate();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>myMouseTranslate.setTransformGroup(objTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>myMouseTranslate.setSchedulingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>MouseZoom
+myMouseZoom = new MouseZoom();<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>myMouseZoom.setTransformGroup(objTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>myMouseZoom.setSchedulingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>MouseRotate
+myMouseRotate = new MouseRotate();<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:3'>                                 </span>myMouseRotate.setTransformGroup(objTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:3'>                                 </span>myMouseRotate.setSchedulingBounds(bounds);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:3'>                                 </span>objTranslate.addChild(myMouseRotate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(myMouseTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(myMouseZoom);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:6'>                                                                        </span><o:p></o:p></p>
+
+<p class=MsoNormal>/*************************** END CREATE MOUSE LISTENER
+***************************/<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objSpin.addChild(new
+Cylinder(1, 3, app1));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>objTranslate.addChild(objSpin);<span
+style='mso-tab-count:2'>                       </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>objRoot.addChild(objTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>//objSpin.addChild(new
+Sphere(.5f, app2));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><span
+style='mso-tab-count:2'>                        </span>//translate.setTranslation(new
+Vector3f(-5.0f, -5.0f, -5.0f));<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>//objTranslate
+= new TransformGroup(translate);<span style='mso-tab-count:3'>                                   </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>//objTranslate.addChild(new
+Sphere(.5f, app2));<span style='mso-tab-count:2'>                       </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span>//objRoot.addChild(objTranslate);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><span style='mso-tab-count:1'>          </span>objRoot.compile();<span
+style='mso-tab-count:1'>       </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:3'>                                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">    </span>return objRoot;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span><span
+style="mso-spacerun: yes">  </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<span
+style='mso-tab-count:1'>          </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>public
+static void main(String[] args)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:2'>                        </span>Frame
+frame = new MainFrame(new finalPart2(), 500, 500);<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal>}</p>
+
+</div>
+
+</body>
+
+</html>

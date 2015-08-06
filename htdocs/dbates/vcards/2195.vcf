@@ -1,0 +1,18 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Keating;Joseph;P.
+FN:Joseph P. Keating
+NICKNAME:Joe
+ORG:Keating Aviation Consulting, LLC
+TITLE:President
+TEL;WORK;VOICE:(502) 722-9400
+TEL;WORK;FAX:(502) 722-9401
+ADR;WORK:;;8461 Shelbyville Road;Simpsonville;KY;40067;United States of America
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:8461 Shelbyville Road=0D=0ASimpsonville, KY 40067=0D=0AUnited States of Amer=
+ica
+URL;WORK:http://keatingaviation.com
+ROLE:Aviation Consultant
+EMAIL;PREF;INTERNET:joe@keatingaviation.com
+REV:20060712T170019Z
+END:VCARD
+

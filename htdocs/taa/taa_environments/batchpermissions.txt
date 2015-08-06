@@ -1,0 +1,81 @@
+REPLACE <env_name> WITH YOUR ENVIRONMENT
+chmod -R 755 <env_name>
+###########################################
+# <env_name>/fw/java/patch/*
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/fw/java/patch 
+# Set everything in in/data to be writable by group 
+chmod g+w <env_name>/fw/java/patch 
+# Always must have execute permissions to dir itself & so group can execute what they place in patch dir 
+chmod -R g+x <env_name>/fw/java/patch 
+# Change group of data contents to batchtaa 
+chgrp -R batchtaa <env_name>/fw/java/patch 
+
+###########################################
+# env_name/*/temp
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/*/temp 
+# Set everything in temp to be writable by group 
+chmod -R g+w <env_name>/*/temp 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/*/temp 
+# Change group of temp contents to batchtaa 
+chgrp -R batchtaa <env_name>/*/temp 
+###########################################
+# env_name/*/logs
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/*/logs 
+# Set everything in logs to be writable by group 
+chmod -R g+w <env_name>/*/logs 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/*/logs 
+# Change group of logs contents to batchtaa 
+chgrp -R batchtaa <env_name>/*/logs 
+###########################################
+# env_name/tierslogs
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/tierslogs 
+# Set everything in logs to be writable by group 
+chmod -R g+w <env_name>/tierslogs 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/tierslogs 
+# Change group of logs contents to batchtaa 
+chgrp -R batchtaa <env_name>/tierslogs 
+###########################################
+# env_name/*/data
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/*/data 
+# Set everything in data to be writable by group 
+chmod -R g+w <env_name>/*/data 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/*/data 
+# Change group of data contents to batchtaa 
+chgrp -R batchtaa <env_name>/*/data 
+###########################################
+# env_name/*/report
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/*/report 
+# Set everything in report to be writable by group 
+chmod -R g+w <env_name>/*/report 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/*/report 
+# Change group of report contents to batchtaa 
+chgrp -R batchtaa <env_name>/*/report 
+###########################################
+# env_name/co/print
+###########################################
+# Set dir so anything written in it inherits dir's group. 
+chmod g+s <env_name>/co/print 
+# Set everything in logs to be writable by group 
+chmod -R g+w <env_name>/co/print 
+# Always must have execute permissions to dir itself. 
+chmod g+x <env_name>/co/print 
+# Change group of logs contents to batchtaa 
+chgrp -R batchtaa <env_name>/co/print 
+

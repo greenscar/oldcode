@@ -1,0 +1,114 @@
+import java.io.*;
+import java.util.*;
+
+public class Mp3Lister{
+  File currentDir;
+  File[] currentFile;
+  File[] dirList;
+  File[] mp3List;
+  Vector totalList = new Vector();
+  public Mp3Lister(){
+  }
+
+  public void makeList(String directory){
+    currentFile = List_Mp3s_In_Dir(directory);
+    //printList(currentFile);
+    dirList = List_Dirs_In_Dir(directory);
+    if (dirList.length == 0){
+      totalList.add(List_Mp3s_In_Dir(directory));
+      mp3List = List_Mp3s_In_Dir(directory);
+    }
+    else{
+      for(int i = 0; i < dirList.length; i++){
+        makeList(dirList[i].getName());
+        totalList.add(List_Mp3s_In_Dir(directory));
+        mp3List = List_Mp3s_In_Dir(directory);
+      }
+    }
+    printList(totalList);
+
+    //printList(currentFile);
+    /*
+    System.out.println("currentFile.length:" + currentFile.length);
+    for(int i = 0; i < currentFile.length; i++){
+      makeList(currentFile[i].getName());
+      System.out.println("currentFile.length IN:" + currentFile.length);
+      System.out.println("In loop:"+i);
+      System.out.println("size=" + currentFile.length);
+      try{
+        System.out.println(currentFile[i].getName());
+      }
+      catch(ArrayIndexOutOfBoundsException e){
+      }
+			//makeList(currentFile[i].getName());
+    }*/
+  }
+  public void printList(Vector v){
+  System.out.println("The vector size is:"+ v.size());
+    for(int i = 0; i < v.size(); i++){
+      System.out.println(v.elementAt(i));
+    }
+  }
+
+  public void printList(File[] list){
+    try{
+      for(int i = 0; i < list.length; i++){
+        System.out.println(list[i]);
+      }
+    }
+    catch(NullPointerException e){}
+  }
+
+  /*
+   * Returns a File array holding all mp3s in the
+   * 	provided directory
+   */
+  public File[] List_Mp3s_In_Dir(String directory){
+    Filter MP3filter = new Filter(".mp3");
+    currentDir = new File(directory);
+    return currentDir.listFiles(MP3filter);
+  }
+
+  /*
+   * Returns a Vector holding all subdirectories
+   * 	of the provided directory
+   */
+  private File[] List_Dirs_In_Dir(String directory)
+  {
+    int i;
+    int dirCnt = 0;
+    File[] tmpList;
+    Vector dirList = new Vector();
+    dirCnt = 0;
+
+    Filter ListAllFilter = new Filter();
+    currentDir = new File(directory);
+
+    // Make tmpList a list of everything in the directory
+    tmpList = currentDir.listFiles(ListAllFilter);
+
+    if (tmpList != null){
+      // Make dirList a list of directories in the directory
+      for(i = 0; i < tmpList.length; i++){
+        if (tmpList[i].isDirectory()){
+          dirList.add(tmpList[i]);
+        }
+      }
+    }
+    //Create an array the size of the vector
+    tmpList = new File[dirList.size()];
+
+    //Take Vector of all directories and place them in an array
+    for(i = 0; i < dirList.size(); i++){
+      tmpList[i] = (File)(dirList.elementAt(i));
+    }
+    return tmpList;
+  }
+
+  public static void main(String args[]){
+    Mp3Lister m = new Mp3Lister();
+    m.makeList("d:/");
+  }
+}
+
+

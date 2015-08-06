@@ -1,0 +1,142 @@
+@page 
+	{ 
+	size 8.5in 11in; 
+	margin: 1in; 
+	}
+
+a
+        {
+	font-weight: normal;
+	text-decoration: underline;
+	color: #063DAE;
+	}
+
+a:hover
+        {
+	color: #C00000;
+	}
+
+body
+        {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 9pt;
+        } 
+
+form	{
+	margin: 2pt; 
+	}           
+
+h1	{margin: 5pt;}
+h2	{margin: 5pt;}
+h3	{font-size: 12pt; margin: 5pt;}
+h4	{font-size: 10pt; margin: 5pt;} 
+
+hr	{margin: 0pt;} 
+
+li
+	{list-style-type: disc;}
+p
+        { 
+        font-size: 9pt;
+	margin: 5pt;
+        }  
+
+td
+	{
+	padding-left:5pt;
+	font-size: 10pt;
+	}  
+textarea {font-family: verdana, helvetica, sans;}
+#PageTable
+	{
+	background-color: #F0F0FF;  
+	margin-left:10pt; 
+	margin-right:10pt;  
+	page-break-inside:avoid;
+	width: 560px;
+	}  
+
+#MainTable
+	{
+	width:600px;
+	background-color: #E0E0FF;
+	}   
+
+#SubmissionBar
+	{              
+	font-weight: bold;
+	background-color: #001060; 
+	color: white;
+	} 
+
+#TemplateBar
+	{              
+	font-weight: bold;
+	background-color: navy; 
+	color: white;
+	}
+	        
+
+#section
+	{              
+	font-weight: bold;
+	font-size: 9pt;
+	background-color: black; 
+	color: white;    
+	}    
+
+#subsection
+	{              
+	font-weight: bold;
+	font-size: 9pt;
+	background-color: navy; 
+	color: white; 
+	}
+
+#subheading
+	{              
+	font-weight: bold;
+	font-size: 9pt;
+	background-color: #A0A0A0; 
+	color: white;
+	}
+	
+.incomplete
+	{    
+	background-color: yellow; 
+	}
+
+#AutoTotal
+	{ 
+	background-color: navy;
+	color: white;
+	font-weight: bold;
+	}
+
+#less
+	{
+	font-size: 7pt;
+	}   
+
+#displayValue
+	{
+	border-style:inset;
+	text-align:left;
+	width: 100%; 
+	padding: 3px;
+	}
+
+#FormerTextArea
+	{
+	background-color:white;
+	border-style:inset;
+	color:black;
+	width:100%;
+	}
+#show
+	{
+	background-color:white;
+	border-style:inset;
+	padding: 3px;
+	color:black;
+	}

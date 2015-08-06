@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project kpf_version="2" name="treats_2">
+<preference-set id="">
+  <string id="import_dirname">C:\wwwroot\treats_2</string>
+</preference-set>
+<file name="blank.html" url="blank.html">
+</file>
+<file name="index.php" url="index.php">
+</file>
+<file name="treatbath.php" url="treatbath.php">
+</file>
+<file name="treatbody.php" url="treatbody.php">
+</file>
+<file name="treatcontact.php" url="treatcontact.php">
+</file>
+<file name="treatface.php" url="treatface.php">
+</file>
+<file name="treatfeet.php" url="treatfeet.php">
+</file>
+<file name="treatfresh.php" url="treatfresh.php">
+</file>
+<file name="treatgifts.php" url="treatgifts.php">
+</file>
+<file name="treatpress.php" url="treatpress.php">
+</file>
+<ProjectRef name="treats_2.kpf" url="treats_2.kpf">
+</ProjectRef>
+<folder name="cc_process" url="cc_process">
+<file name="PHPScript.zip" url="cc_process/PHPScript.zip">
+</file>
+<file name="sim.php" url="cc_process/sim.php">
+</file>
+<file name="simdata.php" url="cc_process/simdata.php">
+</file>
+<file name="simdata_1.php" url="cc_process/simdata_1.php">
+</file>
+<file name="simlib.php" url="cc_process/simlib.php">
+</file>
+<file name="simlib_1.php" url="cc_process/simlib_1.php">
+</file>
+<file name="sim_1.php" url="cc_process/sim_1.php">
+</file>
+</folder>
+<folder name="images" url="images">
+<file name="01.GIF" url="images/01.GIF">
+</file>
+<file name="about.gif" url="images/about.gif">
+</file>
+<file name="add.jpg" url="images/add.jpg">
+</file>
+<file name="Beauteaful-Face-Scrub.JPG" url="images/Beauteaful-Face-Scrub.JPG">
+</file>
+<file name="beauty.gif" url="images/beauty.gif">
+</file>
+<file name="BetterHomesandGardenszoomed.JPG" url="images/BetterHomesandGardenszoomed.JPG">
+</file>
+<file name="BetterHomesGardens.JPG" url="images/BetterHomesGardens.JPG">
+</file>
+<file name="BetterHomesGardensCover.JPG" url="images/BetterHomesGardensCover.JPG">
+</file>
+<file name="bottom_bg.gif" url="images/bottom_bg.gif">
+</file>
+<file name="bottom_cor.gif" url="images/bottom_cor.gif">
+</file>
+<file name="bottom_cor01.gif" url="images/bottom_cor01.gif">
+</file>
+<file name="bottom_yellow.gif" url="images/bottom_yellow.gif">
+</file>
+<file name="BrownSugarBathCrumbs.JPG" url="images/BrownSugarBathCrumbs.JPG">
+</file>
+<file name="BrownSugarSmoothie.jpg" url="images/BrownSugarSmoothie.jpg">
+</file>
+<file name="btmred.gif" url="images/btmred.gif">
+</file>
+<file name="BUT01.GIF" url="images/BUT01.GIF">
+</file>
+<file name="BUT02.GIF" url="images/BUT02.GIF">
+</file>
+<file name="BUT03.GIF" url="images/BUT03.GIF">
+</file>
+<file name="BUT04.GIF" url="images/BUT04.GIF">
+</file>
+<file name="BUT05.GIF" url="images/BUT05.GIF">
+</file>
+<file name="BUT06.GIF" url="images/BUT06.GIF">
+</file>
+<file name="BUT07.GIF" url="images/BUT07.GIF">
+</file>
+<file name="BUT08.GIF" url="images/BUT08.GIF">
+</file>
+<file name="button_bg.gif" url="images/button_bg.gif">
+</file>
+<file name="buynow.jpg" url="images/buynow.jpg">
+</file>
+<file name="CheekyTreatBox.JPG" url="images/CheekyTreatBox.JPG">
+</file>
+<file name="ClearlySweetBlemishGel.JPG" url="images/ClearlySweetBlemishGel.JPG">
+</file>
+<file name="Cocoa-Truffle.JPG" url="images/Cocoa-Truffle.JPG">
+</file>
+<file name="CocoaTrufflenotzoomed.JPG" url="images/CocoaTrufflenotzoomed.JPG">
+</file>
+<file name="CreamyBubbleGumBath.jpg" url="images/CreamyBubbleGumBath.jpg">
+</file>
+<file name="FizzyMilkTreatment.JPG" url="images/FizzyMilkTreatment.JPG">
+</file>
+<file name="GO.GIF" url="images/GO.GIF">
+</file>
+<file name="HandyCandyCream.JPG" url="images/HandyCandyCream.JPG">
+</file>
+<file name="JanuaryLuckyCover.JPG" url="images/JanuaryLuckyCover.JPG">
+</file>
+<file name="LavenderLemonAid.JPG" url="images/LavenderLemonAid.JPG">
+</file>
+<file name="LemonDropCreamyCleanser.jpg" url="images/LemonDropCreamyCleanser.jpg">
+</file>
+<file name="littlebottlegroup.jpg" url="images/littlebottlegroup.jpg">
+</file>
+<file name="logo.gif" url="images/logo.gif">
+</file>
+<file name="LuckyAprilCover.JPG" url="images/LuckyAprilCover.JPG">
+</file>
+<file name="LuckyAprilInside.JPG" url="images/LuckyAprilInside.JPG">
+</file>
+<file name="LuckyJanuaryInside.JPG" url="images/LuckyJanuaryInside.JPG">
+</file>
+<file name="LusciousHoneyLotion.JPG" url="images/LusciousHoneyLotion.JPG">
+</file>
+<file name="MAINPIC.JPG" url="images/MAINPIC.JPG">
+</file>
+<file name="PeppermintPatty.JPG" url="images/PeppermintPatty.JPG">
+</file>
+<file name="PIC01.GIF" url="images/PIC01.GIF">
+</file>
+<file name="PIC02.GIF" url="images/PIC02.GIF">
+</file>
+<file name="PIC03.GIF" url="images/PIC03.GIF">
+</file>
+<file name="PIC04.GIF" url="images/PIC04.GIF">
+</file>
+<file name="PIC05.GIF" url="images/PIC05.GIF">
+</file>
+<file name="PINKCOR.GIF" url="images/PINKCOR.GIF">
+</file>
+<file name="pinkcor02.gif" url="images/pinkcor02.gif">
+</file>
+<file name="PINK_BG.GIF" url="images/PINK_BG.GIF">
+</file>
+<file name="PrettySweetBox.JPG" url="images/PrettySweetBox.JPG">
+</file>
+<file name="SavingFace.JPG" url="images/SavingFace.JPG">
+</file>
+<file name="SEARCH.GIF" url="images/SEARCH.GIF">
+</file>
+<file name="Seventeen.JPG" url="images/Seventeen.JPG">
+</file>
+<file name="Seventeena.JPG" url="images/Seventeena.JPG">
+</file>
+<file name="Seventeencover.JPG" url="images/Seventeencover.JPG">
+</file>
+<file name="Seventeen_clip.jpg" url="images/Seventeen_clip.jpg">
+</file>
+<file name="SHOP.GIF" url="images/SHOP.GIF">
+</file>
+<file name="SPACER.GIF" url="images/SPACER.GIF">
+</file>
+<file name="SugarSpiceSmoothie.JPG" url="images/SugarSpiceSmoothie.JPG">
+</file>
+<file name="SweetFaceCleansingMilk.JPG" url="images/SweetFaceCleansingMilk.JPG">
+</file>
+<file name="tbbrownsugarbathcrumbs.jpg" url="images/tbbrownsugarbathcrumbs.jpg">
+</file>
+<file name="tbbrownsugarsmoothie.jpg" url="images/tbbrownsugarsmoothie.jpg">
+</file>
+<file name="tbcocoatruffle.jpg" url="images/tbcocoatruffle.jpg">
+</file>
+<file name="tbcreamybubblegumbath.jpg" url="images/tbcreamybubblegumbath.jpg">
+</file>
+<file name="tbfizzymilktreatment.jpg" url="images/tbfizzymilktreatment.jpg">
+</file>
+<file name="tbhandycandycream.jpg" url="images/tbhandycandycream.jpg">
+</file>
+<file name="tblavenderlemonaid.jpg" url="images/tblavenderlemonaid.jpg">
+</file>
+<file name="tblemondropcreamycleanser.jpg" url="images/tblemondropcreamycleanser.jpg">
+</file>
+<file name="tbluscioushoneylotion.jpg" url="images/tbluscioushoneylotion.jpg">
+</file>
+<file name="tbsugarspicesmoothie.jpg" url="images/tbsugarspicesmoothie.jpg">
+</file>
+<file name="tbtroublemelts.jpg" url="images/tbtroublemelts.jpg">
+</file>
+<file name="tfbeauteafulfacescrub.jpg" url="images/tfbeauteafulfacescrub.jpg">
+</file>
+<file name="tfclearlysweetblemishgel.jpg" url="images/tfclearlysweetblemishgel.jpg">
+</file>
+<file name="tfpeppermintpatty.jpg" url="images/tfpeppermintpatty.jpg">
+</file>
+<file name="tfsavingface.jpg" url="images/tfsavingface.jpg">
+</file>
+<file name="tfsweetfacecleansingmilk.jpg" url="images/tfsweetfacecleansingmilk.jpg">
+</file>
+<file name="Thumbs.db" url="images/Thumbs.db">
+</file>
+<file name="TOP01.GIF" url="images/TOP01.GIF">
+</file>
+<file name="top01_1.gif" url="images/top01_1.gif">
+</file>
+<file name="TOP02.GIF" url="images/TOP02.GIF">
+</file>
+<file name="TOPPIC.JPG" url="images/TOPPIC.JPG">
+</file>
+<file name="toppic02.gif" url="images/toppic02.gif">
+</file>
+<file name="top_bg.gif" url="images/top_bg.gif">
+</file>
+<file name="top_cor01.gif" url="images/top_cor01.gif">
+</file>
+<file name="top_cor02.gif" url="images/top_cor02.gif">
+</file>
+<file name="top_cor03.gif" url="images/top_cor03.gif">
+</file>
+<file name="top_cor04.gif" url="images/top_cor04.gif">
+</file>
+<file name="top_yellowbg.gif" url="images/top_yellowbg.gif">
+</file>
+<file name="treatbath.gif" url="images/treatbath.gif">
+</file>
+<file name="treatbathhead.gif" url="images/treatbathhead.gif">
+</file>
+<file name="treatbody.gif" url="images/treatbody.gif">
+</file>
+<file name="treatbodyhead.gif" url="images/treatbodyhead.gif">
+</file>
+<file name="treatcontact.gif" url="images/treatcontact.gif">
+</file>
+<file name="treatcontacthead.gif" url="images/treatcontacthead.gif">
+</file>
+<file name="treatface.gif" url="images/treatface.gif">
+</file>
+<file name="treatfacehead.gif" url="images/treatfacehead.gif">
+</file>
+<file name="treatfeet.gif" url="images/treatfeet.gif">
+</file>
+<file name="treatfeethead.gif" url="images/treatfeethead.gif">
+</file>
+<file name="treatfresh.gif" url="images/treatfresh.gif">
+</file>
+<file name="treatfreshhead.gif" url="images/treatfreshhead.gif">
+</file>
+<file name="treatgifts.gif" url="images/treatgifts.gif">
+</file>
+<file name="treatgiftshead.gif" url="images/treatgiftshead.gif">
+</file>
+<file name="treatletter.jpg" url="images/treatletter.jpg">
+</file>
+<file name="treatletter2.jpg" url="images/treatletter2.jpg">
+</file>
+<file name="treatlogo.psd" url="images/treatlogo.psd">
+</file>
+<file name="treatlogofront.gif" url="images/treatlogofront.gif">
+</file>
+<file name="treatpress.gif" url="images/treatpress.gif">
+</file>
+<file name="treatpresshead.gif" url="images/treatpresshead.gif">
+</file>
+<file name="TroubleMelts.JPG" url="images/TroubleMelts.JPG">
+</file>
+<file name="TruffleTrioBox.jpg" url="images/TruffleTrioBox.jpg">
+</file>
+<file name="TruffleTrioBoxgift.JPG" url="images/TruffleTrioBoxgift.JPG">
+</file>
+<file name="Victoria Feb 2003 cover.jpg" url="images/Victoria%20Feb%202003%20cover.jpg">
+</file>
+<file name="Victoria Feb 2003 p12.jpg" url="images/Victoria%20Feb%202003%20p12.jpg">
+</file>
+<file name="view.jpg" url="images/view.jpg">
+</file>
+<file name="Washington Post inside.JPG" url="images/Washington%20Post%20inside.JPG">
+</file>
+<file name="WashingtonPostCover.JPG" url="images/WashingtonPostCover.JPG">
+</file>
+</folder>
+<folder name="photos" url="photos">
+<file name="10.jpg" url="photos/10.jpg">
+</file>
+<file name="11.jpg" url="photos/11.jpg">
+</file>
+<file name="12.jpg" url="photos/12.jpg">
+</file>
+<file name="13.jpg" url="photos/13.jpg">
+</file>
+<file name="14.jpg" url="photos/14.jpg">
+</file>
+<file name="15.jpg" url="photos/15.jpg">
+</file>
+<file name="17.jpg" url="photos/17.jpg">
+</file>
+<file name="18.jpg" url="photos/18.jpg">
+</file>
+<file name="189.jpg" url="photos/189.jpg">
+</file>
+<file name="19.jpg" url="photos/19.jpg">
+</file>
+<file name="2.jpg" url="photos/2.jpg">
+</file>
+<file name="20.jpg" url="photos/20.jpg">
+</file>
+<file name="23.jpg" url="photos/23.jpg">
+</file>
+<file name="24.jpg" url="photos/24.jpg">
+</file>
+<file name="25.jpg" url="photos/25.jpg">
+</file>
+<file name="3.jpg" url="photos/3.jpg">
+</file>
+<file name="32.jpg" url="photos/32.jpg">
+</file>
+<file name="33.jpg" url="photos/33.jpg">
+</file>
+<file name="34.jpg" url="photos/34.jpg">
+</file>
+<file name="35.jpg" url="photos/35.jpg">
+</file>
+<file name="36.jpg" url="photos/36.jpg">
+</file>
+<file name="37.jpg" url="photos/37.jpg">
+</file>
+<file name="38.jpg" url="photos/38.jpg">
+</file>
+<file name="39.jpg" url="photos/39.jpg">
+</file>
+<file name="4.jpg" url="photos/4.jpg">
+</file>
+<file name="40.jpg" url="photos/40.jpg">
+</file>
+<file name="41.jpg" url="photos/41.jpg">
+</file>
+<file name="46.jpg" url="photos/46.jpg">
+</file>
+<file name="47.jpg" url="photos/47.jpg">
+</file>
+<file name="5.jpg" url="photos/5.jpg">
+</file>
+<file name="51.jpg" url="photos/51.jpg">
+</file>
+<file name="52.jpg" url="photos/52.jpg">
+</file>
+<file name="54.jpg" url="photos/54.jpg">
+</file>
+<file name="56.jpg" url="photos/56.jpg">
+</file>
+<file name="57.jpg" url="photos/57.jpg">
+</file>
+<file name="58.jpg" url="photos/58.jpg">
+</file>
+<file name="59.jpg" url="photos/59.jpg">
+</file>
+<file name="6.jpg" url="photos/6.jpg">
+</file>
+<file name="60.jpg" url="photos/60.jpg">
+</file>
+<file name="61.jpg" url="photos/61.jpg">
+</file>
+<file name="62.jpg" url="photos/62.jpg">
+</file>
+<file name="63.jpg" url="photos/63.jpg">
+</file>
+<file name="64.jpg" url="photos/64.jpg">
+</file>
+<file name="65.jpg" url="photos/65.jpg">
+</file>
+<file name="66.jpg" url="photos/66.jpg">
+</file>
+<file name="67.jpg" url="photos/67.jpg">
+</file>
+<file name="68.jpg" url="photos/68.jpg">
+</file>
+<file name="69.jpg" url="photos/69.jpg">
+</file>
+<file name="70.jpg" url="photos/70.jpg">
+</file>
+<file name="71.jpg" url="photos/71.jpg">
+</file>
+<file name="72.jpg" url="photos/72.jpg">
+</file>
+<file name="73.jpg" url="photos/73.jpg">
+</file>
+<file name="74.jpg" url="photos/74.jpg">
+</file>
+<file name="75.jpg" url="photos/75.jpg">
+</file>
+<file name="76.jpg" url="photos/76.jpg">
+</file>
+<file name="77.jpg" url="photos/77.jpg">
+</file>
+<file name="78.jpg" url="photos/78.jpg">
+</file>
+<file name="79.jpg" url="photos/79.jpg">
+</file>
+<file name="8.jpg" url="photos/8.jpg">
+</file>
+<file name="80.jpg" url="photos/80.jpg">
+</file>
+<file name="81.jpg" url="photos/81.jpg">
+</file>
+<file name="82.jpg" url="photos/82.jpg">
+</file>
+<file name="83.jpg" url="photos/83.jpg">
+</file>
+<file name="86.jpg" url="photos/86.jpg">
+</file>
+<file name="87.jpg" url="photos/87.jpg">
+</file>
+<file name="88.jpg" url="photos/88.jpg">
+</file>
+<file name="89.jpg" url="photos/89.jpg">
+</file>
+<file name="add_to_treat_bag.gif" url="photos/add_to_treat_bag.gif">
+</file>
+<file name="checkout.gif" url="photos/checkout.gif">
+</file>
+<file name="coming_soon.gif" url="photos/coming_soon.gif">
+</file>
+<file name="mailtest.php" url="photos/mailtest.php">
+</file>
+<file name="mastercard.gif" url="photos/mastercard.gif">
+</file>
+<file name="treat_logo.gif" url="photos/treat_logo.gif">
+</file>
+<file name="vert_line.gif" url="photos/vert_line.gif">
+</file>
+<file name="view_treat_bag.gif" url="photos/view_treat_bag.gif">
+</file>
+<file name="visa.gif" url="photos/visa.gif">
+</file>
+</folder>
+<folder name="php" url="php">
+<file name="add_cart.php" url="php/add_cart.php">
+</file>
+<file name="add_item.php" url="php/add_item.php">
+</file>
+<file name="cart.inc" url="php/cart.inc">
+</file>
+<file name="CHANGE" url="php/CHANGE">
+</file>
+<file name="checkout.php" url="php/checkout.php">
+</file>
+<file name="check_fields.inc" url="php/check_fields.inc">
+</file>
+<file name="CREATE_TABLES" url="php/CREATE_TABLES">
+</file>
+<file name="description.php" url="php/description.php">
+</file>
+<file name="display_tables.php" url="php/display_tables.php">
+</file>
+<file name="empty_cart.php" url="php/empty_cart.php">
+</file>
+<file name="figure_shipping.inc" url="php/figure_shipping.inc">
+</file>
+<file name="form_check_functions.php" url="php/form_check_functions.php">
+</file>
+<file name="GILLSAN0.eot" url="php/GILLSAN0.eot">
+</file>
+<file name="header.inc" url="php/header.inc">
+</file>
+<file name="index.php" url="php/index.php">
+</file>
+<file name="index_bath_treats.php" url="php/index_bath_treats.php">
+</file>
+<file name="items.php" url="php/items.php">
+</file>
+<file name="mailtest.php" url="php/mailtest.php">
+</file>
+<file name="new_index.php" url="php/new_index.php">
+</file>
+<file name="process_order.php" url="php/process_order.php">
+</file>
+<file name="README" url="php/README">
+</file>
+<file name="receipt.php" url="php/receipt.php">
+</file>
+<file name="remove_item.php" url="php/remove_item.php">
+</file>
+<file name="session_header.php" url="php/session_header.php">
+</file>
+<file name="show_cart.inc" url="php/show_cart.inc">
+</file>
+<file name="some_useful_functions.inc" url="php/some_useful_functions.inc">
+</file>
+<file name="sql_connect.inc" url="php/sql_connect.inc">
+</file>
+<file name="test.php" url="php/test.php">
+</file>
+<file name="update_item.php" url="php/update_item.php">
+</file>
+<file name="upload_item.php" url="php/upload_item.php">
+</file>
+<file name="user_info.php" url="php/user_info.php">
+</file>
+<file name="view_cart.php" url="php/view_cart.php">
+</file>
+<folder name="admin" url="php/admin">
+<file name="add_category.php" url="php/admin/add_category.php">
+</file>
+<file name="add_category_response.php" url="php/admin/add_category_response.php">
+</file>
+<file name="add_item.php" url="php/admin/add_item.php">
+</file>
+<file name="add_item_process.php" url="php/admin/add_item_process.php">
+</file>
+<file name="add_picture.php" url="php/admin/add_picture.php">
+</file>
+<file name="display_tables.php" url="php/admin/display_tables.php">
+</file>
+<file name="file_upload_CLASS.php" url="php/admin/file_upload_CLASS.php">
+</file>
+<file name="header.inc" url="php/admin/header.inc">
+</file>
+<file name="index.php" url="php/admin/index.php">
+</file>
+<file name="receipt.php" url="php/admin/receipt.php">
+</file>
+<file name="receipt1.php" url="php/admin/receipt1.php">
+</file>
+<file name="remove_category.php" url="php/admin/remove_category.php">
+</file>
+<file name="remove_category2.php" url="php/admin/remove_category2.php">
+</file>
+<file name="remove_category_response.php" url="php/admin/remove_category_response.php">
+</file>
+<file name="remove_item.php" url="php/admin/remove_item.php">
+</file>
+<file name="remove_item2.php" url="php/admin/remove_item2.php">
+</file>
+<file name="remove_item_response.php" url="php/admin/remove_item_response.php">
+</file>
+<file name="search_receipts.php" url="php/admin/search_receipts.php">
+</file>
+<file name="search_receipts_response.php" url="php/admin/search_receipts_response.php">
+</file>
+<file name="update_item.php" url="php/admin/update_item.php">
+</file>
+<file name="update_item_process.php" url="php/admin/update_item_process.php">
+</file>
+<file name="update_item_response.php" url="php/admin/update_item_response.php">
+</file>
+<file name="upload.php" url="php/admin/upload.php">
+</file>
+<file name="upload_item.php" url="php/admin/upload_item.php">
+</file>
+<file name="view_catalog.php" url="php/admin/view_catalog.php">
+</file>
+</folder>
+<folder name="cc_process" url="php/cc_process">
+<file name="add_cart.php" url="php/cc_process/add_cart.php">
+</file>
+<file name="cc_response.php" url="php/cc_process/cc_response.php">
+</file>
+<file name="sim.php" url="php/cc_process/sim.php">
+</file>
+<file name="simdata.php" url="php/cc_process/simdata.php">
+</file>
+<file name="simlib.php" url="php/cc_process/simlib.php">
+</file>
+</folder>
+</folder>
+<folder name="_notes" url="_notes">
+<file name="dwSiteColumnsMe.xml" url="_notes/dwSiteColumnsMe.xml">
+</file>
+</folder>
+</project>

@@ -1,0 +1,66 @@
+<tour>
+<ship id='1'>
+	<title>SOVEREIGN OF THE SEAS</title>
+	<point>An "extreme" clipper ship built in 1852</point>
+</ship>
+<ship id='2'>
+	<title>U.S.S. CONSTITUTION - 'OLD IRONSIDES'</title>
+	<point>Without doubt the most famous ship in the annals of the American Navy is the Frigate, U.S.S. "CONSTITUTION"</point>
+</ship>
+<ship id='3'>
+	<title>THE SEA WITCH</title>
+	<point>A clipper ship built in 1846</point>
+	<point>"THE SEA WITCH" broke all existing records on her maiden voyage to China, logging 81 days, New York to Canton. On a subsequent voyage she made the voyage in 74 days, a record never surpassed by a sailing vessel.</point>
+</ship>
+<ship id='4'>
+	<title>BROTHER JONATHAN</title>
+	<point>Built: New York, 1857</point>
+	<point>Lost: July 20, 1865 off the California coast.</point>
+</ship>
+<ship id='5'>
+	<title>TYPHOON</title>
+	<point>An example of a steam ferry yacht</point>
+</ship>
+<ship id='6'>
+	<title>Old Dutch SHOKKOR</title>
+	<point>Ships of this type (one mast, one boom and four sails) were used by fishermen  on the banks of the North Sea until the 1880s.</point>
+	<point>This model is well over 100 years old</point>
+</ship>
+<ship id='7'>
+	<title>UNTITLED</title>
+	<point>A Dutch canal boat</point>
+</ship>
+<ship id='8'>
+	<title>ELSIE</title>
+</ship>
+<ship id='9'>
+	<title>Old Dutch TJALK</title>
+	<point>The "TJALK" was a North Sea fishing vessel.</point>
+	<point>This model is well over 100 years old</point>
+</ship>
+<ship id='10'>
+	<title>VINTA</title>
+	<point>A "vinta" is a double outrigger, dugout canoe of the Philippine Island Group.</point>
+</ship>
+<ship id='11'>
+	<title>FELUCCA or XEBEC</title>
+</ship>
+<ship id='12'>
+	<title>GLAD</title>
+</ship>
+<ship id='13'>
+	<title>SCHOONER</title>
+	<point>A "schooner" is a fore-and-aft (bow to stern that is, front end to back end) rigged vessel</point>
+</ship>
+<ship id='14'>
+	<title>SPANISH GALLEON</title>
+	<point>The "Spanish Galleon" with crests on its sails was made in the Oregon State Prison.</point>
+</ship>
+<ship id='15'>
+	<title>U.S.S. Constitution - 'Old Ironsides'</title>
+</ship>
+<ship id='16'>
+	<title>PELICAN</title>
+	<point>French 1794-1815 Made from mutton and beef bone, wood, hair</point>
+</ship>
+</tour>

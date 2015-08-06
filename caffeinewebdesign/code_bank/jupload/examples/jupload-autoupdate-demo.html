@@ -1,0 +1,62 @@
+<html>
+<body>
+<!-- The following code is specified at the beginning of the <BODY> tag. -->
+<SCRIPT LANGUAGE="JavaScript"><!--
+var _info = navigator.userAgent; var _ns = false;
+var _ie = (_info.indexOf("MSIE") > 0 && _info.indexOf("Win") > 0
+&& _info.indexOf("Windows 3.1") < 0);
+//--></SCRIPT>
+<COMMENT><SCRIPT LANGUAGE="JavaScript1.1"><!--
+var _ns = (navigator.appName.indexOf("Netscape") >= 0
+&& ((_info.indexOf("Win") > 0 && _info.indexOf("Win16") < 0
+&& java.lang.System.getProperty("os.version").indexOf("3.5") < 0)
+|| _info.indexOf("Sun") > 0));
+//--></SCRIPT></COMMENT>
+
+<!-- The following code is repeated for each APPLET tag -->
+<SCRIPT LANGUAGE="JavaScript"><!--
+ if (_ie == true) document.writeln('
+<OBJECT
+classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+width="200" height="200" align="baseline"
+codebase="http://java.sun.com/products/plugin/autodl/jinstall-1_4_2-windows-i586.cab#Version=1,4,2,0">
+<NOEMBED><XMP>');
+else if (_ns == true) document.writeln('
+<EMBED
+type="application/x-java-applet;version=1.4" width="200" height="200"
+align="baseline" code="JUpload/startup.class" ARCHIVE="jupload_uncompressed.jar"
+pluginspage="http://java.sun.com/products/plugin/autodl/jinstall-1_4_2-windows-i586.cab#Version=1,4,2,0">
+<NOEMBED><XMP>');
+//--></SCRIPT>
+
+
+<APPLET archive="jupload_uncompressed.jar"
+	code="JUpload/startup.class"
+	name="JUpload"
+	alt="Upload Applet ! from www.JUpload.biz"
+	width="650" height="350" align="middle"
+	mayscript="mayscript">
+</XMP>
+
+ <PARAM NAME="progressbar" VALUE="true">
+ <PARAM NAME="boxmessage" VALUE="Loading the upload utility ! Please wait...">
+ <PARAM NAME="boxbgcolor" VALUE="#D6D6D6">
+ <param name="debug" value="true">
+ <param name="debugLogfile" value="jupload.log">
+ <param name="actionURL" value="jupload.php">
+ <param name="useRecursivePaths" value="true">
+ <param name="useAbsolutePaths" value="true">
+ <param name="mainSplitPaneLocation" value="450">
+ <param name="leftSplitPaneLocation" value="220">
+ <param name="completeURL" value="">
+ <param name="targetFrame" value="frameUnten">
+ <param name="checkResponse" value="false">
+ <param name="realTimeResponse" value="false">
+
+ <param name="showSuccessDialog" value="false">
+ <param name="maxTotalRequestSize" value="64000000">
+</APPLET></NOEMBED></EMBED>
+</OBJECT>
+
+</body>
+</html>

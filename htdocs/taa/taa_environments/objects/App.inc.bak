@@ -1,0 +1,35 @@
+<?php
+require_once("Secretary.inc");
+require_once("MQ.inc");
+require_once("Schema.inc");
+require_once("Settings.inc");
+class App
+{
+   var $box;
+   var $id;
+   var $release_num;
+   var $schema;
+   var $mq;
+   var $settings;
+   
+   function App()
+   {
+      $this->log = new Secretary();
+      $this->mq = new MQ();
+      $this->schema = new Schema();
+      $this->settings = new Settings();
+   }
+   
+   function to_string()
+   {
+      $str = "\r\n-------------------------------------------\r\n";
+      $str .= "id => " . $this->id . "\r\n";
+      $str .= "box => " . $this->box . "\r\n";
+      $str .= "release_num => " . $this->release_num . "\r\n";
+      $str .= "schema => " . $this->schema->id . "\r\n";
+      $str .= "mq => " . $this->mq->qm . "\r\n";
+      $str .= "-------------------------------------------\r\n";
+      return($str);
+   }   
+}
+?>

@@ -1,0 +1,36 @@
+a
+        {
+	color: #0000DD;
+	font-weight: bold; 
+	text-decoration: none;
+	}
+
+a:hover
+        {
+	color: #C00000;
+	}
+
+body
+	{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11pt;
+	margin-top:0pt;
+	margin-left:0pt;
+	width:640px;
+	} 
+
+#toc
+        {
+	font-family: verdana, arial, sans-serif;
+        font-size: 7pt;
+        } 
+
+p
+	{
+	margin: 5pt;
+	}
+
+h1	{margin: 5pt;}
+h2	{margin: 5pt;}
+h3	{margin: 5pt;}
+h4	{margin: 5pt;}

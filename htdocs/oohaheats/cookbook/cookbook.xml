@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cookbook SYSTEM "cookbook.dtd">
+<cookbook>
+   <recipe>
+      <header>
+         <title>Peanut Butter and Jelly</title>
+         <category>Sandwiches</category>
+      </header>
+      <ingredient amount="2 pieces">bread</ingredient>
+      <ingredient amount="2 Tb">peanut butter</ingredient>
+      <ingredient amount="2 Tb">jelly</ingredient>
+      <instruction num="1">Lay out a piece of bread</instruction>
+      <instruction num="2">Spread peanut butter on bread</instruction>
+      <instruction num="3">Lay out a piece of bread</instruction>
+      <instruction num="4">Spread jelly on bread</instruction>
+      <instruction num="5">Place pieces of bread together with peanut butter and jelly inside</instruction>
+   </recipe>
+</cookbook>
+

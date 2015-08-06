@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>An interactive form has been submitted at ~SubmitTime~:</p>
+<p>
+     Client: ~ClientName~<br>
+       Form: ~SubmissionTitle~<br>
+Transaction: ~TransID~
+</p>
+<p>The form and any notes or related files are attached below.</p>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<html>
+
+<head>
+<style TYPE="text/css">
+    #movefish {position:absolute; left:50; top:300; width:144; z-index:0}
+    #movehand {position:absolute; left:580; top:50; width:144; z-index:0}
+    #movemorninglory {position:absolute; left:630; top:250;width:144;z-index:0}
+    #movegears  {position:absolute; left:190; top:47; width:144;z-index:0}
+</style>
+<title>James Sandlin</title>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!--  Begin
+
+// global holds reference to selected element
+var selectedObj
+// globals hold location of click relative to element
+var offsetX, offsetY
+// global holds current direction of fish (positive = right, negative = left)
+var fishdirection=2
+// globals hold x,y directions of hand
+var handx=Math.round(Math.random() * 10), handy=Math.round(Math.random() * 10) * -1
+
+// Netscape/Internet Explorer discovery
+window.status = "Use your curser to move any image around."
+var isNav, isIE
+
+if (parseInt(navigator.appVersion) >= 4) {
+    if (navigator.appName == "Netscape") {
+        isNav = true
+    }
+    else {
+        isIE = true
+    }
+}
+
+// Assign event handlers used by both Navigator and IE (called by
+// onLoad()), then get the objects moving!
+
+function init() {
+    if (isNav) {
+       setNavEventCapture()
+    }
+
+    // assign functions for mouse down, drag, up
+
+    document.onmousedown = engage
+    document.onmousemove = dragIt
+    document.onmouseup = release
+
+    // get those objects moving...
+
+    MoveObjects()
+
+}
+
+
+// Set zIndex (depth) property
+function setZIndex(obj, zOrder) {
+    // dragged object floats above other objects
+   obj.zIndex = zOrder
+}
+
+
+// Position an object at a specific pixel coordinate
+function shiftTo(obj, x, y) {
+  if (x < 0) {
+      x = 0;
+  }
+  else if (y < 0) {
+      y = 0;
+  }
+  
+  if (isNav) {
+      obj.moveTo(x,y)
+  }
+  else {
+      obj.pixelLeft = x
+      obj.pixelTop = y
+  }
+}
+
+
+
+// Determine which object is being dragged
+function setSelectedElem(evt) {
+    if (isNav) {
+        var testObj
+        var clickX = evt.pageX
+        var clickY = evt.pageY
+        // loop through all layers (starting with frontmost layer)
+        // to see if event coordinates are in the layer
+        for (var i = document.layers.length - 1; i >= 0; i--) {
+            testObj = document.layers[i]
+            if ((clickX > testObj.left) && 
+                (clickX < testObj.left +
+                 testObj.clip.width) && 
+                (clickY > testObj.top) && 
+                (clickY < testObj.top +
+                 testObj.clip.height)) {
+               // remember layer in global, bring layer to front
+               selectedObj = testObj
+               setZIndex(selectedObj, 100)
+               return
+            }
+        }
+    } 
+    else {
+        var imgObj = window.event.srcElement
+        // make sure it's a moveable object
+        if (imgObj.parentElement.id.indexOf("move") != -1) {
+            // remember layer in global, bring layer to front
+            selectedObj = imgObj.parentElement.style
+            setZIndex(selectedObj,100)
+            return
+        }
+    }
+
+    // no selected object
+    selectedObj = null
+    return
+}
+
+
+// Reverse direction of fish object
+function FishReverse() {
+   if (fishdirection > 0) {
+        if (isNav) {
+            document.movefish.src="images/fish.gif"
+        }
+        else {
+            document.all("movefish").innerHTML = '<img src="images/fish.gif">'
+
+        }
+   }
+   else {
+       if (isNav) {
+           document.movefish.src="images/fish_r.gif"
+       }
+       else {
+           document.all("movefish").innerHTML = '<img src="images/fish_r.gif">'
+       }
+   }
+}
+
+
+// Move objects--seemingly recursive (though it's not).
+// 'setTimeout()' method is a strange hack 
+// (but apparently standard practice...)
+function MoveObjects() {
+    if (isNav) {        
+            if (document.movefish.left < 2) {
+                fishdirection=2
+                FishReverse()
+            }
+            else if (document.movefish.left > window.innerWidth) {
+                fishdirection=-2
+                FishReverse()
+            }
+
+            if (document.movehand.left < 2) {
+                handx=Math.round(Math.random() * 10)
+            }
+            else if (document.movehand.left > window.innerWidth) {
+                handx=Math.round(Math.random() * 10) * -1
+            }
+
+            if (document.movehand.top < 2) {
+                handy=Math.round(Math.random() * 10)
+            }
+            else if (document.movehand.top > window.innerHeight) {
+                handy=Math.round(Math.random() * 10) * -1
+            }
+
+            shiftTo(document.movefish,
+                    document.movefish.left+fishdirection,
+                    document.movefish.top)
+
+            shiftTo(document.movehand,
+                    document.movehand.left+handx,
+                    document.movehand.top+handy)
+    }
+    else {
+            if (movefish.offsetLeft < 2) {
+                fishdirection=2
+                FishReverse()
+            }
+            else if (movefish.offsetLeft > document.body.clientWidth) {
+                fishdirection=-2
+                FishReverse()
+            }
+
+            if (movehand.offsetLeft < 2) {
+                handx=Math.round(Math.random() * 10)
+            }
+            else if (movehand.offsetLeft > document.body.clientWidth) {
+                handx=Math.round(Math.random() * 10) * -1
+            }
+
+            if (movehand.offsetTop < 2) {
+                handy=Math.round(Math.random() * 10)
+            }
+            else if (movehand.offsetTop> document.body.clientHeight) {
+                handy=Math.round(Math.random() * 10) * -1
+            }
+
+            shiftTo(movefish.style,
+                    parseInt(movefish.offsetLeft)+fishdirection,
+                    parseInt(movefish.offsetTop))
+
+            shiftTo(movehand.style,
+                    parseInt(movehand.offsetLeft)+handx,
+                    parseInt(movehand.offsetTop)+ handy)
+                    
+    }
+
+
+//    if (isNav) {      
+//          shiftTo(document.layers["movefish"], 
+//             document.layers["movefish"].left+1,
+//             document.layers["movefish"].top)
+//    }
+
+
+
+    // we'll be called by a new thread of execution, and the 
+    // current invocation will be gone by then...
+                
+    setTimeout('MoveObjects()', 100)
+
+}
+
+
+// Drag an object
+function dragIt(evt) {
+    // operate only if a moveable object is selected
+    if (selectedObj) {
+        if (isNav) {
+            shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))
+            return false
+        }
+        else {
+            shiftTo(selectedObj, (window.event.clientX -
+                offsetX), (window.event.clientY - offsetY))
+           // prevent further system response to dragging in IE
+           return false
+        }
+    }
+}
+
+
+// Setup possible drag
+function engage(evt) {
+    // figure out which object was clicked (if any) 
+    setSelectedElem(evt)
+    if (selectedObj) {
+        // remember where the click is in relation to the
+        // top left corner of the object 
+        if (isNav) {
+            offsetX = evt.pageX - selectedObj.left
+            offsetY = evt.pageY - selectedObj.top
+        } 
+        else {
+            offsetX = window.event.offsetX
+            offsetY = window.event.offsetY      
+        }
+    }
+
+    return true
+}
+
+
+// Stop dragging current object
+function release(evt) {
+    if (selectedObj) {
+        setZIndex(selectedObj, 0)
+        selectedObj = null
+    }
+}
+
+
+// Start event capture for Navigator
+function setNavEventCapture() {
+    if (isNav) {
+        document.captureEvents(Event.MOUSEDOWN |
+                               Event.MOUSEMOVE | Event.MOUSEUP)
+    }
+}
+
+// End -->
+
+
+</SCRIPT> 
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <META NAME="Author" CONTENT="James Gregory Sandlin">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#ff0066" VLINK="#0000ff"
+ALINK="#ff0066" onLoad="init()">
+<!doctype-- html public "-//w3c//dtd html 4.0 transitional//en">
+<P><CENTER>
+    <div class=Section1> 
+      <table width="68%" border="0" align="center">
+        <tr> 
+          <td colspan="3" height="127">
+            <div align="center"><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><font size="5"><b>James G. 
+              Sandlin</b></font></span> </div>
+            
+          <p class=MsoTitle style='margin-top:.5pt' align="center"><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>300 NW 8<sup>th</sup> Avenue 
+            # 403<o:p><br>
+            </o:p></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Portland, OR 97209<br>
+            s</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>andlinjames@yahoo.com<br>
+            </span></p>
+            <hr width="80%">
+            <span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'> </span></td>
+        </tr>
+        <tr> 
+          <td width="18%"> 
+            <p class=MsoTitle style='margin-top:.5pt'> </p>
+            <p class=MsoNormal><font size="3"><b style='mso-bidi-font-weight:normal'>OBJECTIVE</b></font></p>
+          </td>
+          <td colspan="2" rowspan="2"><font size="3">An entry-level position in 
+            software or web development,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; which will utilize and challenge my 
+            programming abilities.</font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"> 
+            <div align="left"><font size="3"></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%" height="12"><font size="3"></font></td>
+          <td width="51%" height="12"><font size="3"></font></td>
+          <td width="31%" height="12"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"> 
+            <p class=MsoTitle style='margin-top:.5pt'> </p>
+            <p class=MsoNormal><font size="3"><b style='mso-bidi-font-weight:normal'>EDUCATION</b></font></p>
+          </td>
+          <td rowspan="6" width="51%"> 
+            <p><font size="3"><b>B.S. in Applied Computer Science<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Science Sequence<br>
+              </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Illinois State University <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Normal, IL)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Major GPA 3.52 of 4.0</font><font size="3"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Member Golden Key National Honor Society</font></p>
+          </td>
+          <td width="31%" height="2"> 
+            <div align="right"><b style='mso-bidi-font-weight:normal'><font size="3">May 
+              2001</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td height="0" width="18%"><font size="3"></font></td>
+          <td height="0" width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td height="0" width="18%">&nbsp;</td>
+          <td height="0" width="31%">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="2" width="18%">&nbsp;</td>
+          <td height="2" width="31%">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="51%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td rowspan="2" width="51%"><font size="3"><b>B.A. in Psychology<br>
+            <span style="mso-spacerun: yes"> </span></b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Northeast Louisiana University<br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='font-weight:
+normal'> (Monroe, LA)</span></font></td>
+          <td width="31%" height="2"> 
+            <div align="right"><b><font size="3">August 1999</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%" height="11"><font size="3"></font></td>
+          <td width="31%" height="11"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="10"><font size="3"></font></td>
+          <td width="51%" height="10"><font size="3"></font></td>
+          <td width="31%" height="10"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td rowspan="2" height="25" width="18%"> 
+            <p class=MsoTitle style='margin-top:.5pt'> </p>
+            <p class=MsoNormal><font size="3"><b style='mso-bidi-font-weight:normal'>WORK<br>
+              HISTORY</b></font></p>
+            </td>
+          <td rowspan="3" height="43" width="51%"><font size="3"><b>Software Debugger<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Illinois State University <br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> (Normal, IL)<br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Debug C and Java</span></font></td>
+          <td width="31%" height="2"> 
+            <div align="right"><b><font size="3"><span style='font-weight:
+normal'></span>January - May 2001</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="31%" height="2"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td width="31%" height="2"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="51%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td rowspan="3" width="51%"><font size="3"><b>Software Installation 
+            Team Leader<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; State Farm Insurance Company<br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='font-weight:
+normal'> (Bloomington, IL)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lead a team installing a software<br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='font-weight:
+normal'> package on PCs.</span></font></td>
+          <td width="31%" height="2"> 
+            <div align="right"><b><font size="3">June - August 2000</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="51%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="0"><font size="3"></font></td>
+          <td rowspan="4" width="51%"><font size="3"><b>Chef<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Orleans Food &amp; Spirit <br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='font-weight:
+normal'> (Metarie, LA)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Prep &amp; Grill Cajun Seafood</font></td>
+          <td width="31%" height="0"> 
+            <div align="right"><b><font size="3">November 1998 - May 1999</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%" height="0">&nbsp;</td>
+          <td width="31%" height="0">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td width="31%" height="2"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="51%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td rowspan="3" width="51%"><font size="3"><b>Computer Assembler<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>T.C. Computers <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Kenner, LA)<span style='font-weight:
+normal'><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Assemble PC's for personal orders</font></td>
+          <td width="31%" height="2"> 
+            <div align="right"><b><font size="3">September - November 1998</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="5"><font size="3"></font></td>
+          <td width="31%" height="5"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="51%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td rowspan="3" width="51%"><font size="3"><b>Photographer / Lab Assistant<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>NLU Art Department &amp; Paper<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Monroe, LA)<span style="mso-spacerun: yes"><br>
+             </span><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Photographer &amp; Lab Assistant</font></td>
+          <td width="31%" height="2"> 
+            <div align="right"><b><font size="3">August 1993 - June 1998</font></b></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="18%"><font size="3"></font></td>
+          <td width="31%"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2"><font size="3"></font></td>
+          <td width="31%" height="2"><font size="3"></font></td>
+        </tr>
+        <tr> 
+          <td width="18%" height="10">&nbsp;</td>
+          <td width="51%" height="10">&nbsp;</td>
+          <td width="31%" height="10">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td rowspan="2" height="6" width="18%"> 
+            <p class=MsoTitle style='margin-top:.5pt'> </p>
+            <p class=MsoNormal><font size="3"><b style='mso-bidi-font-weight:normal'>COMPUTER<br>
+              SKILLS</b></font></p>
+            </td>
+          
+        <td rowspan="4" height="2" width="51%"> 
+          <p><b>Languages<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Java, JavaScript, ASP, SQL, HTML<br>
+            <font size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font> OODB, SmallTalk, 
+            UML, Ada,<br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Java3D, C, Lisp, Prolog, <br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>OpenGL, Assembly</p>
+          </td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="12">&nbsp;</td>
+          <td width="31%" height="12">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="6" width="18%">&nbsp;</td>
+          <td rowspan="4" height="18" width="51%"><b>Software<br>
+            </b><span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Unix, Solaris, Windows, <br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Adobe Photoshop, MSVC++,<br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Forte for Java, Kawa for Java,<br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Macromedia Dreamweaver,<br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> Macromedia Fireworks<br>
+          </td>
+          <td height="6" width="31%">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="18%" height="2">&nbsp;</td>
+          <td width="51%" height="2">&nbsp;</td>
+          <td width="31%" height="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="2" width="18%"> 
+            <p class=MsoTitle style='margin-top:.5pt'> </p>
+            <p class=MsoNormal><font size="3"><b style='mso-bidi-font-weight:normal'>FURTHER<br>
+              INFORMATION</b></font></p>
+            </td>
+          <td colspan="2" height="2">Transcripts and References are available 
+            upon request. I can <br>
+            <span style='font-weight:
+normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> be reached at 503-224-3346 anytime 
+            Monday thru Friday.</td>
+        </tr>
+      </table>
+      
+
+      <p class=MsoNormal style='line-height:-107%'><b style='mso-bidi-font-weight:
+normal'> 
+        <![if !supportEmptyParas]>
+        &nbsp; 
+        <![endif]>
+        <o:p></o:p></b></p>
+    </div>
+
+</CENTER><p></P>
+
+<div align="center"></div>
+
+<p><br>
+&nbsp;
+<!--   Definition of layers
+//-->
+
+<DIV ID=movehand>
+
+<img src="images/hand.gif" width="80" height="57">
+
+</DIV>
+
+
+<DIV ID=movefish>
+
+<img src="images/fish.gif" width="177" height="63">
+
+</DIV>
+
+
+<DIV ID=movemorninglory>
+
+<img src="images/morninglory.gif" width="112" height="98">
+
+</DIV>
+
+
+<DIV ID=movegears>
+
+<img src="images/gears.gif" width="78" height="60">
+
+</DIV>
+
+
+<!--   End layer definitions
+//-->
+<p align="center"><a href="../index.htm"><img border="0" src="../Home2.gif" width="126" height="31"></a></p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<h1>Edit recipe</h1>
+<% form_tag :action => 'update', :id => @recipe do %>
+<div>
+<hr>
+<%= link_to "Delete " + @recipe.name, {:action => "delete", :id => @recipe.id}, :class=>"button", :confirm => "Really delete " + @recipe.name + "?" %>
+<%= link_to 'Back', {:action => 'list'}, :class=>"button" %>
+<hr>
+<label for="recipe_name">Name</label>:
+<%= text_field :recipe, :name, :value=>@recipe.name %>
+</div>
+
+<br>
+
+<label for="recipe_category">Category</label>:
+<% @categories.each do |cat| -%>
+   <div>
+      <%= check_box_tag "recipe[category_ids][]", cat.id, @recipe.categories.include?(cat), :name => 'recipe[category_ids][]' -%>
+      <%= label_tag :category_names, cat.name -%>
+   </div>
+<% end -%>
+
+
+<br />
+   
+
+<ul>
+<label for="recipe_ingredients">Ingredients</label>:
+<% @recipe.ingredients.each_with_index do |ingredient, index| %>
+   <li>
+   <% measurement = ingredient.measurement %>
+   <% fields_for "measurements[#{index}]", measurement do |m| %>
+      <%= m.text_field :name, :class => "measurement"%>
+      <% unless measurement.blank? %>
+         <%= m.hidden_field :id%>
+      <% end %>
+   <% end %>
+   <% grocery = ingredient.grocery %>
+   <% fields_for "groceries[#{index}]", grocery do |g| %>
+      <%= g.text_field :name, :class => "grocery"%>
+   <% end %>
+   </li>
+<% end %>
+</ul>
+<br />
+
+<ol>
+<label for="recipe_steps">Steps</label>:
+<% @recipe.steps.each_with_index do |step, index| %>
+   <% fields_for "steps[#{index}]", step do |f| %>
+      <li><%= f.text_area :instruction, :class => "step"%></li>
+      <% unless step.blank? %>
+         <%= f.hidden_field :id%>
+      <% end %>
+   <% end %>
+<% end %>
+</ol>
+<br><br>
+<%= submit_tag "Submit Changes"%>
+
+<% end  %>
+
+<hr>
+<%= link_to "Delete " + @recipe.name, {:action => "delete", :id => @recipe.id}, :class=>"button", :confirm => "Really delete " + @recipe.name + "?" %>
+<%= link_to 'Back', {:action => 'list'}, :class=>"button" %>
+<hr>
+

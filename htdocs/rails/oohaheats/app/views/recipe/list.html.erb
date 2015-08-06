@@ -1,0 +1,16 @@
+<% if @recipes.blank? %>
+<p>There are not any recipes currently in the system.</p>
+<% else %>
+<ul id="recipes">
+<% @recipes.each do |c| %>
+<li><%= link_to c.name, {:action => 'show', :id => c.id} -%>
+</li>
+<% end %>
+</ul>
+<% end %>
+<% unless session[:user].nil? %>
+<h1>USER NILL</h1>
+<% if(session[:user].is_admin) %>
+<p><%= link_to "Add new Recipe", {:action => 'new' }, :class=>"button" %></p>
+<% end %>
+<% end %>

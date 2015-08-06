@@ -1,0 +1,8 @@
+2009-08-31 22:07:50 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Category.recipe_id' in 'on clause'</span> in [/var/htdocs/oohaheats2/cake/libs/model/datasources/dbo_source.php, line 549]
+2009-08-31 22:07:50 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/htdocs/oohaheats2/app/views/recipes/index.ctp, line 11]
+2009-08-31 22:08:16 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Category.recipe_id' in 'on clause'</span> in [/var/htdocs/oohaheats2/cake/libs/model/datasources/dbo_source.php, line 549]
+2009-08-31 22:08:16 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/htdocs/oohaheats2/app/views/recipes/index.ctp, line 11]
+2009-08-31 22:09:02 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Category.recipe_id' in 'on clause'</span> in [/var/htdocs/oohaheats2/cake/libs/model/datasources/dbo_source.php, line 549]
+2009-08-31 22:09:02 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/htdocs/oohaheats2/app/views/recipes/index.ctp, line 11]
+2009-08-31 22:21:36 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/htdocs/oohaheats2/app/views/recipes/index.ctp, line 18]
+2009-08-31 22:21:36 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/htdocs/oohaheats2/app/views/recipes/index.ctp, line 28]

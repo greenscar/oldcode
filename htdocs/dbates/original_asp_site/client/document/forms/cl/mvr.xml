@@ -1,0 +1,106 @@
+<?xml version="1.0"?> 
+<submission>
+	<Recipients>
+		<PrimaryRecipient>
+			<name>team#CSRCommercial</name>
+			<address/>
+		</PrimaryRecipient>
+		<BackupRecipient>
+			<name>role#LCCSR</name> 
+			<address/>
+		</BackupRecipient>
+	</Recipients>
+	<template id="Client-CL-MVR" title="Request Motor Vehicle Report" description="Request driving records of employees or prospective employees.">
+		<page id="0" active="1" title="Initial Questions" description="Please complete the following:">
+			<table id="PageTable" border="0" cellspacing="0">    
+        			<tr>
+        				<td colspan="2" id="section">Contact Information</td> 
+        			</tr>
+				<tr>
+					<td align="right" width="150pt">Your Business</td>
+					<td align="left">
+						<input type="text" name="ClientName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/Name</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="150pt">Your Name</td>
+					<td align="left">
+						<input type="text" name="ContactName" size="40" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactName</refDefault>
+						</input>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="150pt">Your E-mail Address</td>
+					<td align="left">
+						<input type="text" name="ClientEmail" size="30" maxlength="40" required="1">
+							<refDefault>//ClientTable/ContactEmail</refDefault>
+						</input>
+					</td>
+				</tr> 
+				<tr>
+					<td align="right" width="150pt">Your Phone Number</td>
+					<td align="left">
+						<input type="text" name="ContactPhone" size="20" maxlength="25"  required="1">					
+							<refDefault>//ClientTable/ContactPhone</refDefault>
+						</input>
+					</td>
+				</tr> 
+				<MetaQuestion>
+                			<tr>
+                				<td colspan="2" id="section">Report Options</td> 
+                			</tr>
+        				<tr>
+        					<td align="right" width="150pt">How many drivers?</td>
+        					<td align="left">
+        						<input type="text" name="Drivers" size="2" maxlength="2"  required="1">1</input>
+        					</td>
+        				</tr>
+				</MetaQuestion>
+                                <tr id="section">
+					<td colspan="2">Handling Instructions</td>
+                                </tr>
+                                <tr>       
+					<td align="right">Urgent?</td>
+					<td><input type="checkbox" value="1" name="MVRUrgent"/></td>
+
+                                </tr>
+
+			</table>
+		</page>
+		<page id="1" title="Driver Information" description="Please complete the information for each driver"> 
+                        <table id="PageTable" cellspacing="0" cellpadding="0" border="0">  
+                                <tr>
+                                	<td colspan="5" id="section">Drivers</td>
+                                </tr>
+                                
+                                <tr>
+                                	<td align="center">Driver Name</td>
+                                	<td align="center">Date of Birth<br/>mm-dd-yyyy</td>
+                                	<td align="center">License<br/>Number</td>
+                                	<td align="center">Issuing<br/>State</td>
+                                	<td align="center"><small>Currently<br/>Employed?</small></td>
+                                </tr> 
+        			<repeat id="DriverInfo">
+					<Iterations><refX>//input[@name='Drivers']</refX></Iterations>
+        				<RepeatTemplate>
+						<RepeatInstance>
+                                                        <tr>
+                                                                <td align="center"><input type="text" name="MVRDriver" size="20" maxlength="40" required="1"/></td>
+                                                                <td align="center">
+                        						<input type="text" name="MVRDOBMonth" size="2" maxlength="2" required="1"></input>-<input type="text" name="MVRDOBDay" size="2" maxlength="2" required="1"></input>-<input type="text" name="MVRDOBYear" size="4" maxlength="4" required="1" onBlur="Y2K(this.value)"></input>
+                                                        	</td>
+                                                                <td align="center"><input type="text" name="MVRLicense" size="15" maxlength="20" required="1"></input></td>
+                                                                <td align="center" ><input type="text" name="MVRState" size="3" maxlength="3" required="1"></input></td>
+                                                                <td align="center" ><input type="checkbox" value="1" name="MVREmployed"/></td>
+                                                        </tr>
+						</RepeatInstance>
+        				</RepeatTemplate>
+        			</repeat>
+                        </table>
+        	</page>   
+        </template>                        
+</submission>	
+

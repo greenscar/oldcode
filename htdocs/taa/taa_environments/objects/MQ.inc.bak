@@ -1,0 +1,85 @@
+<?php
+require_once("Secretary.inc");
+require_once("Settings.inc");
+class MQ
+{
+   var $qm;
+   var $host;
+   var $port;
+   var $mgw;
+   var $channel;
+   var $datestart;
+   var $dateend;
+   var $settings;
+   
+   function MQ()
+   {
+      $this->log = new Secretary();
+      $this->settings = new Settings();
+   }
+   function get_variables()
+   {
+      $vars = array("qm", "host", "port", "mgw", "channel", "datestart", "dateend");
+      return($vars);
+   }
+   function to_string()
+   {
+      $str = "\r\n-------------------------------------------\r\n";
+      $str .= "qm => " . $this->qm . "\r\n";
+      $str .= "host => " . $this->host . "\r\n";
+      $str .= "port => " . $this->port . "\r\n";
+      $str .= "mgw => " . $this->mgw . "\r\n";
+      $str .= "channel => " . $this->channel . "\r\n";
+      $str .= "datestart => " . $this->datestart . "\r\n";
+      $str .= "dateend => " . $this->dateend . "\r\n";
+      $str .= "-------------------------------------------\r\n";
+      return($str);
+   }
+   function db_load($dbmgr, $qm)
+   {
+      $this->log->write("mq->db_load($dbmgr, $qm)) START");
+      if(!isset($qm))
+      {
+         $this->log->write("ERROR -> this->qm == null");
+         return false;
+      }
+      $to_return = false;
+      $now = $this->settings->get_time();
+      //select * from mq where trim(qm) like 'TIERS.QM4' and datestart <= '2006-11-20' AND (dateend is null or dateend >= '2006-11-20')
+      /*
+      $sel = "SELECT host, port, mgw, channel, datestart, dateend "
+           . "FROM mq "
+           . "where trim(qm) like '" . strtoupper($qm) . "' "
+           . "AND "
+           . "datestart <= '" . date("Y-m-d") . "' "
+           . "AND "
+           . "(dateend is null or dateend > '" . date("Y-m-d") . "')";
+      */
+      $sel = "SELECT host, port, mgw, channel, datestart, dateend "
+           . "FROM mq "
+           . "where trim(qm) like '" . strtoupper($qm) . "' "
+           . "AND "
+           . "datestart <= '$now' "
+           . "AND "
+           . "(dateend is null or dateend > '$now')";
+      $this->log->write($sel);
+      $dbmgr->connect();
+      $dbmgr->query($sel);
+      if($row = $dbmgr->fetch_assoc_array())
+      {
+         $this->qm = $qm;
+         $this->host = $row["host"];
+         $this->port = $row["port"];
+         $this->mgw = $row["mgw"];
+         $this->channel = $row["channel"];
+         $this->datestart = $row["datestart"];
+         $this->dateend = $row["dateend"];
+         $to_return = true;
+      }
+      $dbmgr->disconnect();
+      $this->log->write("mq->db_load($dbmgr, $qm)) END -> $to_return");
+      return($to_return);
+   }
+   
+}
+?>

@@ -1,0 +1,70 @@
+<%@ LANGUAGE = PerlScript %>
+<%
+if ($Request->QueryString('cookie')->item =~ m{off}i)
+        {
+        $Response->Cookies->SetProperty('item', 'publicDurhamAndBates', 'public'); 
+        $Response->Cookies('publicDurhamAndBates')->{Expires} = "December 31, 2010";      
+        $Response->Cookies('publicDurhamAndBates')->SetProperty('item', 'PopUp', 'off'); 
+	%>
+        <html>
+        <head>
+        	<title>Durham and Bates Pop-up Announcement Settings</title>
+        	<link rel="stylesheet" type="text/css" href="/resource/dbates.css">
+        </head>
+        <body>
+        
+        <center><img src="/resource/title3.jpg" style="margin-top:10pt" width="298" height="34"></center>
+        <hr width="90%">
+	<center><h3 style="font-family:verdana, arial;">Pop-ups are off!</h3></center>
+	<hr>
+		<p style="font-size: 9pt;">(If you later wish to enable pop-up announcements of upcoming events, visit <a href="/events.asp" target="dbmain">Events and Seminars</a>)</p>
+        </body>
+        </html>         
+	<%
+        } 
+
+if ($Request->QueryString('cookie')->item =~ m{on}i)
+        {
+        $Response->Cookies->SetProperty('item', 'publicDurhamAndBates', 'public'); 
+        $Response->Cookies('publicDurhamAndBates')->SetProperty('item', 'PopUp', 'on'); 
+	%>
+        <html>
+        <head>
+        	<title>Durham and Bates Pop-up Announcement Settings</title>
+        	<link rel="stylesheet" type="text/css" href="/resource/dbates.css">
+        </head>
+        <body>
+        <center><img src="/resource/title3.jpg" style="margin-top:10pt" width="298" height="34"></center>
+        <hr width="90%">	
+	<center><h3 style="font-family:verdana, arial;">Pop-ups are on!</h3></center>
+	<hr width="50%">
+	<center><a href="/promote.asp?cookie=off" style="font-size:10pt;">Click here to disable future pop-up announcements</a></center>
+        </body>
+        </html>         
+	<%
+        }
+
+if (!${$Request->QueryString}{cookie}{item})
+	{
+	$Session->{PopUp} = 1;
+	%>
+        <html>
+        <head>
+        	<title>Upcoming Seminars</title>
+        	<link rel="stylesheet" type="text/css" href="/resource/dbates.css">
+        </head>
+        <body>
+        <center>
+        	<img src="/resource/title3.jpg" style="margin-top:10pt" width="298" height="34">
+        	<hr width="90%">
+        	<p style="margin:5pt;">Upcoming Seminars: <i>Technology @ Work: Security & Employment Issues in the Digital Age</i></p>
+        	<br>
+		<a href="/ViewDocument.asp?ID=tech" target="_new" style="font-size:10pt;">Click here to find out more</a>
+        	<hr width="50%">
+        	<a href="promote.asp?cookie=off" style="font-size:10pt;">Click here to disable future pop-up announcements</a></center>
+        </body>
+        </html>  
+	<%
+	} 
+%>
+	
